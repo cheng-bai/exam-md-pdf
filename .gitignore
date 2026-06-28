@@ -8,8 +8,13 @@ __pycache__/
 
 # Raw and intermediate files
 inputs/*
+/outputs/
 work/
 *.tmp
+outputs/**/upload-response.json
+outputs/**/result.json
+outputs/**/result.zip
+outputs/**/*_origin.pdf
 
 # Keep directory placeholders
 !inputs/.gitkeep
