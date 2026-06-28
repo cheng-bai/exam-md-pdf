@@ -5,8 +5,9 @@
 ## 工作原则
 
 - Markdown 是主源文件，PDF 是渲染产物。
+- 最终交付的 Markdown 文件名必须按试卷内容使用中文语义化命名，例如 `敬业中学高一期末数学试卷-学生版.md`、`敬业中学高一期末数学试卷-质量报告.md`；不要把最终交付文件命名为 `source.md`、`cleaned.md`、`QUALITY_REPORT.md` 这类泛名或英文名。
 - 原始 PDF、扫描图和 OCR 中间文件默认视为大文件或版权敏感文件，不主动提交，除非用户明确要求。
-- `source.md` 和 `outputs/*.pdf` 也可能包含版权或隐私信息；推送公开仓库前必须提醒用户确认。
+- Markdown 主源稿和 `outputs/*.pdf` 也可能包含版权或隐私信息；推送公开仓库前必须提醒用户确认。
 - 数学公式必须使用标准 Markdown LaTeX：行内 `$...$`，独立 `$$...$$`。
 - OCR 只能作为初稿来源，最终内容必须按原卷逐题校对。
 - 交付前必须验证 Markdown 和 PDF 文件存在，PDF 页数合理，Pandoc 渲染无报错。
@@ -14,7 +15,7 @@
 ## 目录约定
 
 - `inputs/`: 原始 PDF，默认被 `.gitignore` 忽略。
-- `exams/<slug>/source.md`: 单份试卷的 Markdown 源稿。
+- `exams/<slug>/<中文语义文件名>.md`: 单份试卷的 Markdown 源稿或质量报告。
 - `exams/<slug>/figures/`: 从试卷中裁出的题图。
 - `exams/<slug>/outputs/`: 渲染出的 PDF。
 - `scripts/`: 项目自动化脚本。
@@ -37,13 +38,13 @@ python3 scripts/new_exam.py "试卷标题"
 渲染 PDF：
 
 ```bash
-python3 scripts/render_exam.py exams/<slug>/source.md
+python3 scripts/render_exam.py exams/<slug>/<中文语义文件名>.md
 ```
 
 带页数验收：
 
 ```bash
-python3 scripts/render_exam.py exams/<slug>/source.md --expect-pages 8
+python3 scripts/render_exam.py exams/<slug>/<中文语义文件名>.md --expect-pages 8
 ```
 
 ## Git 约定
