@@ -5,7 +5,7 @@
 ## 当前目标
 
 1. 原始 PDF 放入 `inputs/`。
-2. 每份试卷在 `exams/<试卷名>/` 下维护 Markdown 源稿。
+2. 每份最终试卷在 `exams/<年份学校标准名考试名称>/` 下维护 Markdown 源稿和 PDF。
 3. 用 Pandoc + XeLaTeX 把 Markdown 渲染成 PDF。
 4. 用 Git 保存每次校对和排版修改。
 5. 配好 GitHub 远程仓库后推送。
@@ -20,12 +20,12 @@
 ├── outputs/                   # MinerU 全局解析输出 / 上传回执 / 归档包，中间物
 ├── work/                      # 本地裁图 / 预览页 / 临时处理目录，中间物
 ├── exams/                     # 试卷 Markdown、题图和 PDF
-│   ├── 高中_*                 # 最终云端规范归档：同名 md/pdf，可推送 GitHub
-│   ├── 敬业中学高一期末数学试卷/              # 旧工作稿：敬业中学高一数学期末
-│   ├── 华东政法大学附属中学高一期末数学试卷/  # 旧工作稿：华政附中高一数学期末
-│   ├── 晋元高级中学高二数学期末试卷/          # 旧工作稿：晋元高级中学高二数学期末
-│   ├── 松江一中高一数学期末试卷/              # 旧工作稿：松江一中高一数学期末
-│   └── 松江一中高二数学期末试卷/              # 旧工作稿：松江一中高二数学期末
+│   ├── 2026上海市敬业中学高一期末数学试卷/               # 最终归档
+│   ├── 2026上海市晋元高级中学高二数学期末试卷/           # 最终归档
+│   ├── 2026上海市松江一中高一数学期末试卷/               # 最终归档
+│   ├── 2026上海市松江一中高二数学期末试卷/               # 最终归档
+│   ├── 2026华东政法大学附属中学高一期末数学试卷/         # 最终归档
+│   └── 2026上海市敬业中学高一期末数学试卷-工作稿/        # 审校现场
 ├── scripts/                   # 自动化脚本
 ├── tests/                     # 工作流测试
 └── examples/                  # 可运行示例
@@ -38,40 +38,44 @@
 | `inputs/` | 原始 PDF / 扫描图片输入 | 否 | 默认包含版权或隐私材料，只保留目录说明文件 |
 | `outputs/` | MinerU 解析包、上传回执、中间输出 | 否 | 用于追溯 OCR 过程，不作为最终交付 |
 | `work/` | 裁图、预览、临时处理文件 | 否 | 可按需重建，不进入云端归档 |
-| `exams/高中_*` | 最终云端规范归档 | 是 | 每份试卷一个目录，同名 `.md` + `.pdf` |
-| `exams/<中文试卷名>/` | 旧工作稿 / 审校现场 | 视情况 | 不要整体直接推送，先整理成最终归档 |
+| `exams/<年份学校标准名考试名称>/` | 最终云端规范归档 | 是 | 每份试卷一个目录，包含中文语义化 `.md` + `.pdf` |
+| `exams/<年份学校标准名考试名称>-工作稿/` | 审校工作稿 | 视情况 | 不要作为最终归档整体直接推送 |
 | `scripts/` | 自动化脚本 | 是 | 环境检查、建目录、渲染和 MinerU 解析 |
 | `tests/` | 自动化测试 | 是 | 验证脚本和工作流约定 |
 | `examples/` | 示例材料 | 是 | 用于演示最小可运行流程 |
 
 ## 云端归档规则
 
-推送到 GitHub 管理的最终试卷，统一放在 `exams/` 下，并采用“一份试卷一个文件夹”。目录名和目录内主文件名保持一致：
+推送到 GitHub 管理的最终试卷，统一放在 `exams/` 下，并采用“一份试卷一个文件夹”。`exams/` 下的试卷文件夹命名规则是：
 
 ```text
-exams/学段_学校标准名_年级_学科_考试类型_版本类型_提交日期/
-├── 学段_学校标准名_年级_学科_考试类型_版本类型_提交日期.md
-├── 学段_学校标准名_年级_学科_考试类型_版本类型_提交日期.pdf
+年份学校标准名考试名称
+```
+
+文件夹名只描述试卷本身，不放版本类型和提交日期。版本类型写在目录内主文件名里：
+
+```text
+exams/年份学校标准名考试名称/
+├── 年份学校标准名考试名称-版本类型.md
+├── 年份学校标准名考试名称-版本类型.pdf
 └── figures/                  # 仅当 Markdown 引用题图时保留
 ```
 
 示例：
 
 ```text
-exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625/
-├── 高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625.md
-└── 高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625.pdf
+exams/2026上海市建平中学高一期末数学试卷/
+├── 2026上海市建平中学高一期末数学试卷-学生版.md
+└── 2026上海市建平中学高一期末数学试卷-学生版.pdf
 ```
 
 命名字段说明：
 
-- `学段`：如 `高中`。
+- `年份`：试卷年份，如 `2026`。
 - `学校标准名`：优先参考本机资料 `/Users/thj/Documents/Codex/2026-06-24/jp/outputs/上海各区高中学校层次分类表_2026官方版.xlsx`，不要随意使用简称。
-- `年级`：如 `高一`、`高二`、`高三`。
-- `学科`：如 `数学`。
-- `考试类型`：如 `2026春期末`、`2026春期终`、`2026一模`。
-- `版本类型`：如 `学生版`、`解析版`、`OCR审校学生版`、`学生版精校草稿`。
-- `提交日期`：实际提交到 GitHub 的日期，格式为 `YYYYMMDD`。
+- `考试名称`：包含年级、考试类型、学科和“试卷”等语义，例如 `高一期末数学试卷`、`高二数学期末试卷`。
+- `版本类型`：只放在文件名里，例如 `学生版`、`解析版`、`OCR审校学生版`、`学生版精校草稿`。
+- `-工作稿`：如果同一份试卷还要保留审校现场，在规则目录名后追加 `-工作稿`。
 
 不要把 `source.md`、`student.md`、`QUALITY_REPORT.md`、`full.md`、`summary.json`、`result.zip`、`page-previews/`、`final-previews/`、原始扫描 PDF 或 MinerU 归档包作为最终云端归档提交。若 Markdown 引用题图，必须提交必要的 `figures/`，否则 GitHub 上阅读 Markdown 时图片会断链。
 
@@ -88,19 +92,19 @@ python3 scripts/check_environment.py
 ### 2. 新建一份试卷
 
 ```bash
-python3 scripts/new_exam.py "2026-上海-高三数学-一模"
+python3 scripts/new_exam.py "2026上海市建平中学高三数学一模试卷"
 ```
 
 如果已有原始 PDF，可以复制到项目里：
 
 ```bash
-python3 scripts/new_exam.py "2026-上海-高三数学-一模" --pdf "/path/to/source.pdf"
+python3 scripts/new_exam.py "2026上海市建平中学高三数学一模试卷" --pdf "/path/to/source.pdf"
 ```
 
 脚本会创建：
 
 ```text
-exams/2026-shanghai-gaosan-shuxue-yimo/
+exams/2026上海市建平中学高三数学一模试卷-工作稿/
 ├── source.md
 ├── figures/
 └── outputs/
@@ -119,15 +123,15 @@ exams/2026-shanghai-gaosan-shuxue-yimo/
 适合从学校网站、教研系统下载的文字型 PDF。
 
 ```bash
-mkdir -p work/2026-shanghai-gaosan-shuxue-yimo
-pdftotext -layout inputs/2026-shanghai-gaosan-shuxue-yimo.pdf work/2026-shanghai-gaosan-shuxue-yimo/raw.txt
-open work/2026-shanghai-gaosan-shuxue-yimo/raw.txt
+mkdir -p work/2026上海市建平中学高三数学一模试卷
+pdftotext -layout inputs/2026上海市建平中学高三数学一模试卷.pdf work/2026上海市建平中学高三数学一模试卷/raw.txt
+open work/2026上海市建平中学高三数学一模试卷/raw.txt
 ```
 
 然后把 `raw.txt` 里的题目结构整理进：
 
 ```text
-exams/2026-shanghai-gaosan-shuxue-yimo/source.md
+exams/2026上海市建平中学高三数学一模试卷-工作稿/source.md
 ```
 
 整理时要做三件事：
@@ -152,11 +156,11 @@ python3 scripts/check_environment.py
 
 ```bash
 python3 scripts/mineru_parse_exam.py \
-  inputs/2026-shanghai-gaosan-shuxue-yimo.pdf \
+  inputs/2026上海市建平中学高三数学一模试卷.pdf \
   --output-dir "outputs/2026-上海-高三数学-一模-MinerU归档"
 ```
 
-完成后，把归档目录里的 `full.md` 当作 OCR 初稿，复制并校对到 `exams/<slug>/source.md`。不要直接把原始 OCR dump 当最终稿。
+完成后，把归档目录里的 `full.md` 当作 OCR 初稿，复制并校对到 `exams/<年份学校标准名考试名称>-工作稿/source.md`。不要直接把原始 OCR dump 当最终稿。
 
 #### 路线 B2：本地 MinerU CLI
 
@@ -166,7 +170,7 @@ python3 scripts/mineru_parse_exam.py \
 uv venv .venv-mineru --python 3.12
 source .venv-mineru/bin/activate
 uv pip install -U "mineru[all]"
-mineru -p inputs/2026-shanghai-gaosan-shuxue-yimo.pdf -o work/mineru -b pipeline
+mineru -p inputs/2026上海市建平中学高三数学一模试卷.pdf -o work/mineru -b pipeline
 ```
 
 #### 路线 C：扫描版 PDF 用 Marker
@@ -177,16 +181,16 @@ Marker 适合快速把 PDF 转成 Markdown，并会抽取图片。它需要 Pyth
 uv venv .venv-marker --python 3.12
 source .venv-marker/bin/activate
 uv pip install marker-pdf
-marker_single inputs/2026-shanghai-gaosan-shuxue-yimo.pdf --output_dir work/marker --output_format markdown
+marker_single inputs/2026上海市建平中学高三数学一模试卷.pdf --output_dir work/marker --output_format markdown
 ```
 
 如果数学行内公式识别差，可以强制 OCR：
 
 ```bash
-marker_single inputs/2026-shanghai-gaosan-shuxue-yimo.pdf --output_dir work/marker --output_format markdown --force_ocr
+marker_single inputs/2026上海市建平中学高三数学一模试卷.pdf --output_dir work/marker --output_format markdown --force_ocr
 ```
 
-完成后，把 `work/marker/` 生成的 Markdown 和图片整理进 `exams/<slug>/source.md` 与 `exams/<slug>/figures/`。
+完成后，把 `work/marker/` 生成的 Markdown 和图片整理进 `exams/<年份学校标准名考试名称>-工作稿/source.md` 与 `exams/<年份学校标准名考试名称>-工作稿/figures/`。
 
 Markdown 公式约定：
 
@@ -203,25 +207,25 @@ $$
 ### 4. Markdown 渲染 PDF
 
 ```bash
-python3 scripts/render_exam.py exams/2026-shanghai-gaosan-shuxue-yimo/source.md
+python3 scripts/render_exam.py exams/2026上海市建平中学高三数学一模试卷-工作稿/source.md
 ```
 
 如果你知道原卷页数，可以强制检查页数：
 
 ```bash
-python3 scripts/render_exam.py exams/2026-shanghai-gaosan-shuxue-yimo/source.md --expect-pages 8
+python3 scripts/render_exam.py exams/2026上海市建平中学高三数学一模试卷-工作稿/source.md --expect-pages 8
 ```
 
 如果只想避免生成空白或明显缺页 PDF：
 
 ```bash
-python3 scripts/render_exam.py exams/2026-shanghai-gaosan-shuxue-yimo/source.md --min-pages 1
+python3 scripts/render_exam.py exams/2026上海市建平中学高三数学一模试卷-工作稿/source.md --min-pages 1
 ```
 
 输出文件会写到同级 `outputs/` 目录，例如：
 
 ```text
-exams/2026-shanghai-gaosan-shuxue-yimo/outputs/source.pdf
+exams/2026上海市建平中学高三数学一模试卷-工作稿/outputs/source.pdf
 ```
 
 渲染后人工检查：
@@ -254,7 +258,7 @@ git commit -m "chore: initialize exam digitization workflow"
 以后每整理完一份试卷，先整理成“云端归档规则”里的最终目录，再只提交该规范目录：
 
 ```bash
-git add exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625
+git add exams/2026上海市建平中学高一期末数学试卷
 git diff --cached --name-only | rg 'result\.zip|summary\.json|full\.md|source\.md$|student\.md$|page-previews|final-previews|_origin\.pdf' || true
 git diff --cached --check
 git commit -m "docs: add normalized exam markdown and pdf archives"
@@ -281,15 +285,15 @@ git push -u origin main
 
 ```bash
 gh repo view <owner>/<repo> --json nameWithOwner,visibility,isPrivate,url
-find exams -maxdepth 2 -type f \( -name '高中_*.md' -o -name '高中_*.pdf' \) -print | sort
-for f in exams/高中_*/*.pdf; do echo "$f"; pdfinfo "$f" | awk '/^Pages:|^Page size:/ {print "  "$0}'; done
+find exams -maxdepth 2 -type f \( -name '20*.md' -o -name '20*.pdf' \) -print | sort
+for f in exams/20*/*.pdf; do echo "$f"; pdfinfo "$f" | awk '/^Pages:|^Page size:/ {print "  "$0}'; done
 git status --short
 ```
 
 暂存时只加入最终归档目录：
 
 ```bash
-git add exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625
+git add exams/2026上海市建平中学高一期末数学试卷
 git diff --cached --name-only | rg 'result\.zip|summary\.json|full\.md|source\.md$|student\.md$|page-previews|final-previews|_origin\.pdf' || true
 git diff --cached --check
 git commit -m "docs: add normalized exam markdown and pdf archives"
