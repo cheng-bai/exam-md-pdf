@@ -22,6 +22,37 @@
 └── examples/                  # 可运行示例
 ```
 
+## 云端归档规则
+
+推送到 GitHub 管理的最终试卷，统一放在 `exams/` 下，并采用“一份试卷一个文件夹”。目录名和目录内主文件名保持一致：
+
+```text
+exams/学段_学校标准名_年级_学科_考试类型_版本类型_提交日期/
+├── 学段_学校标准名_年级_学科_考试类型_版本类型_提交日期.md
+├── 学段_学校标准名_年级_学科_考试类型_版本类型_提交日期.pdf
+└── figures/                  # 仅当 Markdown 引用题图时保留
+```
+
+示例：
+
+```text
+exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625/
+├── 高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625.md
+└── 高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625.pdf
+```
+
+命名字段说明：
+
+- `学段`：如 `高中`。
+- `学校标准名`：优先参考本机资料 `/Users/thj/Documents/Codex/2026-06-24/jp/outputs/上海各区高中学校层次分类表_2026官方版.xlsx`，不要随意使用简称。
+- `年级`：如 `高一`、`高二`、`高三`。
+- `学科`：如 `数学`。
+- `考试类型`：如 `2026春期末`、`2026春期终`、`2026一模`。
+- `版本类型`：如 `学生版`、`解析版`、`OCR审校学生版`、`学生版精校草稿`。
+- `提交日期`：实际提交到 GitHub 的日期，格式为 `YYYYMMDD`。
+
+不要把 `source.md`、`student.md`、`QUALITY_REPORT.md`、`full.md`、`summary.json`、`result.zip`、`page-previews/`、`final-previews/`、原始扫描 PDF 或 MinerU 归档包作为最终云端归档提交。若 Markdown 引用题图，必须提交必要的 `figures/`，否则 GitHub 上阅读 Markdown 时图片会断链。
+
 ## 一次完整流程
 
 ### 1. 检查环境
@@ -186,11 +217,13 @@ git add README.md AGENTS.md scripts examples .gitignore
 git commit -m "chore: initialize exam digitization workflow"
 ```
 
-以后每整理完一份试卷，推荐这样提交：
+以后每整理完一份试卷，先整理成“云端归档规则”里的最终目录，再只提交该规范目录：
 
 ```bash
-git add exams/<试卷名>/source.md exams/<试卷名>/figures exams/<试卷名>/outputs
-git commit -m "docs: digitize <试卷名>"
+git add exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625
+git diff --cached --name-only | rg 'result\.zip|summary\.json|full\.md|source\.md$|student\.md$|page-previews|final-previews|_origin\.pdf' || true
+git diff --cached --check
+git commit -m "docs: add normalized exam markdown and pdf archives"
 ```
 
 ### 6. 推送到 GitHub
@@ -209,6 +242,27 @@ gh repo create exam-md-pdf --private --source=. --remote=origin --push
 git remote add origin https://github.com/<你的用户名>/<仓库名>.git
 git push -u origin main
 ```
+
+推送一份或多份最终试卷前，建议按顺序检查：
+
+```bash
+gh repo view <owner>/<repo> --json nameWithOwner,visibility,isPrivate,url
+find exams -maxdepth 2 -type f \( -name '高中_*.md' -o -name '高中_*.pdf' \) -print | sort
+for f in exams/高中_*/*.pdf; do echo "$f"; pdfinfo "$f" | awk '/^Pages:|^Page size:/ {print "  "$0}'; done
+git status --short
+```
+
+暂存时只加入最终归档目录：
+
+```bash
+git add exams/高中_上海市建平中学_高一_数学_2026春期末_解析版_20260625
+git diff --cached --name-only | rg 'result\.zip|summary\.json|full\.md|source\.md$|student\.md$|page-previews|final-previews|_origin\.pdf' || true
+git diff --cached --check
+git commit -m "docs: add normalized exam markdown and pdf archives"
+git push origin main
+```
+
+如果第二条 `rg` 命令输出了文件名，说明暂存区混入了中间文件或旧工作稿，应先取消暂存并重新选择要提交的最终目录。
 
 ## Git 学习路径
 
