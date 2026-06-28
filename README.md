@@ -46,18 +46,18 @@
 
 ## 云端归档规则
 
-推送到 GitHub 管理的最终试卷，统一放在 `exams/` 下，并采用“一份试卷一个文件夹”。`exams/` 下的试卷文件夹命名规则是：
+推送到 GitHub 管理的最终试卷，统一放在 `exams/` 下，并采用“一份试卷一个文件夹”。`exams/` 下的文件夹使用中文试卷名称：
 
 ```text
 年份学校标准名考试名称
 ```
 
-文件夹名只描述试卷本身，不放版本类型和提交日期。版本类型写在目录内主文件名里：
+文件夹名只描述试卷本身。目录内最终 `.md` 和 `.pdf` 文件名必须同时包含完整归档字段：
 
 ```text
 exams/年份学校标准名考试名称/
-├── 年份学校标准名考试名称-版本类型.md
-├── 年份学校标准名考试名称-版本类型.pdf
+├── 学段-学校标准名年级学科考试类型版本类型提交日期.md
+├── 学段-学校标准名年级学科考试类型版本类型提交日期.pdf
 └── figures/                  # 仅当 Markdown 引用题图时保留
 ```
 
@@ -65,16 +65,19 @@ exams/年份学校标准名考试名称/
 
 ```text
 exams/2026上海市建平中学高一期末数学试卷/
-├── 2026上海市建平中学高一期末数学试卷-学生版.md
-└── 2026上海市建平中学高一期末数学试卷-学生版.pdf
+├── 高中-上海市建平中学高一数学2026春期末解析版20260625.md
+└── 高中-上海市建平中学高一数学2026春期末解析版20260625.pdf
 ```
 
 命名字段说明：
 
-- `年份`：试卷年份，如 `2026`。
+- `学段`：如 `高中`。
 - `学校标准名`：优先参考本机资料 `/Users/thj/Documents/Codex/2026-06-24/jp/outputs/上海各区高中学校层次分类表_2026官方版.xlsx`，不要随意使用简称。
-- `考试名称`：包含年级、考试类型、学科和“试卷”等语义，例如 `高一期末数学试卷`、`高二数学期末试卷`。
-- `版本类型`：只放在文件名里，例如 `学生版`、`解析版`、`OCR审校学生版`、`学生版精校草稿`。
+- `年级`：如 `高一`、`高二`、`高三`。
+- `学科`：如 `数学`。
+- `考试类型`：如 `2026春期末`、`2026春期终`、`2026一模`。
+- `版本类型`：如 `学生版`、`解析版`、`OCR审校学生版`、`学生版精校草稿`。
+- `提交日期`：实际提交到 GitHub 的日期，格式为 `YYYYMMDD`。
 - `-工作稿`：如果同一份试卷还要保留审校现场，在规则目录名后追加 `-工作稿`。
 
 不要把 `source.md`、`student.md`、`QUALITY_REPORT.md`、`full.md`、`summary.json`、`result.zip`、`page-previews/`、`final-previews/`、原始扫描 PDF 或 MinerU 归档包作为最终云端归档提交。若 Markdown 引用题图，必须提交必要的 `figures/`，否则 GitHub 上阅读 Markdown 时图片会断链。
@@ -285,7 +288,7 @@ git push -u origin main
 
 ```bash
 gh repo view <owner>/<repo> --json nameWithOwner,visibility,isPrivate,url
-find exams -maxdepth 2 -type f \( -name '20*.md' -o -name '20*.pdf' \) -print | sort
+find exams -maxdepth 2 -type f \( -name '*.md' -o -name '*.pdf' \) ! -path '*-工作稿/*' -print | sort
 for f in exams/20*/*.pdf; do echo "$f"; pdfinfo "$f" | awk '/^Pages:|^Page size:/ {print "  "$0}'; done
 git status --short
 ```
