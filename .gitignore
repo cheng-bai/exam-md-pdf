@@ -15,6 +15,10 @@ outputs/**/upload-response.json
 outputs/**/result.json
 outputs/**/result.zip
 outputs/**/*_origin.pdf
+**/outputs/**/upload-response.json
+**/outputs/**/result.json
+**/outputs/**/result.zip
+**/outputs/**/*_origin.pdf
 
 # Keep directory placeholders
 !inputs/.gitkeep
