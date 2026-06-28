@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv*/
+
+# Raw and intermediate files
+inputs/*
+work/
+*.tmp
+
+# Keep directory placeholders
+!inputs/.gitkeep
