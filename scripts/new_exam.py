@@ -1,40 +1,25 @@
 #!/usr/bin/env python3
-"""Create a new exam workspace."""
+"""Create a new Chinese-named exam work draft."""
 
 from __future__ import annotations
 
 import argparse
-import re
 import shutil
 import sys
 from pathlib import Path
 
 
-PINYIN_HINTS = {
-    "上海": "shanghai",
-    "高三": "gaosan",
-    "高二": "gaoer",
-    "高一": "gaoyi",
-    "数学": "shuxue",
-    "语文": "yuwen",
-    "英语": "yingyu",
-    "物理": "wuli",
-    "化学": "huaxue",
-    "生物": "shengwu",
-    "一模": "yimo",
-    "二模": "ermo",
-    "期中": "qizhong",
-    "期末": "qimo",
-}
+def safe_name(title: str) -> str:
+    value = title.strip()
+    for char in '/\\:*?"<>|':
+        value = value.replace(char, "-")
+    value = " ".join(value.split())
+    return value or "未命名试卷"
 
 
-def slugify(title: str) -> str:
-    value = title.strip().lower()
-    for chinese, pinyin in PINYIN_HINTS.items():
-        value = value.replace(chinese, f"-{pinyin}-")
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    value = re.sub(r"-+", "-", value).strip("-")
-    return value or "exam"
+def work_draft_name(title: str) -> str:
+    value = safe_name(title)
+    return value if value.endswith("-工作稿") else f"{value}-工作稿"
 
 
 def markdown_template(title: str) -> str:
@@ -69,14 +54,14 @@ fontsize: 11pt
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Create an exam workspace.")
-    parser.add_argument("title", help="Exam title, for example: 2026-上海-高三数学-一模")
+    parser = argparse.ArgumentParser(description="Create a Chinese-named exam work draft.")
+    parser.add_argument("title", help="Exam title, for example: 2026上海市建平中学高三数学一模试卷")
     parser.add_argument("--pdf", help="Optional source PDF to copy into inputs/")
     args = parser.parse_args()
 
     root = Path.cwd()
-    slug = slugify(args.title)
-    exam_dir = root / "exams" / slug
+    title = safe_name(args.title)
+    exam_dir = root / "exams" / work_draft_name(title)
     source_md = exam_dir / "source.md"
     pdf_path = Path(args.pdf).expanduser() if args.pdf else None
 
@@ -94,7 +79,7 @@ def main() -> int:
     if pdf_path:
         inputs_dir = root / "inputs"
         inputs_dir.mkdir(exist_ok=True)
-        target = inputs_dir / f"{slug}{pdf_path.suffix.lower()}"
+        target = inputs_dir / f"{title}{pdf_path.suffix.lower()}"
         shutil.copy2(pdf_path, target)
         print(f"Copied source PDF: {target}")
 

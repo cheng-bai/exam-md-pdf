@@ -105,6 +105,27 @@ class WorkflowTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertFalse((tmp_path / "exams").exists())
 
+    def test_new_exam_uses_chinese_work_draft_directory(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "new_exam.py"),
+                    "2026上海市建平中学高三数学一模试卷",
+                ],
+                cwd=tmp_path,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+            exam_dir = tmp_path / "exams" / "2026上海市建平中学高三数学一模试卷-工作稿"
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertTrue((exam_dir / "source.md").exists())
+            self.assertTrue((exam_dir / "figures").is_dir())
+            self.assertTrue((exam_dir / "outputs").is_dir())
+
     def test_render_exam_fails_when_expected_pages_do_not_match(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
