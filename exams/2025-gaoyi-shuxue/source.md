@@ -65,34 +65,34 @@ header-includes:
 
 13. 与向量 $\vec a=(-3,4)$ 平行的单位向量是（\quad）
 
-    A. $\left(\frac45,-\frac35\right)$
-    \quad B. $\left(-\frac35,\frac45\right)$
-    \quad C. $\left(\frac35,-\frac35\right)$
-    \quad D. $\left(-\frac45,\frac35\right)$
+    甲. $\left(\frac45,-\frac35\right)$
+    \quad 乙. $\left(-\frac35,\frac45\right)$
+    \quad 丙. $\left(\frac35,-\frac35\right)$
+    \quad 丁. $\left(-\frac45,\frac35\right)$
 
 14. 已知 $z$ 为复数，则下列命题中不正确的是（\quad）
 
-    A. 若 $z^2<0$，则 $z$ 为纯虚数
+    甲. 若 $z^2<0$，则 $z$ 为纯虚数
 
-    B. 若 $z^3=1$，则 $\bar z=z^2$
+    乙. 若 $z^3=1$，则 $\bar z=z^2$
 
-    C. 若 $z=\bar z$，则 $z$ 为实数
+    丙. 若 $z=\bar z$，则 $z$ 为实数
 
-    D. 若 $|z+1|=|z-1|$，则 $z$ 为纯虚数
+    丁. 若 $|z+1|=|z-1|$，则 $z$ 为纯虚数
 
 15. $\triangle ABC$ 中，已知 $\frac{a+b}{a}=\frac{\sin B}{\sin B-\sin A}$，且 $\cos(A-B)-\cos(A+B)=1-\cos2C$，则 $\triangle ABC$ 是（\quad）
 
-    A. 等腰三角形
-    \quad B. 直角三角形
-    \quad C. 等腰直角三角形
-    \quad D. 等腰或直角三角形
+    甲. 等腰三角形
+    \quad 乙. 直角三角形
+    \quad 丙. 等腰直角三角形
+    \quad 丁. 等腰或直角三角形
 
 16. 已知复数 $z_1$ 在复平面内对应的点的坐标为 $(0,1)$，复数 $z_2$ 在复平面内对应的点的坐标为 $(u,0)$。若复数 $z_3$ 满足 $|z_3-\bar z_1|-|z_3-z_1|=2v$，且 $u^2+1=\frac{9}{v^2}$，则 $|z_3+z_1|+|z_3-z_2|$ 的最小值为（\quad）
 
-    A. $3$
-    \quad B. $5$
-    \quad C. $\sqrt3$
-    \quad D. $2\sqrt6$
+    甲. $3$
+    \quad 乙. $5$
+    \quad 丙. $\sqrt3$
+    \quad 丁. $2\sqrt6$
 
 \newpage
 
