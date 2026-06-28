@@ -6,10 +6,18 @@ __pycache__/
 .pytest_cache/
 .venv*/
 
+# Local secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+
 # Raw and intermediate files
 inputs/*
-/outputs/
-work/
+!inputs/README.md
+/outputs/*
+!/outputs/README.md
+work/*
+!work/README.md
 *.tmp
 outputs/**/upload-response.json
 outputs/**/result.json
@@ -19,6 +27,14 @@ outputs/**/*_origin.pdf
 **/outputs/**/result.json
 **/outputs/**/result.zip
 **/outputs/**/*_origin.pdf
+**/outputs/**/*MinerU归档*/**/unzipped/
+**/outputs/**/*MinerU解析*/**/unzipped/
+**/outputs/**/*MinerU归档*/**/*_content_list*.json
+**/outputs/**/*MinerU解析*/**/*_content_list*.json
+**/outputs/**/*MinerU归档*/**/*_model.json
+**/outputs/**/*MinerU解析*/**/*_model.json
+**/outputs/**/*MinerU归档*/**/layout.json
+**/outputs/**/*MinerU解析*/**/layout.json
 
 # Keep directory placeholders
 !inputs/.gitkeep

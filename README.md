@@ -16,11 +16,33 @@
 .
 ├── AGENTS.md                  # Codex 在本项目里的工作规则
 ├── README.md                  # 项目说明和 Git 教程
-├── inputs/                    # 原始 PDF，默认不提交到 Git
-├── exams/                     # 每份试卷的 Markdown、图片和输出 PDF
+├── inputs/                    # 原始 PDF / 扫描图片输入，默认不提交到 Git
+├── outputs/                   # MinerU 全局解析输出 / 上传回执 / 归档包，中间物
+├── work/                      # 本地裁图 / 预览页 / 临时处理目录，中间物
+├── exams/                     # 试卷 Markdown、题图和 PDF
+│   ├── 高中_*                 # 最终云端规范归档：同名 md/pdf，可推送 GitHub
+│   ├── 敬业中学高一期末数学试卷/              # 旧工作稿：敬业中学高一数学期末
+│   ├── 华东政法大学附属中学高一期末数学试卷/  # 旧工作稿：华政附中高一数学期末
+│   ├── 晋元高级中学高二数学期末试卷/          # 旧工作稿：晋元高级中学高二数学期末
+│   ├── 松江一中高一数学期末试卷/              # 旧工作稿：松江一中高一数学期末
+│   └── 松江一中高二数学期末试卷/              # 旧工作稿：松江一中高二数学期末
 ├── scripts/                   # 自动化脚本
+├── tests/                     # 工作流测试
 └── examples/                  # 可运行示例
 ```
+
+## 目录导航
+
+| 路径 | 用途 | 是否建议提交 | 说明 |
+|---|---|---:|---|
+| `inputs/` | 原始 PDF / 扫描图片输入 | 否 | 默认包含版权或隐私材料，只保留目录说明文件 |
+| `outputs/` | MinerU 解析包、上传回执、中间输出 | 否 | 用于追溯 OCR 过程，不作为最终交付 |
+| `work/` | 裁图、预览、临时处理文件 | 否 | 可按需重建，不进入云端归档 |
+| `exams/高中_*` | 最终云端规范归档 | 是 | 每份试卷一个目录，同名 `.md` + `.pdf` |
+| `exams/<中文试卷名>/` | 旧工作稿 / 审校现场 | 视情况 | 不要整体直接推送，先整理成最终归档 |
+| `scripts/` | 自动化脚本 | 是 | 环境检查、建目录、渲染和 MinerU 解析 |
+| `tests/` | 自动化测试 | 是 | 验证脚本和工作流约定 |
+| `examples/` | 示例材料 | 是 | 用于演示最小可运行流程 |
 
 ## 云端归档规则
 
@@ -114,11 +136,31 @@ exams/2026-shanghai-gaosan-shuxue-yimo/source.md
 2. 把错乱换行合并成自然段。
 3. 把数学公式改成 LaTeX，不保留 OCR 产生的乱码。
 
-#### 路线 B：扫描版 PDF 用 MinerU
+#### 路线 B：扫描版 PDF 用 MinerU API
 
-MinerU 适合扫描件、复杂版式、公式和表格较多的 PDF。官方 CLI 支持本地 PDF 输入并输出 Markdown/JSON。
+MinerU 适合扫描件、复杂版式、公式和表格较多的 PDF。本项目优先复用本机已经配置好的 MinerU API 归档脚本，保留 `summary.json`、`result.zip`、`full.md` 等可追溯原始结果。
 
-建议先建独立虚拟环境，避免污染系统 Python：
+先确认 MinerU API 配置可用：
+
+```bash
+python3 scripts/check_environment.py
+```
+
+项目默认读取 `/Users/thj/MinerU/config.json`。如果要改成项目本地配置，复制 `.env.example` 为 `.env`，设置 `MINERU_TOKEN_CONFIG` 或 `MINERU_API_TOKEN`；`.env` 已被 Git 忽略，不要提交真实 token。
+
+解析扫描版 PDF：
+
+```bash
+python3 scripts/mineru_parse_exam.py \
+  inputs/2026-shanghai-gaosan-shuxue-yimo.pdf \
+  --output-dir "outputs/2026-上海-高三数学-一模-MinerU归档"
+```
+
+完成后，把归档目录里的 `full.md` 当作 OCR 初稿，复制并校对到 `exams/<slug>/source.md`。不要直接把原始 OCR dump 当最终稿。
+
+#### 路线 B2：本地 MinerU CLI
+
+如果 API 不可用，再考虑本地 CLI。建议先建独立虚拟环境，避免污染系统 Python：
 
 ```bash
 uv venv .venv-mineru --python 3.12
@@ -126,14 +168,6 @@ source .venv-mineru/bin/activate
 uv pip install -U "mineru[all]"
 mineru -p inputs/2026-shanghai-gaosan-shuxue-yimo.pdf -o work/mineru -b pipeline
 ```
-
-如果你的机器支持 GPU 或 Apple Silicon 加速，也可以先尝试：
-
-```bash
-mineru -p inputs/2026-shanghai-gaosan-shuxue-yimo.pdf -o work/mineru
-```
-
-完成后，在 `work/mineru/` 里找到生成的 `.md`，把可用内容复制并校对到 `exams/<slug>/source.md`。
 
 #### 路线 C：扫描版 PDF 用 Marker
 

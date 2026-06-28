@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import subprocess
+import os
 import sys
 import tempfile
 import unittest
@@ -14,6 +15,76 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_mineru_parse_dry_run_with_token_does_not_write_temp_config(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            source = tmp_path / "source.pdf"
+            source.write_bytes(b"%PDF-1.4\n")
+            archive_script = tmp_path / "mineru_parse.py"
+            archive_script.write_text("#!/usr/bin/env python3\n", encoding="utf-8")
+            before = {path.name for path in tmp_path.iterdir()}
+            env = {
+                **os.environ,
+                "MINERU_API_TOKEN": "fake-token-for-dry-run",
+                "TMPDIR": str(tmp_path),
+            }
+            env.pop("MINERU_TOKEN_CONFIG", None)
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "mineru_parse_exam.py"),
+                    str(source),
+                    "--archive-script",
+                    str(archive_script),
+                    "--dry-run",
+                ],
+                cwd=tmp_path,
+                env=env,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+            after = {path.name for path in tmp_path.iterdir()}
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(before, after)
+            self.assertIn("<temporary-token-config>", result.stdout)
+            self.assertNotIn("fake-token-for-dry-run", result.stdout)
+
+    def test_mineru_parse_dry_run_uses_config_without_calling_api(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            source = tmp_path / "source.pdf"
+            source.write_bytes(b"%PDF-1.4\n")
+            archive_script = tmp_path / "mineru_parse.py"
+            archive_script.write_text("#!/usr/bin/env python3\n", encoding="utf-8")
+            token_config = tmp_path / "mineru-config.json"
+            token_config.write_text('{"config":"{\\"state\\":{\\"client_api_token\\":\\"fake-token\\"}}"}', encoding="utf-8")
+            env = {**os.environ, "MINERU_TOKEN_CONFIG": str(token_config)}
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "mineru_parse_exam.py"),
+                    str(source),
+                    "--archive-script",
+                    str(archive_script),
+                    "--dry-run",
+                ],
+                cwd=tmp_path,
+                env=env,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn("mineru_parse.py", result.stdout)
+            self.assertIn("--token-config", result.stdout)
+            self.assertNotIn("Bearer", result.stdout)
+            self.assertNotIn("MINERU_API_TOKEN", result.stdout)
+
     def test_new_exam_missing_pdf_does_not_leave_exam_directory(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
@@ -69,4 +140,3 @@ class WorkflowTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
