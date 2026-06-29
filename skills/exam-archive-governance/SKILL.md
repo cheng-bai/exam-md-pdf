@@ -15,6 +15,17 @@ description: Use when preparing final exam Markdown/PDF archives for GitHub, enf
 exams/年份学校标准名考试名称/
 ```
 
+非单份试卷先按资料类型归档：
+
+```text
+handouts/小专题中文名称/
+collections/汇编类型/汇编成品中文名称/
+```
+
+- `handouts/` 放围绕一个知识点、题型或小专题组织的讲义、教师版材料和专题习题册。
+- `collections/` 放多校、多套、跨主题或大体量汇编材料。
+- 不把明显不是一类的资料放在同一个文件夹里；不确定时新建更清晰的中文分类目录。
+
 工作稿留在本地或工作目录中：
 
 ```text
