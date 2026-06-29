@@ -38,6 +38,7 @@ AI agent 执行顺序：
 ├── outputs/                   # MinerU 解析包和上传回执，默认不提交
 ├── work/                      # 裁图、预览、临时文件，默认不提交
 ├── exams/                     # 最终试卷归档目录
+├── handouts/                  # 专题讲义、教师版材料和习题册归档
 ├── scripts/                   # 环境检查、建工作稿、MinerU、渲染脚本
 ├── tests/                     # 工作流脚本测试
 └── examples/                  # 最小示例
