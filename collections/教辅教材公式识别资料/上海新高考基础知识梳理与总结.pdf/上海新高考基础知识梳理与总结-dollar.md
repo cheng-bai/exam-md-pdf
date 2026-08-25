@@ -1,0 +1,4103 @@
+## 目 录
+
+01. 集合与逻辑 03
+
+02. 等式与不等式 08
+
+03. 函数的概念、性质及应用 18
+
+04. 幂函数、指数函数和对数函数 31
+
+05. 三角 37
+
+06. 三角函数 44
+
+07. 平面向量 50
+
+08. 复数 56
+
+09. 空间直线与平面 61
+
+10. 简单几何体 68
+
+11. 平面直角坐标系中的直线 74
+
+12. 圆锥曲线 79
+
+13. 空间向量及其应用 88
+
+14. 数列 92
+
+15. 导数及其应用 98
+
+16. 计数原理 101
+
+17. 概率初步 104
+
+18. 统计 111
+
+![bo_d7aq48ilb0pc73dcpcb0_2_315_309_1021_863_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_2_315_309_1021_863_0.jpg)
+
+## 1. 集合
+
+把一些确定的对象的全体叫做集合,简称集. 集合通常用大写字母 $A\text{ 、 }B\text{ 、 }C\cdots$ 表示.
+
+集合所含的各个对象叫做该集合的元素. 元素通常用小写字母 $a\text{ 、 }b\text{ 、 }c\cdots$ 表示.
+
+如果 $a$ 是集合 $A$ 的元素，就记作 $a \in  A$ ，读作 “ $a$ 属于 ${A}^{n}$ ；如果 $a$ 不是集合 $A$ 的元素， 就记作 $a \notin  A$ ,读作 “ $a$ 不属于 $A$ ”.
+
+集合三性:集合的元素具有确定性、互异性和无序性.
+
+如果两个集合 $A$ 与 $B$ 的组成元素完全相同,就称这两个集合相等,记作 $A = B$ .
+
+元素个数有限的集合称为有限集, 元素个数无限的集合称为无限集.
+
+数的集合简称数集.
+
+常用数集符合: 自然数集,记作 $\mathbf{N}$ ; 正整数集,记作 ${\mathbf{N}}^{ * }$ ; 整数集,记作 $\mathbf{Z}$ ; 有理数集, 记作 $\mathbf{Q}$ ; 实数集,记作 $\mathbf{R}$ .
+
+另外正整数集、负整数集、正有理数集、负有理数集、正实数集、负实数集分别可表示为 ${\mathbf{Z}}^{ + }\text{ 、 }{\mathbf{Z}}^{ - }\text{ 、 }{\mathbf{Q}}^{ + }\text{ 、 }{\mathbf{Q}}^{ - }\text{ 、 }{\mathbf{R}}^{ + }\text{ 、 }{\mathbf{R}}^{ - }$ .
+
+点的集合简称点集, 即以平面直角坐标内的点作为元素构成的集合.
+
+不含有任何元素的集合称为空集，记作 $\varnothing$ .
+
+## 2. 集合的表示方法
+
+集合的表示方法常用列举法和描述法.
+
+列举法: 将集合中的元素不重复地一一列举出来, 并写在大括号内, 这种表示集合的方法叫做列举法.
+
+描述法:在大括号内先写出这个集合中元素的一个记号，再画一条竖线，并在竖线的右边写上集合中所有元素具有的共同特征,即 $A = \{ x \mid  x$ 满足性质 $p\}$ ,这种表示集合的方法叫做描述法.
+
+区间的概念: 当 $a\text{ 、 }b \in  \mathbf{R}$ 且 $a < b$ 时,
+
+满足不等式 $a \leq  x \leq  b$ 的全体实数 $x$ 组成的集合称为一个闭区间,记作 $\left\lbrack  {a, b}\right\rbrack$ .
+
+满足不等式 $a < x < b$ 的全体实数 $x$ 组成的集合称为一个开区间,记作 $\left( {a, b}\right)$ .
+
+满足不等式 $a \leq  x < b$ 的全体实数 $x$ 组成的集合称为一个左闭右开区间,记作 $\lbrack a, b)$ .
+
+满足不等式 $a < x \leq  b$ 的全体实数 $x$ 组成的集合称为一个左开右闭区间,记作 $(a, b\rbrack$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_3_308_930_211_70_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_3_308_930_211_70_0.jpg)
+
+$\left\lbrack  {a, b}\right\rbrack$
+
+![bo_d7aq48ilb0pc73dcpcb0_3_586_931_210_71_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_3_586_931_210_71_0.jpg)
+
+$\left( {a, b}\right)$
+
+![bo_d7aq48ilb0pc73dcpcb0_3_865_931_208_71_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_3_865_931_208_71_0.jpg)
+
+$\lbrack a, b)$
+
+![bo_d7aq48ilb0pc73dcpcb0_3_1142_931_210_70_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_3_1142_931_210_70_0.jpg)
+
+$\left( {a, b}\right\rbrack$
+
+这里的实数 $a\text{ 、 }b$ 统称为这些区间的端点.
+
+此外,满足不等式 $x \geq  a\text{ 、 }x > a\text{ 、 }x \leq  b$ 或 $x < b$ 的全体实数 $x$ 所组成的集合可分别用区间表示为 $\left\lbrack  {a, + \infty }\right) \text{ 、 }\left( {a, + \infty }\right) \text{ 、 }\left( {-\infty , b}\right\rbrack$ 或 $\left( {-\infty , b}\right) .$ (符号 “ $\infty$ ” 读作 “无穷”)
+
+实数集 $\mathbf{R}$ 可用区间表示为 $\left( {-\infty , + \infty }\right)$ .
+
+## 3. 集合之间的关系
+
+对于两个集合 $A$ 与 $B$ ,如果集合 $A$ 的每个元素都是集合 $B$ 的元素,那么集合 $A$ 叫做集合 $B$ 的子集,记作 $A \subseteq  B$ (或 $B \supseteq  A$ ),读作 “ $A$ 包含于 $B$ ” (或 “ $B$ 包含 $A$ ”).
+
+我们常用文氏图来直观表示集合以及集合之间的关系.
+
+对于集合之间的包含关系，我们有下列结论:
+
+(1) $A \subseteq  A$ ；
+
+(2)若 $A \subseteq  B$ 且 $B \subseteq  A$ ，则 $A = B$ ；
+
+(3)传递性:若 $A \subseteq  B$ 且 $B \subseteq  C$ ，则 $A \subseteq  C$ .
+
+对于两个集合 $A$ 与 $B$ ,如果 $A \subseteq  B$ ,且 $B$ 中至少有一个元素不属于 $A$ (即 $B$ 不是 $A$ 的子集),那么称集合 $A$ 是集合 $B$ 的真子集,记作 $A \subset  B$ (或 $B \supset  A$ ),读作 “ $A$ 真包含于 $B$ ” (或 “B 真包含 A”).
+
+对于常用数集,有如下包含关系: $\mathbf{N} \subset  \mathbf{Z} \subset  \mathbf{Q} \subset  \mathbf{R}$ .
+
+对任意集合 $A$ ,规定 $\varnothing  \subseteq  A$ . 即空集是任何集合的子集,是任何非空集合的真子集. 所以若 $A \subseteq  B$ ,不能遗漏 $A = \varnothing$ 的情况.
+
+对于一个含有 $n$ 个元素的集合 $P$ ,它的子集个数为 ${2}^{n}$ ,真子集个数为 ${2}^{n} - 1$ ,非空子集个数为 ${2}^{n} - 1$ ,非空真子集的个数为 ${2}^{n} - 2$ .
+
+## 4. 集合的运算
+
+交集: 由既属于集合 $A$ 又属于集合 $B$ 的所有元素组成的集合,叫做集合 $A$ 与 $B$ 的交集, 记作 $A \cap  B$ (读作 “ $A$ 交 $B$ ”),即 $A \cap  B = \{ x \mid  x \in  A$ 且 $x \in  B\}$ .
+
+并集: 由所有属于集合 $A$ 或属于集合 $B$ 的元素所组成的集合,叫做集合 $A$ 与 $B$ 的并集, 记作 $A \cup  B$ (读作 “ $A$ 并 $B$ ”),即 $A \cup  B = \{ x \mid  x \in  A$ 或 $x \in  B\}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_4_371_756_239_185_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_4_371_756_239_185_0.jpg)
+
+$A \cap  B$
+
+![bo_d7aq48ilb0pc73dcpcb0_4_706_758_237_183_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_4_706_758_237_183_0.jpg)
+
+$A \cup  B$
+
+![bo_d7aq48ilb0pc73dcpcb0_4_1040_760_233_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_4_1040_760_233_180_0.jpg)
+
+$\bar{A}$
+
+在数学研究中, 所研究的对象往往是某个确定集合的一个子集或元素, 这个确定的集合称为全集,常用符合 $U$ 表示. 它含有我们所要研究问题的全部可能的元素.
+
+补集: 设 $U$ 为全集, $A$ 是 $U$ 的子集,由 $U$ 中所有不属于 $A$ 的元素组成的集合叫做集合 $A$ 在全集 $U$ 中的补集,记作 $\bar{A}$ (读作 “ $A$ 补”),即 $\bar{A} = \{ x \mid  x \in  U$ 且 $x \notin  A\}$ .
+
+有时为了强调全集 $U$ ,集合 $A$ 在全集 $U$ 中的补集 $\bar{A}$ 也可以记作 ${\mathrm{C}}_{U}A$ .
+
+当全集为实数集 $\mathbf{R}$ 时,有理数集 $\mathbf{Q}$ 的补集 $\overline{\mathbf{Q}}$ 就是全体无理数组成的集合.
+
+德摩根定律: $\overline{A \cap  B} = \bar{A} \cup  \bar{B};\overline{A \cup  B} = \bar{A} \cap  \bar{B}$ .
+
+容斥原理: 用 $\left| A\right|$ 表示集合 $A$ 的元素个数,则 $\left| {A \cup  B}\right|  = \left| A\right|  + \left| B\right|  - \left| {A \cap  B}\right|$ ;
+
+$\left| {A \cup  B \cup  C}\right|  = \left| A\right|  + \left| B\right|  + \left| C\right|  - \left| {A \cap  B}\right|  - \left| {B \cap  C}\right|  - \left| {C \cap  A}\right|  + \left| {A \cap  B \cap  C}\right| .$
+
+## 5. 命题
+
+用自然语言、符号或式子表达，且可以判断其真假的语句叫做命题. 命题通常用陈述句表述. 其含义判断为真的命题叫做真命题, 判断为假的命题叫做假命题.
+
+在形如 “若 $\alpha$ ,则 $\beta$ ” 的命题中,陈述句 $\alpha$ 称为条件, $\beta$ 称为结论.
+
+命题 “若 $\alpha$ ,则 $\beta$ ” 是真命题,是指所有满足条件 $\alpha$ 的对象都满足结论 $\beta$ . 用集合的语言描述即 $\{ x \mid  x$ 满足 $\alpha \}  \subseteq  \{ x \mid  x$ 满足 $\beta \}$ . 所以,要确定这类命题是真命题,就必须给出其证明.
+
+命题 “若 $\alpha$ ,则 $\beta$ ” 是假命题,是指存在满足条件 $\alpha$ 的对象,它不满足结论 $\beta$ . 所以, 要确定这类命题是假命题,举一个满足条件 $\alpha$ 而不满足结论 $\beta$ 的例子就可以了.
+
+如果命题 “若 $\alpha$ ,则 $\beta$ ” 是真命题,那么就称 $\alpha$ 推出 $\beta$ ,记作 $\alpha  \Rightarrow  \beta$ (或 $\beta  \Leftarrow  \alpha$ ). 换言之, $\alpha  \Rightarrow  \beta$ 表示以 $\alpha$ 为条件, $\beta$ 为结论的命题是真命题.
+
+因为子集关系满足传递性, 所以推出关系也满足传递性:
+
+若 $\alpha  \Rightarrow  \beta$ 且 $\beta  \Rightarrow  \gamma$ ,则 $\alpha  \Rightarrow  \gamma$ .
+
+## 6. 四种命题与复合命题(※)
+
+一个数学命题用条件 $\alpha$ ,结论 $\beta$ 表示就是 “如果 $\alpha$ ,那么 $\beta$ ”,如果把结论和条件互相交换,就得到一个新命题 “如果 $\beta$ ,那么 $\alpha$ ”,这个命题叫做原命题的逆命题.
+
+一个命题的条件与结论分别是另一个命题的条件的否定与结论的否定, 我们把这样两个命题叫做互否命题，如果其中一个叫原命题，那么另一个命题就叫做原命题的否命题. 如果把 $\alpha$ 、 $\beta$ 的否定分别记作 $\overline{\alpha }$ 、 $\overline{\beta }$ ，那么命题“如果 $\alpha$ ，那么 $\beta$ ”的否命题就是“如果 $\overline{\alpha }$ ， 那么 $\overline{\beta }$ ”.
+
+如果把原命题 “如果 $\alpha$ ,那么 $\beta$ ” 结论的否定作条件,把条件的否定作结论,那么就可得到一个新命题，我们把它叫做原命题的逆否命题，即 “如果 $\overline{\beta }$ ，那么 $\overline{\alpha }$ ”.
+
+如果 $A\text{ 、 }B$ 是两个命题, $A \Rightarrow  B, B \Rightarrow  A$ ,那么 $A\text{ 、 }B$ 叫做等价命题.
+
+原命题与逆否命题是等价命题.
+
+![bo_d7aq48ilb0pc73dcpcb0_5_560_1239_529_281_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_5_560_1239_529_281_0.jpg)
+
+不含逻辑联结词的命题叫做简单命题，由简单命题和逻辑联结词构成的命题叫做复合命题; 复合命题有三类: $p$ 或 $q, p$ 且 $q$ ,非 $p$ ;
+
+<table><tr><td>$p$</td><td>$q$</td><td>非 $p$</td><td>$p$ 或 $q$</td><td>$p$ 且 $q$</td></tr><tr><td>真</td><td>真</td><td>假</td><td>真</td><td>真</td></tr><tr><td>真</td><td>假</td><td>假</td><td>真</td><td>假</td></tr><tr><td>假</td><td>真</td><td>真</td><td>真</td><td>假</td></tr><tr><td>假</td><td>假</td><td>真</td><td>假</td><td>假</td></tr></table>
+
+## 7. 充分条件与必要条件
+
+对于两个陈述句 $\alpha$ 与 $\beta$ ,如果 $\alpha  \Rightarrow  \beta$ ,就称 $\alpha$ 是 $\beta$ 的充分条件,亦称 $\beta$ 是 $\alpha$ 的必要条件.
+
+对于两个陈述句 $\alpha$ 与 $\beta$ ,如果既有 $\alpha  \Rightarrow  \beta$ ,又有 $\beta  \Rightarrow  \alpha$ ,就称 $\alpha$ 是 $\beta$ 的充分必要条件,简称充要条件,记作 $\alpha  \Leftrightarrow  \beta$ ,读作 “ $\alpha$ 与 $\beta$ 等价” 或 “ $\alpha$ 成立当且仅当 $\beta$ 成立”.
+
+设具有性质 $p$ 的对象组成集合 $A$ ,具有性质 $q$ 的对象组成集合 $B$ ,则
+
+① 若 $A \subseteq  B$ ,则 $p$ 是 $q$ 的充分条件;
+
+② 若 $A \subset  B$ ，则 $p$ 是 $q$ 的充分非必要条件；
+
+③ 若 $A \supseteq  B$ ，则 $p$ 是 $q$ 的必要条件；
+
+④ 若 $A \supset  B$ ,则 $p$ 是 $q$ 的必要非充分条件；
+
+⑤ 若 $A = B$ ，则 $p$ 、 $q$ 互为充要条件.
+
+等价关系: “ $p \Rightarrow  q$ ” $\Leftrightarrow$ “ $A \subseteq  B$ ” $\Leftrightarrow$ “ $A \cap  B = A$ ” $\Leftrightarrow$ “ $A \cup  B = B$ ” $\Leftrightarrow$ “ $\bar{B} \subseteq  \bar{A}$ ” $\Leftrightarrow$ “ $A \cap  \bar{B} = \varnothing$ ” $\Leftrightarrow$ “ $\bar{A} \cup  B = U$ ” (注意考虑 $A = \varnothing$ 的情况)
+
+## 8. 反证法
+
+前面已经提到,要判断命题 “若 $\alpha$ ,则 $\beta$ ” 是假命题,只要存在一个满足条件 $\alpha$ 但不满足结论 $\beta$ 的对象就行了. 但是要判断命题 “若 $\alpha$ ,则 $\beta$ ” 是真命题,就需要证明所有满足条件 $\alpha$ 的对象都满足结论 $\beta$ . 有时候直接验证这一点并不是一件容易的事,这时候通常会用到反证法.
+
+反证法: 首先假设结论 $\beta$ 不成立 ( $\beta$ 为假),然后经过正确的逻辑推理得出矛盾,从而说明 “ $\beta$ 为假” 是不可能发生的,即结论 $\beta$ 是正确的.
+
+一些常用的否定形式:
+
+<table><tr><td>陈述句 $\alpha$</td><td>$\alpha$ 的否定形式</td><td>陈述句 $\alpha$</td><td>$\alpha$ 的否定形式</td></tr><tr><td>是</td><td>不是</td><td>至少有一个</td><td>一个也没有</td></tr><tr><td>都是</td><td>不都是</td><td>至多有一个</td><td>至少有两个</td></tr><tr><td>大于</td><td>不大于(小于等于)</td><td>至少有 $n$ 个</td><td>至多有 $n - 1$ 个</td></tr><tr><td>小于</td><td>不小于(大于等于)</td><td>至多有 $n$ 个</td><td>至少有 $n + 1$ 个</td></tr><tr><td>$p$ 或 $q$</td><td>非 $p$ 且非 $q$</td><td>对所有 $x$ 成立</td><td>存在某个 ${x}_{0}$ 不成立</td></tr><tr><td>$p$ 且 $q$</td><td>非 $p$ 或非 $q$</td><td>对任意 $x$ 不成立</td><td>存在某个 ${x}_{0}$ 成立</td></tr></table>
+
+## 第二章 等式与不等式
+
+![bo_d7aq48ilb0pc73dcpcb0_7_263_305_1132_851_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_7_263_305_1132_851_0.jpg)
+
+## 1. 等式的性质与方程的解集
+
+用等号 “ $=$ ” 把两个表达式连接起来,所得的式子称为等式.
+
+等式具有以下性质: 设 $a\text{ 、 }b\text{ 、 }c$ 均为实数,
+
+(1)传递性:如果 $a = b$ 且 $b = c$ ，那么 $a = c$ .
+
+(2)加法性质:如果 $a = b$ ，那么 $a + c = b + c$ .
+
+(3)乘法性质:如果 $a = b$ ，那么 ${ac} = {bc}$ .
+
+当一个等式成立时, 由上面的性质, 在等式两边减去同一个数, 或除以同一个不等于零的数, 该等式仍然成立.
+
+含有未知数的等式称为方程.
+
+使得方程左右两边相等的未知数的值, 称为方程的解.
+
+以方程的所有解为元素组成的集合称为方程的解集.
+
+## 2. 一元二次方程的解集及根与系数的关系
+
+一元二次方程的解又叫做该方程的根. 如果一元二次方程的两个根相等, 那么这两个根叫做重根. 重根在解集中只能出现一次.
+
+一元二次方程 $a{x}^{2} + {bx} + c = 0\left( {a \neq  0}\right)$ 的解集情况由其判别式 $\Delta  = {b}^{2} - {4ac}$ 的符号决定. 当 $\Delta  > 0$ 时,解集为 $\left\{  \frac{-b \pm  \sqrt{\Delta }}{2a}\right\}$ ; 当 $\Delta  = 0$ 时,解集为 $\left\{  \frac{-b}{2a}\right\}$ ; 当 $\Delta  < 0$ 时,解集为 $\varnothing$ .
+
+韦达定理 (即一元二次方程根与系数的关系): 若一元二次方程 $a{x}^{2} + {bx} + c = 0\left( {a \neq  0}\right)$ 的两个根为 ${x}_{1}\text{ 、 }{x}_{2}$ ,则两根之和 ${x}_{1} + {x}_{2} =  - \frac{b}{a}$ ,两根之积 ${x}_{1}{x}_{2} = \frac{c}{a}$ .
+
+## 3. 不等式的性质
+
+大于号>,小于号<,大于等于号≥,小于等于号≤,不等号≠都称为不等号.
+
+用不等号将两个表达式连接起来, 就得到一个不等式.
+
+不等式具有以下性质: 设 $a\text{ 、 }b\text{ 、 }c$ 均为实数,
+
+(1)传递性:如果 $a > b, b > c$ ,那么 $a > c$ .
+
+(2)加法性质:如果 $a > b$ ，那么 $a + c > b + c$ .
+
+(3)乘法性质:如果 $a > b, c > 0$ ，那么 ${ac} > {bc}$ ；如果 $a > b, c < 0$ ，那么 ${ac} < {bc}$ .
+
+(4)同向可加性:如果 $a > b$ ， $c > d$ ，那么 $a + c > b + d$ .
+
+(5) 同向可乘性: 如果 $a > b > 0, c > d > 0$ ,那么 ${ac} > {bd}$ .
+
+(6) 倒数性质: 如果 $a > b > 0$ ,那么 $0 < \frac{1}{a} < \frac{1}{b}$ .
+
+(7)乘方性质:如果 $a > b > 0$ ，那么 ${a}^{n} > {b}^{n}\left( {n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+(8)开方性质:如果 $a > b > 0$ ，那么 $\sqrt[n]{a} > \sqrt[n]{b}\left( {n \in  {\mathbf{N}}^{ * }, n > 1}\right)$ .
+
+## 4. 不等式的求解
+
+在含有未知数的不等式中, 能使此不等式成立的未知数的值称为该不等式的解.
+
+一个不等式的解的全体所组成的集合称为此不等式的解集.
+
+求不等式解集的过程称为不等式的求解或解不等式.
+
+将含有相同未知数的多个不等式联立起来, 就得到不等式组, 解不等式组就是求不等式组中的所有不等式的解集的交集.
+
+(1)一元一次不等式(组)
+
+例. 设 $a$ 为实数，解关于 $x$ 的一元一次不等式组 $\left\{  \begin{array}{l} {2x} + a > 0 \\  {3x} - {6a} < 0 \end{array}\right.$ .
+
+解: $\left\{  {\begin{array}{l} {2x} + a > 0 \\  {3x} - {6a} < 0 \end{array} \Rightarrow  \left\{  \begin{array}{l} {2x} >  - a \\  {3x} < {6a} \end{array}\right. }\right.$ ,整理得 $\left\{  \begin{array}{l} x >  - \frac{a}{2} \\  x < {2a} \end{array}\right.$ ,
+
+$\therefore$ 当 $a > 0$ 时,解集为 $\left( {-\frac{a}{2},{2a}}\right)$ ; 当 $a \leq  0$ 时,解集为 $\varnothing$ .
+
+## (2)一元二次不等式
+
+设 $a\text{ 、 }b\text{ 、 }c$ 为实数,且 $a \neq  0$ ,形如 $a{x}^{2} + {bx} + c > 0\left( { < 0\text{ 、 } \geq  0\text{ 、 } \leq  0}\right)$ 的不等式统称为一元二次不等式.
+
+一般地,设一元二次不等式为 $a{x}^{2} + {bx} + c > 0$ 或 $a{x}^{2} + {bx} + c < 0\left( {a > 0}\right)$ ,当对应的一元二次方程 $a{x}^{2} + {bx} + c = 0$ 的根的判别式 $\Delta  = {b}^{2} - {4ac} > 0$ 时,先求出方程 $a{x}^{2} + {bx} + c = 0$ 的两个实数根 ${x}_{1}\text{ 、 }{x}_{2}$ (不妨设 ${x}_{1} < {x}_{2}$ ),于是不等式 $a{x}^{2} + {bx} + c > 0$ 的解集为 $\left( {-\infty ,{x}_{1}}\right)  \cup  \left( {{x}_{2}, + \infty }\right)$ ,不等式 $a{x}^{2} + {bx} + c < 0$ 的解集为 $\left( {{x}_{1},{x}_{2}}\right)$ .
+
+上述不等式的解集情况可总结成下表 (大于写两边, 小于写中间):
+
+<table><tr><td colspan="2">$a > 0,\Delta  > 0$</td></tr><tr><td>$a{x}^{2} + {bx} + c > 0$</td><td>$\left( {-\infty ,{x}_{1}}\right)  \cup  \left( {{x}_{2}, + \infty }\right)$</td></tr><tr><td>$a{x}^{2} + {bx} + c \geq  0$</td><td>$\left( {-\infty ,{x}_{1}}\right\rbrack   \cup  \left\lbrack  {{x}_{2}, + \infty }\right)$</td></tr><tr><td>$a{x}^{2} + {bx} + c < 0$</td><td>$\left( {{x}_{1},{x}_{2}}\right)$</td></tr><tr><td>$a{x}^{2} + {bx} + c \leq  0$</td><td>$\left\lbrack  {{x}_{1},{x}_{2}}\right\rbrack$</td></tr></table>
+
+![bo_d7aq48ilb0pc73dcpcb0_9_351_1063_231_219_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_9_351_1063_231_219_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_9_709_1062_232_218_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_9_709_1062_232_218_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_9_1068_1062_233_219_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_9_1068_1062_233_219_0.jpg)
+
+前面讨论的是判别式 $\Delta  > 0$ 的情形,当 $\Delta  < 0$ 时,抛物线 $y = a{x}^{2} + {bx} + c\left( {a > 0}\right)$ 与 $x$ 轴没有交点,整个图像都在 $x$ 轴的上方,于是不等式 $a{x}^{2} + {bx} + c > 0$ 的解集为实数集 $\mathbf{R}$ ,不等式 $a{x}^{2} + {bx} + c < 0$ 的解集为空集 $\varnothing$ .
+
+当 $\Delta  = 0$ 时,抛物线 $y = a{x}^{2} + {bx} + c\left( {a > 0}\right)$ 与 $x$ 轴两个交点重合,即 ${x}_{1} = {x}_{2} =  - \frac{b}{2a}$ , 除了这一个点外,抛物线的其余部分都在 $x$ 轴的上方,于是不等式 $a{x}^{2} + {bx} + c > 0$ 的解集为 $\left( {-\infty ,{x}_{1}}\right)  \cup  \left( {{x}_{1}, + \infty }\right)$ ,不等式 $a{x}^{2} + {bx} + c < 0$ 的解集为空集 $\varnothing$ .
+
+上述结果可总结成下表:
+
+<table><tr><td colspan="2">$a > 0,\Delta  < 0$</td><td colspan="2">$a > 0,\Delta  = 0$</td></tr><tr><td>$a{x}^{2} + {bx} + c > 0$</td><td>$\mathbf{R}$</td><td>$a{x}^{2} + {bx} + c > 0$</td><td>$\left( {-\infty ,{x}_{1}}\right)  \cup  \left( {{x}_{1}, + \infty }\right)$</td></tr><tr><td>$a{x}^{2} + {bx} + c \geq  0$</td><td>$\mathbf{R}$</td><td>$a{x}^{2} + {bx} + c \geq  0$</td><td>$\mathbf{R}$</td></tr><tr><td>$a{x}^{2} + {bx} + c < 0$</td><td>⌀</td><td>$a{x}^{2} + {bx} + c < 0$</td><td>$\varnothing$</td></tr><tr><td>$a{x}^{2} + {bx} + c \leq  0$</td><td>⌀</td><td>$a{x}^{2} + {bx} + c \leq  0$</td><td>$\left\{  {x}_{1}\right\}$</td></tr></table>
+
+## (3)分式不等式
+
+型如 $\frac{f\left( x\right) }{g\left( x\right) } > 0$ (或 $\geq  0$ ) 或 $\frac{f\left( x\right) }{g\left( x\right) } < 0$ (或 $\leq  0$ ) (其中 $f\left( x\right) \text{ 、 }g\left( x\right)$ 为整式且 $g\left( x\right)  \neq  0$ ) 的不等式称为分式不等式. 解分式不等式的关键是转化为整式不等式.
+
+$\frac{f\left( x\right) }{g\left( x\right) } > 0 \Leftrightarrow  f\left( x\right)  \cdot  g\left( x\right)  > 0,\frac{f\left( x\right) }{g\left( x\right) } < 0 \Leftrightarrow  f\left( x\right)  \cdot  g\left( x\right)  < 0.$
+
+$\frac{f\left( x\right) }{g\left( x\right) } \geq  0$ (或 $\leq  0$ ) $\Leftrightarrow  f\left( x\right)  \cdot  g\left( x\right)  \geq  0$ (或 $\leq  0$ ) 且 $g\left( x\right)  \neq  0$ .
+
+例. 解不等式 $\frac{x + 3}{4 - x} \geq  0$ .
+
+解: $\frac{x + 3}{4 - x} \geq  0 \Rightarrow  \left( {x + 3}\right) \left( {4 - x}\right)  \geq  0$ 且 $4 - x \neq  0$ ,即 $\left( {x + 3}\right) \left( {x - 4}\right)  \leq  0$ 且 $x \neq  4$ ,
+
+$\therefore$ 不等式解集为 $\lbrack  - 3,4)$ .
+
+## (4)含绝对值不等式
+
+$\left| x\right|$ 表示实数 $x$ 在数轴上所对应的点到原点的距离;
+
+所以,不等式 $\left| x\right|  < a\left( {a > 0}\right)$ 的解集为 $\left( {-a, a}\right)$ ,类似地,不等式 $\left| x\right|  > a\left( {a > 0}\right)$ 的解集为 $\left( {-\infty , - a}\right)  \cup  \left( {a, + \infty }\right)$ . (大于写两边,小于写中间)
+
+解绝对值不等式的关键在于去掉绝对值, 一般有如下方法:
+
+① 定义法; ② 平方法; ③ 零点分段法; ④ 数形结合法.
+
+例. (1) $\left| {x - 1}\right|  < 2$ ; (2) $\left| {{2x} - 3}\right|  < \left| {{3x} - 2}\right|$ ; (3) $\left| {x - 3}\right|  + \left| {x - 5}\right|  < 4$ .
+
+解:(1)(定义法): $\left| {x - 1}\right|  < 2 \Rightarrow   - 2 < x - 1 < 2 \Rightarrow   - 1 < x < 3$ ， $\therefore$ 解集为 $\left( {-1,3}\right)$ .
+
+(2)(平方法):两边为非负，直接平方得: $4{x}^{2} - {12x} + 9 < 9{x}^{2} - {12x} + 4$ ，
+
+整理得: ${x}^{2} > 1$ ，即 $x > 1$ 或 $x <  - 1$ ， $\therefore$ 解集为 $\left( {-\infty , - 1}\right)  \cup  \left( {1, + \infty }\right)$ .
+
+(注意: 使用平方法时, 不等式两边需非负)
+
+(3)法一(零点分段法，注意分类不重复不遗漏):
+
+当 $x < 3$ 时， $3 - x + 5 - x < 4$ ，解得 $x > 2$ ，此时 $2 < x < 3$ ；
+
+当 $3 \leq  x < 5$ 时， $x - 3 + 5 - x < 4$ ，即 $2 < 4$ ，恒成立，此时 $3 \leq  x < 5$ ；
+
+当 $x \geq  5$ 时， $x - 3 + x - 5 < 4$ ，解得 $x < 6$ ，此时 $5 \leq  x < 6$ ；
+
+$\therefore$ 综上所述，原不等式的解集为 $\left( {2,3}\right)  \cup  \lbrack 3,5) \cup  \lbrack 5,6) = \left( {2,6}\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_10_1052_1834_298_259_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_10_1052_1834_298_259_0.jpg)
+
+法二(数形结合法，需要对函数图像特别熟悉):
+
+分析函数 $y = \left| {x - 3}\right|  + \left| {x - 5}\right|$ 的图像,
+
+当 $x < 3$ 时, $y =  - {2x} + 8$ ,当 $3 \leq  x < 5$ 时, $y = 2$ ,
+
+当 $x \geq  5$ 时, $y = {2x} - 8$ ,图像如图所示,
+
+可知 $\left| {x - 3}\right|  + \left| {x - 5}\right|  < 4$ 的解集为 $\left( {2,6}\right)$ .
+
+(5)无理不等式(※)
+
+只含有一个未知数，并且未知数在根号中的不等式叫做无理不等式.
+
+解无理不等式, 关键是转化为有理不等式, 主要方法是平方.
+
+$\sqrt{f\left( x\right) } > \sqrt{g\left( x\right) } \Leftrightarrow  f\left( x\right)  \geq  0, g\left( x\right)  \geq  0, f\left( x\right)  > g\left( x\right) .$
+
+$\sqrt{f\left( x\right) } > g\left( x\right)  \Leftrightarrow  \left\{  {\begin{array}{l} g\left( x\right)  \geq  0 \\  f\left( x\right)  > {\left\lbrack  g\left( x\right) \right\rbrack  }^{2} \end{array}\text{ 或 }\left\{  {\begin{array}{l} g\left( x\right)  < 0 \\  f\left( x\right)  \geq  0 \end{array}.}\right. }\right.$
+
+$\sqrt{f\left( x\right) } < g\left( x\right)  \Leftrightarrow  g\left( x\right)  \geq  0,0 \leq  f\left( x\right)  < {\left\lbrack  g\left( x\right) \right\rbrack  }^{2}.$
+
+例. 解不等式 $\sqrt{{x}^{2} - {3x} + 2} > x - 3$ .
+
+解: 不等式可化为 $\left\{  \begin{array}{l} x - 3 \geq  0 \\  {x}^{2} - {3x} + 2 > {\left( x - 3\right) }^{2} \end{array}\right.$ 或 $\left\{  \begin{array}{l} x - 3 < 0 \\  {x}^{2} - {3x} + 2 \geq  0 \end{array}\right.$ ,
+
+即 $x \geq  3$ 或 $2 \leq  x < 3$ 或 $x \leq  1$ ,即不等式解集为 $\left( {-\infty ,1\rbrack \cup \lbrack 2, + \infty }\right)$ .
+
+(6)高次不等式(※)
+
+高次不等式常用 “数轴标根法”(俗称 “穿针引线”)来解，其步骤是:
+
+① 等价变形后的不等式一边是零，一边是各因式的积;(未知数系数一定是正数)
+
+② 把各因式的根标在数轴上;
+
+③ 从右上角起, 用曲线穿根 (奇次根穿过, 偶次根折回), 看图像写出解集.
+
+如图: $\left( {x - {x}_{1}}\right) \left( {x - {x}_{2}}\right) \left( {x - {x}_{3}}\right)  \geq  0$ (假设 ${x}_{1} < {x}_{2} < {x}_{3}$ ) 的解集为 $\left\lbrack  {{x}_{1},{x}_{2}}\right\rbrack   \cup  \left\lbrack  {{x}_{3}, + \infty }\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_11_577_1241_552_81_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_11_577_1241_552_81_0.jpg)
+
+例. 解不等式 ${\left( x + 1\right) }^{2}\left( {x - 1}\right) {\left( x - 4\right) }^{3} > 0$ .
+
+解: 法一: 如图所示,数轴标根,奇穿偶回,可得解集为 $\left( {-\infty , - 1}\right)  \cup  \left( {-1,1}\right)  \cup  \left( {4, + \infty }\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_11_574_1473_554_84_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_11_574_1473_554_84_0.jpg)
+
+法二: ${\left( x + 1\right) }^{2}\left( {x - 1}\right) {\left( x - 4\right) }^{3} > 0 \Rightarrow  \left\{  \begin{array}{l} \left( {x - 1}\right) \left( {x - 4}\right)  > 0 \\  {\left( x + 1\right) }^{2}{\left( x - 4\right) }^{2} \neq  0 \end{array}\right.$ ,
+
+即解集为 $\left( {-\infty , - 1}\right)  \cup  \left( {-1,1}\right)  \cup  \left( {4, + \infty }\right)$ .
+
+(7)指数对数不等式(※)
+
+解指数对数不等式的关键是化成相同的底数, 然后同时去掉底数.
+
+① 当 $a > 1$ 时， ${a}^{f\left( x\right) } > {a}^{g\left( x\right) } \Leftrightarrow  f\left( x\right)  > g\left( x\right)$ ，
+
+${\log }_{a}f\left( x\right)  > {\log }_{a}g\left( x\right)  \Leftrightarrow  f\left( x\right)  > g\left( x\right)  > 0;$
+
+② 当 $0 < a < 1$ 时， ${a}^{f\left( x\right) } > {a}^{g\left( x\right) } \Leftrightarrow  f\left( x\right)  < g\left( x\right)$ ，
+
+${\log }_{a}f\left( x\right)  > {\log }_{a}g\left( x\right)  \Leftrightarrow  0 < f\left( x\right)  < g\left( x\right) .$
+
+## 5. 平均值不等式及其应用
+
+基本不等式 1 对任意实数 $a$ 和 $b$ ,有 ${a}^{2} + {b}^{2} \geq  {2ab}$ ,当且仅当 $a = b$ 时等号成立. 基本不等式 2 对任意正数 $a$ 和 $b$ ,有 $\frac{a + b}{2} \geq  \sqrt{ab}$ ,当且仅当 $a = b$ 时等号成立. 如下左图为基本不等式 1 的几何解释, 大正方形的面积 $\geq  4$ 个小直角三角形面积之和. 如下右图为基本不等式 2 的几何解释, 直角三角形斜边上的中线 $\geq$ 斜边上的高.
+
+![bo_d7aq48ilb0pc73dcpcb0_12_409_535_243_245_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_12_409_535_243_245_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_12_905_593_326_182_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_12_905_593_326_182_0.jpg)
+
+推论 1 若 $a\text{ 、 }b\text{ 、 }c \in  {\mathbf{R}}^{ + }$ ,则 ${a}^{3} + {b}^{3} + {c}^{3} \geq  {3abc}$ ,当且仅当 $a = b = c$ 时等号成立.
+
+推论 2 若 $a\text{ 、 }b\text{ 、 }c \in  {\mathbf{R}}^{ + }$ ,则 $\frac{a + b + c}{3} \geq  \sqrt[3]{abc}$ ,当且仅当 $a = b = c$ 时等号成立.
+
+推论 $3\frac{{a}_{1} + {a}_{2} + \cdots  + {a}_{n}}{n} \geq  \sqrt[n]{{a}_{1}{a}_{2}\cdots {a}_{n}}, n \in  {\mathbf{N}}^{ * },{a}_{i} \in  {\mathbf{R}}^{ + },1 \leq  i \leq  n$ .
+
+平均值不等式 $\sqrt{\frac{{a}^{2} + {b}^{2}}{2}} \geq  \frac{a + b}{2} \geq  \sqrt{ab} \geq  \frac{2}{\frac{1}{a} + \frac{1}{b}}, a\text{ 、 }b \in  {\mathbf{R}}^{ + }$ .
+
+(即平方平均数 $\geq$ 算术平均数 $\geq$ 几何平均数 $\geq$ 调和平均数,当 $a = b$ 时等号成立)
+
+柯西不等式 $\left( {{a}^{2} + {b}^{2}}\right) \left( {{c}^{2} + {d}^{2}}\right)  \geq  {\left( ac + bd\right) }^{2}$
+
+注意: 一正二定三相等; 和定积最大, 积定和最小.
+
+## 6. 三角不等式
+
+三角不等式: 两个实数和的绝对值小于等于它们绝对值的和.
+
+即对任意给定的实数 $a\text{ 、 }b$ ,有 $\left| {a + b}\right|  \leq  \left| a\right|  + \left| b\right|$ ,当且仅当 ${ab} \geq  0$ 时等号成立.
+
+三角不等式的拓展: $\left| a\right|  - \left| b\right|  \leq  \left| {a \pm  b}\right|  \leq  \left| a\right|  + \left| b\right|$ .
+
+## 7. 不等式的证明 (※)
+
+## (1)比较法
+
+要证明 $a > b$ ,只要证明 $a - b > 0$ ,同样,要证明 $a < b$ ,只要证明 $a - b < 0$ ,这种证明不等式的方法叫做作差比较法.
+
+用作差比较法证明不等式的一般步骤是: 先作出要求证的不等式两边的差, 通过对这个差的变形, 确定其值是正的还是负的, 从而证明不等式成立.
+
+① 作差比较法, 作差结果与 0 进行比较.
+
+例. 已知 $a < b < c$ ,求证: ${a}^{2}b + {b}^{2}c + {c}^{2}a < {a}^{2}c + {b}^{2}a + {c}^{2}b$ .
+
+证明: $\because {a}^{2}b + {b}^{2}c + {c}^{2}a - \left( {{a}^{2}c + {b}^{2}a + {c}^{2}b}\right)  = \left( {{a}^{2}b - {b}^{2}a}\right)  + \left( {{b}^{2}c - {a}^{2}c}\right)  + \left( {{c}^{2}a - {c}^{2}b}\right)$
+
+$= {ab}\left( {a - b}\right)  + c\left( {b + a}\right) \left( {b - a}\right)  + {c}^{2}\left( {a - b}\right)  = \left( {a - b}\right) \left( {{ab} - {bc} - {ac} + {c}^{2}}\right)$
+
+$= \left( {a - b}\right) \left( {a - c}\right) \left( {b - c}\right)$ ,又 $a < b < c,\therefore \left( {a - b}\right) \left( {a - c}\right) \left( {b - c}\right)  < 0$ ,
+
+即 ${a}^{2}b + {b}^{2}c + {c}^{2}a - \left( {{a}^{2}c + {b}^{2}a + {c}^{2}b}\right)  < 0,\therefore {a}^{2}b + {b}^{2}c + {c}^{2}a < {a}^{2}c + {b}^{2}a + {c}^{2}b$ .
+
+② 类似地，也有作商比较法，作商结果与 1 进行比较.
+
+例. 已知 $a > 0, b > 0, c > 0$ ,求证: ${a}^{a}{b}^{b}{c}^{c} \geq  {\left( abc\right) }^{\frac{a + b + c}{3}}$ .
+
+证明: $\frac{{a}^{a}{b}^{b}{c}^{c}}{{\left( abc\right) }^{\frac{a + b + c}{3}}} = {a}^{\frac{\left( {a - b}\right)  + \left( {a - c}\right) }{3}} \cdot  {b}^{\frac{\left( {b - a}\right)  + \left( {b - c}\right) }{3}} \cdot  {c}^{\frac{\left( {c - a}\right)  + \left( {c - b}\right) }{3}} = {\left( \frac{a}{b}\right) }^{\frac{a - b}{3}} \cdot  {\left( \frac{b}{c}\right) }^{\frac{b - c}{3}} \cdot  {\left( \frac{c}{a}\right) }^{\frac{c - a}{3}}$ .
+
+当 $a \geq  b > 0$ 时, $\frac{a}{b} \geq  1,\frac{a - b}{3} \geq  0,\therefore {\left( \frac{a}{b}\right) }^{\frac{a - b}{3}} \geq  1$ ;
+
+当 $b > a > 0$ 时, $0 < \frac{a}{b} < 1,\frac{a - b}{3} < 0,\therefore {\left( \frac{a}{b}\right) }^{\frac{a - b}{3}} > 1$ ;
+
+综上, ${\left( \frac{a}{b}\right) }^{\frac{a - b}{3}} \geq  1$ ,同理, ${\left( \frac{b}{c}\right) }^{\frac{b - c}{3}} \geq  1,{\left( \frac{c}{a}\right) }^{\frac{c - a}{3}} \geq  1,\therefore {\left( \frac{a}{b}\right) }^{\frac{a - b}{3}} \cdot  {\left( \frac{b}{c}\right) }^{\frac{b - c}{3}} \cdot  {\left( \frac{c}{a}\right) }^{\frac{c - a}{3}} \geq  1$ ,
+
+$\therefore \frac{{a}^{a}{b}^{b}{c}^{c}}{{\left( abc\right) }^{\frac{a + b + c}{3}}} \geq  1$ ,当且仅当 $a = b = c$ 时等号成立, $\therefore {a}^{a}{b}^{b}{c}^{c} \geq  {\left( abc\right) }^{\frac{a + b + c}{3}}$ .
+
+## (2)分析法
+
+从要求证的结论出发, 经过适当的变形, 分析出使这个结论成立的条件, 把证明结论转化为判定这些条件是否成立的问题, 如果能够判定这些条件都成立, 那么就可以断定原结论成立, 这种证明方法叫做分析法.
+
+分析法是一种 “由果及因” 的方法, 它的关键是如何从结论去找其成立的充分条件.
+
+例. 已知 $a \geq  3$ ,求证: $\sqrt{a} - \sqrt{a - 1} < \sqrt{a - 2} - \sqrt{a - 3}$ .
+
+证明: 欲证 $\sqrt{a} - \sqrt{a - 1} < \sqrt{a - 2} - \sqrt{a - 3}$ ,只需证 $\sqrt{a} + \sqrt{a - 3} < \sqrt{a - 1} + \sqrt{a - 2}$ ,
+
+两边平方即证 ${2a} - 3 + 2\sqrt{a\left( {a - 3}\right) } < {2a} - 3 + 2\sqrt{\left( {a - 1}\right) \left( {a - 2}\right) }$ ,
+
+即 $\sqrt{a\left( {a - 3}\right) } < \sqrt{\left( {a - 1}\right) \left( {a - 2}\right) }$ ,再次平方即证 ${a}^{2} - {3a} < {a}^{2} - {3a} + 2$ ,
+
+即 $0 < 2$ ,显然成立. 且当 $a \geq  3$ 时,以上每步均可逆,
+
+$\therefore \sqrt{a} - \sqrt{a - 1} < \sqrt{a - 2} - \sqrt{a - 3}$ 成立.
+
+## (3)综合法
+
+从已知条件出发，利用各种已知的命题和运算性质作为依据，推导出要求证的结论，这种方法叫做综合法.
+
+综合法是一种“由因及果”的方法, 它的关键是如何选好切入点.
+
+例. 已知 $a > 0, b > 0, c > 0$ ,且 $a + b + c = 1$ ,求证: $\left( {\frac{1}{a} - 1}\right) \left( {\frac{1}{b} - 1}\right) \left( {\frac{1}{c} - 1}\right)  \geq  8$ .
+
+证明: 1 的代换, $\left( {\frac{1}{\mathrm{a}} - 1}\right) \left( {\frac{1}{\mathrm{\;b}} - 1}\right) \left( {\frac{1}{\mathrm{c}} - 1}\right)  = \left( {\frac{a + b + c}{\mathrm{a}} - 1}\right) \left( {\frac{a + b + c}{\mathrm{\;b}} - 1}\right) \left( {\frac{a + b + c}{\mathrm{c}} - 1}\right) \left( {\frac{a + b + c}{\mathrm{c}} - 1}\right)$
+
+$= \frac{b + c}{a} \cdot  \frac{a + c}{b} \cdot  \frac{a + b}{c} = \frac{1}{abc}\left( {b + c}\right) \left( {a + c}\right) \left( {a + b}\right)  \geq  \frac{1}{abc} \cdot  2\sqrt{bc} \cdot  2\sqrt{ac} \cdot  2\sqrt{ab} = 8$ ,
+
+$\therefore \left( {\frac{1}{a} - 1}\right) \left( {\frac{1}{b} - 1}\right) \left( {\frac{1}{c} - 1}\right)  \geq  8$ .
+
+## (4)放缩法
+
+在证明过程中, 根据不等式传递性, 常采用舍去 (或添加) 一些项而使不等式的各项之和变小 (或变大), 或把某些项换成较大 (或较小) 的数, 或在分式中扩大 (或缩小) 分式的分子 (或分母), 从而达到证明的目的, 这种证明不等式的方法叫做放缩法.
+
+例. 求证: $2\sqrt{n + 1} - 2 < 1 + \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} + \cdots  + \frac{1}{\sqrt{n}} < 2\sqrt{n} - 1, n \in  {\mathbf{N}}^{ * }$ .
+
+证明: $\because \frac{2}{\sqrt{k + 1} + \sqrt{k}} < \frac{1}{\sqrt{k}} = \frac{2}{\sqrt{k} + \sqrt{k}} < \frac{2}{\sqrt{k} + \sqrt{k - 1}}, k \in  {\mathbf{N}}^{ * }$ ,
+
+$\therefore 1 + \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} + \cdots  + \frac{1}{\sqrt{n}} = \frac{2}{\sqrt{1} + \sqrt{1}} + \frac{2}{\sqrt{2} + \sqrt{2}} + \frac{2}{\sqrt{3} + \sqrt{3}} + \cdots  + \frac{2}{\sqrt{n} + \sqrt{n}}$
+
+$> \frac{2}{\sqrt{1} + \sqrt{2}} + \frac{2}{\sqrt{2} + \sqrt{3}} + \frac{2}{\sqrt{3} + \sqrt{4}} + \cdots  + \frac{2}{\sqrt{n} + \sqrt{n + 1}}$
+
+$= 2\left( {\sqrt{2} - \sqrt{1}}\right)  + 2\left( {\sqrt{3} - \sqrt{2}}\right)  + 2\left( {\sqrt{4} - \sqrt{3}}\right) \cdots  + 2\left( {\sqrt{n + 1} - \sqrt{n}}\right)  = 2\sqrt{n + 1} - 2$ ,
+
+又 $1 + \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} + \cdots  + \frac{1}{\sqrt{n}} = 1 + \frac{2}{\sqrt{2} + \sqrt{2}} + \frac{2}{\sqrt{3} + \sqrt{3}} + \cdots  + \frac{2}{\sqrt{n} + \sqrt{n}}$
+
+$< 1 + \frac{2}{\sqrt{1} + \sqrt{2}} + \frac{2}{\sqrt{2} + \sqrt{3}} + \cdots  + \frac{2}{\sqrt{n - 1} + \sqrt{n}}$
+
+$= 1 + 2\left( {\sqrt{2} - \sqrt{1}}\right)  + 2\left( {\sqrt{3} - \sqrt{2}}\right)  + \cdots  + 2\left( {\sqrt{n} - \sqrt{n - 1}}\right)  = 2\sqrt{n} - 1.$
+
+综上所述, $2\sqrt{n + 1} - 2 < 1 + \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{3}} + \cdots  + \frac{1}{\sqrt{n}} < 2\sqrt{n} - 1$ .
+
+(5) 换元法
+
+根据证明需要进行一些等量代换, 选择适当的辅助参数简化问题的一种方法.
+
+例. 已知 $1 \leq  {x}^{2} + {y}^{2} \leq  2$ ,求证: $\frac{1}{2} \leq  {x}^{2} + {xy} + {y}^{2} \leq  3$ .
+
+证明: $\because 1 \leq  {x}^{2} + {y}^{2} \leq  2,\therefore$ 令 $x = r\cos \theta , y = r\sin \theta ,\therefore {r}^{2} \in  \left\lbrack  {1,2}\right\rbrack$ ,
+
+$\therefore {x}^{2} + {xy} + {y}^{2} = {r}^{2} + {r}^{2}\sin \theta \cos \theta  = {r}^{2}\left( {1 + \frac{1}{2}\sin {2\theta }}\right)$ ,
+
+当 ${r}^{2} = 1,\sin {2\theta } =  - 1$ 时, ${\left( {x}^{2} + xy + {y}^{2}\right) }_{\min } = \frac{1}{2}$ ;
+
+当 ${r}^{2} = 2,\sin {2\theta } = 1$ 时, ${\left( {x}^{2} + xy + {y}^{2}\right) }_{\max } = 3$ ; 即证 $\frac{1}{2} \leq  {x}^{2} + {xy} + {y}^{2} \leq  3$ .
+
+## (6) 判别式法
+
+根据证明需要, 通过构造一元二次方程, 利用关于某一变量的二次三项式有实根时的判别式的取值范围来证明不等式.
+
+例. 求证: $\frac{1}{2} \leq  \frac{{x}^{2} + x + 1}{{x}^{2} + 1} \leq  \frac{3}{2}$ .
+
+证明: 设 $y = \frac{{x}^{2} + x + 1}{{x}^{2} + 1}$ ,去分母,整理得 $\left( {y - 1}\right) {x}^{2} - x + \left( {y - 1}\right)  = 0$ ,
+
+$\because x\text{ 、 }y \in  \mathbf{R},\therefore \Delta  = 1 - 4{\left( y - 1\right) }^{2} \geq  0$ ,即 ${\left( y - 1\right) }^{2} \leq  \frac{1}{4},\therefore \frac{1}{2} \leq  y \leq  \frac{3}{2}$ ,
+
+即 $\frac{1}{2} \leq  \frac{{x}^{2} + x + 1}{{x}^{2} + 1} \leq  \frac{3}{2}$ .
+
+## (7)构造法
+
+通过构造函数、方程、数列、向量或图形等方式来证明不等式的方法. 如证明柯西不等式 $\left( {{a}^{2} + {b}^{2}}\right) \left( {{c}^{2} + {d}^{2}}\right)  \geq  {\left( ac + bd\right) }^{2}$ ,可构造向量 $\overrightarrow{m} = \left( {a, b}\right) ,\overrightarrow{n} = \left( {c, d}\right)$ ,由 $\left| \overrightarrow{m}\right|  \cdot  \left| \overrightarrow{n}\right|  \geq  \left| {\overrightarrow{m} \cdot  \overrightarrow{n}}\right|$ 平方可得 $\left( {{a}^{2} + {b}^{2}}\right) \left( {{c}^{2} + {d}^{2}}\right)  \geq  {\left( ac + bd\right) }^{2}$ .
+
+例. 已知实数 $a\text{ 、 }b\text{ 、 }c$ 满足 $a + b + c = 0$ 和 ${abc} = 2$ ,求证: $a\text{ 、 }b\text{ 、 }c$ 中至少有一个不小于 2 .
+
+证明: 显然 $a\text{ 、 }b\text{ 、 }c$ 中必有一个正数,不妨设 $a > 0$ ,
+
+则 $b + c =  - a,{bc} = \frac{2}{a}$ ,可构造方程 ${x}^{2} + {ax} + \frac{2}{a} = 0$ ,使 $b\text{ 、 }c$ 为其两实数根,
+
+由 $\Delta  = {a}^{2} - \frac{8}{a} \geq  0$ ,得 ${a}^{3} \geq  8,\therefore a \geq  2$ ,
+
+$\therefore a\text{ 、 }b\text{ 、 }c$ 中至少有一个不小于 2 .
+
+## (8) 反证法
+
+对于正面证明较为困难时, 可先假设结论不成立 (结论为假), 然后经过正确的逻辑推理得出矛盾, 从而说明 “结论为假” 是不可能发生的, 即结论是正确的.
+
+例. 已知 $a\text{ 、 }b\text{ 、 }c \in  \left( {0,1}\right)$ ,求证: $\left( {1 - a}\right) b\text{ 、 }\left( {1 - b}\right) c\text{ 、 }\left( {1 - c}\right) a$ 不可能都大于 $\frac{1}{4}$ .
+
+证明: 假设 $\left( {1 - a}\right) b\text{ 、 }\left( {1 - b}\right) c\text{ 、 }\left( {1 - c}\right) a$ 都大于 $\frac{1}{4},\therefore {abc}\left( {1 - a}\right) \left( {1 - b}\right) \left( {1 - c}\right)  > \frac{1}{64}$ ,
+
+$\because 0 < a < 1,\therefore 0 < 1 - a < 1,\therefore 0 < a\left( {1 - a}\right)  \leq  {\left\lbrack  \frac{a + \left( {1 - a}\right) }{2}\right\rbrack  }^{2} = \frac{1}{4}$ ,
+
+同理可得 $0 < b\left( {1 - b}\right)  \leq  \frac{1}{4},0 < c\left( {1 - c}\right)  \leq  \frac{1}{4}$ ,三式相乘: ${abc}\left( {1 - a}\right) \left( {1 - b}\right) \left( {1 - c}\right)  \leq  \frac{1}{64}$ ,
+
+这与 ${abc}\left( {1 - a}\right) \left( {1 - b}\right) \left( {1 - c}\right)  > \frac{1}{64}$ 互相矛盾,故假设不成立,
+
+$\therefore \left( {1 - a}\right) b\text{ 、 }\left( {1 - b}\right) c\text{ 、 }\left( {1 - c}\right) a$ 不可能都大于 $\frac{1}{4}$ .
+
+## (9)数学归纳法
+
+对于某些与自然数 $n$ 有关的不等式证明,可以从特殊情况的真实性推断出一般结论的真实性的一种证明方法. 数学归纳法的一般步骤:
+
+① 证明当 $n$ 取第一个值 ${n}_{0}$ ( ${n}_{0} \in  {\mathbf{N}}^{ * }$ ，例如 ${n}_{0} = 1$ 或 2)时，命题成立.
+
+② 假设当 $n = k$ ( $k \in  {\mathbf{N}}^{ * }$ ， $k \geq  {n}_{0}$ )时命题成立，证明当 $n = k + 1$ 时命题也成立.
+
+在完成了上面两步后,就可以断定这个命题对从 ${n}_{0}$ 开始的所有正整数 $n$ 都成立.
+
+例. 已知 $n \in  {\mathbf{N}}^{ * }$ ,求证: $\left( {1 + 2 + \cdots  + n}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{n}}\right)  \geq  {n}^{2}$ .
+
+证明: ① 当 $n = 1$ 时, $1 \times  1 \geq  {1}^{2}$ ,原不等式成立.
+
+② 假设当 $n = k$ 时， $\left( {1 + 2 + \cdots  + k}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)  \geq  {k}^{2}$ 成立，
+
+则当 $n = k + 1$ 时, $\left\lbrack  {\left( {1 + 2 + \cdots  + k}\right)  + \left( {k + 1}\right) }\right\rbrack   \cdot  \left\lbrack  {\left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)  + \frac{1}{k + 1}}\right\rbrack$
+
+$= \left( {1 + 2 + \cdots  + k}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)  + \left( {k + 1}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)  + \frac{1 + 2 + \cdots  + k}{k + 1} + 1$
+
+$\geq  {k}^{2} + \left( {k + 1}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)  + \frac{\left( {1 + k}\right) k}{2\left( {k + 1}\right) } + 1 = {k}^{2} + \frac{k}{2} + 1 + \left( {k + 1}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{k}}\right)$
+
+$\geq  {k}^{2} + \frac{k}{2} + 1 + \frac{\left( {k + 1}\right) {k}^{2}}{\left( 1 + 2 + \cdots  + k\right) } = {k}^{2} + \frac{k}{2} + 1 + \frac{2\left( {k + 1}\right) {k}^{2}}{\left( {1 + k}\right) k} = {\left( k + 1\right) }^{2} + \frac{k}{2} > {\left( k + 1\right) }^{2}$ ,
+
+即 $n = k + 1$ 时,原不等式成立.
+
+综上所述,对任意 $n \in  {\mathbf{N}}^{ * },\left( {1 + 2 + \cdots  + n}\right) \left( {1 + \frac{1}{2} + \cdots  + \frac{1}{n}}\right)  \geq  {n}^{2}$ .
+
+## (10)数形结合法
+
+对题设的条件与结论进行分析, 找出它们的几何意义, 力求在几何图形上寻找解题思路的一种解题方法.
+
+例. 已知 ${x}^{2} + {y}^{2} = 1$ ,求证: $- \sqrt{1 + {a}^{2}} \leq  y - {ax} \leq  \sqrt{1 + {a}^{2}}$ .
+
+证明: 法一,三角换元法,设 $x = \cos \theta , y = \sin \theta$ ,
+
+$\therefore y - {ax} = \sin \theta  - a\cos \theta  = \sqrt{1 + {a}^{2}}\sin \left( {\theta  - \varphi }\right)  \in  \left\lbrack  {-\sqrt{1 + {a}^{2}},\sqrt{1 + {a}^{2}}}\right\rbrack$ (其中 $\tan \varphi  = a$ ), 故 $- \sqrt{1 + {a}^{2}} \leq  y - {ax} \leq  \sqrt{1 + {a}^{2}}$ .
+
+法二,数形结合法,欲证 $- \sqrt{1 + {a}^{2}} \leq  y - {ax} \leq  \sqrt{1 + {a}^{2}}$ , 即证 $\frac{\left| y - ax\right| }{\sqrt{1 + {a}^{2}}} \leq  1$ ,其几何意义为单位圆 ${x}^{2} + {y}^{2} = 1$ 上的点 $\left( {x, y}\right)$ 到直线 $y = {ax}$ 的距离小于等于 $1,\because$ 直线 $y = {ax}$ 经过单位圆 ${x}^{2} + {y}^{2} = 1$ 的圆心,故显然成立, $\therefore  - \sqrt{1 + {a}^{2}} \leq  y - {ax} \leq  \sqrt{1 + {a}^{2}}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_16_1067_1806_298_233_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_16_1067_1806_298_233_0.jpg)
+
+## 第三章 函数的概念、性质及应用
+
+![bo_d7aq48ilb0pc73dcpcb0_17_288_304_1085_951_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_17_288_304_1085_951_0.jpg)
+
+## 1. 函数的概念与表示
+
+## (1)函数概念
+
+设 $D$ 是一个非空的实数集,如果按照某种确定的对应法则 $f$ ,使对集合 $D$ 中的任意给定的 $x$ ,都有唯一的实数 $y$ 与之对应,就称这个对应关系 $f$ 为集合 $D$ 上的一个函数,记作 $y = f\left( x\right) ,\;x \in  D.$
+
+其中, $x$ 叫做自变量,其取值范围 (数集 $D$ ) 称为该函数的定义域.
+
+$y$ 是 $x$ 的函数. 当自变量 $x$ 取值 ${x}_{0}$ 时,由对应关系 $f$ 所确定的对应于 ${x}_{0}$ 的值 ${y}_{0}$ ,称为函数在 ${x}_{0}$ 处的函数值,记作 ${y}_{0} = f\left( {x}_{0}\right)$ . 所有函数值组成的集合 $\{ y \mid  y = f\left( x\right) , x \in  D\}$ 称为这个函数的值域.
+
+定义域和对应关系称为函数的两个要素. 如果两个函数的定义域和对应关系都完全一致, 就称这两个函数是相同的. 同一个对应关系可能有不同的表述形式.
+
+求函数定义域时，主要考虑以下因素:
+
+① 分母不为零; ② 偶次方根号内大于等于零; ③ 真数大于零; ④ 实际意义.
+
+求定义域时, 遵循 “括号内范围一致” 原则.
+
+例. 若函数 $y = f\left( {x + 1}\right)$ 的定义域是 $\lbrack  - 2,3)$ ,求函数 $y = f\left( {\frac{1}{x} + 2}\right)$ 的定义域.
+
+解: 定义域即 $x$ 的范围, $x \in  \lbrack  - 2,3),\therefore x + 1 \in  \lbrack  - 1,4)$ ,即括号内范围为 $\lbrack  - 1,4)$ ,
+
+$\therefore \frac{1}{x} + 2 \in  \lbrack  - 1,4)$ ,得 $\frac{1}{x} \in  \lbrack  - 3,2)$ ,即 $x \in  \left( {-\infty , - \frac{1}{3}}\right\rbrack   \cup  \left( {\frac{1}{2}, + \infty }\right)$ ,
+
+$\therefore$ 函数 $y = f\left( {\frac{1}{x} + 2}\right)$ 的定义域为 $\left( {-\infty , - \frac{1}{3}}\right\rbrack   \cup  \left( {\frac{1}{2}, + \infty }\right)$ .
+
+## (2)函数的表示方法
+
+用一个数学表达式来表示两个变量之间的对应关系, 这种表示函数的方法称为解析法.
+
+通过列出自变量的值与对应函数值的相应表格来表达函数关系的方法称为列表法.
+
+对于函数 $y = f\left( x\right) , x \in  D$ ,其定义域 $D$ 中每一个 $x$ 的值都有唯一的一个 $y$ 值与之对应. 把这两个对应的数构成的有序实数对 $\left( {x, y}\right)$ 作为点 $P$ 的坐标,记作 $P\left( {x, y}\right)$ . 所有这些点组成的集合 $G$ 叫做函数 $y = f\left( x\right) , x \in  D$ 的图像,即 $G = \{ \left( {x, y}\right)  \mid  y = f\left( x\right) , x \in  D\}$ .
+
+可以看出,如果对定义域 $\mathrm{D}$ 中的实数 ${x}_{0}$ ,有 $f\left( {x}_{0}\right)  = {y}_{0}$ ,那么点 $P\left( {{x}_{0},{y}_{0}}\right)$ 一定在该函数图像上. 反之,如果点 $P\left( {{x}_{0},{y}_{0}}\right)$ 在该函数的图像上,那么必有 ${x}_{0} \in  D$ ,且 ${y}_{0} = f\left( {x}_{0}\right)$ .
+
+## (3)函数的运算(※)
+
+一般地,已知两个函数 $y = f\left( x\right) \left( {x \in  {D}_{1}}\right) , y = g\left( x\right) \left( {x \in  {D}_{2}}\right)$ ,设 $D = {D}_{1} \cap  {D}_{2}$ ,并且 $D \neq  \varnothing$ ,那么当 $x \in  D$ 时, $y = f\left( x\right)$ 与 $y = g\left( x\right)$ 都有意义,于是把函数 $y = f\left( x\right)  + g\left( x\right) \; \left( {x \in  D}\right)$ 叫做函数 $y = f\left( x\right)$ 与 $y = g\left( x\right)$ 的和.
+
+类似于求两个函数的和，我们也可以求两个函数的积，同样考虑两函数的公共定义域后， 可以定义两个函数的积.
+
+例. 设函数 $f\left( x\right)  = \frac{x - 1}{x - 2}, g\left( x\right)  = \frac{x - 2}{\sqrt{x - 1}}$ ,求 $f\left( x\right)  \cdot  g\left( x\right)$ .
+
+解: $\because f\left( x\right)$ 的定义域 ${D}_{1} = \left( {-\infty ,2}\right)  \cup  \left( {2, + \infty }\right) , g\left( x\right)$ 的定义域 ${D}_{2} = \left( {1, + \infty }\right)$ ,
+
+公共定义域 $D = {D}_{1} \cap  {D}_{2} = \left( {1,2}\right)  \cup  \left( {2, + \infty }\right)$ ,
+
+$\therefore f\left( x\right)  \cdot  g\left( x\right)  = \frac{x - 1}{x - 2} \cdot  \frac{x - 2}{\sqrt{x - 1}} = \sqrt{x - 1}, x \in  \left( {1,2}\right)  \cup  \left( {2, + \infty }\right)$ .
+
+## 2. 函数的基本性质
+
+## (1)函数的奇偶性
+
+对于函数 $y = f\left( x\right)$ ,如果对于其定义域 $D$ 中任意给定的实数 $x$ ,都有 $- x \in  D$ ,并且 $f\left( {-x}\right)  = f\left( x\right)$ ,就称函数 $y = f\left( x\right)$ 为偶函数.
+
+如果函数 $y = f\left( x\right) \left( {x \in  D}\right)$ 是偶函数,那么 $y = f\left( x\right)$ 的图像关于 $y$ 轴成轴对称图形,反过来,如果一个函数的图像关于 $y$ 轴成轴对称图形,那么这个函数必是偶函数.
+
+对于函数 $y = f\left( x\right)$ ,如果对于其定义域 $D$ 中任意给定的实数 $x$ ,都有 $- x \in  D$ ,并且 $f\left( {-x}\right)  =  - f\left( x\right)$ ,就称函数 $y = f\left( x\right)$ 为奇函数.
+
+如果函数 $y = f\left( x\right) \left( {x \in  D}\right)$ 是奇函数,那么 $y = f\left( x\right)$ 的图像关于原点成中心对称图形, 反过来,如果一个函数的图像关于原点成中心对称图形, 那么这个函数必是奇函数.
+
+由上可知,函数定义域 $D$ 关于原点对称是这个函数有奇偶性的必要非充分条件.
+
+![bo_d7aq48ilb0pc73dcpcb0_19_275_513_1096_229_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_19_275_513_1096_229_0.jpg)
+
+奇偶性分类:① 奇函数；② 偶函数；③ 既是奇函数又是偶函数；④ 非奇非偶函数. 定义在 $\mathbf{R}$ 上的既是奇函数又是偶函数的函数只有一个,即 $y = 0\left( {x \in  \mathbf{R}}\right)$ .
+
+奇偶性常用性质结论:
+
+① 奇函数 $y = f\left( x\right)$ 在 $x = 0$ 处有意义 $\Rightarrow  f\left( 0\right)  = 0$ .
+
+② 奇函数关于原点对称; 偶函数关于 $y$ 轴对称.
+
+③ 对于多项式函数 $f\left( x\right)  = a{x}^{n} + b{x}^{n - 1} + \cdots  + c{x}^{2} + {dx} + e$ ,
+
+若 $f\left( x\right)$ 是奇函数 $\Leftrightarrow  f\left( x\right)$ 偶次项的系数全为零;
+
+若 $f\left( x\right)$ 是偶函数 $\Leftrightarrow  f\left( x\right)$ 奇次项的系数全为零.
+
+④ $y = f\left( {x + a}\right)$ 为奇函数 $\Leftrightarrow  f\left( {-x + a}\right)  =  - f\left( {x + a}\right)  \Leftrightarrow$ 关于点 $\left( {a,0}\right)$ 对称;
+
+$y = f\left( {x + a}\right)$ 为偶函数 $\Leftrightarrow  f\left( {-x + a}\right)  = f\left( {x + a}\right)  \Leftrightarrow$ 关于直线 $x = a$ 对称.
+
+⑤ $y = f\left( x\right)$ 为奇函数 $\Leftrightarrow  f\left( {x + a}\right)  =  - f\left( {-x - a}\right)$ ;
+
+$y = f\left( x\right)$ 为偶函数 $\Leftrightarrow  f\left( {x + a}\right)  = f\left( {-x - a}\right)$ .
+
+⑥ 任意一个定义域关于原点对称的函数都可以表示成一个奇函数和一个偶函数的和. 即: $f\left( x\right)  = \frac{f\left( x\right)  - f\left( {-x}\right) }{2} + \frac{f\left( x\right)  + f\left( {-x}\right) }{2}$ .
+
+复合函数奇偶性:
+
+① 对于 $y = f\left( {g\left( x\right) }\right)$ 的奇偶性, $y = f\left( t\right)$ 与 $t = g\left( x\right)$ 同奇则奇,有偶则偶.
+
+② 奇±奇＝奇；偶±偶＝偶；奇×奇＝偶；奇÷奇＝偶；
+
+偶☒偶=偶；偶÷偶=偶；奇×偶=奇；奇÷偶=奇.
+
+## (2)函数的单调性
+
+对于定义在 $D$ 上的函数 $y = f\left( x\right)$ ,设区间 $I$ 是 $D$ 的一个子集. 对于区间 $I$ 上的任意给定的两个自变量的值 ${x}_{1}\text{ 、 }{x}_{2}$ ,当 ${x}_{1} < {x}_{2}$ 时,如果总有 $f\left( {x}_{1}\right)  \leq  f\left( {x}_{2}\right)$ ,就称函数 $y = f\left( x\right)$ 在区间 $I$ 上是增函数; 而如果总有 $f\left( {x}_{1}\right)  \geq  f\left( {x}_{2}\right)$ ,就称函数 $y = f\left( x\right)$ 在区间 $I$ 上是减函数.
+
+特别地,如果总有 $f\left( {x}_{1}\right)  < f\left( {x}_{2}\right)$ ,就称函数 $y = f\left( x\right)$ 在区间 $I$ 上是严格增函数; 而如果总有 $f\left( {x}_{1}\right)  > f\left( {x}_{2}\right)$ ,就称函数 $y = f\left( x\right)$ 在区间 $I$ 上是严格减函数.
+
+“严格增”、“严格减”、“增”及“减”统称为函数的单调性.
+
+如果函数 $y = f\left( x\right)$ 在某个区间 $I$ 上是增 (减) 函数,那么就称函数 $y = f\left( x\right)$ 在区间 $I$ 上是单调函数,并称区间 $I$ 是函数 $y = f\left( x\right)$ 的一个单调区间.
+
+一般来说, 所讨论的单调区间总是指满足这一要求的 “最大” 的单调区间.
+
+证明单调性步骤: ① 在定义域上任取 ${x}_{1} < {x}_{2}$ ; ② 作差 $f\left( {x}_{1}\right)  - f\left( {x}_{2}\right)$ ; ③ 变形判断. 单调性常用性质结论:
+
+① 在对称的两个区间上，奇函数单调性相同，偶函数单调性相反；
+
+② 互为反函数的两个函数有相同的单调性.
+
+复合函数单调性:
+
+① 对于 $f\left( {g\left( x\right) }\right)$ ，同增异减；
+
+② 增+增=增; 减+减=减; 增一减=增; 减一增=减.
+
+注意:单调性是函数局部的性质，奇偶性是整体的性质.
+
+## (3)函数的最值
+
+函数 $y = f\left( x\right)$ 在 ${x}_{0}$ 处的函数值是 $f\left( {x}_{0}\right)$ ,对于定义域内任意给定的 $x$ ,如果 $f\left( x\right)  \geq  f\left( {x}_{0}\right)$ 都成立,那么 $f\left( {x}_{0}\right)$ 就叫做函数 $y = f\left( x\right)$ 的最小值,记作 ${y}_{\min } = f\left( {x}_{0}\right)$ ; 相反, 如果 $f\left( x\right)  \leq  f\left( {x}_{0}\right)$ 都成立,那么 $f\left( {x}_{0}\right)$ 就叫做函数 $y = f\left( x\right)$ 的最大值,记作 ${y}_{\max } = f\left( {x}_{0}\right)$ .
+
+最大值与最小值统称为最值.
+
+求函数最值的方法:
+
+① 利用基本初等函数的值域:反比例函数、一次函数、二次函数、幂指对函数等.
+
+例. 求函数 $y = {2}^{{x}^{2} - {2x} + 2}$ 的值域.
+
+解: $\because {x}^{2} - {2x} + 2 = {\left( x - 1\right) }^{2} + 1 \geq  1,\therefore {2}^{{x}^{2} - {2x} + 2} \geq  {2}^{1}$ ,即值域为 $\lbrack 2, + \infty )$ .
+
+② 配方法:主要用于二次函数求最值.
+
+例. 求函数 $y = {x}^{2} - {2x} + 2$ 的值域.
+
+解: $y = {x}^{2} - {2x} + 2 = {\left( x - 1\right) }^{2} + 1 \geq  1$ ,即值域为 $\lbrack 1, + \infty )$ .
+
+③ 换元法:适用于无理函数，复合函数等，包括三角换元，注意新变量的取值范围.
+
+例 1. 求函数 $y = x + \sqrt{1 - x}$ 的值域.
+
+解: 设 $t = \sqrt{1 - x} \geq  0,\therefore x = 1 - {t}^{2}$ ,即 $y = 1 - {t}^{2} + t =  - {\left( t - \frac{1}{2}\right) }^{2} + \frac{5}{4}, y \in  \left( {-\infty ,\frac{5}{4}}\right\rbrack$ .
+
+“换元”目的是为了“去根号”，注意“新元” $t$ 的取值范围.
+
+例 2. 求函数 $y = x + \sqrt{1 - {x}^{2}}$ 的值域.
+
+解: 设 $x = \cos \theta  \in  \left\lbrack  {-1,1}\right\rbrack$ ,则 $\sqrt{1 - {x}^{2}} = \sin \theta  \in  \left\lbrack  {0,1}\right\rbrack$ ,令 $\theta  \in  \left\lbrack  {0,\pi }\right\rbrack$ ,
+
+$\therefore y = \cos \theta  + \sin \theta  = \sqrt{2}\sin \left( {\theta  + \frac{\pi }{4}}\right) ,\because \theta  \in  \left\lbrack  {0,\pi }\right\rbrack  ,\therefore y \in  \left\lbrack  {-1,\sqrt{2}}\right\rbrack$ .
+
+一般的 “换元” 在本题不管用，所以要用特殊的换元法一一三角换元；本题中同样要注意 “新元” $\theta$ 的取值范围,要使得 $\cos \theta  \in  \left\lbrack  {-1,1}\right\rbrack$ 和 $\sin \theta  \in  \left\lbrack  {0,1}\right\rbrack$ 同时成立!
+
+例 3. 求函数 $y = \sqrt{1 - x} + \sqrt{1 + x}$ 的值域.
+
+解: $x \in  \left\lbrack  {-1,1}\right\rbrack$ ,设 $t = \sqrt{1 - x} \in  \left\lbrack  {0,\sqrt{2}}\right\rbrack  , y = t + \sqrt{2 - {t}^{2}}$ ,再三角换元,
+
+设 $t = \sqrt{2}\sin \theta ,\sqrt{2 - {t}^{2}} = \sqrt{2}\cos \theta$ ,令 $\theta  \in  \left\lbrack  {0,\frac{\pi }{2}}\right\rbrack$ ,
+
+则 $y = \sqrt{2}\sin \theta  + \sqrt{2}\cos \theta  = 2\sin \left( {\theta  + \frac{\pi }{4}}\right)  \in  \left\lbrack  {\sqrt{2},2}\right\rbrack$ .
+
+这题用到了两次换元，可比较一下和例 1、例 2 之间的异同.
+
+例 4. 求函数 $y =  - x + \sqrt{1 + {x}^{2}}$ 的值域.
+
+解: 设 $x = \tan \theta  \in  \mathbf{R}$ ,则 $\sqrt{1 + {x}^{2}} = \sec \theta  \in  \lbrack 1, + \infty )$ ,令 $\theta  \in  \left( {-\frac{\pi }{2},\frac{\pi }{2}}\right)$ ,
+
+$\therefore y =  - \tan \theta  + \sec \theta  = \frac{-\sin \theta  + 1}{\cos \theta } = \frac{\sin \left( {-\theta }\right)  + 1}{\cos \left( {-\theta }\right) }$ ,可看作点 $\left( {\cos \theta ,\sin \theta }\right)$ 和点 $\left( {0, - 1}\right)$ 之间的斜率,数形结合可得 $y \in  \left( {0, + \infty }\right)$ .
+
+本题也是三角换元, 注意与例 2 的异同, 目的还是为了去根号, 注意数形结合的使用.
+
+例 5. 求函数 $y = {4}^{x} + \frac{1}{{4}^{x}} - {2}^{x + 1} - \frac{1}{{2}^{x - 1}}$ 的值域.
+
+解: 设 $t = {2}^{x} + \frac{1}{{2}^{x}} \in  \lbrack 2, + \infty )$ ,则 ${4}^{x} + \frac{1}{{4}^{x}} = {t}^{2} - 2,\therefore y = {t}^{2} - {2t} - 2 = {\left( t - 1\right) }^{2} - 3$ ,
+
+$\because t \in  \lbrack 2, + \infty ),\therefore y \in  \lbrack  - 2, + \infty )$ .
+
+这也是一类典型的换元,同样要特别注意 “新元” $t$ 的取值范围.
+
+例 6. 求函数 $y = \frac{{x}^{2} + {3x} + 2}{x - 1}$ 的值域.
+
+解: 设 $t = x - 1$ ,则 $x = t + 1,\therefore y = \frac{{\left( t + 1\right) }^{2} + 3\left( {t + 1}\right)  + 2}{t} = \frac{{t}^{2} + {5t} + 6}{t} = t + \frac{6}{t} + 5$ ,
+
+$\because t + \frac{6}{t} \in  \left( {-\infty , - 2\sqrt{6}}\right\rbrack  \bigcup \left\lbrack  {2\sqrt{6}, + \infty }\right) ,\therefore y \in  \left( {-\infty ,5 - 2\sqrt{6}}\right\rbrack  \bigcup \left\lbrack  {5 + 2\sqrt{6}, + \infty }\right)$ .
+
+注意与下文 “分离常数法”、“判别式法” 的比较.
+
+④ 数形结合法: 利用函数图像求最值, 或根据几何意义 (斜率、距离等).
+
+例 1. 求函数 $y = \frac{\sin x}{\cos x - 2}$ 的值域.
+
+解: 可看作点 $\left( {\cos x,\sin x}\right)$ 与点 $\left( {2,0}\right)$ 之间的斜率,而点 $\left( {\cos x,\sin x}\right)$ 即单位圆上的点.
+
+根据图像可知,斜率范围为 $\left\lbrack  {-\frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}}\right\rbrack$ ,即值域为 $\left\lbrack  {-\frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}}\right\rbrack$ .
+
+法二: $y = \frac{\sin x}{\cos x - 2} \Rightarrow  y\cos x - {2y} = \sin x \Rightarrow  y\cos x - \sin x = {2y}$ ,
+
+利用辅助角公式得 $\left| {2y}\right|  \leq  \sqrt{{y}^{2} + 1}$ ,解得 $y \in  \left\lbrack  {-\frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}}\right\rbrack$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_22_305_466_315_226_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_22_305_466_315_226_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_22_823_466_554_226_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_22_823_466_554_226_0.jpg)
+
+例 2. 求函数 $y = {\left( 3\cos x - 5\right) }^{2} + {\sin }^{2}x$ 的值域.
+
+解: 可看作点 $\left( {3\cos x,\sin x}\right)$ 与点 $\left( {5,0}\right)$ 之间距离的平方,点 $\left( {3\cos x,\sin x}\right)$ 是椭圆 $\frac{{x}^{2}}{9} + {y}^{2} = 1$ 上的点,结合图像可知距离的范围为 $\left\lbrack  {2,8}\right\rbrack  ,\therefore$ 值域为 $\left\lbrack  {4,{64}}\right\rbrack$ .
+
+法二: $y = 9{\cos }^{2}x - {30}\cos x + {25} + 1 - {\cos }^{2}x = 8{\cos }^{2}x - {30}\cos x + {26}$ ,
+
+然后配方即可得 $y \in  \left\lbrack  {4,{64}}\right\rbrack$ .
+
+例 3. 求函数 $y = \sqrt{1 - x} + \sqrt{1 + x}$ 的值域.
+
+解: 设 $\sqrt{1 - x} = u,\sqrt{1 + x} = v,\therefore {u}^{2} + {v}^{2} = 2, y = u + v$ ,可看作四分之一圆与直线 $v =  - u + y$ 相交时截距的取值范围,结合图像可知范围为 $\left\lbrack  {\sqrt{2},2}\right\rbrack$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_22_409_1276_263_261_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_22_409_1276_263_261_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_22_913_1276_332_261_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_22_913_1276_332_261_0.jpg)
+
+例 4. 求函数 $y = \sqrt{{x}^{2} + {4x} + 8} + \sqrt{{x}^{2} - {4x} + 5}$ 的值域.
+
+解: $y = \sqrt{{\left( x + 2\right) }^{2} + {2}^{2}} + \sqrt{{\left( x - 2\right) }^{2} + {1}^{2}}$ ,可看作点 $\left( {x,0}\right)$ 到两定点 $\left( {-2, - 2}\right) \text{ 、 }\left( {2,1}\right)$ 的距离之和,结合图像可知,当三点一线时取到最小值 5,即值域 $\lbrack 5, + \infty )$ .
+
+⑤ 单调性法:结合函数单调性求最值.
+
+例 1. 求函数 $y =  - x + \sqrt{1 + {x}^{2}}$ 的值域.
+
+解: 当 $x \leq  0$ 时,函数 $y =  - x$ 递减,函数 $y = \sqrt{1 + {x}^{2}}$ 递减, $\therefore y =  - x + \sqrt{1 + {x}^{2}}$ 递减; 当 $x > 0$ 时,函数 $y =  - x + \sqrt{1 + {x}^{2}} = \frac{1}{x + \sqrt{1 + {x}^{2}}}$ ,在 $x \in  \left( {0, + \infty }\right)$ 上递减.
+
+$\therefore$ 函数 $y =  - x + \sqrt{1 + {x}^{2}}$ 在 $\mathbf{R}$ 上递减,当 $x \rightarrow   - \infty , y \rightarrow   + \infty$ ; 当 $x \rightarrow   + \infty , y \rightarrow  0$ ,
+
+$\therefore$ 函数 $y =  - x + \sqrt{1 + {x}^{2}}$ 的值域为 $\left( {0, + \infty }\right)$ .
+
+例 2. (※) 求函数 $y = {e}^{-x} + \arccos x$ 的值域.
+
+解: 这两个基本初等函数都是单调递减的, $\therefore$ 和函数也是递减的,定义域 $\left\lbrack  {-1,1}\right\rbrack$ ,
+
+$\therefore x =  - 1$ 时取最大值 $e + \pi , x = 1$ 时取最小值 ${e}^{-1}$ ,即值域为 $\left\lbrack  {{e}^{-1}, e + \pi }\right\rbrack$ .
+
+⑥ 不等式法:利用常见的基本不等式，注意一正二定三相等.
+
+例 1. 求函数 $y = \sqrt{1 - x} + \sqrt{1 + x}$ 的值域.
+
+解: 将 $\sqrt{1 - x}$ 看作 $a,\sqrt{1 + x}$ 看作 $b$ ,则化为 “已知 $a \geq  0, b \geq  0$ ,且 ${a}^{2} + {b}^{2} = 2$ , 求 $a + b$ 的取值范围”,根据基本不等式 ${a}^{2} + {b}^{2} \leq  {\left( a + b\right) }^{2} \leq  2\left( {{a}^{2} + {b}^{2}}\right)$ ,
+
+可得 $2 \leq  {y}^{2} \leq  4,\therefore y \in  \left\lbrack  {\sqrt{2},2}\right\rbrack$ .
+
+例 2. (※) 求函数 $y = x\sqrt{3 - {2x}}$ 的值域.
+
+解: 很明显值域可以取到 $- \infty$ ,令 $0 \leq  x \leq  \frac{3}{2}$ 求最大值, $\therefore y = \sqrt{x} \cdot  \sqrt{x} \cdot  \sqrt{3 - {2x}}$ ,
+
+$\therefore 3 = x + x + \left( {3 - {2x}}\right)  \geq  3\sqrt[3]{x \cdot  x \cdot  \left( {3 - {2x}}\right) } = 3\sqrt[3]{{y}^{2}}$ ,即 $y \leq  1,\therefore y \in  ( - \infty ,1\rbrack$ .
+
+用基本不等式法的关键在于凑出 “和”、“积” 或 “平方和” 为 “定值”.
+
+⑦ 分离常数法: 分式函数.
+
+例 1. 求函数 $y = \frac{{3x} + 2}{x - 1}$ 的值域. (一次/一次类型)
+
+解: $y = \frac{{3x} + 2}{x - 1} = \frac{3\left( {x - 1}\right)  + 5}{x - 1} = 3 + \frac{5}{x - 1},\because \frac{5}{x - 1} \in  \left( {-\infty ,0}\right)  \cup  \left( {0, + \infty }\right)$ ,
+
+即 $y \in  \left( {-\infty ,3}\right)  \cup  \left( {3, + \infty }\right)$ .
+
+例 2. 求函数 $y = \frac{{x}^{2} + {3x} + 2}{x - 1}$ 的值域. (二次/一次类型)
+
+解: $y = \frac{{x}^{2} + {3x} + 2}{x - 1} = \frac{{\left( x - 1\right) }^{2} + 5\left( {x - 1}\right)  + 6}{x - 1} = \left( {x - 1}\right)  + \frac{6}{x - 1} + 5$ ,
+
+$\because \left( {x - 1}\right)  + \frac{6}{\left( x - 1\right) } \in  \left( {-\infty , - 2\sqrt{6}}\right\rbrack  \bigcup \left\lbrack  {2\sqrt{6}, + \infty }\right)$ ,
+
+$\therefore y \in  \left( {-\infty ,5 - 2\sqrt{6}}\right\rbrack   \cup  \left\lbrack  {5 + 2\sqrt{6}, + \infty }\right)$ ; 注意与上文 “换元法” 例 6 的比较.
+
+例 3. 求函数 $y = \frac{{x}^{2} + {3x} + 2}{{x}^{2} + {2x} - 1}$ 的值域. (二次/二次类型)
+
+解: $y = \frac{{x}^{2} + {3x} + 2}{{x}^{2} + {2x} - 1} = \frac{{x}^{2} + {2x} - 1 + x + 3}{{x}^{2} + {2x} - 1} = 1 + \frac{x + 3}{{x}^{2} + {2x} - 1}$ ,然后类似于例 2 类型.
+
+$1 + \frac{x + 3}{{x}^{2} + {2x} - 1} = 1 + \frac{x + 3}{{\left( x + 3\right) }^{2} - 4\left( {x + 3}\right)  + 2} = 1 + \frac{1}{\left( {x + 3}\right)  + \frac{2}{\left( x + 3\right) } - 4}$
+
+$\because \left( {x + 3}\right)  + \frac{2}{\left( x + 3\right) } - 4 \in  \left( {-\infty , - 2\sqrt{2} - 4\rbrack \cup \lbrack  - 2\sqrt{2} + 4, + \infty }\right) ,\therefore y \in  \left\lbrack  {\frac{2 + \sqrt{2}}{4},\frac{6 + \sqrt{2}}{4}}\right\rbrack$ .
+
+注意本题 $\left( {x + 3}\right)$ 可以等于零.
+
+⑧ 判别式法:主要用于没有限定定义域的二次分式方程.
+
+例 1. 求函数 $y = \frac{{x}^{2} + {3x} + 2}{x - 1}$ 的值域.
+
+解: $y = \frac{{x}^{2} + {3x} + 2}{x - 1} \Rightarrow  {yx} - y = {x}^{2} + {3x} + 2 \Rightarrow  {x}^{2} + \left( {3 - y}\right) x + y + 2 = 0$ .
+
+$\therefore \Delta  = {\left( 3 - y\right) }^{2} - 4\left( {y + 2}\right)  = {y}^{2} - {10y} + 1 \geq  0, y \in  \left( {-\infty ,5 - 2\sqrt{6}}\right\rbrack   \cup  \left\lbrack  {5 + 2\sqrt{6}, + \infty }\right)$ .
+
+例 2. 求函数 $y = \frac{{x}^{2} + {3x} + 2}{{x}^{2} + {2x} - 1}$ 的值域.
+
+解: 如上题, $y = \frac{{x}^{2} + {3x} + 2}{{x}^{2} + {2x} - 1} \Rightarrow  \left( {y - 1}\right) {x}^{2} + \left( {{2y} - 3}\right) x - \left( {y + 2}\right)  = 0$ .
+
+$\therefore \Delta  = {\left( 2y - 3\right) }^{2} + 4\left( {y - 1}\right) \left( {y + 2}\right)  \geq  0,\therefore$ 解得 $y \in  \left\lbrack  {\frac{2 + \sqrt{2}}{4},\frac{6 + \sqrt{2}}{4}}\right\rbrack$ .
+
+⑨ 转化法:利用某些式子的有界性进行转化求最值；或转化成求反函数的定义域.
+
+例. 求函数 $y = \frac{{2}^{x} + 1}{{2}^{x} - 2}$ 的值域.
+
+解: $y = \frac{{2}^{x} + 1}{{2}^{x} - 2} \Rightarrow  {2}^{x} = \frac{{2y} + 1}{y - 1},\because {2}^{x} > 0,\therefore \frac{{2y} + 1}{y - 1} > 0$ ,
+
+即 $y \in  \left( {-\infty , - \frac{1}{2}}\right)  \cup  \left( {1, + \infty }\right)$ .
+
+本题也可用分离法, $y = \frac{{2}^{x} + 1}{{2}^{x} - 2} = \frac{{2}^{x} - 2 + 3}{{2}^{x} - 2} = 1 + \frac{3}{{2}^{x} - 2}$ ,即可求出值域.
+
+⑩ 其他法:包括构造法、平方法、导数法等.
+
+例 1. 求函数 $y = \sqrt{1 - x} + \sqrt{1 + x}$ 的值域. (平方法)
+
+解: ${y}^{2} = 2 + 2\sqrt{1 - x} \cdot  \sqrt{1 + x} = 2 + 2\sqrt{1 - {x}^{2}} \in  \left\lbrack  {2,4}\right\rbrack  ,\therefore y \in  \left\lbrack  {\sqrt{2},2}\right\rbrack$ .
+
+可比较一下和用 “换元法” 的异同, 换元是为了去根号, 平方也是为了去根号, 但注意平方后千万不要扩大了范围
+
+例 2. 求函数 $y = x\sqrt{3 - x}$ 的值域. (导数法)
+
+解: 设 $t = \sqrt{3 - x} \geq  0$ ,则 $x = 3 - {t}^{2}$ ,即 $y = {3t} - {t}^{3},{y}^{\prime } = 3 - 3{t}^{2}$ .
+
+${y}^{\prime } > 0$ 时,即 $t \in  \lbrack 0,1)$ ,函数单调递增; ${y}^{\prime } < 0$ 时,即 $t \in  \left( {1, + \infty }\right)$ ,函数单调递减;
+
+可知 $t = 1$ ,函数取得最大值 2,即值域为 $( - \infty ,2\rbrack$ .
+
+(4)周期性(※)
+
+对于函数 $y = f\left( x\right)$ ,如果存在一个非零常数 $T$ ,使得当 $x$ 取其定义域 $D$ 中的任意值时, 有 $x + T \in  D$ ,且成立 $f\left( {x + T}\right)  = f\left( x\right)$ ,那么函数 $y = f\left( x\right)$ 就叫做周期函数,而这个非零常数 $T$ 就叫做函数 $y = f\left( x\right)$ 的一个周期.
+
+对于一个周期函数 $y = f\left( x\right)$ ,如果在它的所有周期中存在一个最小正数,那么这个最小正数就叫做函数 $y = f\left( x\right)$ 的最小正周期.
+
+周期性的判断:
+
+① 若 $f\left( {x + a}\right)  = f\left( {x - a}\right)$ ,则 $T = {2a}$ ; 若 $f\left( {x + a}\right)  = f\left( {x + b}\right)$ ,则 $T = a - b$ .
+
+② 若 $f\left( {x + a}\right)  =  - f\left( x\right)$ ，或 $f\left( {x + a}\right)  =  \pm  \frac{1}{f\left( x\right) }$ ，或 $f\left( {x + a}\right)  = \frac{1 - f\left( x\right) }{1 + f\left( x\right) }$ ，则 $T = {2a}$ .
+
+推导: 若 $f\left( {x + a}\right)  =  - f\left( x\right)$ ,则 $f\left( {x + {2a}}\right)  =  - f\left( {x + a}\right)  = f\left( x\right) ,\therefore T = {2a}$ ;
+
+若 $f\left( {x + a}\right)  = \frac{1}{f\left( x\right) }$ ,则 $f\left( {x + {2a}}\right)  = \frac{1}{f\left( {x + a}\right) } = f\left( x\right) ,\therefore T = {2a}$ ;
+
+若 $f\left( {x + a}\right)  =  - \frac{1}{f\left( x\right) }$ ,则 $f\left( {x + {2a}}\right)  =  - \frac{1}{f\left( {x + a}\right) } = f\left( x\right) ,\therefore T = {2a}$ ;
+
+若 $f\left( {x + a}\right)  = \frac{1 - f\left( x\right) }{1 + f\left( x\right) }$ ,则 $f\left( {x + {2a}}\right)  = \frac{1 - f\left( {x + a}\right) }{1 + f\left( {x + a}\right) } = \frac{1 - \frac{1 - f\left( x\right) }{1 + f\left( x\right) }}{1 + \frac{1 - f\left( x\right) }{1 + f\left( x\right) }} =$
+
+$\frac{1 + f\left( x\right)  - 1 + f\left( x\right) }{1 + f\left( x\right)  + 1 - f\left( x\right) } = f\left( x\right) ,\therefore T = {2a}.$
+
+③ 若 $f\left( {x + a}\right)  = \frac{1}{1 - f\left( x\right) }$ ，或 $f\left( x\right)  = 1 - \frac{1}{f\left( {x + a}\right) }$ ，则 $T = {3a}$ .
+
+推导: $f\left( {x + a}\right)  = \frac{1}{1 - f\left( x\right) } = \frac{1}{1 - \frac{1}{1 - f\left( {x - a}\right) }} = \frac{1 - f\left( {x - a}\right) }{1 - f\left( {x - a}\right)  - 1} = \frac{1 - \frac{1}{1 - f\left( {x - {2a}}\right) }}{-\frac{1}{1 - f\left( {x - {2a}}\right) }} =$
+
+$\frac{1 - f\left( {x - {2a}}\right)  - 1}{-1} = f\left( {x - {2a}}\right) ,\therefore T = {3a};$
+
+$f\left( x\right)  = 1 - \frac{1}{f\left( {x + a}\right) }$ 等同于 $f\left( {x + a}\right)  = \frac{1}{1 - f\left( x\right) }$ ,推导同上.
+
+④ (※) 若 $f\left( {x + a}\right)  = \frac{f\left( x\right)  - 1}{f\left( x\right)  + 1}$ ,或 $f\left( {x + a}\right)  = \frac{1 + f\left( x\right) }{1 - f\left( x\right) }$ ,则 $T = {4a}$ .
+
+推导: $f\left( {x + a}\right)  = \frac{f\left( x\right)  - 1}{f\left( x\right)  + 1} = \frac{\frac{f\left( {x - a}\right)  - 1}{f\left( {x - a}\right)  + 1} - 1}{\frac{f\left( {x - a}\right)  - 1}{f\left( {x - a}\right)  + 1} + 1} = \frac{f\left( {x - a}\right)  - 1 - f\left( {x - a}\right)  - 1}{f\left( {x - a}\right)  - 1 + f\left( {x - a}\right)  + 1} = \frac{-1}{f\left( {x - a}\right) }$ ,
+
+即 $f\left( {x + a}\right)  = \frac{-1}{f\left( {x - a}\right) },\therefore f\left( {x - a}\right)  = \frac{-1}{f\left( {x - {3a}}\right) },\therefore f\left( {x + a}\right)  = f\left( {x - {3a}}\right) , T = {4a}$ ; $f\left( {x + a}\right)  = \frac{1 + f\left( x\right) }{1 - f\left( x\right) } = \frac{1 + \frac{1 + f\left( {x - a}\right) }{1 - f\left( {x - a}\right) }}{1 - \frac{1 + f\left( {x - a}\right) }{1 - f\left( {x - a}\right) }} = \frac{1 - f\left( {x - a}\right)  + 1 + f\left( {x - a}\right) }{1 - f\left( {x - a}\right)  - 1 - f\left( {x - a}\right) } = \frac{1}{-f\left( {x - a}\right) },$
+
+$\therefore$ 同上可得, $f\left( {x + a}\right)  = f\left( {x - {3a}}\right) , T = {4a}$ .
+
+⑤ (※) 若 $f\left( x\right)  + f\left( {x + a}\right)  = f\left( x\right) f\left( {x + a}\right)$ ，则 $T = {2a}$ .
+
+若 $f\left( x\right)  + f\left( {x + a}\right)  + f\left( {x + {2a}}\right)  = f\left( x\right) f\left( {x + a}\right) f\left( {x + {2a}}\right)$ ,则 $T = {3a}$ .
+
+若 $\underset{n + 1\text{ 项 }}{\underbrace{f\left( x\right)  + f\left( {x + a}\right)  + \cdots  + f\left( {x + {na}}\right) }} = f\left( x\right)  \cdot  f\left( {x + a}\right) \cdots f\left( {x + {na}}\right)$ ,则 $T = \left( {n + 1}\right) a$ .
+
+推导: $\because \underset{n + 1\text{ 项 }}{\underbrace{f\left( x\right)  + f\left( {x + a}\right)  + \cdots  + f\left( {x + {na}}\right) }} = f\left( x\right)  \cdot  f\left( {x + a}\right) \cdots f\left( {x + {na}}\right)$ ,
+
+$\therefore \underset{n + 1\text{ 项 }}{\underbrace{f\left( {x - a}\right)  + f\left( x\right)  + \cdots  + f\left\lbrack  {x + \left( {n - 1}\right) a}\right\rbrack  }} = f\left( {x - a}\right)  \cdot  f\left( x\right) \cdots f\left\lbrack  {x + \left( {n - 1}\right) a}\right\rbrack$ ,
+
+作差: $f\left( {x + {na}}\right)  - f\left( {x - a}\right)  = \left\lbrack  {f\left( {x + {na}}\right)  - f\left( {x - a}\right) }\right\rbrack   \cdot  f\left( x\right)  \cdot  f\left( {x + a}\right) \cdots f\left\lbrack  {x + \left( {n - 1}\right) a}\right\rbrack$ ,
+
+$\therefore f\left( {x + {na}}\right)  - f\left( {x - a}\right)  = 0$ ,即 $f\left( {x + {na}}\right)  = f\left( {x - a}\right) ,\therefore T = \left( {n + 1}\right) a$ .
+
+## (5)对称性(※)
+
+## ① 一个函数的对称性
+
+对于函数 $y = f\left( x\right)$ ,若 $f\left( {a + x}\right)  = f\left( {a - x}\right)$ 或 $f\left( x\right)  = f\left( {{2a} - x}\right)$ 恒成立,则函数对称轴是 $x = a$ ; 若 $f\left( {a + x}\right)  = f\left( {b - x}\right)$ 恒成立,则函数对称轴是 $x = \frac{a + b}{2}$ .
+
+若 $f\left( {a + x}\right)  + f\left( {a - x}\right)  = 0$ 或 $f\left( x\right)  + f\left( {{2a} - x}\right)  = 0$ 恒成立,则函数对称中心是 $\left( {a,0}\right)$ ; 若 $f\left( {a + x}\right)  + f\left( {a - x}\right)  = {2b}$ ,则函数的对称中心是 $\left( {a, b}\right)$ .
+
+注意: 括号内相减得常数, 一般有周期性; 括号内相加得常数, 一般有对称性.
+
+## ② 两个函数的对称性
+
+函数 $y = f\left( x\right)$ 与函数 $y = f\left( {{2a} - x}\right)$ 的图像关于直线 $x = a$ 对称.
+
+函数 $y = f\left( {x + a}\right)$ 与函数 $y = f\left( {b - x}\right)$ 的图像关于直线 $x = \frac{b - a}{2}$ 对称.
+
+函数 $y = f\left( x\right)$ 与函数 ${2b} - y = f\left( {{2a} - x}\right)$ (即 $y = {2b} - f\left( {{2a} - x}\right)$ ) 的图像关于点 $\left( {a, b}\right)$ 对称.
+
+## 3. 函数的图像变换
+
+## (1)平移变换
+
+① 左加右减
+
+$y = f\left( x\right) \xrightarrow[]{\text{ 左移 }a\text{ 个单位 }}y = f\left( {x + a}\right) ;y = f\left( x\right) \xrightarrow[]{\text{ 右移 }a\text{ 个单位 }}y = f\left( {x - a}\right)$ .
+
+② 上加下减
+
+$$
+y = f\left( x\right) \text{ 上移 }b\text{ 个单位 } \rightarrow  y = f\left( x\right)  + b;y = f\left( x\right) \text{ 一下移 }b\text{ 个单位 } \rightarrow  y = f\left( x\right)  - b\text{ . }
+$$
+
+## (2)伸缩变换
+
+① $y = f\left( x\right) \xrightarrow[]{\text{ 纵坐标不变,横坐标变为原来的 }\frac{1}{\omega }\text{ 倍 }}y = f\left( {\omega x}\right) \left( {\omega  > 0}\right)$ .
+
+② $y = f\left( x\right)$ 横坐标不变，纵坐标变为原来的 $A$ 倍 $\rightarrow  y = {Af}\left( x\right) \left( {A > 0}\right)$ .
+
+## (3)翻折变换
+
+① $y = f\left( x\right)  \rightarrow  y = \left| {f\left( x\right) }\right|$
+
+函数 $y = f\left( x\right)$ 图像在 $x$ 轴上方的部分保持不变,将函数 $y = f\left( x\right)$ 图像在 $x$ 轴下方的部分对称翻折到 $x$ 轴上方.
+
+② $y = f\left( x\right)  \rightarrow  y = f\left( \left| x\right| \right)$
+
+保留 $y = f\left( x\right)$ 图像在 $y$ 轴右边的部分,并将 $y$ 轴右边的部分沿 $y$ 轴对称翻折到 $y$ 轴左边,替代原有的 $y$ 轴左边图像.
+
+## (4)对称变换
+
+函数 $y = f\left( x\right)$ 与函数 $y = f\left( {-x}\right)$ 的图像关于 $y$ 轴对称.
+
+函数 $y = f\left( x\right)$ 与函数 $y =  - f\left( x\right)$ 的图像关于 $x$ 轴对称.
+
+函数 $y = f\left( x\right)$ 与函数 $y =  - f\left( {-x}\right)$ 的图像关于原点对称.
+
+函数 $y = f\left( x\right)$ 与函数 $y = f\left( {{2a} - x}\right)$ 的图像关于直线 $x = a$ 对称.
+
+函数 $y = f\left( {x + a}\right)$ 与函数 $y = f\left( {b - x}\right)$ 的图像关于直线 $x = \frac{b - a}{2}$ 对称.
+
+函数 $y = f\left( x\right)$ 与函数 ${2b} - y = f\left( {{2a} - x}\right)$ (即 $y = {2b} - f\left( {{2a} - x}\right)$ ) 的图像关于点 $\left( {a, b}\right)$ 对称.
+
+## 4. 函数的应用
+
+## (1)函数关系的建立
+
+在研究某些数学问题时, 所研究的变量往往依赖于另一个变量, 此时就需要建立这两个变量之间的函数关系.
+
+## (2)用函数观点求解方程与不等式
+
+对于函数 $y = f\left( x\right) , x \in  D$ ,如果存在实数 $c \in  D$ ,使得 $f\left( c\right)  = 0$ ,那么就把 $c$ 叫做该函数的零点.
+
+函数 $y = f\left( x\right) , x \in  D$ 的零点,就是方程 $f\left( x\right)  = 0$ 在集合 $D$ 中的解,也是该函数 $y = f\left( x\right)$ 的图像与 $x$ 轴的交点的横坐标. 这就将方程 $f\left( x\right)  = 0$ 的求解与求函数 $y = f\left( x\right)$ 的零点联系起来.
+
+二次项系数 $a > 0$ 时,二次不等式与相应二次函数的联系:
+
+<table><tr><td>$f\left( x\right)  = a{x}^{2} + {bx} + c$</td><td>$\Delta  = {b}^{2} - {4ac} > 0$</td><td>$\Delta  = {b}^{2} - {4ac} = 0$</td><td>$\Delta  = {b}^{2} - {4ac} < 0$</td></tr><tr><td>零点</td><td>${x}_{1}\text{ 、 }{x}_{2}\left( {{x}_{1} < {x}_{2}}\right)$</td><td>${x}_{1}$</td><td>不存在</td></tr><tr><td>大致图像</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_28.jpg]</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_28.jpg]</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_28.jpg]</td></tr><tr><td>$f\left( x\right)  > 0$ 的解集</td><td>$\left( {-\infty ,{x}_{1}}\right)  \cup  \left( {{x}_{2}, + \infty }\right)$</td><td>$\left\{  {x \mid  x \neq  {x}_{1}}\right\}$</td><td>$\mathbf{R}$</td></tr><tr><td>$f\left( x\right)  < 0$ 的解集</td><td>$\left( {{x}_{1},{x}_{2}}\right)$</td><td>⌀</td><td>0</td></tr></table>
+
+## (3)用二分法求函数的零点
+
+如果在区间 $\left\lbrack  {a, b}\right\rbrack$ 上,函数 $y = f\left( x\right)$ 的图像是一段连续曲线,并且 $f\left( a\right)  \cdot  f\left( b\right)  < 0$ ,那么 $y = f\left( x\right)$ 在区间 $\left( {a, b}\right)$ 上一定有零点.
+
+二分法: 在确定了区间 $\left( {a, b}\right)$ 上一定有零点的前提下,将区间一分为二,这两部分中总有一个含有零点, 而含有零点的区间的长度变为原先的一半. 反复执行这种 “一分为二” 的操作, 就能将零点限制在一个足够小的区间中, 从而容易求得其近似值.
+
+## 5. 反函数
+
+## (1)反函数的概念
+
+对于函数 $y = f\left( x\right) , x \in  D$ ,记其值域为 $f\left( D\right)$ ,如果对 $f\left( D\right)$ 中的任意给定的一个值 $y$ ,在 $D$ 中满足 $f\left( x\right)  = y$ 的 $x$ 值只有一个,那么由此得到的 $x$ 关于 $y$ 的函数叫做 $y = f\left( x\right)$ , $x \in  D$ 的反函数,记作 $x = {f}^{-1}\left( y\right) , y \in  f\left( D\right)$ . 由于自变量习惯上常用 $x$ 表示,而函数值常用 $y$ 表示,因此通常把该函数改写为 $y = {f}^{-1}\left( x\right) , x \in  f\left( D\right)$ .
+
+## 反函数存在的判定:
+
+① 反函数存在的条件是原函数为一一对应函数，因此，在定义域上的严格增函数或严格减函数均存在反函数.
+
+② 周期函数不存在反函数，定义域为非单元素的偶函数不存在反函数.
+
+## (2)反函数的图像
+
+在平面直角坐标系中,点 $P\left( {a, b}\right)$ 与点 ${P}^{\prime }\left( {b, a}\right)$ 关于直线 $y = x$ 成轴对称.
+
+## 反函数的性质:
+
+① 原函数 $y = f\left( x\right)$ 和反函数 $y = {f}^{-1}\left( x\right)$ 的图像关于直线 $y = x$ 成轴对称; 若点 $\left( {a, b}\right)$ 在原函数 $y = f\left( x\right)$ 上,则点 $\left( {b, a}\right)$ 必在其反函数 $y = {f}^{-1}\left( x\right)$ 上.
+
+② 函数 $y = f\left( x\right)$ 与 $y = {f}^{-1}\left( x\right)$ 互为反函数；原函数 $y = f\left( x\right)$ 的定义域是它反函数 $y = {f}^{-1}\left( x\right)$ 的值域; 原函数 $y = f\left( x\right)$ 的值域是它反函数 $y = {f}^{-1}\left( x\right)$ 的定义域.
+
+③ 原函数与反函数具有对应相同的单调性; 奇函数的反函数也是奇函数.
+
+## 求反函数步骤:
+
+① 求出反函数的定义域 (即原函数的值域);
+
+② 解方程 $y = f\left( x\right)$ ，求出 $x$ 关于 $y$ 的函数表达式(即用 $y$ 表示 $x$ ，求出 $x = {f}^{-1}\left( y\right)$ )；
+
+③ 交换 $x$ 与 $y$ (即写出 $y = {f}^{-1}\left( x\right)$ ).
+
+注意事项: 若函数 $y = f\left( {{ax} + b}\right)$ 存在反函数,则其反函数为 $y = \frac{1}{a}\left\lbrack  {{f}^{-1}\left( x\right)  - b}\right\rbrack$ ,而不是 $y = {f}^{-1}\left( {{ax} + b}\right)$ ,函数 $y = {f}^{-1}\left( {{ax} + b}\right)$ 是 $y = \frac{1}{a}\left\lbrack  {f\left( x\right)  - b}\right\rbrack$ 的反函数.
+
+第四章 幂函数、指数函数和对数函数
+
+![bo_d7aq48ilb0pc73dcpcb0_30_281_324_1036_773_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_30_281_324_1036_773_0.jpg)
+
+## 1. 幂与指数
+
+初中阶段,我们学过正整数指数幂的定义: 如果 $a$ 是一个实数, $n$ 是一个正整数,那么称 ${a}^{n} = \underset{n \uparrow  a}{\underbrace{a \cdot  a \cdot  \cdots  \cdot  a}}$ 为 $a$ 的 $n$ 次幂. 也叫做 $a$ 的 $n$ 次方,记作 ${a}^{n}, a$ 为幂的底数 (简称底), $n$ 为幂的指数.
+
+当 $a \neq  0$ 时,可以定义 ${a}^{0} = 1,{a}^{-n} = \frac{1}{{a}^{n}}$ .
+
+一般地,如果 $n$ 为大于 1 的整数,且 ${x}^{n} = a$ ,那么 $x$ 叫做 $a$ 的 $n$ 次方根. 用式子 $\sqrt[n]{a}$ 表示 $a$ 的 $n$ 次方根,这里 $n$ 叫做根指数, $a$ 叫做被开方数.
+
+当 $n$ 为奇数时, $\sqrt[n]{{a}^{n}} = a$ ; 当 $n$ 为偶数时, $\sqrt[n]{{a}^{n}} = \left| a\right|$ .
+
+一般地,在 $n$ 为正整数,且 $m$ 为整数时,对所有使得 $\sqrt[n]{{a}^{m}}$ 有意义的实数 $a$ ,都可以定义 ${a}^{\frac{m}{n}} = \sqrt[n]{{a}^{m}}$ .
+
+当指数幂从正整数拓展到实数时,我们要求底 $a$ 是一个正数,此时满足以下运算性质:
+
+对任意给定的正数 $a\text{ 、 }b$ 及实数 $s\text{ 、 }t$ ,有:
+
+$$
+{a}^{s}{a}^{t} = {a}^{s + t},\;{\left( {a}^{s}\right) }^{t} = {a}^{st},\;{\left( ab\right) }^{t} = {a}^{t}{b}^{t}.
+$$
+
+幂的基本不等式: 当 $a > 1, s > 0$ 时,有 ${a}^{s} > 1$ .
+
+## 2. 对数
+
+## (1)对数的定义
+
+在 $a > 0, a \neq  1$ ,且 $N > 0$ 的条件下,唯一满足 ${a}^{x} = N$ 的数 $x$ ,称为 $N$ 以 $a$ 为底的对数,并用符号 ${\log }_{a}N$ 表示,其中 $a$ 称为对数的底数, $N$ 称为真数.
+
+根据对数定义，可知:① 零和负数没有对数，真数大于零；② 1 的对数为 0，即 ${\log }_{a}1 = 0$ ; ③ 底的对数等于 1,即 ${\log }_{a}a = 1$ ; ④ 对数恒等式: ${a}^{{\log }_{a}N} = N$ 成立.
+
+以 10 为底的对数称为常用对数,常用对数 ${\log }_{10}N$ 通常记为 $\lg N$ ; 以无理数 $\mathrm{e}(\mathrm{e}$ 的值约为 ${2.71828}\cdots$ ) 为底的对数称为自然对数,自然对数 ${\log }_{\mathrm{e}}N$ 通常记为 $\ln N$ .
+
+## (2)对数的运算性质
+
+对数性质 1: 当 $M > 0, N > 0$ 时, ${\log }_{a}\left( {MN}\right)  = {\log }_{a}M + {\log }_{a}N$ .
+
+对数性质 2: 当 $M > 0, N > 0$ 时, ${\log }_{a}\frac{M}{N} = {\log }_{a}M - {\log }_{a}N$ .
+
+对数性质 3: 当 $N > 0$ 时,对任何给定的实数 $c,{\log }_{a}{N}^{c} = c{\log }_{a}N$ .
+
+(对数化乘为加、化除为减、化乘方为乘、化开方为除)
+
+## (3)对数的换底
+
+对数换底公式: 当 $N > 0$ 时, ${\log }_{b}N = \frac{{\log }_{a}N}{{\log }_{a}b}$ (其中 $a > 0$ 且 $a \neq  1, b > 0$ 且 $b \neq  1$ ).
+
+常用恒等式: ① ${a}^{{\log }_{a}N} = N$ ; ② ${\log }_{a}{a}^{N} = N$ ; ③ ${\log }_{a}b \cdot  {\log }_{b}a = 1$ ;
+
+④ ${\log }_{a}b \cdot  {\log }_{b}c \cdot  {\log }_{c}d = {\log }_{a}d$ ; ⑤ ${\log }_{{a}^{m}}{b}^{n} = \frac{n}{m}{\log }_{a}b$ .
+
+## 3. 幂函数
+
+当指数 $a\left( {a \in  \mathbf{R}}\right)$ 固定,等式 $y = {x}^{a}$ 确定了变量 $y$ 随变量 $x$ 变化的规律,称为指数为 $a$ 的幂函数.
+
+常见幂函数的图像:
+
+![bo_d7aq48ilb0pc73dcpcb0_31_301_1613_256_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_301_1613_256_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_582_1610_257_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_582_1610_257_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_865_1610_258_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_865_1610_258_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_1152_1613_252_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_1152_1613_252_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_302_1875_256_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_302_1875_256_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_582_1872_257_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_582_1872_257_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_865_1872_256_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_865_1872_256_253_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_31_1148_1872_256_253_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_31_1148_1872_256_253_0.jpg)
+
+注意:画幂函数图像时，先画第一象限的部分，再根据奇偶性完成整个图像.
+
+幂函数 $y = {x}^{a}\left( {a \in  \mathbf{R}}\right)$ 的性质:
+
+① 幂函数在第一象限总有图像, 幂函数的图像最多只能同时出现在两个象限, 幂函数的图像不经过第四象限;
+
+② 如果幂函数的图像与坐标轴相交，则交点一定是原点；
+
+③ 所有幂函数在 $\left( {0, + \infty }\right)$ 上都有定义，并且图像都经过点 $\left( {1,1}\right)$ ；
+
+④ 若 $a > 0$ ,幂函数图像都经过点 $\left( {0,0}\right)$ 和 $\left( {1,1}\right)$ ,在第一象限内严格增; 若 $a < 0$ ,幂函数图像只经过点 $\left( {1,1}\right)$ ,在第一象限内严格减; 若 $a = 0$ ,幂函数 $y = {x}^{0} = 1\left( {x \neq  0}\right)$ .
+
+## 4. 指数函数
+
+当底数 $a$ 固定,且 $a > 0, a \neq  1$ 时,等式 $y = {a}^{x}$ 确定了变量 $y$ 随变量 $x$ 变化的规律,称为底为 $a$ 的指数函数. 自变量 $x$ 叫做指数, $a$ 叫做底数,函数的定义域是 $\mathbf{R}$ .
+
+指数函数 $y = {a}^{x}$ 的图像与性质可总结如下表:
+
+<table><tr><td>$y = {a}^{x}$</td><td>$a > 1$</td><td>$0 < a < 1$</td></tr><tr><td>图像</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_32.jpg]</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_32.jpg]</td></tr><tr><td rowspan="3">图像特征</td><td colspan="2">(1)图像都在 $x$ 轴上方，无限趋近于 $x$ 轴，但永不相交</td></tr><tr><td colspan="2">(2)过点 $\left( {0,1}\right)$</td></tr><tr><td>(3)由左至右，图像上升</td><td>(3)由左至右，图像下降</td></tr><tr><td rowspan="3">函数性质</td><td colspan="2">(1)定义域为 $\mathbf{R}$ ，函数值恒正，即值域为 $\left( {0, + \infty }\right)$</td></tr><tr><td colspan="2">(2)当 $x = 0$ 时， $y = 1$</td></tr><tr><td>(3)在 $\mathbf{R}$ 上是严格增函数</td><td>(3)在 $\mathbf{R}$ 上是严格减函数</td></tr></table>
+
+## 5. 对数函数
+
+当底数 $a$ 固定,且 $a > 0, a \neq  1$ 时, $x$ 以 $a$ 为底的对数 $y = {\log }_{a}x$ 确定了变量 $y$ 随变量 $x$ 变化的规律,称为底为 $a$ 的对数函数.
+
+因为 $y = {\log }_{a}x$ 是 ${a}^{y} = x$ 的解,所以说对数运算是指数运算的逆运算,即 $y = {\log }_{a}x$ 是 $y = {a}^{x}$ 的反函数. 因为 $y = {a}^{x}$ 的值域是 $\left( {0, + \infty }\right)$ ,所以 $y = {\log }_{a}x$ 的定义域为 $\left( {0, + \infty }\right)$ .
+
+指数函数 $y = {a}^{x}$ 的图像与其反函数对数函数 $y = {\log }_{a}x$ 的图像关于直线 $y = x$ 对称. 对数的基本不等式: 当 $a > 1, N > 1$ 时, ${\log }_{a}N > 0$ .
+
+对数函数 $y = {\log }_{a}x$ 的图像与性质可总结如下表:
+
+<table><tr><td>$y = {\log }_{a}x$</td><td>$a > 1$</td><td>$0 < a < 1$</td></tr><tr><td>图像</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_33.jpg]</td><td>[失效外部图片：bo_d7aq48ilb0pc73dcpcb0_33.jpg]</td></tr><tr><td rowspan="3">图像特征</td><td colspan="2">(1)图像都在 $y$ 轴右侧,无限趋近于 $y$ 轴,但永不相交</td></tr><tr><td colspan="2">(2)过点 $\left( {1,0}\right)$</td></tr><tr><td>(3)由左至右，图像上升</td><td>(3)由左至右，图像下降</td></tr><tr><td rowspan="3">函数性质</td><td colspan="2">(1)定义域为 $\left( {0, + \infty }\right)$ ，值域为 $\mathbf{R}$</td></tr><tr><td colspan="2">(2)当 $x = 1$ 时， $y = 0$</td></tr><tr><td>(3)在 $\left( {0, + \infty }\right)$ 上是严格增函数</td><td>(3)在(0，+∞)上是严格减函数</td></tr></table>
+
+## 6. 指数对数方程(※)
+
+我们把指数里含有未知数的方程叫做指数方程. 在解指数方程时, 常利用指数函数的性质: ${a}^{\alpha } = {a}^{\beta } \Leftrightarrow  \alpha  = \beta$ ,其中 $a > 0$ 且 $a \neq  1$ ,将指数方程化为整式方程求解.
+
+在对数符号后面含有未知数的方程叫做对数方程. 在解对数方程时, 常利用对数函数的性质: ${\log }_{a}\alpha  = {\log }_{a}\beta  \Leftrightarrow  \alpha  = \beta$ ,其中 $a > 0$ 且 $a \neq  1$ ,将对数方程化为整式方程求解.
+
+解对数方程时, 必须对求得的解进行检验, 因为在利用对数的性质将对数方程变形过程中, 如果未知数的允许值范围扩大, 那么可能产生增解.
+
+解指数对数方程的基本思路是通过 “化成相同底数” “换元” 等方法转化成整式方程.
+
+例 1. 求方程 $\frac{3}{{3}^{x} - 1} + \frac{1}{3} = {3}^{x - 1}$ 的实数解.
+
+解: 等式两边同时乘以 $3\left( {{3}^{x} - 1}\right)$ ,得: $9 + {3}^{x} - 1 = {3}^{x}\left( {{3}^{x} - 1}\right)$ ,
+
+整理得, ${3}^{2x} - 2 \cdot  {3}^{x} - 8 = 0$ ,因式分解得 $\left( {{3}^{x} + 2}\right) \left( {{3}^{x} - 4}\right)  = 0$ ,
+
+$\therefore {3}^{x} =  - 2$ 或 ${3}^{x} = 4,\because {3}^{x} > 0,\therefore$ 舍去 ${3}^{x} =  - 2,\therefore$ 经检验 ${3}^{x} = 4$ ,
+
+即 $x = {\log }_{3}4$ , $\therefore$ 所求方程的解为 $x = {\log }_{3}4$ .
+
+例 2. 求方程 ${\log }_{2}\left( {{9}^{x - 1} - 5}\right)  = {\log }_{2}\left( {{3}^{x - 1} - 2}\right)  + 2$ 的解.
+
+解: ${\log }_{2}\left( {{9}^{x - 1} - 5}\right)  = {\log }_{2}\left( {{3}^{x - 1} - 2}\right)  + 2 = {\log }_{2}\left( {{3}^{x - 1} - 2}\right)  + {\log }_{2}4 = {\log }_{2}\left\lbrack  {4\left( {{3}^{x - 1} - 2}\right) }\right\rbrack$ ,
+
+即 ${\log }_{2}\left( {{9}^{x - 1} - 5}\right)  = {\log }_{2}\left( {4 \cdot  {3}^{x - 1} - 8}\right) ,\therefore {9}^{x - 1} - 5 = 4 \cdot  {3}^{x - 1} - 8$ ,即 ${9}^{x} - {45} = {12} \cdot  {3}^{x} - {72}$ ,
+
+设 ${3}^{x} = t,\therefore {9}^{x} = {t}^{2}$ ,方程可化为 ${t}^{2} - {45} = {12t} - {72}$ ,即 ${t}^{2} - {12t} + {27} = 0$ ,
+
+$\therefore \left( {t - 3}\right) \left( {t - 9}\right)  = 0$ ,解得 $t = 3$ 或 $t = 9$ ,即 ${3}^{x} = 3$ 或 ${3}^{x} = 9$ ,
+
+$\because$ 真数 ${3}^{x - 1} - 2 > 0$ 且 ${9}^{x - 1} - 5 > 0$ ,即 ${3}^{x} > 6$ 且 ${9}^{x} > {45}$ ,故舍去 ${3}^{x} = 3$ ,
+
+$\therefore$ 经检验 ${3}^{x} = 9$ ,即 $x = 2,\therefore$ 所求方程的解为 $x = 2$ .
+
+## 7. 抽象函数
+
+有一类函数问题, 函数的表达式并不具体给出, 而只是 “抽象” 地列出一些条件, 此类函数我们称之为 “抽象函数”.
+
+抽象函数相关题目的解法:
+
+① 赋值法; 如赋值 $x = 0\text{ 、 }x =  \pm  1\text{ 、 }y =  \pm  x\text{ 、 }x = y = 0$ 等.
+
+② 结构变换法; 如 $f\left( {x}_{1}\right)  = f\left\lbrack  {\left( {{x}_{1} - {x}_{2}}\right)  + {x}_{2}}\right\rbrack  \text{ 、 }f\left( {x}_{1}\right)  = f\left( {\frac{{x}_{1}}{{x}_{2}} \cdot  {x}_{2}}\right)$ 等.
+
+<table><tr><td>抽象函数特征</td><td>可能对应函数</td></tr><tr><td>$f\left( {x + y}\right)  = f\left( x\right)  + f\left( y\right)$ 或 $f\left( {xy}\right)  = x \cdot  f\left( y\right) ,\;f\left( 1\right)  = c$</td><td>正比例函数 $f\left( x\right)  = {cx}\left( {c \neq  0}\right)$</td></tr><tr><td>$f\left( {x + y}\right)  = f\left( x\right)  \cdot  f\left( y\right)$ 或 $f\left( {xy}\right)  = {\left\lbrack  f\left( x\right) \right\rbrack  }^{y},\;f\left( 0\right)  = 1$</td><td>指数函数 $y = {a}^{x}\left( {a > 0\text{ 且 }a \neq  1}\right)$</td></tr><tr><td>$f\left( {xy}\right)  = f\left( x\right)  + f\left( y\right)$ 或 $f\left( {x}^{y}\right)  = y \cdot  f\left( x\right) ,\;f\left( 1\right)  = 0$</td><td>对数函数 $y = {\log }_{a}x\left( {a > 0\text{ 且 }a \neq  1}\right)$</td></tr><tr><td>$f\left( {xy}\right)  = f\left( x\right)  \cdot  f\left( y\right) ,\;f\left( 1\right)  = 1$</td><td>幂函数 $f\left( x\right)  = {x}^{a}$</td></tr></table>
+
+例. 已知函数 $f\left( x\right) \left( {x \neq  0}\right)$ 对定义域内的任意 $x\text{ 、 }y$ 满足 $f\left( {xy}\right)  = f\left( x\right)  + f\left( y\right)$ ,且当 $x > 1$ 时， $f\left( x\right)  > 0, f\left( 2\right)  = 1$ .
+
+(1)求证: $f\left( x\right)$ 为偶函数；
+
+(2)求证: $f\left( x\right)$ 在 $\left( {0, + \infty }\right)$ 上是严格增函数；
+
+(3)解不等式 $f\left( {2{x}^{2} - 1}\right)  < 2$ .
+
+解: (1) 函数 $f\left( x\right)$ 的定义域为 $\left( {-\infty ,0}\right)  \cup  \left( {0, + \infty }\right)$ ,关于原点对称,
+
+赋值法,令 $x = y = 1$ ,则 $f\left( {1 \times  1}\right)  = f\left( 1\right)  + f\left( 1\right) ,\therefore f\left( 1\right)  = 0$ ,
+
+令 $x = y =  - 1$ ,则 $f\left( 1\right)  = f\left( {-1}\right)  + f\left( {-1}\right)  = 0,\therefore f\left( {-1}\right)  = 0$ ,
+
+令 $y =  - 1$ ,则 $f\left( {-x}\right)  = f\left( x\right)  + f\left( {-1}\right) ,\because f\left( {-1}\right)  = 0,\therefore f\left( {-x}\right)  = f\left( x\right)$ ,
+
+$\therefore f\left( x\right)$ 为偶函数.
+
+(2)在 $\left( {0, + \infty }\right)$ 上任取 ${x}_{2} > {x}_{1} > 0$ ，
+
+则 $f\left( {x}_{2}\right)  - f\left( {x}_{1}\right)  = f\left( {\frac{{x}_{2}}{{x}_{1}} \cdot  {x}_{1}}\right)  - f\left( {x}_{1}\right)  = f\left( \frac{{x}_{2}}{{x}_{1}}\right)  + f\left( {x}_{1}\right)  - f\left( {x}_{1}\right)  = f\left( \frac{{x}_{2}}{{x}_{1}}\right)$ ,
+
+$\because {x}_{2} > {x}_{1} > 0,\therefore \frac{{x}_{2}}{{x}_{1}} > 1$ ,根据题意, $\therefore f\left( \frac{{x}_{2}}{{x}_{1}}\right)  > 0$ ,
+
+即 $f\left( {x}_{2}\right)  - f\left( {x}_{1}\right)  > 0,\therefore f\left( {x}_{2}\right)  > f\left( {x}_{1}\right)$ ,
+
+$\therefore f\left( x\right)$ 在 $\left( {0, + \infty }\right)$ 上是严格增函数.
+
+(3) $\because f\left( 2\right)  = 1,\therefore f\left( 4\right)  = f\left( {2 \times  2}\right)  = f\left( 2\right)  + f\left( 2\right)  = 2$ ,
+
+$\therefore f\left( {2{x}^{2} - 1}\right)  < 2$ ,即 $f\left( {2{x}^{2} - 1}\right)  < f\left( 4\right)$ ,
+
+由第(1)问结论, $f\left( x\right)$ 为偶函数, $\therefore f\left( \left| {2{x}^{2} - 1}\right| \right)  < f\left( 4\right)$ ,
+
+由第(2)问结论, $f\left( x\right)$ 在 $\left( {0, + \infty }\right)$ 上是严格增函数,
+
+$\therefore \left| {2{x}^{2} - 1}\right|  < 4$ ,即 $- 4 < 2{x}^{2} - 1 < 4,\therefore 2{x}^{2} < 5$ ,
+
+$\therefore {x}^{2} < \frac{5}{2}$ ,即 $- \frac{\sqrt{10}}{2} < x < \frac{\sqrt{10}}{2}$ ,
+
+$\therefore$ 不等式 $f\left( {2{x}^{2} - 1}\right)  < 2$ 的解集为 $\left( {-\frac{\sqrt{10}}{2},\frac{\sqrt{10}}{2}}\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_36_258_229_1088_890_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_36_258_229_1088_890_0.jpg)
+
+## 三角
+
+## 1. 正弦、余弦、正切、余切
+
+## (1)锐角的正弦、余弦、正切、余切
+
+![bo_d7aq48ilb0pc73dcpcb0_36_1089_1340_259_203_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_36_1089_1340_259_203_0.jpg)
+
+将直角三角形 ${ABC}$ 中(其中 ${\angle C} = {90}^{ \circ  }$ ) $\angle A$ 、 $\angle B$ 、 $\angle C$ 的对边边长分别记作 $a\text{ 、 }b\text{ 、 }c$ ,在初中我们已经知道,锐角 $A$ 的正弦、余弦、正切、余切的定义分别为:
+
+$$
+\sin A = \frac{a}{c},\;\cos A = \frac{b}{c},\;\tan A = \frac{a}{b},\;\cot A = \frac{b}{a}.
+$$
+
+## (2)任意角及其度量
+
+一条射线绕端点按逆时针方向旋转所形成的角为正角，其度量值是正的；按顺时针方向旋转所形成的角为负角, 其度量值是负的. 特别地, 当一条射线没有旋转时, 我们也认为形成了一个角, 称为零角, 零角的始边与终边重合.
+
+在平面直角坐标系中,把角的顶点置于坐标原点,角的始边与 $x$ 轴的正半轴重合,此时角的终边在第几象限, 就说这个角是第几象限的角, 或者说这个角属于第几象限. 当角的终边在坐标轴上时, 就认为这个角不属于任何象限.
+
+我们把所有与角 $\alpha$ 的终边重合的角(包括角 $\alpha$ 本身)的集合表示为:
+
+$$
+\{ \beta  \mid  \beta  = k \cdot  {360}^{ \circ  } + \alpha , k \in  \mathbf{Z}\}
+$$
+
+在平面几何中,我们把周角的 $\frac{1}{360}$ 作为 1 度,用 “度” 作为单位来度量角的单位制叫做角度制.
+
+我们也可以用圆弧的长与圆半径的比值来表示这个圆弧所对的圆心角的大小. 把弧长等于半径的弧所对的圆心角叫做 1 弧度的角, 用 “弧度” 作为单位来度量角的单位制叫做弧度制.
+
+如果一个半径为 $r$ 的圆的圆心角 $\alpha$ 所对的弧长为 $l$ ,那么比值 $\frac{l}{r}$ 就是角 $\alpha$ 的弧度的绝对值,即 $\left| \alpha \right|  = \frac{l}{r}$ ,这里 $\alpha$ 的符号由它的始边旋转至终边的方向决定. 零角的弧度数为 0 .
+
+弧度制与角度制的换算关系: 1 弧度 $= \frac{{180}^{ \circ  }}{\pi },{1}^{ \circ  } = \frac{\pi }{180}$ 弧度.
+
+在弧度制下,角的集合与实数集 $\mathbf{R}$ 之间建立起一一对应的关系. 例如,与角 $\alpha$ 终边相同的角可以表示为 $\{ \beta  \mid  \beta  = {2k\pi } + \alpha , k \in  \mathbf{Z}\}$ ,与角 $\alpha$ 终边共线的角可以表示为 $\{ \beta  \mid  \beta  = {k\pi } + \alpha , k \in  \mathbf{Z}\} .$
+
+扇形弧长公式: $l = \left| \alpha \right| r$ . 扇形面积公式: ${S}_{\text{ 扇形 }} = \frac{1}{2}\left| \alpha \right| {r}^{2} = \frac{1}{2}{lr}$ .
+
+附表: 由 $\alpha$ 的象限判断 ${2\alpha }\text{ 、 }{3\alpha }\text{ 、 }\frac{\alpha }{2}\text{ 、 }\frac{\alpha }{3}$ 的象限:
+
+<table><tr><td>$\alpha$</td><td>一</td><td>二</td><td>三</td><td>四</td></tr><tr><td>${2\alpha }$</td><td>一、二</td><td>三、四</td><td>一、二</td><td>三、四</td></tr><tr><td>${3\alpha }$</td><td>一、二、三</td><td>一、二、四</td><td>一、三、四</td><td>二、三、四</td></tr><tr><td>$\frac{\alpha }{2}$</td><td>一、三</td><td>一、三</td><td>二、四</td><td>二、四</td></tr><tr><td>$\frac{\alpha }{3}$</td><td>一、二、三</td><td>一、二、四</td><td>一、三、四</td><td>二、三、四</td></tr></table>
+
+## ( 3 )任意角的正弦、余弦、正切、余切
+
+![bo_d7aq48ilb0pc73dcpcb0_37_1090_1613_281_236_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_37_1090_1613_281_236_0.jpg)
+
+在任意角 $\alpha$ 的终边上任取异于原点的一点 $P$ ,设其坐标为 $\left( {x, y}\right)$ ,并令 $\left| {OP}\right|  = r$ ,则 $r = \sqrt{{x}^{2} + {y}^{2}} > 0$ ,这样,就可以分别定义角 $\alpha$ 的正弦、余弦、正切、余切为:
+
+$\sin \alpha  = \frac{y}{r},\cos \alpha  = \frac{x}{r},\tan \alpha  = \frac{y}{x},\cot \alpha  = \frac{x}{y}.$
+
+应当注意,当 $\alpha  = {k\pi } + \frac{\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ ,即角 $\alpha$ 的终边位于 $y$ 轴上时, $x = 0,\tan \alpha  = \frac{y}{x}$ 无意义. 当 $\alpha  = {k\pi }\;\left( {k \in  \mathbf{Z}}\right)$ ,即角 $\alpha$ 的终边位于 $x$ 轴上时, $y = 0,\cot \alpha  = \frac{x}{y}$ 无意义.
+
+各象限角的正弦、余弦、正切、余切的正负情况:
+
+$\sin \alpha$
+
+$\cos \alpha$
+
+![bo_d7aq48ilb0pc73dcpcb0_38_696_257_234_226_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_696_257_234_226_0.jpg)
+
+$\tan \alpha \left( {\cot \alpha }\right)$
+
+![bo_d7aq48ilb0pc73dcpcb0_38_371_256_234_229_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_371_256_234_229_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_38_1020_256_233_228_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_1020_256_233_228_0.jpg)
+
+在平面直角坐标系中,称以原点 $O$ 为圆心,以 1 为半径的圆为单位圆. 把点 $P\left( {x, y}\right)$ 看作角 $\alpha$ 的终边与单位圆的交点,如图,过点 $P$ 作 $x$ 轴的垂线,垂足为 $M$ ,过点 $A\left( {1,0}\right)$ 作单位圆的切线,这条切线必然平行于 $y$ 轴,设它与角 $\alpha$ 的终边或其反向延长线相交于点 $T$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_38_283_694_292_273_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_283_694_292_273_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_38_676_695_292_272_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_676_695_292_272_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_38_1071_696_293_271_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_38_1071_696_293_271_0.jpg)
+
+于是, $\cos \alpha  = x = {OM},\sin \alpha  = y = {PM},\tan \alpha  = \frac{y}{x} = {AT}$ . 所以点 $P$ 坐标总可以表示成 $\left( {\cos \alpha ,\sin \alpha }\right)$ . 我们把 ${PM}\text{ 、 }{OM}\text{ 、 }{AT}$ 这三条线段分别叫做角 $\alpha$ 的正弦线、余弦线、正切线, 这些线段通称为三角函数线.
+
+由三角函数线得出的常用不等式:
+
+① $0 \leq  \left| {\sin x}\right|  \leq  1,0 \leq  \left| {\cos x}\right|  \leq  1,1 \leq  \left| {\sin x}\right|  + \left| {\cos x}\right|  \leq  \sqrt{2}$ .
+
+② 若 $x \in  \left( {0,\frac{\pi }{2}}\right)$ ，则 $\sin x < x < \tan x$ . (提示:即 ${PM}$ 的长 $<$ 劣弧 ${PA}$ 的长 $< {AT}$ 的长)
+
+附表:特殊角的三角函数值
+
+<table><tr><td>$\alpha$</td><td>0</td><td>$\frac{\pi }{6}$</td><td>$\frac{\pi }{4}$</td><td>$\frac{\pi }{3}$</td><td>$\frac{\pi }{2}$</td><td>$\pi$</td><td>$\frac{3\pi }{2}$</td></tr><tr><td>$\sin \alpha$</td><td>0</td><td>$\frac{1}{2}$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$\frac{\sqrt{3}}{2}$</td><td>1</td><td>0</td><td>-1</td></tr><tr><td>cosα</td><td>1</td><td>$\frac{\sqrt{3}}{2}$</td><td>$\frac{\sqrt{2}}{2}$</td><td>$\frac{1}{2}$</td><td>0</td><td>-1</td><td>0</td></tr><tr><td>$\tan \alpha$</td><td>0</td><td>$\frac{\sqrt{3}}{3}$</td><td>1</td><td>✓</td><td>不存在</td><td>0</td><td>不存在</td></tr></table>
+
+同角的三角函数之间的关系:
+
+① 倒数关系: $\tan \alpha  \cdot  \cot \alpha  = 1,\sin \alpha  \cdot  \csc \alpha  = 1,\cos \alpha  \cdot  \sec \alpha  = 1$ .
+
+(正割 $\sec \alpha$ 为余弦 $\cos \alpha$ 的倒数,余割 $\csc \alpha$ 为正弦 $\sin \alpha$ 的倒数)
+
+② 商数关系: $\tan \alpha  = \frac{\sin \alpha }{\cos \alpha },\cot \alpha  = \frac{\cos \alpha }{\sin \alpha }$ .
+
+③ 平方关系: ${\sin }^{2}\alpha  + {\cos }^{2}\alpha  = 1,1 + {\tan }^{2}\alpha  = {\sec }^{2}\alpha ,1 + {\cot }^{2}\alpha  = {\csc }^{2}\alpha$ .
+
+利用同角的三角函数的关系，可以实现 “弦”、“切”、“割” 之间的互化:
+
+① 切割化弦，“切”通过商数关系化为 “弦”，“割”通过倒数关系化为 “弦”.
+
+② 弦化切，一般和“齐次式”有关，通过分式上下同时除以 $\cos$ 或 ${\cos }^{2}$ 得到“切”.
+
+③ 1 的代换，通过平方关系，将 1 代换成所需的三角函数.
+
+例. 已知 $\tan \alpha  = 3$ ,求 ${\sin }^{2}\alpha  - 2\sin \alpha \cos \alpha$ 的值.
+
+解: 1 的代换, ${\sin }^{2}\alpha  - 2\sin \alpha \cos \alpha  = \frac{{\sin }^{2}\alpha  - 2\sin \alpha \cos \alpha }{1} = \frac{{\sin }^{2}\alpha  - 2\sin \alpha \cos \alpha }{{\sin }^{2}\alpha  + {\cos }^{2}\alpha }$ , 分式上下同时除以 ${\cos }^{2}$ ,原式 $= \frac{\frac{{\sin }^{2}\alpha }{{\cos }^{2}\alpha } - \frac{2\sin \alpha }{\cos \alpha }}{\frac{{\sin }^{2}\alpha }{{\cos }^{2}\alpha } + 1} = \frac{{\tan }^{2}\alpha  - 2\tan \alpha }{{\tan }^{2}\alpha  + 1} = \frac{{3}^{2} - 2 \times  3}{{3}^{2} + 1} = \frac{3}{10}$ .
+
+## (4)诱导公式
+
+第一组: $\sin \left( {{2k\pi } + \alpha }\right)  = \sin \alpha ,\cos \left( {{2k\pi } + \alpha }\right)  = \cos \alpha ,\tan \left( {{2k\pi } + \alpha }\right)  = \tan \alpha$ .
+
+第二组: $\sin \left( {-\alpha }\right)  =  - \sin \alpha ,\cos \left( {-\alpha }\right)  = \cos \alpha ,\tan \left( {-\alpha }\right)  =  - \tan \alpha$ .
+
+第三组: $\sin \left( {\pi  + \alpha }\right)  =  - \sin \alpha ,\cos \left( {\pi  + \alpha }\right)  =  - \cos \alpha ,\tan \left( {\pi  + \alpha }\right)  = \tan \alpha$ .
+
+第四组: $\sin \left( {\pi  - \alpha }\right)  = \sin \alpha ,\cos \left( {\pi  - \alpha }\right)  =  - \cos \alpha ,\tan \left( {\pi  - \alpha }\right)  =  - \tan \alpha$ .
+
+第五组: $\sin \left( {\frac{\pi }{2} - \alpha }\right)  = \cos \alpha ,\cos \left( {\frac{\pi }{2} - \alpha }\right)  = \sin \alpha ,\tan \left( {\frac{\pi }{2} - \alpha }\right)  = \cot \alpha$ .
+
+第六组: $\sin \left( {\frac{\pi }{2} + \alpha }\right)  = \cos \alpha ,\cos \left( {\frac{\pi }{2} + \alpha }\right)  =  - \sin \alpha ,\tan \left( {\frac{\pi }{2} + \alpha }\right)  =  - \cot \alpha$ .
+
+关于角 $\frac{k\pi }{2} \pm  \alpha \;\left( {k \in  \mathbf{Z}}\right)$ 的三角函数值呈现的规律可以总结为: 奇变偶不变,符号看象限. 当 $k$ 为奇数时,等式左边 $\frac{k\pi }{2} \pm  \alpha$ 的三角函数名与等式右边 $\alpha$ 的三角函数名不同,此为 “奇变”; 当 $k$ 为偶数时,等式左边 $\frac{k\pi }{2} \pm  \alpha$ 的三角函数名与等式右边 $\alpha$ 的三角函数名相同, 此为 “偶不变”. 等式右边 $\alpha$ 的三角函数前的符号,可以将 $\alpha$ 视为锐角 (实际上 $\alpha$ 此时可以为任意角),由等式左边 $\frac{k\pi }{2} \pm  \alpha$ 所在象限的三角函数值的符号来确定,即 “符号看象限”.
+
+## (5)已知正弦、余弦或正切值求角
+
+若 $\sin x = \sin \alpha$ ,则 $x = \alpha  + {2k\pi }$ 或 $\pi  - \alpha  + {2k\pi }, k \in  \mathbf{Z}$ ,即 $x = {k\pi } + {\left( -1\right) }^{k}\alpha , k \in  \mathbf{Z}$ .
+
+若 $\cos x = \cos \alpha$ ,则 $x = \alpha  + {2k\pi }$ 或 $- \alpha  + {2k\pi }, k \in  \mathbf{Z}$ ,即 $x = {2k\pi } \pm  \alpha , k \in  \mathbf{Z}$ .
+
+若 $\tan x = \tan \alpha$ ,则 $x = {k\pi } + \alpha , k \in  \mathbf{Z}$ .
+
+## 2. 常用三角公式
+
+## (1)两角和与差的正弦、余弦、正切公式
+
+$\cos \left( {\alpha  - \beta }\right)  = \cos \alpha \cos \beta  + \sin \alpha \sin \beta ,\;\cos \left( {\alpha  + \beta }\right)  = \cos \alpha \cos \beta  - \sin \alpha \sin \beta .$
+
+$\sin \left( {\alpha  + \beta }\right)  = \sin \alpha \cos \beta  + \cos \alpha \sin \beta ,\;\sin \left( {\alpha  - \beta }\right)  = \sin \alpha \cos \beta  - \cos \alpha \sin \beta .$
+
+$\tan \left( {\alpha  + \beta }\right)  = \frac{\tan \alpha  + \tan \beta }{1 - \tan \alpha \tan \beta },\;\tan \left( {\alpha  - \beta }\right)  = \frac{\tan \alpha  - \tan \beta }{1 + \tan \alpha \tan \beta }.$
+
+辅助角公式: $a\sin \alpha  + b\cos \alpha  = \sqrt{{a}^{2} + {b}^{2}}\sin \left( {\alpha  + \varphi }\right) ,\varphi$ 通常取 $- \frac{\pi }{2} < \varphi  < \frac{\pi }{2}$ , 由 $\cos \varphi  = \frac{a}{\sqrt{{a}^{2} + {b}^{2}}},\sin \varphi  = \frac{b}{\sqrt{{a}^{2} + {b}^{2}}}$ (或 $\tan \varphi  = \frac{b}{a}$ ) 确定.
+
+常见类型: $\sin \alpha  \pm  \cos \alpha  = \sqrt{2}\sin \left( {\alpha  \pm  \frac{\pi }{4}}\right)$ ;
+
+$$
+\sqrt{3}\sin \alpha  \pm  \cos \alpha  = 2\sin \left( {\alpha  \pm  \frac{\pi }{6}}\right)
+$$
+
+$$
+\sin \alpha  \pm  \sqrt{3}\cos \alpha  = 2\sin \left( {\alpha  \pm  \frac{\pi }{3}}\right) .
+$$
+
+## (2)二倍角公式
+
+$\sin {2\alpha } = 2\sin \alpha \cos \alpha ;$
+
+$\cos {2\alpha } = {\cos }^{2}\alpha  - {\sin }^{2}\alpha  = 2{\cos }^{2}\alpha  - 1 = 1 - 2{\sin }^{2}\alpha ;$
+
+$\tan {2\alpha } = \frac{2\tan \alpha }{1 - {\tan }^{2}\alpha }.$
+
+三倍角公式: $\sin {3\alpha } = 3\sin \alpha  - 4{\sin }^{3}\alpha ;\cos {3\alpha } =  - 3\cos \alpha  + 4{\cos }^{3}\alpha$ ; $\tan {3\alpha } = \frac{3\tan \alpha  - {\tan }^{3}\alpha }{1 - 3{\tan }^{2}\alpha }.$
+
+## (3)三角变换的应用
+
+① 半角公式: $\sin \frac{\alpha }{2} =  \pm  \sqrt{\frac{1 - \cos \alpha }{2}};\cos \frac{\alpha }{2} =  \pm  \sqrt{\frac{1 + \cos \alpha }{2}}$ ; $\tan \frac{\alpha }{2} =  \pm  \sqrt{\frac{1 - \cos \alpha }{1 + \cos \alpha }} = \frac{\sin \alpha }{1 + \cos \alpha } = \frac{1 - \cos \alpha }{\sin \alpha }.$
+
+② 积化和差公式: $\sin A\cos B = \frac{1}{2}\left\lbrack  {\sin \left( {A + B}\right)  + \sin \left( {A - B}\right) }\right\rbrack$ ；
+
+$$
+\cos A\sin B = \frac{1}{2}\left\lbrack  {\sin \left( {A + B}\right)  - \sin \left( {A - B}\right) }\right\rbrack
+$$
+
+$$
+\cos A\cos B = \frac{1}{2}\left\lbrack  {\cos \left( {A + B}\right)  + \cos \left( {A - B}\right) }\right\rbrack
+$$
+
+$$
+\sin A\sin B = \frac{1}{2}\left\lbrack  {\cos \left( {A - B}\right)  - \cos \left( {A + B}\right) }\right\rbrack  .
+$$
+
+③ 和差化积公式: $\sin A + \sin B = 2\sin \frac{A + B}{2}\cos \frac{A - B}{2}$ ;
+
+$$
+\sin A - \sin B = 2\cos \frac{A + B}{2}\sin \frac{A - B}{2};
+$$
+
+$$
+\cos A + \cos B = 2\cos \frac{A + B}{2}\cos \frac{A - B}{2};
+$$
+
+$$
+\cos A - \cos B =  - 2\sin \frac{A + B}{2}\sin \frac{A - B}{2}.
+$$
+
+④ 万能公式: $\sin {2\alpha } = \frac{2\tan \alpha }{1 + {\tan }^{2}\alpha };\cos {2\alpha } = \frac{1 - {\tan }^{2}\alpha }{1 + {\tan }^{2}\alpha };\tan {2\alpha } = \frac{2\tan \alpha }{1 - {\tan }^{2}\alpha }$ .
+
+⑤ 特殊三角等式: $\sin \left( {\alpha  + \beta }\right) \sin \left( {\alpha  - \beta }\right)  = {\sin }^{2}\alpha  - {\sin }^{2}\beta$ ;
+
+$$
+\cos \left( {\alpha  + \beta }\right) \cos \left( {\alpha  - \beta }\right)  = {\cos }^{2}\alpha  - {\sin }^{2}\beta  = {\cos }^{2}\beta  - {\sin }^{2}\alpha
+$$
+
+$$
+\cot \alpha  - \tan \alpha  = 2\cot {2\alpha }
+$$
+
+⑥ 常见公式变形: $\sqrt{1 + \cos \alpha } = \sqrt{2}\cos \frac{\alpha }{2};\sqrt{1 - \cos \alpha } = \sqrt{2}\sin \frac{\alpha }{2}$ ;
+
+$$
+1 \pm  \sin {2\alpha } = {\left( \sin \alpha  \pm  \cos \alpha \right) }^{2};\frac{1 \pm  \tan \alpha }{1 \mp  \tan \alpha } = \tan \left( {\frac{\pi }{4} \pm  \alpha }\right) ;
+$$
+
+$$
+\tan \alpha  \pm  \tan \beta  = \tan \left( {\alpha  \pm  \beta }\right) \left( {1 \mp  \tan \alpha \tan \beta }\right) .
+$$
+
+⑦ 常见角的变换: $\alpha  = \left( {\alpha  + \beta }\right)  - \beta ;\alpha  = 2 \cdot  \frac{\alpha }{2};\frac{\pi }{2} = \left( {\frac{\pi }{4} + \alpha }\right)  + \left( {\frac{\pi }{4} - \alpha }\right)$ ；
+
+$$
+{2\alpha } = \left( {\alpha  + \beta }\right)  + \left( {\alpha  - \beta }\right) ;\;{2\beta } = \left( {\alpha  + \beta }\right)  - \left( {\alpha  - \beta }\right) ;
+$$
+
+$$
+\frac{\alpha  + \beta }{2} = \left( {\alpha  - \frac{\beta }{2}}\right)  - \left( {\frac{\alpha }{2} - \beta }\right) ;\frac{\alpha  - \beta }{2} = \left( {\alpha  + \frac{\beta }{2}}\right)  - \left( {\frac{\alpha }{2} + \beta }\right) .
+$$
+
+## 3. 解三角形
+
+我们将不是直角三角形的三角形统称为斜三角形. 在三角形的三个角和三条边这六个元素中, 经常会遇到已知其中三个元素 (至少一个元素为边) 求其他元素的问题, 这称为解三角形.
+
+## (1)正弦定理
+
+三角形面积公式: (其中 $R$ 是三角形外接圆半径, $r$ 是内切圆半径, $p = \frac{a + b + c}{2}$ )
+
+${S}_{\bigtriangleup {ABC}} = \frac{1}{2}{bc}\sin A = \frac{1}{2}{ac}\sin B = \frac{1}{2}{ab}\sin C;$
+
+${S}_{\bigtriangleup {ABC}} = \frac{abc}{4R} = 2{R}^{2}\sin A\sin B\sin C;$
+
+${S}_{\bigtriangleup {ABC}} = {pr} = \sqrt{p\left( {p - a}\right) \left( {p - b}\right) \left( {p - c}\right) }$ (海伦公式、秦九韶公式).
+
+正弦定理: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin B} = {2R}$ ,其中 $R$ 是三角形外接圆半径.
+
+(2)余弦定理
+
+${a}^{2} = {b}^{2} + {c}^{2} - {2bc}\cos A$ ,即 $\cos A = \frac{{b}^{2} + {c}^{2} - {a}^{2}}{2bc}$ ;
+
+${b}^{2} = {a}^{2} + {c}^{2} - {2ac}\cos B$ ,即 $\cos B = \frac{{a}^{2} + {c}^{2} - {b}^{2}}{2ac}$ ;
+
+${c}^{2} = {a}^{2} + {b}^{2} - {2ab}\cos C$ ,即 $\cos C = \frac{{a}^{2} + {b}^{2} - {c}^{2}}{2ab}$ .
+
+一般地,我们用 $\arcsin a$ 表示满足 $\sin x = a\left( {0 \leq  a \leq  1}\right)$ 的角 $x\left( {x \in  \left\lbrack  {0,\frac{\pi }{2}}\right\rbrack  }\right)$ ; 用 $\arccos a$ 表示满足 $\cos x = a\left( {0 \leq  a \leq  1}\right)$ 的角 $x\left( {x \in  \left\lbrack  {0,\frac{\pi }{2}}\right\rbrack  }\right)$ ; 用 $\arctan a$ 表示满足 $\tan x = a\;\left( {a \geq  0}\right)$ 的角 $x\left( {x \in  \left\lbrack  {0,\frac{\pi }{2}}\right\rbrack  }\right)$ . 当所表示的角为钝角时,可以对应表示为 $\pi  - \arcsin \left| a\right| \text{ 、 }\pi  - \arccos \left| a\right| \text{ 、 }\pi  - \arctan \left| a\right|$ .
+
+## (3)三角形中常见结论
+
+① $a < b \Leftrightarrow  A < B \Leftrightarrow  \sin A < \sin B$ .
+
+② $\sin {2A} = \sin {2B} \Leftrightarrow  A = B$ 或 $A + B = {90}^{ \circ  };\cos {2A} = \cos {2B} \Leftrightarrow  A = B$ .
+
+③ $A$ 、 $B$ 、 $C$ 成等差数列 $\Leftrightarrow  B = {60}^{ \circ  }$ .
+
+④ $A$ 、 $B$ 、 $C$ 成等差数列， $a$ 、 $b$ 、 $c$ 成等比数列 $\Leftrightarrow  \bigtriangleup {ABC}$ 为等边三角形.
+
+## (4)三角形中的恒等式
+
+① $\sin \left( {A + B}\right)  = \sin C,\cos \left( {A + B}\right)  =  - \cos C,\tan \left( {A + B}\right)  =  - \tan C$ ; $\sin \frac{A + B}{2} = \cos \frac{C}{2},\;\cos \frac{A + B}{2} = \sin \frac{C}{2},\;\tan \frac{A + B}{2} = \cot \frac{C}{2}.$
+
+② $\sin A + \sin B + \sin C = 4\cos \frac{A}{2}\cos \frac{B}{2}\cos \frac{C}{2}$ ;
+
+$\cos A + \cos B + \cos C = 1 + 4\sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}.$
+
+③ $\sin {2A} + \sin {2B} + \sin {2C} = 4\sin A\sin B\sin C$ ；
+
+$\cos {2A} + \cos {2B} + \cos {2C} =  - 1 - 4\cos A\cos B\cos C$ .
+
+④ ${\sin }^{2}A + {\sin }^{2}B + {\sin }^{2}C = 2 + 2\cos A\cos B\cos C$ ;
+
+${\cos }^{2}A + {\cos }^{2}B + {\cos }^{2}C = 1 - 2\cos A\cos B\cos C.$
+
+⑤ $\tan A + \tan B + \tan C = \tan A \cdot  \tan B \cdot  \tan C$ ;
+
+$\tan \frac{A}{2}\tan \frac{B}{2} + \tan \frac{B}{2}\tan \frac{C}{2} + \tan \frac{C}{2}\tan \frac{A}{2} = 1$ .
+
+## 第六章 三角函数
+
+![bo_d7aq48ilb0pc73dcpcb0_43_261_323_1079_658_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_43_261_323_1079_658_0.jpg)
+
+## 1. 正弦函数的图像与性质
+
+## (1)正弦函数的图像
+
+对于任意一个角 $x$ ,都有唯一确定的正弦值 $\sin x$ 与之对应. 按照这个对应法则所建立的函数叫做正弦函数,记作 $y = \sin x$ . 正弦函数的定义域是实数集 $\mathbf{R}$ . 正弦函数的图像通常称为正弦曲线.
+
+![bo_d7aq48ilb0pc73dcpcb0_43_404_1367_851_242_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_43_404_1367_851_242_0.jpg)
+
+## (2) 正弦函数的性质
+
+① 周期性:正弦函数 $y = \sin x$ 是周期函数， ${2k\pi }\left( {k \in  \mathbf{Z}, k \neq  0}\right)$ 均是它的周期， ${2\pi }$ 是它的最小正周期. 函数 $y = A\sin \left( {{\omega x} + \varphi }\right)$ 的周期是 $T = \frac{2\pi }{\left| \omega \right| }$ .
+
+② 值域与最值: 正弦函数 $y = \sin x, x \in  \mathbf{R}$ 的值域为 $\left\lbrack  {-1,1}\right\rbrack$ .
+
+当且仅当 $x = {2k\pi } + \frac{\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ 时, $y = \sin x$ 取得最大值 1 ;
+
+当且仅当 $x = {2k\pi } + \frac{3\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ 时, $y = \sin x$ 取得最小值 -1 .
+
+③ 奇偶性:对任意给定的 $x \in  \mathbf{R}$ ，等式 $\sin \left( {-x}\right)  =  - \sin x$ 都成立，因此正弦函数 $y = \sin x$ 是一个奇函数,其图像关于坐标原点中心对称.
+
+④ 单调性: 正弦函数 $y = \sin x$ 在区间 $\left\lbrack  {{2k\pi } - \frac{\pi }{2},{2k\pi } + \frac{\pi }{2}}\right\rbrack  \left( {k \in  \mathbf{Z}}\right)$ 上为严格增函数; 在区间 $\left\lbrack  {{2k\pi } + \frac{\pi }{2},{2k\pi } + \frac{3\pi }{2}}\right\rbrack  \;\left( {k \in  \mathbf{Z}}\right)$ 上为严格减函数.
+
+⑤ 对称性:正弦函数 $y = \sin x$ 既是轴对称图形,又是中心对称图形,对称轴是直线 $x = {k\pi } + \frac{\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ ,对称中心为 $\left( {{k\pi },0}\right) \left( {k \in  \mathbf{Z}}\right)$ .
+
+## 2. 余弦函数的图像与性质
+
+## (1)余弦函数的图像
+
+对于任意一个角 $x$ ,都有唯一确定的余弦值 $\cos x$ 与之对应,按照这个对应法则所建立的函数叫做余弦函数,记作 $y = \cos x$ ,余弦函数的定义域是实数集 $\mathbf{R}$ . 余弦函数的图像通常称为余弦曲线.
+
+由诱导公式 $\cos x = \sin \left( {x + \frac{\pi }{2}}\right)$ ,所以 $y = \cos x$ 的图像可由 $y = \sin x$ 的图像向左平移 $\frac{\pi }{2}$ 个单位得到.
+
+![bo_d7aq48ilb0pc73dcpcb0_44_394_1124_859_236_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_44_394_1124_859_236_0.jpg)
+
+## (2)余弦函数的性质
+
+① 周期性:余弦函数 $y = \cos x$ 是周期函数， ${2k\pi }\left( {k \in  \mathbf{Z}, k \neq  0}\right)$ 均是它的周期， ${2\pi }$ 是它的最小正周期. 函数 $y = A\cos \left( {{\omega x} + \varphi }\right)$ 的周期是 $T = \frac{2\pi }{\left| \omega \right| }$ .
+
+② 值域与最值:余弦函数 $y = \cos x, x \in  \mathbf{R}$ 的值域是 $\left\lbrack  {-1,1}\right\rbrack$ .
+
+当且仅当 $x = {2k\pi }\left( {k \in  \mathbf{Z}}\right)$ 时, $y = \cos x$ 取得最大值 1 ;
+
+当且仅当 $x = {2k\pi } + \pi \;\left( {k \in  \mathbf{Z}}\right)$ 时, $y = \cos x$ 取得最小值 -1 .
+
+③ 奇偶性: 余弦函数 $y = \cos x$ 是偶函数,其图像关于 $y$ 轴对称.
+
+④ 单调性: 余弦函数 $y = \cos x$ 在区间 $\left\lbrack  {{2k\pi } - \pi ,{2k\pi }}\right\rbrack  \left( {k \in  \mathbf{Z}}\right)$ 上为严格增函数; 在区间 $\left\lbrack  {{2k\pi },{2k\pi } + \pi }\right\rbrack  \;\left( {k \in  \mathbf{Z}}\right)$ 上为严格减函数.
+
+⑤ 对称性:余弦函数 $y = \cos x$ 既是轴对称图形,又是中心对称图形,对称轴是直线 $x = {k\pi }\;\left( {k \in  \mathbf{Z}}\right)$ ; 对称中心为 $\left( {{k\pi } + \frac{\pi }{2},0}\right) \;\left( {k \in  \mathbf{Z}}\right)$ .
+
+## 3. 函数 $y = A\sin \left( {{\omega x} + \varphi }\right)$ 的图像
+
+函数 $y = A\sin \left( {{\omega x} + \varphi }\right) \left( {A > 0,\omega  > 0}\right)$ 中的常数 $A\text{ 、 }\omega \text{ 、 }\varphi$ 对其图像有如下影响:
+
+① $A$ 称为该振动曲线的振幅. $A$ 越大，曲线振动的幅度越大. 正数 $A$ 决定了函数 $y = A\sin \left( {{\omega x} + \varphi }\right)$ 的值域为 $\left\lbrack  {-A, A}\right\rbrack$ .
+
+如图, $y = \sin x$ 与 $y = 2\sin x$ 的图像对比,横坐标不变,纵坐标变成原来的 2 倍.
+
+![bo_d7aq48ilb0pc73dcpcb0_45_453_506_762_305_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_45_453_506_762_305_0.jpg)
+
+② $T = \frac{2\pi }{\omega }$ 称为该振动曲线的周期， $\omega$ 越大，振动的周期越小. 在单位时间内曲线振动的次数 $f = \frac{1}{T} = \frac{\omega }{2\pi }$ 称为该振动曲线的频率,而 $\omega  = {2\pi f}$ 相应地称为圆频率. $\omega$ 越大,振动的频率越大. $y = \left| {A\sin \left( {{\omega x} + \varphi }\right) }\right|$ 的周期为 $\frac{\pi }{\omega }$ .
+
+如图, $y = \sin x$ 与 $y = \sin {2x}$ 的图像对比,纵坐标不变,横坐标变成原来的 $\frac{1}{2}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_45_417_1168_835_218_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_45_417_1168_835_218_0.jpg)
+
+③ ${\omega x} + \varphi$ 称为该振动曲线的相位. 当 $x = 0$ 时的相位 $\varphi$ 称为初始相位. $\varphi$ 决定该振动曲线的左右平移距离. 当 $\varphi  > 0$ 时,向左平移 $\frac{\varphi }{\omega }$ 个单位; 当 $\varphi  < 0$ 时,向右平移 $\frac{\left| \varphi \right| }{\omega }$ 个单位.
+
+如图, $y = \sin x$ 与 $y = \sin \left( {x + \frac{\pi }{3}}\right)$ 的图像对比,图像整体往左平移 $\frac{\pi }{3}$ 个单位.
+
+![bo_d7aq48ilb0pc73dcpcb0_45_418_1638_835_220_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_45_418_1638_835_220_0.jpg)
+
+总结: $y = \sin x \rightarrow  y = A\sin \left( {{\omega x} + \varphi }\right)  + B\left( {A > 0,\omega  > 0}\right)$ 的图像变换.
+
+$y = \sin x\xrightarrow[]{\text{ 横坐标变成原来的 }\frac{1}{\omega }}y = \sin {\omega x}\xrightarrow[]{\text{ 水平方向平移 }\frac{\left| \varphi \right| }{\omega }\text{ 个单位 }}y = \sin \left( {{\omega x} + \varphi }\right)$
+
+___纵坐标变成原来的 $A$ 倍 $\rightarrow  y = A\sin \left( {{\omega x} + \varphi }\right) \xrightarrow[\text{ 一一连 方向平移 }]{\text{ 垂直方向平移 }}y = A\sin \left( {{\omega x} + \varphi }\right)  + B$ .
+
+例. 已知函数 $f\left( x\right)  = 2\sqrt{3}\sin {\omega x}\cos {\omega x} + 2{\cos }^{2}{\omega x}\left( {\omega  > 0}\right)$ 的最小正周期为 $\pi$ .
+
+(1)求 $\omega$ 的值；
+
+(2)求函数 $f\left( x\right)$ 的单调增区间；
+
+(3)求函数 $f\left( x\right)$ 的对称轴及对称中心；
+
+(4)求函数 $f\left( x\right)$ 的最大值和最小值，及取得最大值和最小值时的所有 $x$ 的值；
+
+(5)求函数 $f\left( x\right)$ 在区间 $\lbrack 0,\frac{\pi }{2})$ 上的值域；
+
+(6)作出函数 $f\left( x\right)$ 的大致图像，并说明其可由 $y = \sin x$ 的图像如何变换得到？ 解: (1) 由倍角公式, $f\left( x\right)  = 2\sqrt{3}\sin {\omega x}\cos {\omega x} + 2{\cos }^{2}{\omega x} = \sqrt{3}\sin {2\omega x} + \cos {2\omega x} + 1$ , 由辅助角公式, $f\left( x\right)  = 2\sin \left( {{2\omega x} + \frac{\pi }{6}}\right)  + 1,\because T = \frac{2\pi }{2\omega } = \pi ,\therefore \omega  = 1$ .
+
+(2) $f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1,\because y = \sin x$ 在 $\left\lbrack  {-\frac{\pi }{2} + {2k\pi },\frac{\pi }{2} + {2k\pi }}\right\rbrack$ 上为严格增函数，
+
+$\therefore {2x} + \frac{\pi }{6} \in  \left\lbrack  {-\frac{\pi }{2} + {2k\pi },\frac{\pi }{2} + {2k\pi }}\right\rbrack$ ,即 ${2x} \in  \left\lbrack  {-\frac{2\pi }{3} + {2k\pi },\frac{\pi }{3} + {2k\pi }}\right\rbrack  , k \in  \mathbf{Z}$ ,
+
+$\therefore x \in  \left\lbrack  {-\frac{\pi }{3} + {k\pi },\frac{\pi }{6} + {k\pi }}\right\rbrack$ ,即函数 $f\left( x\right)$ 的单调增区间为 $\left\lbrack  {-\frac{\pi }{3} + {k\pi },\frac{\pi }{6} + {k\pi }}\right\rbrack  \left( {k \in  \mathbf{Z}}\right)$ .
+
+(3) $\because y = \sin x$ 的对称轴为直线 $x = \frac{\pi }{2} + {k\pi }$ ,对称中心为点 $\left( {{k\pi },0}\right) , k \in  \mathbf{Z}$ ，
+
+$\therefore {2x} + \frac{\pi }{6} = \frac{\pi }{2} + {k\pi } \Rightarrow  x = \frac{\pi }{6} + \frac{k\pi }{2},{2x} + \frac{\pi }{6} = {k\pi } \Rightarrow  x =  - \frac{\pi }{12} + \frac{k\pi }{2}, k \in  \mathbf{Z}$ ,
+
+$\therefore$ 函数 $f\left( x\right)$ 的对称轴为直线 $x = \frac{\pi }{6} + \frac{k\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ ,对称中心为 $\left( {-\frac{\pi }{12} + \frac{k\pi }{2},1}\right) \left( {k \in  \mathbf{Z}}\right)$ .
+
+(4) $f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1,\because \sin \left( {{2x} + \frac{\pi }{6}}\right)  \in  \left\lbrack  {-1,1}\right\rbrack  ,\therefore 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  \in  \left\lbrack  {-2,2}\right\rbrack$ ,
+
+$\therefore f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1 \in  \left\lbrack  {-1,3}\right\rbrack$ ,即函数 $f\left( x\right)$ 的最大值为 3,最小值为 -1 . 当 $f\left( x\right)$ 取到最大值 3 时, ${2x} + \frac{\pi }{6} = \frac{\pi }{2} + {2k\pi }\left( {k \in  \mathbf{Z}}\right)$ ,即 $x = \frac{\pi }{6} + {k\pi }\left( {k \in  \mathbf{Z}}\right)$ ; 当 $f\left( x\right)$ 取到最小值 -1 时, ${2x} + \frac{\pi }{6} =  - \frac{\pi }{2} + {2k\pi }\left( {k \in  \mathbf{Z}}\right)$ ,即 $x =  - \frac{\pi }{3} + {k\pi }\left( {k \in  \mathbf{Z}}\right)$ .
+
+(5) $f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1,\because x \in  \left\lbrack  {0,\frac{\pi }{2}}\right) ,\therefore {2x} \in  \lbrack 0,\pi ),{2x} + \frac{\pi }{6} \in  \left\lbrack  {\frac{\pi }{6},\frac{7\pi }{6}}\right)$ , $\therefore \sin \left( {{2x} + \frac{\pi }{6}}\right)  \in  \left( {-\frac{1}{2},1}\right\rbrack  ,\therefore 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  \in  ( - 1,2\rbrack ,\therefore 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1 \in  (0,3\rbrack$ , 即函数 $f\left( x\right)$ 在区间 $\left\lbrack  {0,\frac{\pi }{2}}\right)$ 上的值域为 $(0,3\rbrack$ .
+
+(6)函数 $f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1$ 的大致图像如图所示:
+
+![bo_d7aq48ilb0pc73dcpcb0_47_316_294_880_232_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_47_316_294_880_232_0.jpg)
+
+将 $y = \sin x$ 的图像横坐标收缩一半,得到 $y = \sin {2x}$ 的图像,再将 $y = \sin {2x}$ 的图像向左平移 $\frac{\pi }{12}$ 的单位,得到 $y = \sin \left( {{2x} + \frac{\pi }{6}}\right)$ 的图像,再将 $y = \sin \left( {{2x} + \frac{\pi }{6}}\right)$ 的图像纵坐标伸长一倍,得到 $y = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)$ 的图像,最后向上平移一个单位,得到 $f\left( x\right)  = 2\sin \left( {{2x} + \frac{\pi }{6}}\right)  + 1$ .
+
+## 4. 正切函数的图像与性质
+
+## (1)正切函数的图像
+
+对于任意一个角 $x$ ,只要 $x \neq  {k\pi } + \frac{\pi }{2}\left( {k \in  \mathbf{Z}}\right)$ ,都有唯一确定的正切值 $\tan x$ 与之对应. 按照这个对应法则所建立的函数叫做正切函数,表示为 $y = \tan x$ . 正切函数的定义域是 $\left\{  {x \mid  x \in  \mathbf{R}\text{ 且 }x \neq  {k\pi } + \frac{\pi }{2}\left( {k \in  \mathbf{Z}}\right) }\right\}  .$
+
+![bo_d7aq48ilb0pc73dcpcb0_47_509_1169_643_322_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_47_509_1169_643_322_0.jpg)
+
+## (2)正切函数的性质
+
+① 周期性:由诱导公式 $\tan \left( {x + \pi }\right)  = \tan x$ 可知，正切函数是周期函数， ${k\pi }$ ( $k \in  \mathbf{Z}$ ， $k \neq  0$ ) 均是它的周期, $\pi$ 是它的最小正周期. 函数 $y = A\tan \left( {{\omega x} + \varphi }\right)$ 的周期是 $T = \frac{\pi }{\left| \omega \right| }$ .
+
+② 值域:由正切函数 $y = \tan x$ 的定义可以得到，正切函数 $y = \tan x$ 的值域是实数集 R , 它既没有最大值, 也没有最小值.
+
+③ 奇偶性: 由诱导公式 $\tan \left( {-x}\right)  =  - \tan x$ 可知,正切函数 $y = \tan x$ 是奇函数. 因此, 其图像关于坐标原点对称.
+
+④ 单调性: 正切函数 $y = \tan x$ 在区间 $\left( {{k\pi } - \frac{\pi }{2},{k\pi } + \frac{\pi }{2}}\right) \left( {k \in  \mathbf{Z}}\right)$ 上为严格增函数.
+
+⑤ 对称性:正切函数 $y = \tan x$ 是中心对称图形,对称中心是 $\left( {\frac{k\pi }{2},0}\right) \left( {k \in  \mathbf{Z}}\right)$ .
+
+## 5. 反三角函数的图像与性质 (※)
+
+函数 $y = \sin x, x \in  \left\lbrack  {-\frac{\pi }{2},\frac{\pi }{2}}\right\rbrack$ 的反函数叫做反正弦函数,记作 $y = \arcsin x, x \in  \left\lbrack  {-1,1}\right\rbrack$ ; 函数 $y = \cos x, x \in  \left\lbrack  {0,\pi }\right\rbrack$ 的反函数叫做反余弦函数,记作 $y = \arccos x, x \in  \left\lbrack  {-1,1}\right\rbrack$ ; 函数 $y = \tan x,\;x \in  \left( {-\frac{\pi }{2},\frac{\pi }{2}}\right)$ 的反函数叫做反正切函数,记作 $y = \arctan x,\;x \in  \left( {-\infty , + \infty }\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_48_319_513_269_259_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_48_319_513_269_259_0.jpg)
+
+$y = \arcsin x$
+
+![bo_d7aq48ilb0pc73dcpcb0_48_692_516_268_257_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_48_692_516_268_257_0.jpg)
+
+$y = \arccos x$
+
+![bo_d7aq48ilb0pc73dcpcb0_48_1091_517_267_256_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_48_1091_517_267_256_0.jpg)
+
+$y = \arctan x$
+
+反三角函数的性质:
+
+① 值域: $y = \arcsin x \in  \left\lbrack  {-\frac{\pi }{2},\frac{\pi }{2}}\right\rbrack$ ； $y = \arccos x \in  \left\lbrack  {0,\pi }\right\rbrack$ ； $y = \arctan x \in  \left( {-\frac{\pi }{2},\frac{\pi }{2}}\right)$ .
+
+② 奇偶性: $y = \arcsin x$ 与 $y = \arctan x$ 为奇函数； $y = \arccos x$ 为非奇非偶函数.
+
+③ 单调性: $y = \arcsin x$ 与 $y = \arctan x$ 为增函数； $y = \arccos x$ 为减函数.
+
+④ 对称性: $y = \arcsin x$ 与 $y = \arctan x$ 关于原点成中心对称， $y = \arccos x$ 关于点 $\left( {0,\frac{\pi }{2}}\right)$ 成中心对称.
+
+由反三角函数的定义有以下恒等式:
+
+$\sin \left( {\arcsin x}\right)  = x\left( {-1 \leq  x \leq  1}\right) ;\;\arcsin \left( {\sin x}\right)  = x\left( {-\frac{\pi }{2} \leq  x \leq  \frac{\pi }{2}}\right) .$
+
+$\cos \left( {\arccos x}\right)  = x\left( {-1 \leq  x \leq  1}\right) ;\arccos \left( {\cos x}\right)  = x\left( {0 \leq  x \leq  \pi }\right)$ .
+
+$\tan \left( {\arctan x}\right)  = x\left( {x \in  \mathbf{R}}\right) ;\arctan \left( {\tan x}\right)  = x\left( {-\frac{\pi }{2} < x < \frac{\pi }{2}}\right) .$
+
+$\arcsin x + \arccos x = \frac{\pi }{2}\left( {-1 \leq  x \leq  1}\right) ;\arctan x + \operatorname{arccot}x = \frac{\pi }{2}\left( {x \in  \mathbf{R}}\right) .$
+
+## 第七章 平面向量
+
+![bo_d7aq48ilb0pc73dcpcb0_49_265_337_1071_794_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_49_265_337_1071_794_0.jpg)
+
+## 1. 向量的概念和线性运算
+
+## (1)向量的概念
+
+既有大小又有方向的量叫做向量. 向量由两个要素定义, 一是它的大小 (非负实数), 一是它的方向.
+
+常常把向量用有向线段 (即指定了方向的线段) 表示出来, 线段的长度就是向量的大小, 线段的方向表示向量的方向. 我们也直接把表示向量的有向线段称作向量, 有向线段的起点称为向量的起点, 有向线段的终点称为向量的终点.
+
+向量通常用上方加箭头的小写字母表示,如 $\overrightarrow{a}$ ,读作向量 $a$ . 向量也可以用上方加箭头的两个大写字母表示，如 $\overrightarrow{AB}$ ，读作向量 ${AB}$ ，其中 $A$ 是向量的起点， $B$ 是向量的终点.
+
+在讨论向量时, 仅仅有数值 (可以是任何实数) 而没有方向的量称为数量, 又称为标量.
+
+向量 $\overrightarrow{a}$ 的大小叫做 $\overrightarrow{a}$ 的模,记作 $\left| \overrightarrow{a}\right|$ ,模为 1 的向量叫做单位向量.
+
+规定模为 0 的向量叫做零向量,记作 0 , 可认为它具有任意方向.
+
+如果两个非零向量所在的直线平行或者重合, 那么称这两个向量平行. 我们用记号 $\overrightarrow{a}//\overrightarrow{b}$ 表示向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 平行.
+
+如果两个向量同方向且具有相同的模, 根据向量的定义, 它们就是同一个向量, 不过我们常常只说它们是相等的向量. 特别地, 一个向量平移后得到的向量与原来的向量相等.
+
+由于约定了零向量具有任意方向，因此它平行于任意向量. 这样，根据向量相等的定义， 零向量都是相等的.
+
+如果一对平行向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 具有相等的模但方向相反，那么称它们互为负向量，或者称 $\overrightarrow{b}$ 为 $\overrightarrow{a}$ 的负向量,记作 $\overrightarrow{b} =  - \overrightarrow{a}$ .
+
+## (2)向量的加法和减法
+
+如图所示,以点 $O$ 为起点,分别作 $\overrightarrow{OA} = \overrightarrow{a},\overrightarrow{OB} = \overrightarrow{b}$ ,那么以 $\overrightarrow{OA}\text{ 、 }\overrightarrow{OB}$ 为邻边的平行四边形 ${OACB}$ 的对角线所表示的向量 $\overrightarrow{OC} = \overrightarrow{c}$ 就定义为向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的和,记作 $\overrightarrow{c} = \overrightarrow{a} + \overrightarrow{b}$ .
+
+我们把这种作向量和的方法叫做向量加法的平行四边形法则.
+
+![bo_d7aq48ilb0pc73dcpcb0_50_306_690_377_192_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_50_306_690_377_192_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_50_987_694_375_135_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_50_987_694_375_135_0.jpg)
+
+由于平行四边形对边平行且相等,有 $\overrightarrow{AC} = \overrightarrow{OB} = \overrightarrow{b}$ ,因此求向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的和 $\overrightarrow{c} = \overrightarrow{a} + \overrightarrow{b}$ , 在 $\bigtriangleup {OAC}$ 中就可以实现. 如图所示,若以 $O$ 为起点作向量 $\overrightarrow{OA} = \overrightarrow{a}$ ,再以 $A$ 为起点作向量 $\overrightarrow{AC} = \overrightarrow{b}$ ,则连接起点 $O$ 与终点 $C$ 得到向量 $\overrightarrow{OC}$ ,它就是 $\overrightarrow{a}\text{ 、 }\overrightarrow{b}$ 两向量的和 $\overrightarrow{c} = \overrightarrow{a} + \overrightarrow{b}$ .
+
+我们把这种作向量和的方法叫做向量加法的三角形法则.
+
+向量加法交换律 $\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{b} + \overrightarrow{a}$
+
+向量加法结合律 $\left( {\overrightarrow{a} + \overrightarrow{b}}\right)  + \overrightarrow{c} = \overrightarrow{a} + \left( {\overrightarrow{b} + \overrightarrow{c}}\right)$
+
+向量加法首尾规则: 若干个起点、终点依次相接的向量的和是以第一个向量的起点为起点、以最后一个向量的终点为终点的向量.
+
+向量的减法可以转化为向量的加法,即 $\overrightarrow{c} - \overrightarrow{a} = \overrightarrow{c} + \left( {-\overrightarrow{a}}\right)$ .
+
+## (3)实数与向量的乘法
+
+实数 $\lambda$ 与向量 $\overrightarrow{a}$ 的乘积是一个向量,记作 $\lambda \overrightarrow{a}$ . 它的模 $\left| {\lambda \overrightarrow{a}}\right|  = \left| \lambda \right| \left| \overrightarrow{a}\right|$ ; 当 $\lambda  > 0$ 时, $\lambda \overrightarrow{a}$ 的方向与 $\overrightarrow{a}$ 相同; 当 $\lambda  < 0$ 时, $\lambda \overrightarrow{a}$ 的方向与 $\overrightarrow{a}$ 相反. 特别地,当 $\overrightarrow{a} = \overrightarrow{0}$ 或 $\lambda  = 0$ 时, $\lambda \overrightarrow{a} = \overrightarrow{0}$ .
+
+向量 $\overrightarrow{b}$ 与非零向量 $\overrightarrow{a}$ 平行的充要条件是:存在实数 $\lambda$ ，使得 $\overrightarrow{b} = \lambda \overrightarrow{a}$ .
+
+实数与向量的乘法满足下面的运算律,设 $\overrightarrow{a}\text{ 、 }\overrightarrow{b}$ 是向量, $\lambda \text{ 、 }\mu  \in  \mathbf{R}$ ,有:
+
+$\left( {\lambda  + \mu }\right) \overrightarrow{a} = \lambda \overrightarrow{a} + \mu \overrightarrow{a},\;\lambda \left( {\mu \overrightarrow{a}}\right)  = \left( {\lambda \mu }\right) \overrightarrow{a},\;\lambda \left( {\overrightarrow{a} + \overrightarrow{b}}\right)  = \lambda \overrightarrow{a} + \lambda \overrightarrow{b}.$
+
+与非零向量 $\overrightarrow{a}$ 同方向的单位向量叫做向量 $\overrightarrow{a}$ 的单位向量,记作 $\overrightarrow{{a}_{0}},\overrightarrow{{a}_{0}} = \frac{1}{\left| \overrightarrow{a}\right| }\overrightarrow{a}$ .
+
+向量的加法、减法以及实数与向量的乘法, 统称为向量的线性运算. 从一个或几个向量出发, 通过线性运算得到的新向量称为原来那些向量的线性组合.
+
+## 2. 向量的数量积
+
+## (1)向量的投影
+
+平面上一点 $A$ 在直线 $l$ 上的投影，就是过点 $A$ 作直线 $l$ 的垂线而得到的垂足 ${A}^{\prime }$ .
+
+如果向量 $\overrightarrow{AB}$ 的起点 $A$ 和终点 $B$ 在直线 $l$ 上的投影分别为点 ${A}^{\prime }$ 和 ${B}^{\prime }$ ，那么向量 $\overrightarrow{{A}^{\prime }{B}^{\prime }}$ 叫做向量 $\overrightarrow{AB}$ 在直线 $l$ 上的投影向量,简称为投影. 从而,一个向量 $\overrightarrow{b}$ 在一个非零向量 $\overrightarrow{a}$ 的方向上的投影,就是 $\overrightarrow{b}$ 在 $\overrightarrow{a}$ 的任意一条所在直线上的投影.
+
+![bo_d7aq48ilb0pc73dcpcb0_51_254_574_282_203_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_51_254_574_282_203_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_51_588_579_278_198_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_51_588_579_278_198_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_51_896_581_222_198_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_51_896_581_222_198_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_51_1131_579_266_198_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_51_1131_579_266_198_0.jpg)
+
+以 $O$ 为起点，作 $\overrightarrow{OA} = \overrightarrow{a}$ ， $\overrightarrow{OB} = \overrightarrow{b}$ ，我们把射线 ${OA}$ 、 ${OB}$ 的夹角称为向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的夹角,记作 $\langle \overrightarrow{a},\overrightarrow{b}\rangle$ ,它的取值范围是 $\left\lbrack  {0,\pi }\right\rbrack$ . 有时常常用一个希腊字母 (如 $\theta$ ) 来指代向量夹角. 特别地,当 $\theta  = \frac{\pi }{2}$ 时,称 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 垂直,记作 $\overrightarrow{a} \bot  \overrightarrow{b}$ . 设向量 $\overrightarrow{OB}$ 的终点 $B$ 在 $\overrightarrow{OA}$ 所在直线上的投影为 ${B}^{\prime },\overrightarrow{O{B}^{\prime }}$ 即为向量 $\overrightarrow{b}$ 在向量 $\overrightarrow{a}$ 方向上的投影.
+
+容易看出, $\left| \overrightarrow{O{B}^{\prime }}\right|  = \left| \overrightarrow{b}\right|  \cdot  \left| {\cos \theta }\right|$ . 当 $\theta  < \frac{\pi }{2}$ 时, $\overrightarrow{O{B}^{\prime }}$ 与 $\overrightarrow{OA}$ 同向; 当 $\theta  > \frac{\pi }{2}$ 时, $\overrightarrow{O{B}^{\prime }}$ 与 $\overrightarrow{OA}$ 反向；当 $\theta  = \frac{\pi }{2}$ 时，即 $\overrightarrow{a} \bot  \overrightarrow{b}$ 时， $\overrightarrow{O{B}^{\prime }} = \overrightarrow{0}$ . 由此可知，向量 $\overrightarrow{b}$ 在向量 $\overrightarrow{a}$ 方向上的投影为 $\left| \overrightarrow{b}\right| \cos \theta  \cdot  \frac{\overrightarrow{a}}{\left| \overrightarrow{a}\right| }$ ,其中,实数 $\left| \overrightarrow{b}\right| \cos \theta$ 称为向量 $\overrightarrow{b}$ 在向量 $\overrightarrow{a}$ 方向上的数量投影.
+
+零向量在任何非零向量方向上的投影是零向量, 其数量投影为 0 .
+
+## (2)向量数量积的定义与运算律
+
+设 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 是两个非零向量,定义 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的数量积: $\overrightarrow{a} \cdot  \overrightarrow{b} = \left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right|  \cdot  \cos \langle \overrightarrow{a},\overrightarrow{b}\rangle$ . 其中, $\left| \overrightarrow{b}\right| \cos \langle \overrightarrow{a},\overrightarrow{b}\rangle$ 就是 $\overrightarrow{b}$ 在 $\overrightarrow{a}$ 方向上的数量投影, $\left| \overrightarrow{a}\right| \cos \langle \overrightarrow{a},\overrightarrow{b}\rangle$ 就是 $\overrightarrow{a}$ 在 $\overrightarrow{b}$ 方向上的数量投影.
+
+向量数量积的几何意义: 两个向量 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 的数量积 $\overrightarrow{a} \cdot  \overrightarrow{b}$ ,是其中的一个向量 $\overrightarrow{a}$ 的模 $\left| \overrightarrow{a}\right|$ 与另一个向量 $\overrightarrow{b}$ 在向量 $\overrightarrow{a}$ 方向上的数量投影 $\left| \overrightarrow{b}\right| \cos \langle \overrightarrow{a},\overrightarrow{b}\rangle$ 的乘积.
+
+规定零向量与任意向量的数量积为 0,即 $\overrightarrow{0} \cdot  \overrightarrow{a} = 0$ .
+
+向量的数量积运算满足如下运算律,设 $\overrightarrow{a}\text{ 、 }\overrightarrow{b}\text{ 、 }\overrightarrow{c}$ 是向量, $\lambda$ 是实数,则:
+
+向量数量积的交换律 $\overrightarrow{a} \cdot  \overrightarrow{b} = \overrightarrow{b} \cdot  \overrightarrow{a}$
+
+向量数量积对数乘的结合律 $\left( {\lambda \overrightarrow{a}}\right)  \cdot  \overrightarrow{b} = \overrightarrow{a} \cdot  \left( {\lambda \overrightarrow{b}}\right)$
+
+向量数量积对加法的分配律 $\overrightarrow{a} \cdot  \left( {\overrightarrow{b} + \overrightarrow{c}}\right)  = \overrightarrow{a} \cdot  \overrightarrow{b} + \overrightarrow{a} \cdot  \overrightarrow{c}$
+
+向量夹角公式 $\cos \langle \overrightarrow{a},\overrightarrow{b}\rangle  = \frac{\overrightarrow{a} \cdot  \overrightarrow{b}}{\left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right| }$
+
+由向量数量积的定义, 可以得到:
+
+① $\overrightarrow{a} \bot  \overrightarrow{b} \Leftrightarrow  \overrightarrow{a} \cdot  \overrightarrow{b} = 0$ ；
+
+② $\left| {\overrightarrow{a} \cdot  \overrightarrow{b}}\right|  \leq  \left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right|$ ，当且仅当 $\overrightarrow{a}//\overrightarrow{b}$ 时等号成立；
+
+③ 当 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 平行且同向时, $\overrightarrow{a} \cdot  \overrightarrow{b} = \left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right|$ ,当 $\overrightarrow{a}$ 与 $\overrightarrow{b}$ 平行且反向时, $\overrightarrow{a} \cdot  \overrightarrow{b} =  - \left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right|$ ;
+
+④ $\overrightarrow{a} \cdot  \overrightarrow{a} = {\overrightarrow{a}}^{2} = {\left| \overrightarrow{a}\right| }^{2} \geq  0$ ,当 ${\overrightarrow{a}}^{2} = 0$ 时, $\overrightarrow{a} = \overrightarrow{0}$ .
+
+## 3. 向量的坐标表示
+
+## (1)向量基本定理
+
+如果 $\overrightarrow{{e}_{1}}$ 与 $\overrightarrow{{e}_{2}}$ 是平面上两个不平行的向量,那么该平面上的任意向量 $\overrightarrow{a}$ ,都可唯一地表示为 $\overrightarrow{{e}_{1}}$ 与 $\overrightarrow{{e}_{2}}$ 的线性组合,即存在唯一的一对实数 $\lambda$ 与 $\mu$ ,使得 $\overrightarrow{a} = \lambda \overrightarrow{{e}_{1}} + \mu \overrightarrow{{e}_{2}}$ .
+
+给定平面上的一组向量, 如果平面上的任意向量都可以唯一地表示成这组向量的线性组合, 那么就称这组向量是平面向量的一个基. 用这个术语, 向量基本定理可以表述成: 平面上任意两个不平行的向量都组成平面向量的一个基.
+
+向量的三点共线性质: 已知平面上 $A\text{ 、 }B\text{ 、 }C$ 三点共线,点 $O$ 在直线外 $\Leftrightarrow$ 存在唯一实数 $m\text{ 、 }n$ ,使得 $\overrightarrow{OA} = m\overrightarrow{OB} + n\overrightarrow{OC}$ ,其中 $m + n = 1$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_52_1007_1111_338_163_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_52_1007_1111_338_163_0.jpg)
+
+## (2)向量的正交分解与坐标表示
+
+把向量 $\overrightarrow{a}$ 写成所在平面上两个不平行向量 $\overrightarrow{{e}_{1}}$ 与 $\overrightarrow{{e}_{2}}$ 的线性组合的过程称为 $\overrightarrow{a}$ 关于 $\overrightarrow{{e}_{1}}$ 与 $\overrightarrow{{e}_{2}}$ 的分解. 其中在 $\overrightarrow{{e}_{1}} \bot  \overrightarrow{{e}_{2}}$ 情况下进行向量的分解称为向量的正交分解.
+
+在平面直角坐标系中任意一个向量 $\overrightarrow{a}$ 关于 $x$ 轴与 $y$ 轴正方向上的单位向量 $\overrightarrow{i}$ 与 $\overrightarrow{j}$ 的分解 $\overrightarrow{a} = x\overrightarrow{i} + y\overrightarrow{j}$ 就是一个正交分解. 这个正交分解称为向量 $\overrightarrow{a}$ 在这个平面直角坐标系中的坐标分解,而有序实数对 $\left( {x, y}\right)$ 则称为向量 $\overrightarrow{a}$ 的坐标,并直接表示成 $\overrightarrow{a} = \left( {x, y}\right)$ . 向量的这种表示法称为它的坐标表示.
+
+![bo_d7aq48ilb0pc73dcpcb0_52_1075_1560_295_236_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_52_1075_1560_295_236_0.jpg)
+
+必须注意,在向量 $\overrightarrow{a}$ 的坐标表示中,我们先要作出从坐标原点 $O$ 出发的向量 $\overrightarrow{OA} = \overrightarrow{a}$ , 才能用点 $A$ 的坐标 $\left( {x, y}\right)$ 表示向量 $\overrightarrow{a}$ 的坐标. 为此,我们把向量 $\overrightarrow{OA}$ 称为 $\overrightarrow{a}$ 的位置向量. 位置向量终点的坐标才是所给向量的坐标.
+
+## (3)向量线性运算的坐标表示
+
+有了向量的坐标表示后, 向量的运算可转化为其坐标的相应运算.
+
+设 $\lambda$ 是一个实数, $\overrightarrow{a} = \left( {{x}_{1},{y}_{1}}\right) ,\overrightarrow{b} = \left( {{x}_{2},{y}_{2}}\right)$ ,则:
+
+$\overrightarrow{a} \pm  \overrightarrow{b} = \left( {{x}_{1},{y}_{1}}\right)  \pm  \left( {{x}_{2},{y}_{2}}\right)  = \left( {{x}_{1} \pm  {x}_{2},{y}_{1} \pm  {y}_{2}}\right) .$
+
+$\lambda \overrightarrow{a} = \lambda \left( {{x}_{1},{y}_{1}}\right)  = \left( {\lambda {x}_{1},\lambda {y}_{1}}\right) .$
+
+由两点间距离公式,可求得向量 $\overrightarrow{a}$ 的模 $\left| \overrightarrow{a}\right|  = \left| \left( {{x}_{1},{y}_{1}}\right) \right|  = \sqrt{{x}_{1}^{2} + {y}_{1}^{2}}$ .
+
+对平面上任意两点 $P\left( {{x}_{1},{y}_{1}}\right)$ 与 $Q\left( {{x}_{2},{y}_{2}}\right) ,\overrightarrow{PQ}$ 的坐标等于其终点坐标减去起点坐标, 即 $\overrightarrow{PQ} = \overrightarrow{OQ} - \overrightarrow{OP} = \left( {{x}_{2},{y}_{2}}\right)  - \left( {{x}_{1},{y}_{1}}\right)  = \left( {{x}_{2} - {x}_{1},{y}_{2} - {y}_{1}}\right)$ .
+
+## (4)向量数量积与夹角的坐标表示
+
+给定两个坐标表示的向量 $\overrightarrow{a} = \left( {{x}_{1},{y}_{1}}\right)$ 与 $\overrightarrow{b} = \left( {{x}_{2},{y}_{2}}\right)$ ,它们的数量积 $\overrightarrow{a} \cdot  \overrightarrow{b} = {x}_{1}{x}_{2} + {y}_{1}{y}_{2}$ , 即两个向量的数量积等于它们对应坐标的乘积之和.
+
+坐标形式的向量夹角公式 $\cos \langle \overrightarrow{a},\overrightarrow{b}\rangle  = \frac{\overrightarrow{a} \cdot  \overrightarrow{b}}{\left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right| } = \frac{{x}_{1}{x}_{2} + {y}_{1}{y}_{2}}{\sqrt{{x}_{1}^{2} + {y}_{1}^{2}} \cdot  \sqrt{{x}_{2}^{2} + {y}_{2}^{2}}}$
+
+$\overrightarrow{a}$ 与 $\overrightarrow{b}$ 垂直的充要条件是 $\overrightarrow{a} \cdot  \overrightarrow{b} = 0$ ,即 ${x}_{1}{x}_{2} + {y}_{1}{y}_{2} = 0$ .
+
+$\overrightarrow{a}$ 与 $\overrightarrow{b}$ 平行的充要条件是 $\overrightarrow{a} = \lambda \overrightarrow{b}$ ,即 ${x}_{1}{y}_{2} = {x}_{2}{y}_{1}$ .
+
+柯西不等式的向量证明: $\left| {\overrightarrow{a} \cdot  \overrightarrow{b}}\right|  \leq  \left| \overrightarrow{a}\right|  \cdot  \left| \overrightarrow{b}\right|  \Rightarrow  {\left( {x}_{1}{x}_{2} + {y}_{1}{y}_{2}\right) }^{2} \leq  \left( {{x}_{1}^{2} + {y}_{1}^{2}}\right) \left( {{x}_{2}^{2} + {y}_{2}^{2}}\right)$ .
+
+## 4. 向量的应用
+
+定比分点公式: 已知 $P$ 是直线 ${P}_{1}{P}_{2}$ 上一点,且 $\overrightarrow{{P}_{1}P} = \lambda \overrightarrow{P{P}_{2}}\left( {\lambda \text{ 为实数,且 }\lambda  \neq   - 1}\right)$ , ${P}_{1}\text{ 、 }{P}_{2}$ 的坐标分别为 $\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }\left( {{x}_{2},{y}_{2}}\right)$ ,则点 $P$ 的坐标为 $\left( {\frac{{x}_{1} + \lambda {x}_{2}}{1 + \lambda },\frac{{y}_{1} + \lambda {y}_{2}}{1 + \lambda }}\right)$ .
+
+中点坐标公式: 当上述 $\lambda  = 1$ 时,点 $P$ 为线段 ${P}_{1}{P}_{2}$ 的中点,其坐标为 $\left( {\frac{{x}_{1} + {x}_{2}}{2},\frac{{y}_{1} + {y}_{2}}{2}}\right)$ .
+
+重心坐标公式: 以 $A\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }B\left( {{x}_{2},{y}_{2}}\right) \text{ 、 }C\left( {{x}_{3},{y}_{3}}\right)$ 为顶点的 $\bigtriangleup {ABC}$ 的重心坐标为 $\left( {\frac{{x}_{1} + {x}_{2} + {x}_{3}}{3},\frac{{y}_{1} + {y}_{2} + {y}_{3}}{2}}\right) .$
+
+三角形面积公式: 在 $\bigtriangleup {ABC}$ 中,设 $\overrightarrow{CA} = \left( {{x}_{1},{y}_{1}}\right) ,\overrightarrow{CB} = \left( {{x}_{2},{y}_{2}}\right)$ ,则 $\bigtriangleup {ABC}$ 的面积 $S = \frac{1}{2}\left| {{x}_{1}{y}_{2} - {x}_{2}{y}_{1}}\right| .$
+
+## 三角形四心与向量(※)
+
+(1)设 $O$ 为 $\bigtriangleup {ABC}$ 所在平面上的一点，角 $A$ 、 $B$ 、 $C$ 所对的边分别为 $a$ 、 $b$ 、 $c$ .
+
+① $\left| \overrightarrow{OA}\right|  = \left| \overrightarrow{OB}\right|  = \left| \overrightarrow{OC}\right|  \Leftrightarrow$ 0 为 $\bigtriangleup {ABC}$ 外心.
+
+② $\left( {\overrightarrow{OA} + \overrightarrow{OB}}\right)  \cdot  \overrightarrow{AB} = \left( {\overrightarrow{OB} + \overrightarrow{OC}}\right)  \cdot  \overrightarrow{BC} = 0 \Leftrightarrow  O$ 为 $\bigtriangleup {ABC}$ 外心.
+
+③ $\overrightarrow{OA} + \overrightarrow{OB} + \overrightarrow{OC} = \overrightarrow{0} \Leftrightarrow  O$ 为 $\bigtriangleup {ABC}$ 重心.
+
+④ $\overrightarrow{OA} \cdot  \overrightarrow{OB} = \overrightarrow{OB} \cdot  \overrightarrow{OC} = \overrightarrow{OC} \cdot  \overrightarrow{OA} \Leftrightarrow  O$ 为 $\bigtriangleup {ABC}$ 垂心.
+
+⑤ $a\overrightarrow{OA} + b\overrightarrow{OB} + c\overrightarrow{OC} = \overrightarrow{0} \Leftrightarrow  O$ 为 $\bigtriangleup {ABC}$ 内心.
+
+⑥ $\overrightarrow{OA}\left( {\frac{\overrightarrow{AC}}{\left| \overrightarrow{AC}\right| } - \frac{\overrightarrow{AB}}{\left| \overrightarrow{AB}\right| }}\right)  = \overrightarrow{OB}\left( {\frac{\overrightarrow{BC}}{\left| \overrightarrow{BC}\right| } - \frac{\overrightarrow{BA}}{\left| \overrightarrow{BA}\right| }}\right)  = 0 \Leftrightarrow  O$ 为 $\bigtriangleup {ABC}$ 内心.
+
+(2)设 $P$ 为 $\bigtriangleup {ABC}$ 所在平面上的一动点，实数 $\lambda  \in  \lbrack 0, + \infty )$ .
+
+① $\overrightarrow{AP} = \lambda \left( {\overrightarrow{AB} + \overrightarrow{AC}}\right)  \Leftrightarrow$ 动点 $P$ 的轨迹经过 $\bigtriangleup {ABC}$ 重心.
+
+② $\overrightarrow{AP} = \lambda \left( {\frac{\overrightarrow{AB}}{\left| \overrightarrow{AB}\right| \sin B} + \frac{\overrightarrow{AC}}{\left| \overrightarrow{AC}\right| \sin C}}\right)  \Leftrightarrow$ 动点 $P$ 的轨迹经过 $\bigtriangleup  {ABC}$ 重心.
+
+③ $\overrightarrow{AP} = \lambda \left( {\frac{\overrightarrow{AB}}{\left| \overrightarrow{AB}\right| } + \frac{\overrightarrow{AC}}{\left| \overrightarrow{AC}\right| }}\right)  \Leftrightarrow$ 动点 $P$ 的轨迹经过 $\bigtriangleup  {ABC}$ 内心.
+
+④ $\overrightarrow{AP} = \lambda \left( {\frac{\overrightarrow{AB}}{\left| \overrightarrow{AB}\right| \cos B} + \frac{\overrightarrow{AC}}{\left| \overrightarrow{AC}\right| \cos C}}\right)  \Leftrightarrow$ 动点 $P$ 的轨迹经过 $\bigtriangleup {ABC}$ 垂心.
+
+⑤ $\overrightarrow{OP} = \frac{\overrightarrow{OB} + \overrightarrow{OC}}{2} + \lambda \left( {\frac{\overrightarrow{AB}}{\left| \overrightarrow{AB}\right| \cos B} + \frac{\overrightarrow{AC}}{\left| \overrightarrow{AC}\right| \cos C}}\right)  \Leftrightarrow  P$ 的轨迹经过 $\bigtriangleup {ABC}$ 外心.
+
+## 第八章 复数
+
+![bo_d7aq48ilb0pc73dcpcb0_55_271_324_1061_801_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_55_271_324_1061_801_0.jpg)
+
+## 1. 复数及其四则运算
+
+(1)复数的引入与复数的四则运算
+
+为解决负数的开平方问题,引入虚数单位 $\mathrm{i}$ ,规定 ${\mathrm{i}}^{2} =  - 1$ ,即 $\mathrm{i}$ 是 -1 的一个平方根.
+
+形如 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 的数称为一个复数. 全体复数构成的集合用字母 $\mathbf{C}$ 表示. 规定:
+
+① 复数 $a + b\mathrm{i} = 0\left( {a, b \in  \mathbf{R}}\right)  \Leftrightarrow  a = 0$ 且 $b = 0$ ；
+
+② 复数 $a + b\mathrm{i} = c + d\mathrm{i}\;\left( {a, b, c, d \in  \mathbf{R}}\right)  \Leftrightarrow  a = c$ 且 $b = d$ .
+
+复数的四则运算 $\left( {a, b, c, d \in  \mathbf{R}}\right)$ :
+
+复数加法 $\left( {a + b\mathrm{i}}\right)  + \left( {c + d\mathrm{i}}\right)  = \left( {a + c}\right)  + \left( {b + d}\right) \mathrm{i}$ ;
+
+复数减法 $\left( {a + b\mathrm{i}}\right)  - \left( {c + d\mathrm{i}}\right)  = \left( {a - c}\right)  + \left( {b - d}\right) \mathrm{i}$ ；
+
+复数乘法 $\left( {a + b\mathrm{i}}\right) \left( {c + d\mathrm{i}}\right)  = \left( {{ac} - {bd}}\right)  + \left( {{bc} + {ad}}\right) \mathrm{i}$ ；
+
+复数除法 $\frac{a + b\mathrm{i}}{c + d\mathrm{i}} = \frac{{ac} + {bd}}{{c}^{2} + {d}^{2}} + \frac{{bc} - {ad}}{{c}^{2} + {d}^{2}}\mathrm{i}\left( {c + d\mathrm{i} \neq  0}\right)$ .
+
+复数加法与乘法满足交换律、结合律与分配律. 实际计算中, 复数运算类似于多项式运算,乘法公式同样适用. 复数除法本质上是通过分子分母同乘 $c - d\mathrm{i}$ 达到分母实数化的过程.
+
+对任意复数 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 与任何正整数 $n,{\left( a + b\mathrm{i}\right) }^{n}$ 表示 $n$ 个 $a + b\mathrm{i}$ 相乘.
+
+当 $a + b\mathrm{i} \neq  0$ 时,对任何正整数 $n,{\left( a + b\mathrm{i}\right) }^{-n} = \frac{1}{{\left( a + b\mathrm{i}\right) }^{n}}$ ; 当 $a + b\mathrm{i} \neq  0$ 时, ${\left( a + b\mathrm{i}\right) }^{0} = 1$ .
+
+同底数幂的运算规则同样适用于复数,即对任何复数 $z\text{ 、 }{z}_{1}\text{ 、 }{z}_{2}$ 及正整数 $m\text{ 、 }n$ , 满足: ${z}^{m} \cdot  {z}^{n} = {z}^{m + n},{\left( {z}^{m}\right) }^{n} = {z}^{mn},{\left( {z}_{1} \cdot  {z}_{2}\right) }^{n} = {z}_{1}^{n} \cdot  {z}_{2}^{n}$ .
+
+一般地,对 $n \in  \mathbf{N}$ ,满足: ${\mathrm{i}}^{4n} = 1,{\mathrm{i}}^{{4n} + 1} = \mathrm{i},{\mathrm{i}}^{{4n} + 2} =  - 1,{\mathrm{i}}^{{4n} + 3} =  - \mathrm{i}$ .
+
+## (2)复数的实部、虚部与共轭
+
+复数的表达方式 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 称为它的代数形式,其中的实数 $a$ 和 $b$ 分别叫做该复数的实部和虚部,实部记作 $\operatorname{Re}z$ ,虚部记作 $\operatorname{Im}z$ .
+
+对于复数 $z = a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ . 当 $b = 0$ 时,则 $z = a + b\mathrm{i} = a$ 是实数; 当 $b \neq  0$ 时, $z$ 称为虚数,特别地,当 $a = 0$ 但 $b \neq  0$ 时, $z = a + b\mathrm{i} = b\mathrm{i}$ 称为纯虚数.
+
+实数是虚部等于零的复数,因此,实数集合是复数集合的真子集,即 $\mathbf{R} \subset  \mathbf{C}$ .
+
+复数 $\left( {z = a + b\mathrm{i}, a, b \in  \mathbf{R}}\right) \left\{  \begin{array}{l} \text{ 实数 }\left( {b = 0}\right) \\  \text{ 虚数 }\left\{  \begin{array}{l} \text{ 纯虚数 }\left( {a = 0, b \neq  0}\right) \\  \text{ 非纯虚数的虚数 }\left( {a \neq  0, b \neq  0}\right)  \end{array}\right.  \end{array}\right.$
+
+如果两个复数都是实数, 那么这两个复数具有大小关系. 如果两个复数不都是实数, 那么这两个复数只有相等和不相等两种关系, 而不能比较大小.
+
+形如 $a + b\mathrm{i}$ 和 $a - b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 这样实部相等而虚部互为相反数的一对复数,叫做共轭复数,也称这两个复数互为共轭,共轭复数用 $\bar{z}$ 表示,即当 $z = a + b\mathrm{i}$ 时, $\bar{z} = a - b\mathrm{i}$ .
+
+共轭复数具有如下性质:
+
+① $\overline{\bar{z}} = z$ ; ② $\overline{{z}_{1} \pm  {z}_{2}} = \overline{{z}_{1}} \pm  \overline{{z}_{2}},\overline{{z}_{1} \cdot  {z}_{2}} = \overline{{z}_{1}} \cdot  \overline{{z}_{2}},\overline{\left( \frac{{z}_{1}}{{z}_{2}}\right) } = \frac{\overline{{z}_{1}}}{\overline{{z}_{2}}}$ ; ③ $\bar{z} = z \Leftrightarrow  z \in  \mathbf{R}$ .
+
+## 2. 复数的几何意义
+
+## (1)复平面与复数的坐标表示
+
+复数 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 一一对应于有序实数对 $\left( {a, b}\right)$ ,而有序实数对 $\left( {a, b}\right)$ 与平面直角坐标系内的点 $Z\left( {a, b}\right)$ 又是一一对应的. 因此可以用平面直角坐标系内的点 $Z\left( {a, b}\right)$ 来表示复数 $z = a + b\mathrm{i}$ ,也可以用复数 $z = a + b\mathrm{i}$ 来描述平面直角坐标系内的点 $Z\left( {a, b}\right)$ .
+
+建立平面直角坐标系用来表示复数的平面叫做复平面,在这里 $x$ 轴叫做实轴, $y$ 轴叫做虚轴. 表示实数的点都在实轴上, 表示纯虚数的点都在虚轴上, 原点表示实数 0 .
+
+复数集中的元素和复平面上所有的点是一一对应的.
+
+![bo_d7aq48ilb0pc73dcpcb0_56_1034_1797_370_276_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_56_1034_1797_370_276_0.jpg)
+
+## (2)复数的向量表示
+
+复数集中的元素与复平面上以原点为起始点的向量是一一对应的(实数 0 与零向量对应). 我们把复数 $z = a + b\mathrm{i} \; \left( {a, b \in  \mathbf{R}}\right)$ 看作点 $Z\left( {a, b}\right)$ 或看作向量 $\overrightarrow{OZ} = \left( {a, b}\right)$ .
+
+## (3)复数加法的平行四边形法则
+
+两个复数 ${z}_{1}\text{ 、 }{z}_{2}$ 的和 ${z}_{1} + {z}_{2}$ 所对应的向量,就是原来两个复数所对应向量 $\overrightarrow{O{Z}_{1}}\text{ 、 }\overrightarrow{O{Z}_{2}}$ 的和,即以 $\overrightarrow{O{Z}_{1}}\text{ 、 }\overrightarrow{O{Z}_{2}}$ 为邻边的平行四边形的对角线所表示的向量. 这就是复数加法的平行四边形法则. 同样,两个复数的差 ${z}_{1} - {z}_{2}$ 所对应向量,就是 $\overrightarrow{O{Z}_{1}}\text{ 、 }\overrightarrow{O{Z}_{2}}$ 的差 $\overrightarrow{O{Z}_{1}} - \overrightarrow{O{Z}_{2}}$ .
+
+## (4)复数的模
+
+复数 $z = a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 在复平面上所对应的点 $Z\left( {a, b}\right)$ 到坐标原点的距离 $\sqrt{{a}^{2} + {b}^{2}}$ , 叫做复数 $z$ 的模 (或绝对值),记作 $\left| z\right|$ . 由模的定义可知 $\left| z\right|  = \left| {a + b\mathrm{i}}\right|  = \sqrt{{a}^{2} + {b}^{2}}$ .
+
+由于复数 $z = a + b\mathrm{i}$ 的模与该复数所对应的向量 $\overrightarrow{OZ}$ 的模是一致的,因此复数的模也可以说成是其对应的向量的模.
+
+复数的模有如下性质: $\left| z\right|  = \left| \bar{z}\right| , z \cdot  \bar{z} = {\left| z\right| }^{2},\left| {{z}_{1} \cdot  {z}_{2}}\right|  = \left| {z}_{1}\right|  \cdot  \left| {z}_{2}\right| ,\left| \frac{{z}_{1}}{{z}_{2}}\right|  = \frac{\left| {z}_{1}\right| }{\left| {z}_{2}\right| }$ , $\left| {z}^{n}\right|  = {\left| z\right| }^{n},\left| {z}_{1}\right|  + \left| {z}_{2}\right|  \geq  \left| {{z}_{1} + {z}_{2}}\right| .$
+
+设 ${Z}_{1}\left( {a, b}\right) \text{ 、 }{Z}_{2}\left( {c, d}\right)$ 是复平面上的两个点,其对应的复数为 ${z}_{1} = a + b\mathrm{i}\text{ 、 }{z}_{2} = c + d\mathrm{i}$ , 则由平面上两点间距离公式可知: $\left| {{z}_{1} - {z}_{2}}\right|  = \sqrt{{\left( a - c\right) }^{2} + {\left( b - d\right) }^{2}} = \left| {{Z}_{1}{Z}_{2}}\right|  = \left| \overrightarrow{{Z}_{1}{Z}_{2}}\right|$ .
+
+## 3. 实系数一元二次方程
+
+## (1)实数的平方根
+
+设 $c \in  \mathbf{R}$ ,并设 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 是它的一个平方根,即 ${\left( a + b\mathrm{i}\right) }^{2} = c$ . 若 $c \geq  0$ ,其平方根为 $a =  \pm  \sqrt{c}$ ; 若 $c < 0$ ,其平方根为 $b\mathrm{i} =  \pm  \sqrt{-c}\mathrm{i}$ ,它们是两个共轭的纯虚数.
+
+例如,虚数单位 $\mathrm{i}$ 是 -1 的一个平方根,即 $\mathrm{i} = \sqrt{-1}$ .
+
+## (2)实系数一元二次方程
+
+设一元二次方程 $a{x}^{2} + {bx} + c = 0\left( {a, b, c \in  \mathbf{R}\text{ 且 }a \neq  0}\right)$ ,判别式 $\Delta  = {b}^{2} - {4ac}$ ,
+
+① 当 $\Delta  > 0$ 时,方程有两个不相等的实根 $x = \frac{-b \pm  \sqrt{\Delta }}{2a}$ ;
+
+② 当 $\Delta  = 0$ 时,方程有两个相等的实根 (二重根) $x = \frac{-b}{2a}$ ;
+
+③ 当 $\Delta  < 0$ 时,方程有一对共轭虚根 $x = \frac{-b \pm  \sqrt{-\Delta }\mathrm{i}}{2a}$ .
+
+韦达定理同样适用于 $\Delta  < 0$ 的情况: ${x}_{1} + {x}_{2} =  - \frac{b}{a},{x}_{1}{x}_{2} = \frac{c}{a}$ .
+
+对于实系数一元 $n$ 次方程 ${a}_{n}{x}^{n} + {a}_{n - 1}{x}^{n - 1} + \cdots  + {a}_{2}{x}^{2} + {a}_{1}x + {a}_{0} = 0$ ,有:
+
+① 如果虚数 $z$ 是方程的根,那么 $\bar{z}$ 也是方程的根;
+
+② 方程在复数集中一定有 $n$ 个根,即方程可化为 ${a}_{n}\left( {x - {x}_{1}}\right) \left( {x - {x}_{2}}\right) \cdots \left( {x - {x}_{n}}\right)  = 0$ .
+
+## (3)复数的平方根和立方根(※)
+
+如果复数 $a + b\mathrm{i}\left( {a, b \in  \mathbf{R}}\right)$ 和 $c + d\mathrm{i}\left( {c, d \in  \mathbf{R}}\right)$ 满足: ${\left( a + b\mathrm{i}\right) }^{2} = c + d\mathrm{i}$ ,则称 $a + b\mathrm{i}$ 是 $c + d\mathrm{i}$ 的一个平方根. 因为 ${\left( \pm \mathrm{i}\right) }^{2} =  - 1$ ,即 $\pm  \mathrm{i}$ 是 -1 的平方根.
+
+类似地,若复数 ${z}_{1}\text{ 、 }{z}_{2}$ 满足 ${z}_{1}^{3} = {z}_{2}$ ,则称 ${z}_{1}$ 是 ${z}_{2}$ 的立方根.
+
+1 的立方根有三个,分别是 $1, - \frac{1}{2} + \frac{\sqrt{3}}{2}\mathrm{i}, - \frac{1}{2} - \frac{\sqrt{3}}{2}\mathrm{i}$ . 设 $\omega  =  - \frac{1}{2} \pm  \frac{\sqrt{3}}{2}\mathrm{i}$ ,则满足 $\left| \omega \right|  = 1,{\omega }^{3} = 1,{\omega }^{2} + \omega  + 1 = 0$ . 同理,-1的立方根也有三个,分别是 $- 1,\frac{1}{2} + \frac{\sqrt{3}}{2}\mathrm{i}$ , $\frac{1}{2} - \frac{\sqrt{3}}{2}\mathrm{i}$ ; 设 $\omega  = \frac{1}{2} \pm  \frac{\sqrt{3}}{2}\mathrm{i}$ ,则满足 $\left| \omega \right|  = 1,{\omega }^{3} =  - 1,{\omega }^{2} - \omega  + 1 = 0$ .
+
+## 4. 复数的三角形式
+
+## (1)复数的三角形式
+
+![bo_d7aq48ilb0pc73dcpcb0_58_1085_1031_281_281_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_58_1085_1031_281_281_0.jpg)
+
+复数 $z = a + b\mathrm{i}\;\left( {a, b \in  \mathbf{R}}\right)$ 在复平面上所对应的点是 $Z\left( {a, b}\right)$ ,所对应的向量是 $\overrightarrow{OZ}$ ,我们把以原点 $O$ 为顶点, 实轴的正半轴为始边,射线 ${OZ}$ 为终边的角 $\theta$ 叫做复数 $z$ 的辐角,记作 $\operatorname{Arg}z$ .
+
+任意一个非零复数 $z$ 的辐角都有无穷多个,满足在区间 $\lbrack 0,{2\pi })$ 的辐角 $\theta$ 称为复数 $z$ 的辐角主值,记作 $\arg z$ . 易知 $\operatorname{Arg}z = \arg z + {2k\pi }\left( {k \in  \mathbf{Z}}\right)$ .
+
+非零复数与它的模和辐角主值是一一对应的, 两个非零复数当且仅当它们的模与辐角主值分别相等时才相等.
+
+规定复数 0 的辐角是任意的,辐角主值可以取 $\lbrack 0,{2\pi })$ 内的任意值.
+
+设复数的模 $\left| z\right|  = \left| \overrightarrow{OZ}\right|  = r$ ,所以 $a = r\cos \theta , b = r\sin \theta$ ,所以 $z = r\left( {\cos \theta  + \mathrm{i}\sin \theta }\right)$ , 复数的这种表示形式叫做它的三角形式.
+
+## (2)三角形式下复数的乘除运算
+
+设有两个用三角形式表示的复数 ${z}_{1} = r\left( {\cos \alpha  + \mathrm{i}\sin \alpha }\right)$ 与 ${z}_{2} = s\left( {\cos \beta  + \mathrm{i}\sin \beta }\right)$ ,其中 $r = \left| {z}_{1}\right|  \geq  0, s = \left| {z}_{2}\right|  \geq  0$ ,则:
+
+${z}_{1} \cdot  {z}_{2} = {rs}\left\lbrack  {\cos \left( {\alpha  + \beta }\right)  + \mathrm{i}\sin \left( {\alpha  + \beta }\right) }\right\rbrack  ,\frac{{z}_{1}}{{z}_{2}} = \frac{r}{s}\left\lbrack  {\cos \left( {\alpha  - \beta }\right)  + \mathrm{i}\sin \left( {\alpha  - \beta }\right) }\right\rbrack  \left( {{z}_{2} \neq  0}\right) .$
+
+即两个复数相乘，其积的模等于模的积，积的辐角等于辐角的和；两个复数相除(除数不为零), 其商的模等于模的商, 商的辐角等于辐角的差.
+
+复数相乘的几何意义: 在复平面上,将复数 ${z}_{1}$ 所对应的向量 $\overrightarrow{O{Z}_{1}}$ 绕坐标原点逆时针旋转 $\beta$ 角,再把 $\left| \overrightarrow{O{Z}_{1}}\right|$ 变为原来的 $s$ 倍,即得 ${z}_{1} \cdot  {z}_{2}$ 所对应的向量.
+
+复数相除的几何意义: 在复平面上,将复数 ${z}_{1}$ 所对应的向量 $\overrightarrow{O{Z}_{1}}$ 绕坐标原点顺时针旋转 $\beta$ 角,再把 $\left| \overrightarrow{O{Z}_{1}}\right|$ 变为原来的 $\frac{1}{s}$ ,即得 $\frac{{z}_{1}}{{z}_{2}}$ 所对应的向量.
+
+## (3)三角形式下复数的乘方与开方
+
+设 $z = r\left( {\cos \alpha  + \mathrm{i}\sin \alpha }\right) \left( {r = \left| z\right|  \geq  0}\right)$ ,则对任何正整数 $n$ ,有
+
+${z}^{n} = {r}^{n}\left( {\cos {n\alpha } + \mathrm{i}\sin {n\alpha }}\right) ;$
+
+$z$ 的 $n$ 次方根为 $\sqrt[n]{r}\left( {\cos \frac{\alpha  + {2k\pi }}{n} + \mathrm{i}\sin \frac{\alpha  + {2k\pi }}{n}}\right) , k = 0\text{ 、 }1\text{ 、 }2\text{ 、 }\cdots \text{ 、 }n - 1$ .
+
+第九章 空间直线与平面
+
+![bo_d7aq48ilb0pc73dcpcb0_60_269_334_1067_887_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_60_269_334_1067_887_0.jpg)
+
+## 1. 平面及其基本性质
+
+## (1)空间的点、直线与平面
+
+平面具有 “平” 的特征, 无厚度, 无边界, 在空间延伸至无限. 平面可以用大写的英文字母或小写的希腊字母表示.
+
+空间的直线和平面都可以看作点的集合, 所以点、直线与平面之间的关系可以用集合的语言和符合来表示. 例如，如图所示，
+
+点 $A$ 在直线 $l$ 上，或直线 $l$ 经过点 $A$ ，记作 $A \in  l$ ；
+
+点 $B$ 不在直线 $l$ 上，或直线 $l$ 不经过点 $B$ ，记作 $B \notin  l$ ；
+
+点 $A$ 在平面 $\alpha$ 上，或平面 $\alpha$ 经过点 $A$ ，记作 $A \in  \alpha$ ；
+
+点 $B$ 不在平面 $\alpha$ 上，或平面 $\alpha$ 不经过点 $B$ ，记作 $B \notin  \alpha$ ；
+
+直线 $l$ 上的所有点都在平面 $\alpha$ 上,那么称直线 $l$ 在平面 $\alpha$ 上 (或平面 $\alpha$ 经过直线 $l$ ), 记作 $l \subset  \alpha$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_60_344_1967_959_141_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_60_344_1967_959_141_0.jpg)
+
+公理 1 如果一条直线上有两点在一个平面上, 那么这条直线上的点都在这个平面上.
+
+用符号语言表述为:若点 $A \in  \alpha$ ，点 $B \in  \alpha$ ，则 ${AB} \subset  \alpha$ .
+
+如果直线 $l$ 与平面 $\alpha$ 只有一个公共点 $A$ ，那么称直线 $l$ 与平面 $\alpha$ 相交于点 $A$ ，或称 $A$ 是直线 $l$ 与平面 $\alpha$ 的交点,记作 $l \cap  \alpha  = A$ . 如果直线 $l$ 与平面 $\alpha$ 没有公共点,那么称直线 $l$ 与平面 $\alpha$ 平行,记作 $l \cap  \alpha  = \varnothing$ 或 $l//\alpha$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_61_497_508_311_162_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_61_497_508_311_162_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_61_860_510_306_133_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_61_860_510_306_133_0.jpg)
+
+公理 2 不在同一直线上的三点确定一个平面.
+
+推论 1 一条直线和直线外的一点确定一个平面.
+
+推论 2 两条相交的直线确定一个平面.
+
+推论 3 两条平行的直线确定一个平面.
+
+## (2)相交平面
+
+公理 3 如果两个不同的平面有一个公共点, 那么它们有且只有一条过该点的公共直线. 用符号语言表述为: 若存在 $A \in  \alpha  \cap  \beta$ ,则 $\alpha  \cap  \beta  = l$ ,且 $A \in  l$ .
+
+根据公理 3,两个平面 $\alpha$ 和 $\beta$ 的位置关系只有两种: 相交于一条公共直线 $l$ 或者没有公共点. 前者称为相交,记作 $\alpha  \cap  \beta  = l$ ; 后者称为平行,记作 $\alpha //\beta$ 或 $\alpha  \cap  \beta  = \varnothing$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_61_451_1266_325_135_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_61_451_1266_325_135_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_61_875_1266_326_136_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_61_875_1266_326_136_0.jpg)
+
+## (3)空间图形的平面直观图的画法
+
+规定按如图所示的位置和夹角作三条轴分别表示前后方向、左右方向以及铅垂方向的轴,依次把它们叫做 $x$ 轴、 $y$ 轴和 $z$ 轴,规定在 $y$ 轴和 $z$ 轴方向上线段的长度与其表示的真实长度相等,而在 $x$ 轴方向上,线段的长度是其表示的真实长度的二分之一,根据这样的规定, 从而画出空间图形的直观图. 用这种方法画的空间图形直观图叫做斜二轴测图, 这样的画图方法称为斜二测画法.
+
+![bo_d7aq48ilb0pc73dcpcb0_61_936_1743_354_348_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_61_936_1743_354_348_0.jpg)
+
+斜二测画法画的直观图有以下重要性质:
+
+① 线段平行关系不变；
+
+② 线段上定比分点比例不变；
+
+③ 原图与直观图的面积比值为 $2\sqrt{2}$ .
+
+## 2. 直线与直线的位置关系
+
+空间直线与直线的位置关系 $\left\{  \begin{array}{l} \text{ 共面 \{相交 } \\  \text{ 平行 } \end{array}\right.$
+
+## (1)空间的平行直线
+
+公理 4 平行于同一条直线的两条直线互相平行.
+
+等角定理 如果一个角的两边与另一个角的两边分别平行并且方向相同, 那么这两个角相等.
+
+推论 1 如果一个角的两边和另一个角的两边分别平行, 那么这两个角相等或者互补.
+
+推论 2 如果两条相交直线与另两条相交直线分别平行, 那么这两组直线所成的锐角 (或直角) 相等.
+
+## (2)异面直线
+
+在同一平面上, 两条直线只有平行或相交两种位置关系.
+
+如果空间的两条直线既不平行, 也不相交, 这时不可能存在一个平面, 使它能同时经过这两条直线. 我们把不同在任何一个平面上的两条直线叫做异面直线.
+
+画两条异面直线时, 通常需要用一个或两个平面来衬托, 如图所示.
+
+![bo_d7aq48ilb0pc73dcpcb0_62_347_1099_266_165_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_62_347_1099_266_165_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_62_705_1097_235_163_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_62_705_1097_235_163_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_62_1035_1112_262_135_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_62_1035_1112_262_135_0.jpg)
+
+异面直线判定定理 过平面外一点与平面上一点的直线, 和此平面上不经过该点的任何一条直线都是异面直线.
+
+## (3)两条异面直线所成的角
+
+对于异面直线 $a\text{ 、 }b$ ,在空间任取一点 $P$ ,过 $P$ 分别作 $a\text{ 、 }b$ 的平行线 ${a}^{\prime }\text{ 、 }{b}^{\prime }$ ,此时, 相交直线 ${a}^{\prime }\text{ 、 }{b}^{\prime }$ 所成锐角 (或直角) 的大小是唯一确定的. 这样就可以给出定义,两条异面直线平移到相交位置时所得到的锐角或直角, 称为这两条异面直线所成的角.
+
+由上述定义可知,两条异面直线所成角的范围是 $\left( {0,\frac{\pi }{2}}\right\rbrack$ .
+
+特别地,如果两条异面直线 $a\text{ 、 }b$ 所成的角是直角,就说这两条异面直线互相垂直, 记作 $a \bot  b$ . 由上述定义容易推出: 如果 $a \bot  b, b//c$ ,那么 $a \bot  c$ .
+
+## (4)异面直线间的距离(※)
+
+![bo_d7aq48ilb0pc73dcpcb0_62_1062_1911_328_146_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_62_1062_1911_328_146_0.jpg)
+
+对于任意给定的两条异面直线，存在唯一的一条直线与这两条直线都垂直并且相交.
+
+与两条异面直线都垂直且相交的直线称为这两条异面直线的公垂线. 任意两条异面直线的公垂线是唯一存在的. 公垂线的两个垂足之间的线段称为异面直线的公垂线段. 两条异面直线的公垂线段的长度就叫做两条异面直线的距离.
+
+两条异面直线的公垂线段, 是连接两条异面直线所有线段中的最短线段.
+
+## 3. 直线与平面的位置关系
+
+空间直线与平面的位置关系 $\left\{  \begin{array}{l} \text{ 直线在平面上 } \\  \text{ 直线不在平面上 }\left\{  \begin{array}{l} \text{ 相交 } \\  \text{ 平行 } \end{array}\right.  \end{array}\right.$
+
+## (1)直线与平面平行
+
+直线与平面平行的判定定理 如果不在平面上的一条直线与这个平面上的一条直线平行, 那么该直线与这个平面平行.
+
+直线与平面平行的性质定理 如果一条直线与一个平面平行, 过这条直线的一个平面与此平面相交, 那么其交线必与该直线平行.
+
+![bo_d7aq48ilb0pc73dcpcb0_63_376_922_333_140_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_376_922_333_140_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_63_941_920_330_141_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_941_920_330_141_0.jpg)
+
+## (2)直线与平面垂直
+
+如果一条直线与平面上的任意一条直线都垂直, 就说这条直线与这个平面垂直.
+
+如果直线 $l$ 与平面 $\alpha$ 垂直,我们记作 $l \bot  \alpha$ ,直线 $l$ 叫做平面 $\alpha$ 的垂线 (或者法线), $l$ 与 $\alpha$ 的交点叫做垂足.
+
+直线与平面垂直的判定定理 如果一条直线与一个平面上的两条相交直线都垂直, 那么此直线与该平面垂直.
+
+推论 如果一条直线垂直于一个平面, 那么这条直线垂直于平面内的所有直线.
+
+![bo_d7aq48ilb0pc73dcpcb0_63_474_1495_276_149_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_474_1495_276_149_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_63_892_1492_276_152_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_892_1492_276_152_0.jpg)
+
+直线与平面垂直的性质定理 垂直于同一个平面的两条直线互相平行.
+
+![bo_d7aq48ilb0pc73dcpcb0_63_1076_1738_259_169_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_1076_1738_259_169_0.jpg)
+
+推论 1 过一点有且只有一个平面与给定的直线垂直.
+
+推论 2 过一点有且只有一条直线与给定的平面垂直.
+
+推论 如果两条平行直线中的一条垂直于一个平面, 那么另一条也垂直于这个平面.
+
+点到平面的距离: 设 $M$ 是平面 $\alpha$ 外一点,过点 $M$ 作平面 $\alpha$ 的垂线,垂足为 $N$ ,我们把点 $M$ 到垂足 $N$ 之间的距离叫做点 $M$ 到平面 $\alpha$ 的距离.
+
+![bo_d7aq48ilb0pc73dcpcb0_63_1073_1951_265_168_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_63_1073_1951_265_168_0.jpg)
+
+直线到平面的距离: 设直线 $l$ 平行于平面 $\alpha$ ,在直线 $l$ 上任取一点 $M$ ,我们把点 $M$ 到平面 $\alpha$ 的距离叫做直线 $l$ 到与它平行的平面 $\alpha$ 的距离.
+
+## (3)直线与平面所成的角
+
+当直线 $l$ 与平面 $\alpha$ 相交且不垂直时,叫做直线 $l$ 与平面 $\alpha$ 斜交,直线 $l$ 叫做平面 $\alpha$ 的斜线,直线 $l$ 与平面 $\alpha$ 的交点称为斜足.
+
+设直线 $l$ 与平面 $\alpha$ 斜交于点 $M$ ,过 $l$ 上任意点 $A$ ,作平面 $\alpha$ 的垂线,垂足为 $O$ ,我们把点 $O$ 叫做点 $A$ 在平面 $\alpha$ 上的投影(也称射影)，直线 ${OM}$ 叫做直线 $l$ 在平面 $\alpha$ 上的投影.
+
+定义 平面的一条斜线和它在平面上的投影所成的锐角, 叫做这条直线和这个平面所成的角. (如图所示即 $\angle {AMO}$ )
+
+![bo_d7aq48ilb0pc73dcpcb0_64_392_711_365_191_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_64_392_711_365_191_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_64_905_711_371_194_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_64_905_711_371_194_0.jpg)
+
+如果一条直线垂直于平面, 我们说它们所成的角是直角. 如果一条直线和平面平行或在该平面上,就说二者所成的角是 ${0}^{ \circ  }$ 的角.
+
+斜线与平面所成的角, 是这条斜线与平面内任何直线所成的角中最小的角.
+
+## (4)三垂线定理
+
+三垂线定理 平面上的一条直线和这个平面的一条斜线垂直的充要条件是它和这条斜线在平面上的投影垂直.
+
+## 4. 空间平面与平面的位置关系
+
+空间平面与平面的位置关系 $\left\{  \begin{array}{l} \text{ 相交 } \\  \text{ 平行 } \end{array}\right.$
+
+## (1)平面与平面平行
+
+两个平面平行的判定定理 如果一个平面上的两条相交直线与另一个平面都平行, 那么这两个平面平行.
+
+推论 如果一个平面内的两条相交直线, 分别平行于另一个平面内的两条相交直线, 那么这两个平面平行.
+
+推论 垂直于同一条直线的两个平面平行.
+
+![bo_d7aq48ilb0pc73dcpcb0_64_360_1821_250_158_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_64_360_1821_250_158_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_64_703_1803_247_188_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_64_703_1803_247_188_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_64_1043_1807_248_183_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_64_1043_1807_248_183_0.jpg)
+
+两个平面平行的性质定理 如果两个平行平面同时和第三个平面相交, 那么它们的交线平行.
+
+推论 若一条直线垂直于两个平行平面中的一个平面, 则它也垂直于另一个平面.
+
+两个平行平面之间的距离为其中一个平面上的任意一点到另外一个平面的距离.
+
+## (2)二面角
+
+从一条直线出发的两个半平面所组成的图形叫做二面角. 这条直线叫做二面角的棱, 这两个半平面叫做二面角的面. 棱为 ${AB}$ ,两个面为 $\alpha \text{ 、 }\beta$ 的二面角,记作二面角 $\alpha  - {AB} - \beta$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_65_493_492_252_201_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_65_493_492_252_201_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_65_836_494_318_201_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_65_836_494_318_201_0.jpg)
+
+在二面角的棱 ${AB}$ 上任取一点 $O$ ,过 $O$ 分别在平面 $\alpha$ 和 $\beta$ 上作棱 ${AB}$ 的垂线 ${OM}$ 和 ${ON}$ ,射线 ${OM}$ 和 ${ON}$ 所成的角叫做二面角 $\alpha  - {AB} - \beta$ 的平面角.
+
+二面角的取值范围是 $\left\lbrack  {0,\pi }\right\rbrack$ . 当二面角的大小等于直角时,我们称这个二面角为直二面角,即两个平面互相垂直. 平面 $\alpha$ 与平面 $\beta$ 垂直,记作 $\alpha  \bot  \beta$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_65_1065_966_323_207_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_65_1065_966_323_207_0.jpg)
+
+平面与平面垂直的判定定理 如果一个平面经过另一个平面的一条垂线, 那么这两个平面互相垂直.
+
+平面与平面垂直的性质定理 如果两个平面垂直, 那么其中一个平面上垂直于两平面交线的直线与另一个平面垂直.
+
+## 5. 空间角与距离的计算
+
+## (1)异面直线所成角
+
+异面直线所成角的范围 $\left( {0,\frac{\pi }{2}}\right\rbrack$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_65_1111_1447_222_222_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_65_1111_1447_222_222_0.jpg)
+
+求异面直线所成的角, 主要有两种方法:
+
+① 平移，将异面直线平移至相交，常用“作平行”和 “取中点”的方法;
+
+② 补形，延长异面直线，或者将题中几何体进行添补， 然后再平移至相交.
+
+## (2)直线与平面所成角
+
+直线与平面所成角的范围 $\left\lbrack  {0,\frac{\pi }{2}}\right\rbrack$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_65_1071_1869_303_169_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_65_1071_1869_303_169_0.jpg)
+
+求直线与平面所成的角, 主要有以下方法:
+
+① 定义法，根据直线与平面所成角的定义，找斜线及其射影的夹角;
+
+② 垂线法，过直线上某一点作平面的垂线；
+
+![bo_d7aq48ilb0pc73dcpcb0_66_1093_216_222_219_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_1093_216_222_219_0.jpg)
+
+③ 等体积法, 通过几何体体积相等, 求出直线上的点到平面的距离. 再比上斜线段的长度, 可求得直线与平面所成角的正弦值.
+
+## (3)二面角的平面角
+
+二面角的平面角的范围 $\left\lbrack  {0,\pi }\right\rbrack$ .
+
+求二面角的平面角, 主要有以下方法:
+
+① 定义法, 在两个半平面中分别作交线的垂线;
+
+② 垂线法, 过一个平面上一点作另一个平面的垂线, 再作交线的垂线;
+
+③ 垂面法, 找到一个与两个半平面均垂直的平面, 截得的交线所形成的角;
+
+④ 等体积法,通过几何体体积相等,求出直线上的点到平面的距离;
+
+⑤ 射影法,面积射影定理 $\cos \theta  = \frac{{S}^{\prime }}{S}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_66_359_846_208_189_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_359_846_208_189_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_66_701_846_246_190_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_701_846_246_190_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_66_1078_854_208_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_1078_854_208_180_0.jpg)
+
+## (4)距离的计算
+
+异面直线间的距离, 可以转化为直线到平面的距离. 而直线到平面的距离、平面到平面的距离都可以转化为点到平面的距离.
+
+求点到平面的距离, 主要有两种方法:
+
+① 垂线法, 过点作平面的垂线, 求垂线的长度;
+
+② 等体积法, 通过几何体体积相等, 求出高, 即点到平面的距离.
+
+## 附:正方体的截面
+
+用一个平面去截一个几何体, 几何体表面与平面的交线所围成的平面图形叫做平面截几何体的截面.
+
+![bo_d7aq48ilb0pc73dcpcb0_66_412_1619_179_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_412_1619_179_180_0.jpg)
+
+三角形
+
+![bo_d7aq48ilb0pc73dcpcb0_66_736_1619_179_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_736_1619_179_180_0.jpg)
+
+正方形
+
+![bo_d7aq48ilb0pc73dcpcb0_66_1057_1619_180_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_1057_1619_180_180_0.jpg)
+
+矩形
+
+![bo_d7aq48ilb0pc73dcpcb0_66_412_1861_180_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_412_1861_180_180_0.jpg)
+
+梯形
+
+![bo_d7aq48ilb0pc73dcpcb0_66_735_1861_180_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_735_1861_180_180_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_66_1057_1861_179_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_66_1057_1861_179_180_0.jpg)
+
+六边形
+
+五边形
+
+![bo_d7aq48ilb0pc73dcpcb0_67_367_336_868_750_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_67_367_336_868_750_0.jpg)
+
+## 1. 柱体
+
+## (1)棱柱与圆柱
+
+由三角形或平面多边形围成的封闭几何体称为多面体. 构成多面体表面的各三角形或平面多边形称为多面体的面. 相邻面的公共边称为多面体的棱. 棱与棱的交点称为多面体的顶点.
+
+如果一个多面体有一对互相平行的面, 且这两个面是两个全等的三角形或平面多边形, 同时, 不在这两个面上的棱都相互平行, 我们把这样的多面体叫做棱柱. 那一对互相平行的面称为棱柱的底面, 其余的面则称为棱柱的侧面, 棱柱的侧面都是平行四边形. 不在底面上的棱称为棱柱的侧棱, 而棱柱的两个底面之间的距离称为棱柱的高.
+
+![bo_d7aq48ilb0pc73dcpcb0_67_471_1664_713_154_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_67_471_1664_713_154_0.jpg)
+
+侧棱垂直于底面的棱柱称为直棱柱, 否则称为斜棱柱. 直棱柱的侧面都是矩形, 直棱柱的高与侧棱的长相等. 底面是矩形的直棱柱叫做长方体, 所有棱长都相等的长方体叫做正方体. 底面是正多边形的直棱柱称为正棱柱.
+
+![bo_d7aq48ilb0pc73dcpcb0_67_487_2004_672_110_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_67_487_2004_672_110_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_378_203_212_157_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_378_203_212_157_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_652_199_154_158_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_652_199_154_158_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_884_200_165_159_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_884_200_165_159_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_1125_201_135_157_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_1125_201_135_157_0.jpg)
+
+如图, 将矩形 ${ABCD}$ 绕其一条边 ${AB}$ 所在直线旋转一周, 所形成的几何体叫做圆柱. ${AB}$ 所在直线叫做该圆柱的轴,线段 ${AD}$ 和 ${BC}$ 分别旋转而成的圆面叫做该圆柱的底面,线段 ${CD}$ 旋转而成的曲面叫做该圆柱的侧面， ${CD}$ 叫做该圆柱的母线，圆柱的两个底面间的距离 (即 ${AB}$ 的长度) 叫做圆柱的高.
+
+![bo_d7aq48ilb0pc73dcpcb0_68_1135_551_220_264_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_1135_551_220_264_0.jpg)
+
+根据圆柱的形成过程, 易知圆柱有两个相互平行的底面, 有无穷多条母线, 且所有母线都与其轴平行.
+
+我们把棱柱和圆柱统称为柱体.
+
+## (2)柱体的体积
+
+祖暅原理 夹在两个平行平面间的两个几何体，如果被平行于这两个平面的任意平面截得的两个截面都有相等的面积, 那么这两个几何体的体积必相等.
+
+![bo_d7aq48ilb0pc73dcpcb0_68_491_955_658_254_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_491_955_658_254_0.jpg)
+
+棱柱的体积公式: ${V}_{\text{ 棱柱 }} = {S}_{\text{ 底 }} \times  h$ ,其中, ${S}_{\text{ 底 }}$ 为棱柱的底面积, $h$ 为棱柱的高.
+
+圆柱的体积公式: ${V}_{\text{ 圆柱 }} = {S}_{\text{ 底 }} \times  h = \pi {r}^{2}h$ ,其中 ${S}_{\text{ 底 }}$ 为圆柱的底面积, $h$ 为圆柱的高, $r$ 为圆柱的底面半径.
+
+## (3)柱体的表面积
+
+柱体的表面积等于两个底面的面积再加上所有侧面的面积. 其中, 所有侧面的面积之和称为柱体的侧面积.
+
+直棱柱的表面积公式: ${S}_{\text{ 直棱柱表 }} = {S}_{\text{ 侧 }} + 2{S}_{\text{ 底 }} = {ch} + 2{S}_{\text{ 底 }}$ ,其中, ${S}_{\text{ 侧 }}$ 为直棱柱的侧面积, ${S}_{\text{ 底 }}$ 为直棱柱的底面积, $c$ 为底面多边形的周长, $h$ 为直棱柱的高.
+
+![bo_d7aq48ilb0pc73dcpcb0_68_305_1779_119_163_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_305_1779_119_163_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_500_1723_277_264_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_500_1723_277_264_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_865_1779_118_157_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_865_1779_118_157_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_68_1048_1720_259_276_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_68_1048_1720_259_276_0.jpg)
+
+圆柱的表面积公式: ${S}_{\text{ 圆柱表 }} = {ch} + 2{S}_{\text{ 底 }} = {2\pi rh} + {2\pi }{r}^{2}$ ,其中, $c$ 为底面圆的周长, $h$ 为圆柱的高, ${S}_{\text{ 底 }}$ 为圆柱的底面积, $r$ 为圆柱底面的半径.
+
+## 2. 锥体
+
+## (1)棱锥与圆锥
+
+![bo_d7aq48ilb0pc73dcpcb0_69_394_321_220_199_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_69_394_321_220_199_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_69_730_323_231_197_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_69_730_323_231_197_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_69_1079_327_186_192_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_69_1079_327_186_192_0.jpg)
+
+如果一个多面体有一个面是三角形或平面多边形, 且不在这个面上的棱都有一个公共点, 这样的多面体叫做棱锥. 其中, 这个三角形或平面多边形称为棱锥的底面, 其余的面称为棱锥的侧面, 棱锥侧面都是三角形. 不在底面上的棱称为棱锥的侧棱, 所有侧棱的公共点称为棱锥的顶点, 顶点到底面的距离叫做棱锥的高.
+
+如果棱锥的底面是正多边形, 且底面中心与顶点的连线垂直于底面, 那么这个棱锥叫做正棱锥. 正棱锥的各条侧棱长相等, 各个侧面都是全等的等腰三角形, 正棱锥的高与其顶点到底面中心的距离相等.
+
+如图,将直角三角形 ${AOB}$ 绕其一条直角边 ${AO}$ 所在直线旋转一周,所形成的几何体叫做圆锥. 其中, ${AO}$ 所在直线叫做圆锥的轴,点 $A$ 叫做圆锥的顶点,直角边 ${OB}$ 旋转而成的圆面叫做圆锥的底面，斜边 ${AB}$ 旋转而成的曲面叫做圆锥的侧面，斜边 ${AB}$ 叫做圆锥的母线， 圆锥的顶点到底面间的距离(即 ${AO}$ 的长度)叫做圆锥的高.
+
+![bo_d7aq48ilb0pc73dcpcb0_69_1123_1113_236_232_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_69_1123_1113_236_232_0.jpg)
+
+由圆锥的形成过程可以知道, 圆锥有无穷多条母线, 且所有的母线都交于圆锥的顶点, 每条母线与轴的夹角都相等.
+
+我们把棱锥与圆锥统称为锥体.
+
+把一个锥体用平行于底面的平面截去含顶点的小锥体后,
+
+剩下的几何体称为台体. 大圆锥被一个平行于底面的平面所截, 截去小圆锥后剩下的几何体称为圆台. 棱锥被一个平行于底面的平面所截, 截去一个小棱锥后剩下的多面体称为棱台. 其中，由正棱锥截得的棱台称为正棱台.
+
+与台体有关的问题, 我们一方面可以转化为锥体的问题来解决, 另一方面也可以把锥体和柱体看作是台体的极端情形.
+
+## (2)锥体的体积
+
+等底等高的三棱锥的体积相等.
+
+棱锥的体积公式: ${V}_{\text{ 棱锥 }} = \frac{1}{3}{Sh}$ ,其中 $S$ 为棱锥底面的面积, $h$ 为棱锥的高.
+
+圆锥的体积公式: ${V}_{\text{ 圆锥 }} = \frac{1}{3}{Sh} = \frac{1}{3}\pi {r}^{2}h$ ,其中 $S$ 为底面面积, $h$ 为高, $r$ 为底面半径.
+
+台体的体积公式: ${V}_{\text{ 台 }} = \frac{1}{3}\left( {{S}^{\prime } + \sqrt{{S}^{\prime }S} + S}\right) h$ ,其中 ${S}^{\prime }\text{ 、 }S$ 为上、下底面积, $h$ 为高.
+
+(3)锥体的表面积
+
+![bo_d7aq48ilb0pc73dcpcb0_70_471_250_266_339_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_471_250_266_339_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_70_913_249_266_341_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_913_249_266_341_0.jpg)
+
+与柱体类似, 锥体的表面积也等于侧面积与底面积之和.
+
+依据定义,正棱锥的每个侧面都是全等的等腰三角形,我们把这些等腰三角形底边上的高称为棱锥的斜高,记为 ${h}^{\prime }$ .
+
+正棱锥的侧面积公式: ${S}_{\text{ 正棱锥侧 }} = \frac{1}{2}c{h}^{\prime }$ ,其中 $c$ 为底面周长, ${h}^{\prime }$ 为斜高.
+
+正棱锥的表面积公式: ${S}_{\text{ 正棱锥表 }} = \frac{1}{2}c{h}^{\prime } + {S}_{\text{ 底 }}$ ,其中 ${S}_{\text{ 底 }}$ 为底面积.
+
+圆锥的侧面积公式: ${S}_{\text{ 圆锥侧 }} = {\pi rl}$ ,其中 $r$ 为底面半径, $l$ 为圆锥母线长.
+
+圆锥的表面积公式: ${S}_{\text{ 圆锥表 }} = {\pi rl} + \pi {r}^{2}$ ,其中 $r$ 为底面半径, $l$ 为圆锥母线长.
+
+## 3. 多面体与旋转体
+
+## (1)多面体
+
+我们把多面体定义为由三角形或平面多边形围成的封闭几何体. 多面体可以用它的面的数量进行命名, 有几个面的多面体就叫做几面体. 一个多面体至少有四个面.
+
+如果一个多面体的所有面都是全等的正三角形或正多边形, 每个顶点聚集的棱的条数都相等, 这个多面体就叫做正多面体. 正多面体只有五种, 如下图所示:
+
+![bo_d7aq48ilb0pc73dcpcb0_70_269_1512_171_171_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_269_1512_171_171_0.jpg)
+
+正四面体
+
+![bo_d7aq48ilb0pc73dcpcb0_70_500_1512_171_171_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_500_1512_171_171_0.jpg)
+
+正六面体(正方体)
+
+![bo_d7aq48ilb0pc73dcpcb0_70_732_1512_169_171_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_732_1512_169_171_0.jpg)
+
+正八面体
+
+![bo_d7aq48ilb0pc73dcpcb0_70_967_1506_172_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_967_1506_172_180_0.jpg)
+
+正十二面体
+
+![bo_d7aq48ilb0pc73dcpcb0_70_1218_1509_166_180_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_70_1218_1509_166_180_0.jpg)
+
+正二十面体
+
+多面体的欧拉定理: 简单多面体的顶点数 $V$ 、棱数 $E$ 与面数 $F$ 满足关系 $V + F - E = 2$ .
+
+## (2)旋转体
+
+由一个平面封闭图形绕其所在平面上的一条定直线旋转一周所形成的空间封闭几何体称为旋转体. 这条直线叫做该旋转体的轴.
+
+与旋转体类似地可以定义空间中的旋转面: 一条平面曲线 (包括直线、折线等) 绕其所在平面上的一条直线旋转一周所形成的空间图形称为旋转面.
+
+## 4. 球
+
+## (1) 球
+
+![bo_d7aq48ilb0pc73dcpcb0_71_1141_320_229_270_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_71_1141_320_229_270_0.jpg)
+
+如图,将圆心为 $O$ 的半圆面绕其直径所在的直线旋转一周, 所形成的几何体叫做球,记作球 $O$ . 半圆的圆弧绕直径旋转所形成的旋转面叫做球面，点 $O$ 到球面上任意一点的距离都相等，点 $O$ 叫做球心,把原半圆的半径和直径分别叫做球的半径和直径.
+
+球具有丰富的对称性, 所有经过球心的直线都可以作为球的旋转轴, 每条旋转轴与球面交点之间的线段都是球的直径.
+
+用一个平面 $\alpha$ 去截球,得到的截面都是圆. 特别地,若平面 $\alpha$ 经过球心,此时的截面称为球的大圆. 为了区分, 把球的非大圆截面称为小圆.
+
+球面上联结两点的最短路径, 该路径的长度就是球面上两点之间的距离. 在联结球面上两点的路径中, 通过该两点的大圆劣弧最短, 因此该弧的长度就是这两点的球面距离.
+
+若把地球看作是一个球体,设直径 ${AB}$ 的端点分别是地球的北极点和南极点,用平行于赤道平面的平面截地球得到的小圆的圆周称为纬线, 按照南北方向分为南纬和北纬. 过 ${AB}$ 的大圆的半圆周称为经线. 按照约定,通过英国伦敦格林尼治天文台原址的那条经线称为 0 度经线，从它开始，分别按照东西方向分为东经和西经. 地球上某点的纬度是该点和地心连线与赤道平面所成的角. 该点的经度是它所在经线半圆与 0 度经线半圆所成二面角的度数.
+
+## (2)球的体积与表面积
+
+球的体积公式: ${V}_{\text{ 球 }} = \frac{4}{3}\pi {R}^{3}$ ,其中 $R$ 是球的半径.
+
+球的表面积公式: ${S}_{\text{ 球 }} = {4\pi }{R}^{2}$ ,其中 $R$ 是球的半径.
+
+## 附:特殊几何体之间的联系
+
+![bo_d7aq48ilb0pc73dcpcb0_72_276_270_216_217_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_276_270_216_217_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_72_565_271_217_216_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_565_271_217_216_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_72_851_270_220_217_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_851_270_220_217_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_72_282_533_206_223_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_282_533_206_223_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_72_565_538_215_216_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_565_538_215_216_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_72_853_522_242_237_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_72_853_522_242_237_0.jpg)
+
+说明:
+
+1. 正方体 (正六面体) 的面对角线组成一个正四面体, ${V}_{\text{ 正四面体 }} : {V}_{\text{ 正方体 }} = 1 : 3$ ,它们有着同样的外接球, 所以如果求正四面体的外接球的体积, 可以转化为求正方体的外接球的体积.
+
+2. 正方体 (正六面体) 的各个面的中心连线组成一个正八面体, ${V}_{\text{ 正八面体 }} : {V}_{\text{ 正方体 }} = 1 : 6$ , 正方体的内切球是该正八面体的外接球, 它们之间也可以相互转化.
+
+3. 求内切球时, 要注意垂直的条件以及勾股定理的运用.
+
+4. 正四面体的一些数据 (假设正四面体边长为 $a$ ): 底面积为 $\frac{\sqrt{3}}{4}{a}^{2}$ ,表面积为 $\sqrt{3}{a}^{2}$ , 高为 $\frac{\sqrt{6}a}{3}$ ,体积为 $\frac{\sqrt{2}}{12}{a}^{3}$ ,外接球半径为 $\frac{\sqrt{6}a}{4}$ ,内切球半径为 $\frac{\sqrt{6}a}{12},{R}_{\text{ 外接球 }} : {r}_{\text{ 内切球 }} = 3 : 1$ .
+
+5. 用一个平面顺次截正方体六条棱的中点, 会得到一个正六边形, 联结相对的顶点, 会得到一个正六棱锥, ${V}_{\text{ 正六棱锥 }} : {V}_{\text{ 正方体 }} = 3 : 8$ .
+
+## 第十一章 平面直角坐标系中的直线
+
+![bo_d7aq48ilb0pc73dcpcb0_73_268_340_1113_798_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_73_268_340_1113_798_0.jpg)
+
+## 1. 直线的倾斜角与斜率
+
+如图,将 $x$ 轴绕点 $A$ 沿逆时针方向旋转到与直线 $l$ 重合时所转过的最小正角 $\theta$ 叫做直线 $l$ 的倾斜角. 倾斜角 $\theta$ 的范围是 $\lbrack 0,\pi )$ . 当直线 $l$ 的倾斜角 $\theta  \neq  \frac{\pi }{2}$ 时,定义 $\tan \theta$ 为直线 $l$ 的斜率,常用字母 $k$ 表示,即 $k = \tan \theta$ . 当 $\theta  = \frac{\pi }{2}$ ,即 $l$ 与 $x$ 轴垂直时,直线 $l$ 的斜率不存在.
+
+![bo_d7aq48ilb0pc73dcpcb0_73_1082_1310_270_272_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_73_1082_1310_270_272_0.jpg)
+
+在平面直角坐标系中,经过不同的两点 $A\left( {{x}_{1},{y}_{1}}\right)$ 和 $B\left( {{x}_{2},{y}_{2}}\right) \left( {{x}_{1} \neq  {x}_{2}}\right)$ 的直线 $l$ 的斜率为 $k = \frac{{y}_{2} - {y}_{1}}{{x}_{2} - {x}_{1}}$ . 从图像上观察,直线越陡,斜率的绝对值越大.
+
+## 2. 直线的方程
+
+## (1)几种特殊形式的直线方程
+
+① 直线的点斜式方程:如果直线 $l$ 经过点 $\left( {{x}_{0},{y}_{0}}\right)$ ，斜率为 $k$ ，那么直线 $l$ 的方程可写作 $y - {y}_{0} = k\left( {x - {x}_{0}}\right)$ .
+
+② 直线的斜截式方程:如果直线 $l$ 在 $y$ 轴上的截距为 $b$ (即直线 $l$ 与 $y$ 轴的交点为 $\left( {0, b}\right) )$ ,且斜率为 $k$ ,那么直线 $l$ 的方程可写作 $y = {kx} + b$ .
+
+如果直线与 $y$ 轴平行或重合,它的斜率与在 $y$ 轴上的截距都不存在,但此时直线与 $x$ 轴垂直,设垂足为 $\left( {a,0}\right)$ ,那么该直线在 $x$ 轴上的截距为 $a$ ,且直线上所有点的横坐标都是 $a$ , 从而直线的方程是 $x = a$ .
+
+③ 直线的两点式方程: 如果直线 $l$ 经过两点 $\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }\left( {{x}_{2},{y}_{2}}\right) \left( {{x}_{1} \neq  {x}_{2}\text{ 且 }{y}_{1} \neq  {y}_{2}}\right)$ , 那么直线 $l$ 的方程可写作 $\frac{y - {y}_{1}}{{y}_{2} - {y}_{1}} = \frac{x - {x}_{1}}{{x}_{2} - {x}_{1}}$ .
+
+④ 直线的截距式方程: 如果直线 $l$ 与 $x$ 轴和 $y$ 轴分别交于点 $\left( {a,0}\right) \text{ 、 }\left( {0, b}\right)$ ( ${ab} \neq  0$ ), $a\text{ 、 }b$ 分别叫做直线 $l$ 在坐标轴上的横截距和纵截距,那么直线 $l$ 的方程可写作 $\frac{x}{a} + \frac{y}{b} = 1$ .
+
+## (2)直线的一般式方程
+
+⑤ 直线的一般式方程: ${ax} + {by} + c = 0$ ( $a$ 、 $b$ 不同时为零).
+
+⑥ 直线的点法式方程:我们把与直线垂直的非零向量叫做该直线的法向量. 如果直线 $l$ 经过点 $\left( {{x}_{0},{y}_{0}}\right)$ ,法向量 $\overrightarrow{n} = \left( {a, b}\right)$ ,那么直线 $l$ 的方程可写作 $a\left( {x - {x}_{0}}\right)  + b\left( {y - {y}_{0}}\right)  = 0$ .
+
+⑦ (※) 直线的点方向式方程: 我们把与直线平行的非零向量叫做直线的方向向量. 如果直线 $l$ 经过点 $\left( {{x}_{0},{y}_{0}}\right)$ ,方向向量 $\overrightarrow{d} = \left( {u, v}\right)$ ,那么直线 $l$ 的方程可写作 $\frac{x - {x}_{0}}{u} = \frac{y - {y}_{0}}{v}$ .
+
+以直线 $l$ 的一般式方程 ${ax} + {by} + c = 0$ ( $a\text{ 、 }b$ 不同时为零) 的一次项系数为坐标的向量 $\overrightarrow{n} = \left( {a, b}\right)$ 是 $l$ 的一个法向量. $\overrightarrow{d} = \left( {b, - a}\right)$ 是直线 $l$ 的一个方向向量.
+
+<table><tr><td>直线方程</td><td>斜率 $k$</td><td>法向量 $\overrightarrow{n}$</td><td>(※)方向向量 $\overrightarrow{d}$</td></tr><tr><td>$y - {y}_{0} = k\left( {x - {x}_{0}}\right)$</td><td>$k$</td><td>(- $k,1$ )</td><td>$\left( {1, k}\right)$</td></tr><tr><td>$y = {kx} + b$</td><td>$k$</td><td>$\left( {-k,1}\right)$</td><td>$\left( {1, k}\right)$</td></tr><tr><td>$\frac{y - {y}_{1}}{{y}_{2} - {y}_{1}} = \frac{x - {x}_{1}}{{x}_{2} - {x}_{1}}$</td><td>$\frac{{y}_{2} - {y}_{1}}{{x}_{2} - {x}_{1}}$</td><td>$\left( {{y}_{2} - {y}_{1},{x}_{1} - {x}_{2}}\right)$</td><td>$\left( {{x}_{2} - {x}_{1},{y}_{2} - {y}_{1}}\right)$</td></tr><tr><td>$\frac{x}{a} + \frac{y}{b} = 1$</td><td>$- \frac{b}{a}$</td><td>$\left( {b, a}\right)$</td><td>$\left( {a, - b}\right)$</td></tr><tr><td>${ax} + {by} + c = 0$</td><td>$- \frac{a}{b}$</td><td>$\left( {a, b}\right)$</td><td>$\left( {b, - a}\right)$</td></tr><tr><td>$a\left( {x - {x}_{0}}\right)  + b\left( {y - {y}_{0}}\right)  = 0$</td><td>$- \frac{a}{b}$</td><td>$\left( {a, b}\right)$</td><td>$\left( {b, - a}\right)$</td></tr><tr><td>(※) $\frac{x - {x}_{0}}{u} = \frac{y - {y}_{0}}{v}$</td><td>$\frac{v}{u}$</td><td>$\left( {v, - u}\right)$</td><td>$\left( {u, v}\right)$</td></tr></table>
+
+## 3. 两条直线的位置关系
+
+## (1)两条直线的相交、平行与重合
+
+在平面直角坐标系中,已知两条直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0\left( {{a}_{1}\text{ 、 }{b}_{1}}\right.$ 不同时为零) 和 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} = 0$ ( ${a}_{2}\text{ 、 }{b}_{2}$ 不同时为零),如果这两条直线有公共点 $M\left( {{x}_{0},{y}_{0}}\right)$ ,那么点 $M\left( {{x}_{0},{y}_{0}}\right)$ 的坐标要同时满足这两条直线的方程,即 $\left\{  \begin{array}{l} x = {x}_{0} \\  y = {y}_{0} \end{array}\right.$ 是方程组 $\left\{  \begin{array}{l} {a}_{1}x + {b}_{1}y + {c}_{1} = 0 \\  {a}_{2}x + {b}_{2}y + {c}_{2} = 0 \end{array}\right.$ 的解. 反过来,以方程组的解为坐标的点也必是 ${l}_{1}$ 与 ${l}_{2}$ 的公共点. 这样,方程组解的情况即对应两条直线的位置情况.
+
+给定两条直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0$ ( ${a}_{1}\text{ 、 }{b}_{1}$ 不同时为零) 和 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} = 0$ ( ${a}_{2}$ 、 ${b}_{2}\text{ 、 }{c}_{2}$ 均不为零),那么:
+
+① ${l}_{1}$ 与 ${l}_{2}$ 重合 $\Leftrightarrow  \frac{{a}_{1}}{{a}_{2}} = \frac{{b}_{1}}{{b}_{2}} = \frac{{c}_{1}}{{c}_{2}}$ ;
+
+② ${l}_{1}$ 与 ${l}_{2}$ 平行 $\Leftrightarrow  \frac{{a}_{1}}{{a}_{2}} = \frac{{b}_{1}}{{b}_{2}} \neq  \frac{{c}_{1}}{{c}_{2}}$ ;
+
+③ ${l}_{1}$ 与 ${l}_{2}$ 相交 $\Leftrightarrow  \frac{{a}_{1}}{{a}_{2}} \neq  \frac{{b}_{1}}{{b}_{2}}$ .
+
+当直线方程形式为斜截式时,即两条直线分别为 ${l}_{1} : y = {k}_{1}x + {b}_{1}$ 和 ${l}_{2} : y = {k}_{2}x + {b}_{2}$ ,则:
+
+① ${l}_{1}$ 与 ${l}_{2}$ 重合 $\Leftrightarrow  {k}_{1} = {k}_{2}$ 且 ${b}_{1} = {b}_{2}$ ;
+
+② ${l}_{1}$ 与 ${l}_{2}$ 平行 $\Leftrightarrow  {k}_{1} = {k}_{2}$ 且 ${b}_{1} \neq  {b}_{2}$ ；
+
+③ ${l}_{1}$ 与 ${l}_{2}$ 相交 $\Leftrightarrow  {k}_{1} \neq  {k}_{2}$ .
+
+我们还可以通过法向量去判断两条直线相交与否, ${l}_{1}$ 与 ${l}_{2}$ 相交的充要条件是它们的法向量不平行, ${l}_{1}$ 与 ${l}_{2}$ 平行或重合的充要条件是它们的法向量平行.
+
+## (2)两条直线垂直的判定与夹角的求法
+
+平面上两条相交直线交得的锐角或直角叫做这两条直线的夹角. 当两条直线的夹角为直角时, 称这两条直线垂直. 如果两条直线平行或重合, 我们规定它们的夹角为零.
+
+在平面直角坐标系中,给定两条相交的直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0\left( {{a}_{1}\text{ 、 }{b}_{1}}\right.$ 不同时为零 $)$ 和 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} = 0$ ( ${a}_{2}\text{ 、 }{b}_{2}$ 不同时为零),那么 ${l}_{1} \bot  {l}_{2} \Leftrightarrow  {a}_{1}{a}_{2} + {b}_{1}{b}_{2} = 0$ .
+
+当直线方程形式为斜截式时,即两条直线分别为 ${l}_{1} : y = {k}_{1}x + {b}_{1}$ 和 ${l}_{2} : y = {k}_{2}x + {b}_{2}$ ,则 ${l}_{1} \bot  {l}_{2} \Leftrightarrow  {k}_{1}{k}_{2} =  - 1$ .
+
+给定两条相交的直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0$ 和 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} = 0$ ,它们的法向量分别取 $\overrightarrow{{n}_{1}} = \left( {{a}_{1},{b}_{1}}\right)$ 和 $\overrightarrow{{n}_{2}} = \left( {{a}_{2},{b}_{2}}\right)$ ,由两向量的夹角计算公式,可得两条直线的夹角公式为
+
+$$
+\cos \alpha  = \frac{\left| \overrightarrow{{n}_{1}} \cdot  \overrightarrow{{n}_{2}}\right| }{\left| \overrightarrow{{n}_{1}}\right|  \cdot  \left| \overrightarrow{{n}_{2}}\right| } = \frac{\left| {a}_{1}{a}_{2} + {b}_{1}{b}_{2}\right| }{\sqrt{{a}_{1}{}^{2} + {b}_{1}{}^{2}} \cdot  \sqrt{{a}_{2}{}^{2} + {b}_{2}{}^{2}}}.
+$$
+
+若两条直线的方程分别为 ${l}_{1} : y = {k}_{1}x + {b}_{1}$ 和 ${l}_{2} : y = {k}_{2}x + {b}_{2}$ ,根据倾斜角的定义,及两角差的正切公式,可得两条直线的夹角公式为 $\tan \alpha  = \frac{\left| {k}_{1} - {k}_{2}\right| }{\left| 1 + {k}_{1}{k}_{2}\right| }$ .
+
+## 4. 点到直线的距离
+
+点 $P\left( {{x}_{0},{y}_{0}}\right)$ 到直线 $l : {ax} + {by} + c = 0$ 的距离公式: $d = \frac{\left| a{x}_{0} + b{y}_{0} + c\right| }{\sqrt{{a}^{2} + {b}^{2}}}$ .
+
+证明: 如图,作 ${PQ} \bot  l$ ,设垂足 $Q\left( {{x}_{Q},{y}_{Q}}\right) ,\therefore \overrightarrow{PQ} = \left( {{x}_{Q} - {x}_{0},{y}_{Q} - {y}_{0}}\right)$ ,
+
+直线 $l : {ax} + {by} + c = 0$ 的法向量取 $\overrightarrow{n} = \left( {a, b}\right) ,\therefore \overrightarrow{PQ}//\overrightarrow{n}$ ,
+
+$\therefore d = \left| \overrightarrow{PQ}\right|  = \frac{\left| \overrightarrow{PQ} \cdot  \overrightarrow{n}\right| }{\left| \overrightarrow{n}\right| } = \frac{\left| a\left( {x}_{Q} - {x}_{0}\right)  + b\left( {y}_{Q} - {y}_{0}\right) \right| }{\sqrt{{a}^{2} + {b}^{2}}} = \frac{\left| a{x}_{Q} + b{y}_{Q} - a{x}_{0} - b{y}_{0}\right| }{\sqrt{{a}^{2} + {b}^{2}}}$ ,
+
+$\because$ 点 $Q\left( {{x}_{Q},{y}_{Q}}\right)$ 在直线 $l : {ax} + {by} + c = 0$ 上， $\therefore a{x}_{Q} + b{y}_{Q} + c = 0$ ，即 $a{x}_{Q} + b{y}_{Q} =  - c$ ， 代入上式, $\therefore d = \frac{\left| -c - a{x}_{0} - b{y}_{0}\right| }{\sqrt{{a}^{2} + {b}^{2}}} = \frac{\left| a{x}_{0} + b{y}_{0} + c\right| }{\sqrt{{a}^{2} + {b}^{2}}}$
+
+![bo_d7aq48ilb0pc73dcpcb0_76_350_947_348_259_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_76_350_947_348_259_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_76_941_947_353_259_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_76_941_947_353_259_0.jpg)
+
+两条平行直线 ${l}_{1} : {ax} + {by} + {c}_{1} = 0$ 与 ${l}_{2} : {ax} + {by} + {c}_{2} = 0$ 之间的距离 $d = \frac{\left| {c}_{1} - {c}_{2}\right| }{\sqrt{{a}^{2} + {b}^{2}}}$ .
+
+证明: 取 ${l}_{1}$ 上一点 $P\left( {{x}_{0},{y}_{0}}\right)$ ,则 $a{x}_{0} + b{y}_{0} + {c}_{1} = 0$ ,即 $a{x}_{0} + b{y}_{0} =  - {c}_{1}$ ,
+
+点 $P\left( {{x}_{0},{y}_{0}}\right)$ 到 ${l}_{2} : {ax} + {by} + {c}_{2} = 0$ 的距离 $d = \frac{\left| a{x}_{0} + b{y}_{0} + {c}_{2}\right| }{\sqrt{{a}^{2} + {b}^{2}}} = \frac{\left| -{c}_{1} + {c}_{2}\right| }{\sqrt{{a}^{2} + {b}^{2}}} = \frac{\left| {c}_{1} - {c}_{2}\right| }{\sqrt{{a}^{2} + {b}^{2}}}$ .
+
+已知点 $P\left( {{x}_{0},{y}_{0}}\right)$ 和直线 $l : {ax} + {by} + c = 0$ ( $a\text{ 、 }b$ 不同时为零)， $\delta  = \frac{a{x}_{0} + b{y}_{0} + c}{\sqrt{{a}^{2} + {b}^{2}}}$ 的符号确定了点 $P$ 关于直线 $l$ 的相对位置，在直线同侧的所有点， $\delta$ 的符号是相同的，在直线异侧的点， $\delta$ 的符号是相反的.
+
+## 5. 与直线相关的几类问题
+
+## (1)常用直线系
+
+① 定点直线系方程:经过定点 ${P}_{0}\left( {{x}_{0},{y}_{0}}\right)$ 的直线系方程为 $y - {y}_{0} = k\left( {x - {x}_{0}}\right)$ ，其中 $k$ 是待定系数; 或者 $a\left( {x - {x}_{0}}\right)  + b\left( {y - {y}_{0}}\right)  = 0$ ,其中 $a\text{ 、 }b$ 是待定系数.
+
+② 共点直线系方程:经过两直线 ${l}_{1} : {a}_{1}x + {b}_{1}y + {c}_{1} = 0$ 和 ${l}_{2} : {a}_{2}x + {b}_{2}y + {c}_{2} = 0$ 的交点的直线系方程为 $\left( {{a}_{1}x + {b}_{1}y + {c}_{1}}\right)  + \lambda \left( {{a}_{2}x + {b}_{2}y + {c}_{2}}\right)  = 0$ ,其中 $\lambda$ 是待定系数.
+
+③ 平行直线系方程: 与直线 $y = {kx} + b$ 平行的直线系方程为 $y = {kx} + c$ ,其中 $c$ 是待定系数,与直线 ${ax} + {by} + c = 0$ 平行的直线系方程为 ${ax} + {by} + \lambda  = 0$ ,其中 $\lambda$ 是待定系数.
+
+④ 垂直直线系方程: 与直线 ${ax} + {by} + c = 0$ 垂直的直线系方程为 ${bx} - {ay} + \lambda  = 0$ ,其中 $\lambda$ 是待定系数.
+
+## (2)对称问题
+
+① 点关于点对称: 若 $A\text{ 、 }B$ 两点关于点 $\left( {{x}_{0},{y}_{0}}\right)$ 对称,则 $A\left( {x, y}\right)$ 的对称点 $B$ 的坐标为 $\left( {2{x}_{0} - x,2{y}_{0} - y}\right)$ .
+
+② 点关于直线对称: 若 $A\text{ 、 }B$ 两点关于直线 $l : {ax} + {by} + c = 0$ 对称,则 $A\left( {x, y}\right)$ 的对称点 $B$ 的坐标为 $\left( {x - \frac{{2a}\left( {{ax} + {by} + c}\right) }{{a}^{2} + {b}^{2}}, y - \frac{{2b}\left( {{ax} + {by} + c}\right) }{{a}^{2} + {b}^{2}}}\right)$ .
+
+③ 直线关于点对称: 若 $l\text{ 、 }{l}^{\prime }$ 两直线关于点 $\left( {{x}_{0},{y}_{0}}\right)$ 对称,则直线 $l : {ax} + {by} + c = 0$ 的对称直线 ${l}^{\prime }$ 的方程为 $a\left( {2{x}_{0} - x}\right)  + b\left( {2{y}_{0} - y}\right)  + c = 0$ .
+
+④ 直线关于直线对称: 若 ${l}_{1}\text{ 、 }{l}_{2}$ 两直线关于直线 $l : {ax} + {by} + c = 0$ 对称,则 ${l}_{1} : {a}_{1}x + {b}_{1}y \; + {c}_{1} = 0$ 的对称直线 ${l}_{2}$ 的方程为 ${a}_{1}\left\lbrack  {x - \frac{{2a}\left( {{ax} + {by} + c}\right) }{{a}^{2} + {b}^{2}}}\right\rbrack   + {b}_{1}\left\lbrack  {y - \frac{{2b}\left( {{ax} + {by} + c}\right) }{{a}^{2} + {b}^{2}}}\right\rbrack   + {c}_{1} = 0$ .
+
+## (3)距离最值问题
+
+① 在直线 $l$ 上求一点 $P$ ，使 $P$ 到两定点 $A$ 、 $B$ 的距离之和 $\left| {PA}\right|  + \left| {PB}\right|$ 最小.
+
+若 $A\text{ 、 }B$ 位于直线 $l$ 异侧,则 $P$ 在 $l$ 与 ${AB}$ 的交点处时, $\left| {PA}\right|  + \left| {PB}\right|$ 有最小值;
+
+若 $A\text{ 、 }B$ 位于直线 $l$ 同侧,作 $A$ 关于 $l$ 的对称点 ${A}^{\prime }$ ,此时 $\left| {PA}\right|  + \left| {PB}\right|  = \left| {P{A}^{\prime }}\right|  + \left| {PB}\right|$ , 则化归为上面的情况,即 $P$ 在 $l$ 与 ${A}^{\prime }B$ 的交点处时, $\left| {PA}\right|  + \left| {PB}\right|$ 有最小值.
+
+![bo_d7aq48ilb0pc73dcpcb0_77_448_1389_301_179_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_77_448_1389_301_179_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_77_907_1388_299_189_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_77_907_1388_299_189_0.jpg)
+
+② 在直线 $l$ 上求一点 $P$ ，使 $P$ 到两定点 $A$ 、 $B$ 的距离之差的绝对值 $\parallel {PA}\left| -\right| {PB}\parallel$ 最大.
+
+![bo_d7aq48ilb0pc73dcpcb0_77_448_1648_302_158_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_77_448_1648_302_158_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_77_908_1650_298_194_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_77_908_1650_298_194_0.jpg)
+
+若 $A\text{ 、 }B$ 位于直线 $l$ 同侧,则 $P$ 在 $l$ 与 ${AB}$ 的交点处时, $\parallel {PA}\left| -\right| {PB}\parallel$ 有最大值;
+
+若 $A\text{ 、 }B$ 位于直线 $l$ 异侧,作 $A$ 关于 $l$ 的对称点 ${A}^{\prime }$ ,此时 $\parallel {PA}\left| -\right| {PB}\parallel  = \begin{Vmatrix}{P{A}^{\prime }}\end{Vmatrix} - \left| {PB}\right|$ , 则化归为上面的情况，即 $P$ 在 $l$ 与 ${A}^{\prime }B$ 的交点处时， $\parallel {PA}\left| -\right| {PB}\parallel$ 有最大值.
+
+## 第十二章 圆锥曲线
+
+![bo_d7aq48ilb0pc73dcpcb0_78_275_327_1109_942_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_78_275_327_1109_942_0.jpg)
+
+## 1. 圆
+
+## (1)圆的标准方程
+
+圆是到一个定点的距离等于定长 (大于零) 的点的轨迹. 这个定点就是圆心, 定长就是圆的半径.
+
+圆的标准方程: ${\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}$ ,表示以 $\left( {a, b}\right)$ 为圆心, $r$ 为半径的圆.
+
+特别地,当圆心在原点 $O\left( {0,0}\right)$ 时,圆的标准方程为 ${x}^{2} + {y}^{2} = {r}^{2}$ .
+
+## (2)圆的一般方程
+
+圆的一般方程: ${x}^{2} + {y}^{2} + {Dx} + {Ey} + F = 0$ ,即 ${\left( x + \frac{D}{2}\right) }^{2} + {\left( y + \frac{E}{2}\right) }^{2} = \frac{{D}^{2} + {E}^{2} - {4F}}{4}$ .
+
+① 当 ${D}^{2} + {E}^{2} - {4F} > 0$ 时,表示以 $\left( {-\frac{D}{2}, - \frac{E}{2}}\right)$ 为圆心, $\frac{\sqrt{{D}^{2} + {E}^{2} - {4F}}}{2}$ 为半径的圆;
+
+② 当 ${D}^{2} + {E}^{2} - {4F} = 0$ 时,表示一个点 $\left( {-\frac{D}{2}, - \frac{E}{2}}\right)$ ;
+
+③ 当 ${D}^{2} + {E}^{2} - {4F} < 0$ 时，不表示任何图形.
+
+圆的参数方程: $\left\{  \begin{array}{l} x = a + r\cos \theta \\  y = b + r\sin \theta  \end{array}\right.$ ,表示以 $\left( {a, b}\right)$ 为圆心, $r$ 为半径的圆.
+
+圆的直径式方程: $\left( {x - {x}_{1}}\right) \left( {x - {x}_{2}}\right)  + \left( {y - {y}_{1}}\right) \left( {y - {y}_{2}}\right)  = 0$ ,其中 $A\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }B\left( {{x}_{2},{y}_{2}}\right)$ 分别为直径的两个端点.
+
+## (3)点与圆的位置关系
+
+对于点 $P\left( {{x}_{0},{y}_{0}}\right)$ 和圆 ${\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}$ ,有:
+
+${\left( {x}_{0} - a\right) }^{2} + {\left( {y}_{0} - b\right) }^{2} > {r}^{2} \Leftrightarrow$ 点在圆外;
+
+${\left( {x}_{0} - a\right) }^{2} + {\left( {y}_{0} - b\right) }^{2} = {r}^{2} \Leftrightarrow$ 点在圆上;
+
+${\left( {x}_{0} - a\right) }^{2} + {\left( {y}_{0} - b\right) }^{2} < {r}^{2} \Leftrightarrow$ 点在圆内.
+
+## (4)直线与圆的位置关系
+
+判定直线 ${ax} + {by} + c = 0$ 与圆 ${\left( x - {x}_{0}\right) }^{2} + {\left( y - {y}_{0}\right) }^{2} = {r}^{2}$ 位置关系的方法有两种:
+
+① 比较圆心 $\left( {{x}_{0},{y}_{0}}\right)$ 到直线 ${ax} + {by} + c = 0$ 的距离 $d$ 和圆半径 $r$ 的大小:
+
+$d < r \Leftrightarrow$ 相交; $d = r \Leftrightarrow$ 相切; $d > r \Leftrightarrow$ 相离.
+
+② 联立方程组 $\left\{  \begin{array}{l} {ax} + {by} + c = 0 \\  {\left( x - {x}_{0}\right) }^{2} + {\left( y - {y}_{0}\right) }^{2} = {r}^{2} \end{array}\right.$ ,得到关于 $x$ 的二次方程 $A{x}^{2} + {Bx} + C = 0$ , 考察根的判别式 $\Delta  : \Delta  > 0 \Leftrightarrow$ 相交; $\Delta  = 0 \Leftrightarrow$ 相切; $\Delta  < 0 \Leftrightarrow$ 相离.
+
+## (5)圆与圆的位置关系
+
+判定圆 ${C}_{1}$ 与圆 ${C}_{2}$ 位置关系的方法也有两种:
+
+① 若圆 ${C}_{1}$ 的半径是 ${r}_{1}$ ，圆 ${C}_{2}$ 的半径是 ${r}_{2}$ ，圆心距 $\left| {{C}_{1}{C}_{2}}\right|  = d$ ，则:
+
+$d < \left| {{r}_{1} - {r}_{2}}\right|  \Leftrightarrow$ 两圆内含; $d = \left| {{r}_{1} - {r}_{2}}\right|  \Leftrightarrow$ 两圆内切; $\left| {{r}_{1} - {r}_{2}}\right|  < d < {r}_{1} + {r}_{2} \Leftrightarrow$ 两圆相交; $d = {r}_{1} + {r}_{2} \Leftrightarrow$ 两圆外切; $d > {r}_{1} + {r}_{2} \Leftrightarrow$ 两圆外离.
+
+② 联立方程组圆 ${C}_{1}$ 与圆 ${C}_{2}$ ,考察根的判别式 $\Delta  : \Delta  > 0 \Leftrightarrow$ 相交; $\Delta  = 0 \Leftrightarrow$ 相切 (包括内切与外切); $\Delta  < 0 \Leftrightarrow$ 相离 (包括内含与外离).
+
+## 附:圆的相关公式
+
+切线公式一: 对于圆 ${\left( x - a\right) }^{2} + {\left( y - b\right) }^{2} = {r}^{2}$ ,若直线和圆的切点为 $\left( {{x}_{0},{y}_{0}}\right)$ ,则切线方程为 $\left( {x - a}\right) \left( {{x}_{0} - a}\right)  + \left( {y - b}\right) \left( {{y}_{0} - b}\right)  = {r}^{2}$ ; 若点 $\left( {{x}_{0},{y}_{0}}\right)$ 在圆外,则方程 $\left( {x - a}\right) \left( {{x}_{0} - a}\right)  + \; \left( {y - b}\right) \left( {{y}_{0} - b}\right)  = {r}^{2}$ 表示过两个切点的切点弦方程.
+
+切线公式二: 对于圆 ${x}^{2} + {y}^{2} = {r}^{2}$ ,斜率为 $k$ 的切线方程为 $y = {kx} \pm  r\sqrt{{k}^{2} + 1}$ .
+
+两圆公共弦公式: 若两圆 ${C}_{1} : {x}^{2} + {y}^{2} + {D}_{1}x + {E}_{1}y + {F}_{1} = 0$ 和 ${C}_{2} : {x}^{2} + {y}^{2} + {D}_{2}x + {E}_{2}y \; + {F}_{2} = 0$ 相交,则它们公共弦的方程为 $\left( {{D}_{1} - {D}_{2}}\right) x + \left( {{E}_{1} - {E}_{2}}\right) y + \left( {{F}_{1} - {F}_{2}}\right)  = 0$ .
+
+## 2. 椭圆
+
+## (1)椭圆的标准方程
+
+我们把平面上到两个定点 ${F}_{1}\text{ 、 }{F}_{2}$ 的距离之和等于常数 ${2a}\left( {{2a} > \left| {{F}_{1}{F}_{2}}\right| }\right)$ 的点的轨迹叫做椭圆. 定点 ${F}_{1}\text{ 、 }{F}_{2}$ 叫做椭圆的焦点,两个焦点之间的距离 $\left| {{F}_{1}{F}_{2}}\right|$ 叫做椭圆的焦距.
+
+椭圆的标准方程: $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 或 $\frac{{y}^{2}}{{a}^{2}} + \frac{{x}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ ,如图所示, 其中 $a\text{ 、 }b\text{ 、 }c$ 之间的关系满足 ${c}^{2} = {a}^{2} - {b}^{2}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_80_432_599_317_306_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_80_432_599_317_306_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_80_890_599_315_307_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_80_890_599_315_307_0.jpg)
+
+## (2)椭圆的性质
+
+从椭圆的标准方程 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ 出发，可以得到下列性质和结论:
+
+① 对称性:椭圆既是以 $x$ 轴、 $y$ 轴为对称轴的轴对称图形,又是以坐标原点为对称中心的中心对称图形. 椭圆的对称中心叫做椭圆的中心.
+
+② 顶点: $\left( {\pm a,0}\right)$ 和 $\left( {0, \pm  b}\right)$ ，这四个点叫做椭圆的顶点. 若 $a > b > 0$ ， ${2a}$ 表示椭圆长轴的长, ${2b}$ 表示椭圆短轴的长,椭圆的两个焦点都在它的长轴上.
+
+③ 范围: $- a \leq  x \leq  a$ ， $- b \leq  y \leq  b$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_80_913_1357_426_273_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_80_913_1357_426_273_0.jpg)
+
+④ 离心率: $e = \frac{c}{a},0 < e < 1$ .
+
+⑤ 准线:准线方程 $x =  \pm  \frac{{a}^{2}}{c}$ .
+
+⑥ 焦半径公式: $r = a \pm  e{x}_{0}$ .
+
+⑦ 焦点三角形面积公式: $S = {b}^{2}\tan \frac{\theta }{2}$ .
+
+⑧ 切线方程:若 $\left( {{x}_{0},{y}_{0}}\right)$ 为切点，则切线方程为 $\frac{{x}_{0}x}{{a}^{2}} + \frac{{y}_{0}y}{{b}^{2}} = 1$ .
+
+椭圆切线的光学性质:从椭圆的一个焦点发出的光线在到达椭圆上后，被经过到达点的切线反射后必经过椭圆的另一个焦点.
+
+⑨ 参数方程: $\left\{  {\begin{array}{l} x = a\cos \theta \\  y = b\sin \theta  \end{array},\theta  \in  \lbrack 0,{2\pi })}\right.$ .
+
+## 3. 双曲线
+
+## (1)双曲线的标准方程
+
+我们把平面上到两个定点 ${F}_{1}\text{ 、 }{F}_{2}$ 的距离之差的绝对值等于常数 ${2a}\left( {0 < {2a} < \left| {{F}_{1}{F}_{2}}\right| }\right)$ 的点的轨迹叫做双曲线. 定点 ${F}_{1}\text{ 、 }{F}_{2}$ 叫做双曲线的焦点,两个焦点之间的距离 $\left| {{F}_{1}{F}_{2}}\right|$ 叫做双曲线的焦距.
+
+双曲线的标准方程: $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$ 或 $\frac{{y}^{2}}{{a}^{2}} - \frac{{x}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$ , 如图所示. 其中, $a\text{ 、 }b\text{ 、 }c$ 之间的关系满足 ${c}^{2} = {a}^{2} + {b}^{2}$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_81_443_658_285_290_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_81_443_658_285_290_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_81_948_663_284_278_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_81_948_663_284_278_0.jpg)
+
+## (2)双曲线的性质
+
+从双曲线的标准方程 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$ 出发,可以得到下列性质和结论:
+
+① 对称性:双曲线既是以 $x$ 轴、 $y$ 轴为对称轴的轴对称图形，又是以坐标原点为对称中心的中心对称图形. 双曲线的对称中心叫做双曲线的中心.
+
+② 顶点: $\left( {\pm a,0}\right)$ 和 $\left( {0, \pm  b}\right)$ ,这四个点叫做双曲线的顶点. ${2a}$ 表示双曲线实轴的长, ${2b}$ 表示双曲线虚轴的长,双曲线的两个焦点都在它的实轴所在的直线上.
+
+![bo_d7aq48ilb0pc73dcpcb0_81_983_1404_355_343_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_81_983_1404_355_343_0.jpg)
+
+③ 范围: $x \geq  a$ 或 $x \leq   - a, y \in  \mathbf{R}$ .
+
+④ 渐近线: $y =  \pm  \frac{b}{a}x$ . 双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1$ 与双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} =  - 1$ 有共同的渐近线,它们互为共轭双曲线.
+
+⑤ 离心率: $e = \frac{c}{a}, e > 1$ .
+
+⑥ 准线:准线方程 $x =  \pm  \frac{{a}^{2}}{c}$ . ⑦ 焦半径公式: $r = e\left| {x}_{0}\right|  \pm  a$ .
+
+⑧ 焦点三角形面积公式: $S = {b}^{2}\cot \frac{\theta }{2}$ .
+
+⑨ 切线方程:若 $\left( {{x}_{0},{y}_{0}}\right)$ 为切点，则切线方程为 $\frac{{x}_{0}x}{{a}^{2}} - \frac{{y}_{0}y}{{b}^{2}} = 1$ .
+
+⑩ 参数方程: $\left\{  {\begin{array}{l} x = a\sec \theta \\  y = b\tan \theta  \end{array},\theta  \in  \lbrack 0,{2\pi })}\right.$ .
+
+## 4. 抛物线
+
+## (1)抛物线的标准方程
+
+平面上到一个定点 $F$ 和到一条定直线 $l$ ( $F$ 不在 $l$ 上) 距离相等的点的轨迹叫做抛物线. 点 $F$ 叫做抛物线的焦点,定直线 $l$ 叫做抛物线的准线.
+
+抛物线的标准方程: ${y}^{2} = {2px},{y}^{2} =  - {2px},{x}^{2} = {2py},{x}^{2} =  - {2py}$ ,其中 $p > 0$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_82_262_518_239_228_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_82_262_518_239_228_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_82_591_518_234_229_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_82_591_518_234_229_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_82_858_517_237_228_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_82_858_517_237_228_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_82_1156_520_235_228_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_82_1156_520_235_228_0.jpg)
+
+## (2)抛物线的性质
+
+从抛物线的标准方程 ${y}^{2} = {2px}\left( {p > 0}\right)$ 出发，可以得到下列性质和结论:
+
+① 对称性:关于 $x$ 轴对称.
+
+![bo_d7aq48ilb0pc73dcpcb0_82_944_944_307_298_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_82_944_944_307_298_0.jpg)
+
+② 范围: $x \geq  0,\;y \in  \mathbf{R}$ .
+
+③ 顶点: 原点 $\left( {0,0}\right)$ .
+
+④ 准线:准线方程 $x =  - \frac{p}{2}$ .
+
+⑤ 离心率: $e = 1$ .
+
+⑥ 焦半径公式: $r = {x}_{0} + \frac{p}{2}$ .
+
+⑦ 切线方程:若 $\left( {{x}_{0},{y}_{0}}\right)$ 为切点，则切线方程为 ${y}_{0}y = p\left( {x + {x}_{0}}\right)$ .
+
+⑧ 参数方程: $\left\{  {\begin{array}{l} x = {2p}{t}^{2} \\  y = {2pt} \end{array}\;\left( {t \in  \mathbf{R}}\right) }\right.$ .
+
+⑨ 光学性质:所有从抛物线焦点发出的光线经过抛物线反射后都与这条抛物线的对称轴平行或重合.
+
+## 5. 曲线与方程 (※)
+
+(1)求轨迹的方程
+
+借助于平面坐标系用代数方法研究平面上图形性质的学科称为平面解析几何.
+
+一般地,如果曲线 $C$ 与方程 $F\left( {x, y}\right)  = 0$ 之间有以下两个关系:
+
+① 曲线 $C$ 上的点的坐标都是方程 $F\left( {x, y}\right)  = 0$ 的解;
+
+② 以方程 $F\left( {x, y}\right)  = 0$ 的解为坐标的点都在曲线 $C$ 上.
+
+此时,把方程 $F\left( {x, y}\right)  = 0$ 叫做曲线 $C$ 的方程,曲线 $C$ 叫做方程 $F\left( {x, y}\right)  = 0$ 的曲线.
+
+平面解析几何研究的两个基本问题是:
+
+① 根据条件，求出表示平面曲线的方程；② 通过方程，研究平面曲线的方程.
+
+如果曲线 ${C}_{1}\text{ 、 }{C}_{2}$ 的方程分别为 ${F}_{1}\left( {x, y}\right)  = 0$ 和 ${F}_{2}\left( {x, y}\right)  = 0$ ,那么曲线 ${C}_{1}\text{ 、 }{C}_{2}$ 的交点坐标即方程组 $\left\{  \begin{array}{l} {F}_{1}\left( {x, y}\right)  = 0 \\  {F}_{2}\left( {x, y}\right)  = 0 \end{array}\right.$ 的解,方程组解的情况即曲线 ${C}_{1}\text{ 、 }{C}_{2}$ 的相交情况.
+
+求轨迹方程的基本步骤:
+
+① 根据轨迹的特征, 建立适当的平面直角坐标系;
+
+② 轨迹上动点的坐标设为 $\left( {x, y}\right)$ ,将动点满足的条件表示为关于 $x\text{ 、 }y$ 的一个方程;
+
+③ 验证以该方程的解为坐标的点都在给定的轨迹上.
+
+求曲线方程常用方法:
+
+① 直接法；② 定义法；③ 代入法；④ 消参法；⑤ 交轨法；⑥ 其他法.
+
+## (2)简单的参数方程
+
+在求曲线方程 $C$ 时,我们可以先分别求出 $x\text{ 、 }y$ 与某个随动点变化的变量 $t$ 所满足的方程 $x = f\left( t\right) ,\;y = g\left( t\right)$ ,得到方程组: $\left\{  \begin{array}{l} x = f\left( t\right) \\  y = g\left( t\right)  \end{array}\right.$ ,其中 $t$ 在某个范围内变动. 如果对于 $t$ 的每一个允许值,由上述方程组所确定的点 $P\left( {x, y}\right)$ 都在曲线 $C$ 上,反之,对于曲线 $C$ 上任意一点的坐标,都存在 $t$ 的某个允许值使得上述方程组成立,那么上述方程组就叫做曲线 $C$ 的参数方程,变量 $t$ 叫做参变量或参数.
+
+相对于参数方程而言,直接给出曲线上点的坐标 $x\text{ 、 }y$ 之间关系的方程 $F\left( {x, y}\right)  = 0$ 叫做曲线的普通方程.
+
+参数方程化为普通方程的基本方法是 “消去参数”,在消去参数时,要注意变量 $x\text{ 、 }y$ 的取值范围, 使化成的普通方程与参数方程等价.
+
+① 直线的参数方程: 若直线 $l$ 经过点 ${P}_{0}\left( {{x}_{0},{y}_{0}}\right) , l$ 的一个方向向量为 $\overrightarrow{d} = \left( {u, v}\right)$ ,则直线 $l$ 的参数方程为 $\left\{  {\begin{array}{l} x = {x}_{0} + {ut} \\  y = {y}_{0} + {vt} \end{array}\left( {t \in  \mathbf{R}}\right) }\right.$ ; 若 $l$ 的倾斜角为 $\alpha$ ,那么 $l$ 的一个方向向量可以为 $\left( {\cos \alpha ,\sin \alpha }\right)$ ,此时参数方程可写成 $\left\{  {\begin{array}{l} x = {x}_{0} + t\cos \alpha \\  y = {y}_{0} + t\sin \alpha  \end{array}\left( {t \in  \mathbf{R}}\right) }\right.$ .
+
+② 椭圆的参数方程:若椭圆的标准方程为 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > b > 0}\right)$ ，则椭圆的参数方程为 $\left\{  {\begin{array}{l} x = a\cos \varphi \\  y = b\sin \varphi  \end{array}\left( {0 \leq  \varphi  < {2\pi }}\right) }\right.$ .
+
+③ 双曲线的参数方程:若双曲线的标准方程为 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1\left( {a > 0, b > 0}\right)$ ，则双曲线的参数方程为 $\left\{  {\begin{array}{l} x = a\sec \varphi \\  y = b\tan \varphi  \end{array}\left( {0 \leq  \varphi  < {2\pi },\varphi  \neq  \frac{\pi }{2},\varphi  \neq  \frac{3\pi }{2}}\right) }\right.$ .
+
+④ 抛物线的参数方程: 若抛物线的标准方程为 ${y}^{2} = {2px}\;\left( {p > 0}\right)$ ,则抛物线的参数方程为 $\left\{  {\begin{array}{l} x = {2p}{t}^{2} \\  y = {2pt} \end{array}\;\left( {t \in  \mathbf{R}}\right) }\right.$ .
+
+## (3)极坐标系与极坐标方程
+
+## ① 极坐标系
+
+如图,在平面上取一定点 $O$ ,以点 $O$ 为端点引射线 ${Ox}$ ,再选定一个单位长度和旋转角的正方向 (一般规定逆时针方向为正方向),这时对于平面上异于点 $O$ 的任意一点 $M$ ,设 $\rho  = \left| {OM}\right| ,\theta$ 表示以射线 ${Ox}$ 为始边,射线 ${OM}$ 为终边的角,则点 $M$ 的位置可以用有序数对 $\left( {\rho ,\theta }\right)$ 表示. 这样就在平面上建立了一个不同于直角坐标系的坐标系, 我们把它叫做极坐标系.
+
+![bo_d7aq48ilb0pc73dcpcb0_84_1034_539_295_168_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_84_1034_539_295_168_0.jpg)
+
+在极坐标系中,定点 $O$ 叫做极点,射线 ${Ox}$ 叫做极轴, $\left( {\rho ,\theta }\right)$ 就叫做点 $M$ 的极坐标, 其中 $\rho$ 叫做点 $M$ 的极径, $\theta$ 叫做点 $M$ 的极角.
+
+一般地,如果 $\left( {\rho ,\theta }\right)$ 是一点的极坐标,那么 $\left( {\rho ,\theta  + {2n\pi }}\right) \left( {n \in  \mathbf{Z}}\right)$ 都可以作为它的极坐标. 当 $\rho  < 0$ 时,规定 $\left( {\rho ,\theta }\right)$ 对应的点为 $\left( {-\rho ,\theta  + \pi }\right)$ . 此外,规定极点的极坐标为 $\left( {0,\theta }\right)$ ,其中 $\theta$ 可以是任意角.
+
+在极坐标系中,点 $\left( {\rho ,\theta }\right)$ 与 $\left( {-\rho ,\theta }\right)$ 关于极点对称,点 $\left( {\rho ,\theta }\right)$ 与 $\left( {\rho , - \theta }\right)$ 关于极轴对称.
+
+如果我们限定 $\rho  > 0,0 \leq  \theta  < {2\pi }$ ,那么在极坐标系中,除了极点外平面上的所有点组成的集合和实数对集合具有一一对应关系.
+
+## ② 极坐标方程
+
+在极坐标系中,平面上的一条曲线可以用含 $\rho \text{ 、 }\theta$ 这两个变量的方程 $F\left( {\rho ,\theta }\right)  = 0$ 来表示,方程 $F\left( {\rho ,\theta }\right)  = 0$ 叫做这条曲线的极坐标方程. 此时,曲线和方程有如下的关系:
+
+① 以方程 $F\left( {\rho ,\theta }\right)  = 0$ 的解 $\left( {\rho ,\theta }\right)$ 为极坐标的点都在曲线上;
+
+② 曲线上每一点的所有极坐标中,至少有一个极坐标 $\left( {\rho ,\theta }\right)$ 是方程 $F\left( {\rho ,\theta }\right)  = 0$ 的解.
+
+求曲线的极坐标方程, 其实就是找到曲线上所有点的极径和极角应满足的关系式子.
+
+等速螺线 (阿基米德螺线): $\rho  = {\rho }_{0} + {a\theta }\left( {\theta  \geq  0}\right)$ .
+
+## ③ 极坐标与直角坐标的互化
+
+设 $M$ 是平面内任意一点,它的直角坐标为 $\left( {x, y}\right)$ ,极坐标为 $\left( {\rho ,\theta }\right)$ . 由三角函数定义, 可以得到如下的关系式: $x = \rho \cos \theta , y = \rho \sin \theta$ (已知极坐标求直角坐标的公式),以及 ${\rho }^{2} = {x}^{2} + {y}^{2},\tan \theta  = \frac{y}{x}\left( {x \neq  0}\right)$ (已知直角坐标求极坐标的公式) .
+
+通常取 $\rho$ 为正数,即 $\rho  = \sqrt{{x}^{2} + {y}^{2}}$ . 由 $\tan \theta  = \frac{y}{x}$ 确定角度 $\theta$ 时,一般根据此点所在的象限取最小正角,即 $0 \leq  \theta  < {2\pi }$ .
+
+## 6. 圆锥曲线拓展应用(※)
+
+(1)“圆锥曲线” 释义
+
+![bo_d7aq48ilb0pc73dcpcb0_85_355_546_283_255_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_85_355_546_283_255_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_85_740_548_238_265_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_85_740_548_238_265_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_85_1090_512_208_313_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_85_1090_512_208_313_0.jpg)
+
+如图所示, 椭圆 (包括圆)、抛物线、双曲线都可以看作是由不同的平面截同一个圆锥得到的. 所以它们统称为圆锥曲线.
+
+## (2)圆锥曲线的统一定义及统一极坐标方程
+
+① 圆锥曲线的统一定义:圆锥曲线是到一个定点 $F$ 和到一条定直线 $l\left( {F \notin  l}\right)$ 距离之比为定值 $e$ 的点的轨迹. 其中,当 $0 < e < 1$ 时,轨迹为椭圆; 当 $e = 1$ 时,轨迹为抛物线; 当 $e > 1$ 时,轨迹为双曲线.
+
+② 圆锥曲线的统一极坐标方程: $\rho  = \frac{ep}{1 - e\cos \theta }$ . 当 $0 < e < 1$ 时，方程表示左焦点在极点的椭圆；当 $e = 1$ 时,方程表示焦点在极点,开口向右的抛物线；当 $e > 1$ 时,方程表示右焦点在极点的双曲线.
+
+## (3)弦中点问题: 点差法
+
+与弦的中点有关的问题, 主要有三种类型:
+
+① 平行弦的中点轨迹;
+
+② 过定点的弦中点轨迹;
+
+③ 过定点且被定点平分的弦所在的直线方程.
+
+![bo_d7aq48ilb0pc73dcpcb0_85_454_1740_284_264_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_85_454_1740_284_264_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_85_914_1731_280_276_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_85_914_1731_280_276_0.jpg)
+
+弦中点问题的常见结论:
+
+① 若直线 $l : y = {k}_{1}x + m$ 与椭圆 $\frac{{x}^{2}}{{a}^{2}} + \frac{{y}^{2}}{{b}^{2}} = 1$ 相交于 $A\text{ 、 }B$ 两点， ${AB}$ 的中点为 $P$ ， 连结 ${OP}$ ,设 ${OP}$ 的斜率为 ${k}_{2}$ ,则 ${k}_{1}{k}_{2} =  - \frac{{b}^{2}}{{a}^{2}}$ ;
+
+② 若直线 $l : y = {k}_{1}x + m$ 与双曲线 $\frac{{x}^{2}}{{a}^{2}} - \frac{{y}^{2}}{{b}^{2}} = 1$ 相交于 $A$ 、 $B$ 两点， ${AB}$ 的中点为 $P$ ， 连结 ${OP}$ ,设 ${OP}$ 的斜率为 ${k}_{2}$ ,则 ${k}_{1}{k}_{2} = \frac{{b}^{2}}{{a}^{2}}$ .
+
+注意:斜率不存在的情况要单独考虑.
+
+## (4)抛物线焦点弦性质
+
+![bo_d7aq48ilb0pc73dcpcb0_86_1078_717_283_340_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_86_1078_717_283_340_0.jpg)
+
+① $A{M}^{\prime } \bot  B{M}^{\prime }$ ， ${A}^{\prime }F \bot  {B}^{\prime }F$ ， ${M}^{\prime }F \bot  {AB}$ .
+
+② ${x}_{1}{x}_{2} = \frac{{p}^{2}}{4},{y}_{1}{y}_{2} =  - {p}^{2};\overrightarrow{OA} \cdot  \overrightarrow{OB} =  - \frac{3}{4}{p}^{2}$ .
+
+③ $A\text{ 、 }O\text{ 、 }{B}^{\prime }$ 共线， ${A}^{\prime }\text{ 、 }O\text{ 、 }B$ 共线.
+
+④ ${AF} = \frac{p}{1 - \cos \theta },{BF} = \frac{p}{1 + \cos \theta },\frac{1}{AF} + \frac{1}{BF} = \frac{2}{p}$ ,
+
+${AB} = {x}_{1} + {x}_{2} + p = \frac{2p}{{\sin }^{2}\theta },\;{S}_{\bigtriangleup {AOB}} = \frac{{p}^{2}}{2\sin \theta }.$
+
+## (5)韦达定理的应用:联立方程，韦达定理
+
+韦达定理: ${x}_{1} + {x}_{2} =  - \frac{b}{a},{x}_{1} \cdot  {x}_{2} = \frac{c}{a}$ .
+
+弦长公式: $\left| {AB}\right|  = \sqrt{1 + {k}^{2}}\left| {{x}_{1} - {x}_{2}}\right|  = \sqrt{1 + {k}^{2}}\sqrt{{\left( {x}_{1} + {x}_{2}\right) }^{2} - 4{x}_{1} \cdot  {x}_{2}}$ .
+
+$$
+\left| {AB}\right|  = \sqrt{1 + \frac{1}{{k}^{2}}}\left| {{y}_{1} - {y}_{2}}\right|  = \sqrt{1 + \frac{1}{{k}^{2}}}\sqrt{{\left( {y}_{1} + {y}_{2}\right) }^{2} - 4{y}_{1} \cdot  {y}_{2}}.
+$$
+
+## 第十三章 空间向量及其应用
+
+![bo_d7aq48ilb0pc73dcpcb0_87_250_338_1157_658_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_87_250_338_1157_658_0.jpg)
+
+## 1. 空间向量及其运算
+
+如果一组向量可以平移到同一个平面上, 那么称这组向量是共面的. 显然, 任意两个向量都是共面的.
+
+空间向量的模、单位向量、零向量、平行向量、相等向量、负向量、向量夹角等概念, 空间向量的和、差、数乘、数量积等运算的定义及其运算律, 都与平面向量的相应概念、运算及其运算律具有相同的意义.
+
+空间中的向量 $\overrightarrow{b}$ 与非零向量 $\overrightarrow{a}$ 平行的充要条件是存在实数 $\lambda$ ,使得 $\overrightarrow{b} = \lambda \overrightarrow{a}$ .
+
+空间中两向量垂直的充要条件是其数量积为零.
+
+## 2. 空间向量基本定理
+
+## (1)向量共面的充要条件
+
+如果 $\overrightarrow{{e}_{1}}$ 与 $\overrightarrow{{e}_{2}}$ 是两个不平行的向量,那么空间中的向量 $\overrightarrow{a}$ 与 $\overrightarrow{{e}_{1}}\text{ 、 }\overrightarrow{{e}_{2}}$ 共面的充要条件是, 存在唯一的一对实数 $\lambda$ 与 $\mu$ ,使得 $\overrightarrow{a} = \lambda \overrightarrow{{e}_{1}} + \mu \overrightarrow{{e}_{2}}$ .
+
+## (2)空间向量基本定理
+
+如果 $\overrightarrow{{e}_{1}}\text{ 、 }\overrightarrow{{e}_{2}}$ 与 $\overrightarrow{{e}_{3}}$ 是不共面的向量,那么对空间中任意一个向量 $\overrightarrow{a}$ ,存在唯一的一组实数 $\lambda \text{ 、 }\mu$ 与 $v$ ,使得 $\overrightarrow{a} = \lambda \overrightarrow{{e}_{1}} + \mu \overrightarrow{{e}_{2}} + v\overrightarrow{{e}_{3}}$ .
+
+## 3. 空间向量的坐标表示
+
+## (1)空间直角坐标系
+
+如图所示，从空间一点 $O$ 出发，可以作三条两两互相垂直的坐标轴，建立空间直角坐标系 $O - {xyz}$ . 点 $O$ 叫做坐标原点,三条坐标轴分别是横轴 (即 $x$ 轴)、纵轴 (即 $y$ 轴) 与竖轴 (即 $z$ 轴). 通过每两个坐标轴的平面叫坐标平面,分别称为 ${xOy}$ 平面、 ${yOz}$ 平面与 ${zOx}$ 平面. 三个坐标平面把空间划分成八个部分, 每个部分称为一个卦限.
+
+有了空间直角坐标系, 空间中的点与实数的有序三元组就建立了一一对应.
+
+![bo_d7aq48ilb0pc73dcpcb0_88_472_590_246_326_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_88_472_590_246_326_0.jpg)
+
+![bo_d7aq48ilb0pc73dcpcb0_88_898_619_289_281_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_88_898_619_289_281_0.jpg)
+
+## (2)空间向量的坐标表示
+
+设 $P$ 是空间任意一点,经过点 $P$ 作三个平面分别垂直于 $x$ 轴、 $y$ 轴和 $z$ 轴,它们与各坐标轴的交点依次为 $A\text{ 、 }B$ 和 $C$ ,我们把垂足 $A\text{ 、 }B$ 和 $C$ 分别叫作点 $P$ 在 $x$ 轴、 $y$ 轴和 $z$ 轴上的射影,如果点 $A\text{ 、 }B\text{ 、 }C$ 在 $x$ 轴、 $y$ 轴、 $z$ 轴上的坐标分别为 $x\text{ 、 }y\text{ 、 }z$ ,那么点 $P$ 确定了一个有序实数组 $\left( {x, y, z}\right)$ ,我们把有序实数组 $\left( {x, y, z}\right)$ 叫做点 $P$ 的坐标,记作 $P\left( {x, y, z}\right) .P$ 在 ${xOy}$ 平面、 ${xOz}$ 平面和 ${yOz}$ 平面上的射影分别为 $Q\text{ 、 }R\text{ 、 }S$ .
+
+给定任意一个向量 $\overrightarrow{p}$ ，我们通过平移把 $\overrightarrow{p}$ 的起点放到坐标原点 $O$ ，这时得到的向量 $\overrightarrow{OP}$ 称为 $\overrightarrow{p}$ 的位置向量. 设 $\overrightarrow{OP}$ 的终点坐标是 $P\left( {x, y, z}\right)$ ,则直接记 $\overrightarrow{p} = \left( {x, y, z}\right)$ ,并称向量的这种表示法为它的坐标表示.
+
+两个向量相加 (减)，等于把它们的对应坐标相加 (减):
+
+$$
+\left( {{x}_{1},{y}_{1},{z}_{1}}\right)  \pm  \left( {{x}_{2},{y}_{2},{z}_{2}}\right)  = \left( {{x}_{1} \pm  {x}_{2},{y}_{1} \pm  {y}_{2},{z}_{1} \pm  {z}_{2}}\right) .
+$$
+
+一个实数乘一个向量, 等于把这个实数乘它的坐标:
+
+$$
+\lambda \left( {x, y, z}\right)  = \left( {{\lambda x},{\lambda y},{\lambda z}}\right) .
+$$
+
+向量 $\overrightarrow{p} = \left( {x, y, z}\right)$ 的模就是它的位置向量 $\overrightarrow{OP}$ 的终点 $P$ 与坐标原点 $O$ 的距离:
+
+$$
+\left| \overrightarrow{OP}\right|  = \left| \left( {x, y, z}\right) \right|  = \sqrt{{x}^{2} + {y}^{2} + {z}^{2}}.
+$$
+
+空间任意两点 $P\left( {{x}_{1},{y}_{1},{z}_{1}}\right)$ 与 $Q\left( {{x}_{2},{y}_{2},{z}_{2}}\right)$ ,则 $\overrightarrow{PQ} = \left( {{x}_{2} - {x}_{1},{y}_{2} - {y}_{1},{z}_{2} - {z}_{1}}\right)$ ,
+
+$\left| \overrightarrow{PQ}\right|  = \sqrt{{\left( {x}_{2} - {x}_{1}\right) }^{2} + {\left( {y}_{2} - {y}_{1}\right) }^{2} + {\left( {z}_{2} - {z}_{1}\right) }^{2}}.$
+
+数量积公式: $\left( {{x}_{1},{y}_{1},{z}_{1}}\right)  \cdot  \left( {{x}_{2},{y}_{2},{z}_{2}}\right)  = {x}_{1}{x}_{2} + {y}_{1}{y}_{2} + {z}_{1}{z}_{2}$ .
+
+向量夹角公式: $\cos \alpha  = \frac{{x}_{1}{x}_{2} + {y}_{1}{y}_{2} + {z}_{1}{z}_{2}}{\sqrt{{x}_{1}^{2} + {y}_{1}^{2} + {z}_{1}^{2}} \cdot  \sqrt{{x}_{2}^{2} + {y}_{2}^{2} + {z}_{2}^{2}}}$ .
+
+两个非零向量 $\overrightarrow{a} = \left( {{x}_{1},{y}_{1},{z}_{1}}\right)$ 与 $\overrightarrow{b} = \left( {{x}_{2},{y}_{2},{z}_{2}}\right)$ 垂直与平行的充要条件:
+
+$\overrightarrow{a} \bot  \overrightarrow{b} \Leftrightarrow  {x}_{1}{x}_{2} + {y}_{1}{y}_{2} + {z}_{1}{z}_{2} = 0$ .
+
+$\overrightarrow{a}//\overrightarrow{b} \Leftrightarrow$ 存在 $\lambda  \in  \mathbf{R}$ ,使得 $\overrightarrow{a} = \lambda \overrightarrow{b}$ ,即 ${x}_{1} = \lambda {x}_{2},{y}_{1} = \lambda {y}_{2},{z}_{1} = \lambda {z}_{2}$ .
+
+## 4. 空间向量在立体几何中的应用
+
+直线的方向向量: 与直线平行的任何非零向量.
+
+平面的法向量: 垂直于平面的任何非零向量.
+
+用向量方法解决有关直线和平面的问题, 一般先把相应的问题化为关于上述这些向量的问题, 然后加以解决. 建立一个适当的空间直角坐标系常常是有效的辅助手段.
+
+## (1)判断空间直线、平面的位置关系
+
+① 线线平行与垂直:两条直线平行或重合的充要条件是它们的方向向量平行. 两条直线垂直的充要条件是它们的方向向量垂直.
+
+② 线面平行与垂直:不在平面上的一条直线和平面平行的充要条件是直线的方向向量垂直于平面的法向量. 直线和平面垂直的充要条件是直线的方向向量为平面的法向量.
+
+③ 面面平行与垂直:两个平面平行的充要条件是它们的法向量平行. 两个平面垂直的充要条件是它们的法向量垂直.
+
+## (2)求距离
+
+点到平面的距离: 已知平面 $\alpha$ 外一点 $A$ 与平面 $\alpha$ 上一点 $B,\overrightarrow{n}$ 是平面 $\alpha$ 的一个法向量, 则平面外一点 $A$ 到平面 $\alpha$ 的距离 $d = \frac{\left| \overrightarrow{n} \cdot  \overrightarrow{AB}\right| }{\left| \overrightarrow{n}\right| }$ .
+
+求平面的平行线与平面的距离, 只要求平行线上一点到平面的距离. 求两个平行平面的距离, 也只要求其中一个平面上的一个点到另一个平面的距离.
+
+两条异面直线之间的距离: 已知两条异面直线 $a\text{ 、 }b$ ,点 $A\text{ 、 }B$ 分别在直线 $a\text{ 、 }b$ 上, $\overrightarrow{n}$ 是与直线 $a\text{ 、 }b$ 均垂直的向量,则两条异面直线之间的距离 $d = \frac{\left| \overrightarrow{n} \cdot  \overrightarrow{AB}\right| }{\left| \overrightarrow{n}\right| }$ .
+
+## (3)求角的大小
+
+设空间直线 ${l}_{1}$ 与 ${l}_{2}$ 所成的角为 $\theta ,\theta  \in  \left\lbrack  {0,\frac{\pi }{2}}\right\rbrack$ ,它们的方向向量分别为 $\overrightarrow{{r}_{1}}$ 和 $\overrightarrow{{r}_{2}},\overrightarrow{{r}_{1}}$ 和 $\overrightarrow{{r}_{2}}$ 的夹角为 $\varphi ,\varphi  \in  \left\lbrack  {0,\pi }\right\rbrack$ ,根据空间两条直线所成角的定义,可知:
+
+$$
+\cos \theta  = \left| {\cos \varphi }\right|  = \frac{\left| \overrightarrow{{r}_{1}} \cdot  \overrightarrow{{r}_{2}}\right| }{\left| \overrightarrow{{r}_{1}}\right|  \cdot  \left| \overrightarrow{{r}_{2}}\right| }\text{ ,即 }\theta  = \arccos \frac{\left| \overrightarrow{{r}_{1}} \cdot  \overrightarrow{{r}_{2}}\right| }{\left| \overrightarrow{{r}_{1}}\right|  \cdot  \left| \overrightarrow{{r}_{2}}\right| }\text{ . }
+$$
+
+设直线与平面所成的角为 $\theta ,\theta  \in  \left( {0,\frac{\pi }{2}}\right\rbrack  ,\overrightarrow{r}$ 是直线的一个方向向量, $\overrightarrow{n}$ 是平面的一个法向量, $\overrightarrow{r}$ 与 $\overrightarrow{n}$ 的夹角为 $\varphi$ ,根据直线与平面所成角的定义,可知:
+
+$\sin \theta  = \left| {\cos \varphi }\right|  = \frac{\left| \overrightarrow{r} \cdot  \overrightarrow{n}\right| }{\left| \overrightarrow{r}\right|  \cdot  \left| \overrightarrow{n}\right| }$ ,即 $\theta  = \arcsin \frac{\left| \overrightarrow{r} \cdot  \overrightarrow{n}\right| }{\left| \overrightarrow{r}\right|  \cdot  \left| \overrightarrow{n}\right| }$ .
+
+设二面角的大小为 $\theta ,\theta  \in  \left\lbrack  {0,\pi }\right\rbrack$ ,二面角的两个半平面的法向量分别为 $\overrightarrow{{n}_{1}}$ 和 $\overrightarrow{{n}_{2}},\overrightarrow{{n}_{1}}$ 和 $\overrightarrow{{n}_{2}}$ 的夹角为 $\varphi$ ,根据二面角的定义,可知 $\theta  = \varphi$ 或 $\theta  = \pi  - \varphi$ ,即:
+
+若 $\theta$ 为锐角,则 $\theta  = \arccos \frac{\left| \overrightarrow{{n}_{1}} \cdot  \overrightarrow{{n}_{2}}\right| }{\left| \overrightarrow{{n}_{1}}\right|  \cdot  \left| \overrightarrow{{n}_{2}}\right| }$ ; 若 $\theta$ 为钝角,则 $\theta  = \pi  - \arccos \frac{\left| \overrightarrow{{n}_{1}} \cdot  \overrightarrow{{n}_{2}}\right| }{\left| \overrightarrow{{n}_{1}}\right|  \cdot  \left| \overrightarrow{{n}_{2}}\right| }$ .
+
+第十四章 数列
+
+![bo_d7aq48ilb0pc73dcpcb0_91_335_300_962_709_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_91_335_300_962_709_0.jpg)
+
+## 1. 等差数列
+
+## (1)等差数列及其通项公式
+
+按一定顺序排列起来的一列数, 称之为数列. 数列中的每一个数叫做这个数列的项. 数列的一般形式可以记成 ${a}_{1}\text{ 、 }{a}_{2}\text{ 、 }{a}_{3}\text{ 、 }\cdots \text{ 、 }{a}_{n}\text{ 、 }\cdots$ ,其中 ${a}_{n}$ 是数列的第 $n$ 项,下标 $n$ 是 ${a}_{n}$ 的序数,上面的数列常简记为 $\left\{  {a}_{n}\right\}$ .
+
+如果一个数列从第 2 项起, 每一项与其前一项的差都等于同一个常数, 这个数列就叫做等差数列,这个常数叫做等差数列的公差,公差通常用小写字母 $d$ 表示.
+
+等差中项: 如果 $A = \frac{a + b}{2}$ ,那么 $A$ 叫做 $a$ 与 $b$ 的等差中项. 如果三个数成等差数列, 那么等差中项等于其前后两项的算术平均数.
+
+用数列的序数 $n$ 表示相应项 ${a}_{n}$ 的公式称为数列 $\left\{  {a}_{n}\right\}$ 的通项公式.
+
+等差数列 $\left\{  {a}_{n}\right\}$ 的通项公式: ${a}_{n} = {a}_{1} + \left( {n - 1}\right) d\;\left( {n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+## (2)等差数列的前 $n$ 项和
+
+一般地,将数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和记作 ${S}_{n}$ ,即 ${S}_{n} = {a}_{1} + {a}_{2} + \cdots  + {a}_{n} = \mathop{\sum }\limits_{{i = 1}}^{n}{a}_{i}$ .
+
+根据数列前 $n$ 项和的定义, ${a}_{n} = {S}_{n} - {S}_{n - 1}\left( {n \geq  2, n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+等差数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和公式: ${S}_{n} = \frac{n\left( {{a}_{1} + {a}_{n}}\right) }{2} = n{a}_{1} + \frac{n\left( {n - 1}\right) }{2}d = n{a}_{1}$ .
+
+$$
+{S}_{n} = {a}_{1} + {a}_{2} + \cdots  + {a}_{n}
+$$
+
+$$
+{S}_{n} = {a}_{n} + {a}_{n - 1} + {a}_{n}
+$$
+
+2
+
+## (3)等差数列常用性质
+
+已知数列 $\left\{  {a}_{n}\right\}$ 为等差数列,前 $n$ 项和为 ${S}_{n}$ ,则有下列常用性质:
+
+① ${a}_{n} = {a}_{m} + \left( {n - m}\right) d$ .
+
+② 若 $m + n = p + q$ ，则 ${a}_{m} + {a}_{n} = {a}_{p} + {a}_{q}$ .
+
+③ 数列 ${a}_{k}$ 、 ${a}_{k + m}$ 、 ${a}_{k + {2m}}$ 、 $\cdots$ 成等差数列，公差为 ${md}$ .
+
+④ 数列 ${S}_{n}$ 、 ${S}_{2n} - {S}_{n}$ 、 ${S}_{3n} - {S}_{2n}$ 、 ${S}_{4n} - {S}_{3n}$ 、 $\cdots$ 成等差数列，公差为 ${n}^{2}d$ .
+
+⑤ 数列 $\left\{  {a}_{n}\right\}$ 成等差数列 $\Leftrightarrow  {a}_{n} = {pn} + q$ ， $2{a}_{n} = {a}_{n - 1} + {a}_{n + 1}$ ， ${S}_{n} = A{n}^{2} + {Bn}$ .
+
+⑥ 若数列 $\left\{  {a}_{n}\right\}$ 是等差数列,则 $\left\{  {c}^{{a}_{n}}\right\}$ 为等比数列, $c > 0$ .
+
+⑦ ${S}_{n}$ 是前 $n$ 项和， ${S}_{\text{ 奇 }}$ 表示奇数项的和， ${S}_{\text{ 偶 }}$ 表示偶数项的和，则 ${S}_{n} = {S}_{\text{ 奇 }} + {S}_{\text{ 偶 }}.$ 当 $n$ 为偶数时, ${S}_{\text{ 偶 }} - {S}_{\text{ 奇 }} = \frac{n}{2}d$ . 当 $n$ 为奇数时, ${S}_{\text{ 奇 }} - {S}_{\text{ 偶 }} = {a}_{\text{ 中 }},\frac{{S}_{\text{ 奇 }}}{{S}_{\text{ 偶 }}} = \frac{n + 1}{n - 1},\frac{{S}_{\text{ 奇 }} + {S}_{\text{ 偶 }}}{{S}_{\text{ 奇 }} - {S}_{\text{ 偶 }}} = n$ .
+
+⑧ 设 ${S}_{n}$ 和 ${T}_{n}$ 分别表示等差数列 $\left\{  {a}_{n}\right\}$ 、 $\left\{  {b}_{n}\right\}$ 的前 $n$ 项和,则 $\frac{{a}_{n}}{{b}_{n}} = \frac{{S}_{{2n} - 1}}{{T}_{{2n} - 1}}$ .
+
+⑨ 若 ${a}_{p} = q,{a}_{q} = p, p \neq  q$ ,则 ${a}_{p + q} = 0, d =  - 1$ ;
+
+若 ${S}_{p} = q,{S}_{q} = p, p \neq  q$ ,则 ${S}_{p + q} =  - \left( {p + q}\right)$ ;
+
+若 ${S}_{p} = {S}_{q}, p \neq  q$ ,则 ${S}_{p + q} = 0$ .
+
+## 2. 等比数列
+
+## (1)等比数列及其通项公式
+
+如果一个数列从第 2 项起, 每一项与其前一项的比等于同一个非零常数, 这个数列就叫做等比数列,这个常数叫做等比数列的公比,公比通常用小写字母 $q\left( {q \neq  0}\right)$ 表示.
+
+等比中项: 如果 ${G}^{2} = {ab}$ ,那么 $G$ 叫做 $a$ 与 $b$ 的等比中项. 如果三个数成等比数列, 那么等比中项的平方必等于其前后两项的积.
+
+等比数列 $\left\{  {a}_{n}\right\}$ 的通项公式: ${a}_{n} = {a}_{1}{q}^{n - 1}\left( {n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+## (2)等比数列的前 $n$ 项和
+
+等比数列 $\left\{  {a}_{n}\right\}$ 的前 $n$ 项和公式: ${S}_{n} = \frac{{a}_{1}\left( {1 - {q}^{n}}\right) }{1 - q} = \frac{{a}_{1} - {a}_{n}q}{1 - q}\left( {q \neq  1}\right) ,{S}_{n} = n{a}_{1}\left( {q = 1}\right)$ .
+
+数列 $\left\{  {a}_{n}\right\}$ 中,如果当 $n$ 无限增大时, ${a}_{n}$ 的值越来越趋近于某个确定的数 $a$ ,那么称这个数列的极限为 $a$ ,记作 $\mathop{\lim }\limits_{{n \rightarrow   + \infty }}{a}_{n} = a$ .
+
+三个常用极限: ① $\mathop{\lim }\limits_{{n \rightarrow  \infty }}C = C$ ( $C$ 为常数); ② $\mathop{\lim }\limits_{{n \rightarrow  \infty }}\frac{1}{n} = 0$ ; ③ 当 $\left| q\right|  < 1$ 时, $\mathop{\lim }\limits_{{n \rightarrow  \infty }}{q}^{n} = 0$ .
+
+以 $a$ 为首项, $q$ 为公比的等比数列,其前 $n$ 项和为 ${S}_{n}$ ,当 $\left| q\right|  < 1$ 时, $\mathop{\lim }\limits_{{n \rightarrow   + \infty }}{S}_{n} = \frac{a}{1 - q}$ .
+
+(※) 如果 $\mathop{\lim }\limits_{{n \rightarrow  \infty }}{a}_{n} = A,\mathop{\lim }\limits_{{n \rightarrow  \infty }}{b}_{n} = B$ ,那么
+
+① $\mathop{\lim }\limits_{{n \rightarrow  \infty }}\left( {{a}_{n} \pm  {b}_{n}}\right)  = \mathop{\lim }\limits_{{n \rightarrow  \infty }}{a}_{n} \pm  \mathop{\lim }\limits_{{n \rightarrow  \infty }}{b}_{n} = A \pm  B$ ;
+
+② $\mathop{\lim }\limits_{{n \rightarrow  \infty }}\left( {{a}_{n} \cdot  {b}_{n}}\right)  = \mathop{\lim }\limits_{{n \rightarrow  \infty }}{a}_{n} \cdot  \mathop{\lim }\limits_{{n \rightarrow  \infty }}{b}_{n} = A \cdot  B$ ;
+
+③ $\mathop{\lim }\limits_{{n \rightarrow  \infty }}\frac{{a}_{n}}{{b}_{n}} = \frac{\mathop{\lim }\limits_{{n \rightarrow  \infty }}{a}_{n}}{\mathop{\lim }\limits_{{n \rightarrow  \infty }}{b}_{n}} = \frac{A}{B}\left( {B \neq  0}\right)$ .
+
+## (3)等比数列常用性质
+
+已知数列 $\left\{  {a}_{n}\right\}$ 为等比数列,前 $n$ 项和为 ${S}_{n}$ ,则有下列常用性质:
+
+① ${a}_{n} = {a}_{m} \cdot  {q}^{n - m}$ .
+
+② 若 $m + n = p + q$ ，则 ${a}_{m} \cdot  {a}_{n} = {a}_{p} \cdot  {a}_{q}$ .
+
+③ 数列 ${a}_{k}$ 、 ${a}_{k + m}$ 、 ${a}_{k + {2m}}$ 、 $\cdots$ 成等比数列，公比为 ${q}^{m}$ .
+
+④ 数列 ${S}_{n}\text{ 、 }{S}_{2n} - {S}_{n}\text{ 、 }{S}_{3n} - {S}_{2n}\text{ 、 }{S}_{4n} - {S}_{3n}\text{ 、 }\cdots$ 成等比数列,公比为 ${q}^{n}$ .
+
+⑤ 数列 $\left\{  {a}_{n}\right\}$ 成等比数列 $\Leftrightarrow  {a}_{n}^{2} = {a}_{n - 1} \cdot  {a}_{n + 1},{a}_{n} = p \cdot  {q}^{n},{S}_{n} = A\left( {{q}^{n} - 1}\right)$ .
+
+⑥ 若数列 $\left\{  {a}_{n}\right\}$ 是等比数列,且 ${a}_{n} > 0$ ,则 $\left\{  {{\log }_{c}{a}_{n}}\right\}$ 为等差数列.
+
+⑦ ${S}_{n}$ 是前 $n$ 项和， ${S}_{\text{ 奇 }}$ 表示奇数项的和， ${S}_{\text{ 偶 }}$ 表示偶数项的和，则 ${S}_{n} = {S}_{\text{ 奇 }} + {S}_{\text{ 偶 }}$ . 当 $n$ 为偶数时, $\frac{{S}_{\text{ 偶 }}}{{S}_{\text{ 奇 }}} = q$ ; 当 $n$ 为奇数时, $\frac{{S}_{\text{ 奇 }} - {a}_{1}}{{S}_{\text{ 偶 }}} = q$ .
+
+⑧ 设 ${T}_{n}$ 是前 $n$ 项积， ${T}_{\text{ 奇 }}$ 表示奇数项的积， ${T}_{\text{ 偶 }}$ 表示偶数项的积，则 ${T}_{n} = {T}_{\text{ 奇 }} \cdot  {T}_{\text{ 偶 }}$ . 当 $n$ 为偶数时, $\frac{{T}_{\text{ 偶 }}}{{T}_{\text{ 奇 }}} = {q}^{\frac{n}{2}}$ ; 当 $n$ 为奇数时, $\frac{{T}_{\text{ 奇 }}}{{T}_{\text{ 偶 }}} = {a}_{\text{ 中 }}$ .
+
+## 3. 数列
+
+## (1)数列的概念与性质
+
+按照一定顺序排列的一列数称为一个数列.
+
+项数有限的数列叫做有穷数列, 项数无限的数列叫做无穷数列.
+
+从第 2 项起,每一项都不小于其前一项的数列 $\left\{  {a}_{n}\right\}$ 叫做增数列,此时 ${a}_{n + 1} \geq  {a}_{n}$ ( $n$ 为正整数)成立. 特别地,从第 2 项起,每一项都大于其前一项的数列 $\left\{  {a}_{n}\right\}$ 叫做严格增数列, 此时 ${a}_{n + 1} > {a}_{n}$ ( $n$ 为正整数) 成立.
+
+相应地,从第 2 项起,每一项都不大于其前一项的数列 $\left\{  {a}_{n}\right\}$ 叫做减数列,此时 ${a}_{n + 1} \leq  {a}_{n}$
+
+( $n$ 为正整数) 成立. 特别地,从第 2 项起,每一项都小于其前一项的数列 $\left\{  {a}_{n}\right\}$ 叫做严格减数列,此时 ${a}_{n + 1} > {a}_{n}$ ( $n$ 为正整数) 成立.
+
+增数列和减数列统称为单调数列. 各项均相等的数列叫做常数列.
+
+若存在正常数 $M$ ,使得数列每一项的绝对值都不大于 $M$ ,这样的数列叫做有界数列, 否则叫做无界数列
+
+给定数列 $\left\{  {a}_{n}\right\}$ ,如果可以用一个关于序数 $n$ 的公式来表示数列中的任一项 ${a}_{n}$ ,那么这个公式就称为数列 $\left\{  {a}_{n}\right\}$ 的通项公式.
+
+## (2)利用递推公式表示数列
+
+如果数列 $\left\{  {a}_{n}\right\}$ 的任一项 ${a}_{n}$ 可由其前一项 ${a}_{n - 1}$ (或前几项) 通过一个公式来表示,那么这个公式就叫做这个数列的一个递推公式.
+
+等差数列 $\left\{  {a}_{n}\right\}$ 的递推公式: ${a}_{n} = {a}_{n - 1} + d\left( {n \geq  2, n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+等比数列 $\left\{  {a}_{n}\right\}$ 的递推公式: ${a}_{n} = {a}_{n - 1}q\left( {n \geq  2, n \in  {\mathbf{N}}^{ * }}\right)$ .
+
+## (3)求数列通项方法
+
+① 公式法: 等差数列通项 ${a}_{n} = {a}_{1} + \left( {n - 1}\right) d$ ,等比数列通项 ${a}_{n} = {a}_{1}{q}^{n - 1}$ .
+
+② 累加法 (累乘法): ${a}_{n} - {a}_{n - 1} = f\left( n\right) ,\frac{{a}_{n}}{{a}_{n - 1}} = f\left( n\right) , n \geq  2$ .
+
+③ 作差法 (作商法): 若 ${S}_{n} = {a}_{1} + {a}_{2} + {a}_{3} + \cdots  + {a}_{n}$ ,则 ${a}_{n} = {S}_{n} - {S}_{n - 1}, n \geq  2$ ;
+
+若 ${T}_{n} = {a}_{1} \cdot  {a}_{2} \cdot  {a}_{3}\cdots \cdots {a}_{n}$ ,则 ${a}_{n} = \frac{{T}_{n}}{{T}_{n - 1}}, n \geq  2$ .
+
+④ 构造法: ${a}_{n} = A{a}_{n - 1} + B;{a}_{n} = A{a}_{n - 1} + {Bn} + C;{a}_{n} = A{a}_{n - 1} + {B}^{n}$ ;
+
+$$
+{a}_{n + 1} = p{a}_{n}^{q};\;{a}_{n} = \frac{{a}_{n - 1}}{k{a}_{n - 1} + b};\;{a}_{n + 1} = p{a}_{n} + q{a}_{n - 1}.
+$$
+
+⑥ 特征根法: 适用于 ${a}_{n + 1} = p{a}_{n} + q{a}_{n - 1} + r\left( {p \neq  0}\right)$ .
+
+⑤ 不动点法:适用于分式递推数列 ${a}_{n + 1} = \frac{C{a}_{n} + D}{A{a}_{n} + B}\left( {A \neq  0}\right)$ .
+
+⑦ 数学归纳法:对数列通项进行归纳猜想，然后按数学归纳法步骤进行证明.
+
+## (4)数列求和方法
+
+① 求和公式法: 等差数列前 $n$ 项和公式: ${S}_{n} = \frac{n\left( {{a}_{1} + {a}_{n}}\right) }{2} = n{a}_{1} + \frac{n\left( {n - 1}\right) }{2}d = n{a}_{\text{ 中 }}$ . 等比数列前 $n$ 项和公式: ${S}_{n} = \frac{{a}_{1}\left( {1 - {q}^{n}}\right) }{1 - q} = \frac{{a}_{1} - {a}_{n}q}{1 - q}\left( {q \neq  1}\right)$ .
+
+$$
+{1}^{2} + {2}^{2} + {3}^{2} + \cdots  + {n}^{2} = \frac{1}{6}n\left( {n + 1}\right) \left( {{2n} + 1}\right) .
+$$
+
+$$
+{1}^{3} + {2}^{3} + {3}^{3} + \cdots  + {n}^{3} = \frac{1}{4}{n}^{2}{\left( n + 1\right) }^{2}.
+$$
+
+② 倒序相加法:首尾距离相等的两项有共性或数列的通项与组合数相关联.
+
+③ 错位相减法:数列通项由等差数列与等比数列相乘构成.
+
+④ 裂项相消法: 将数列中的每项进行分解, 然后重新组合, 达到消项的目的.
+
+$$
+\frac{1}{n\left( {n + 1}\right) } = \frac{1}{n} - \frac{1}{n + 1};\;\frac{1}{n\left( {n + k}\right) } = \frac{1}{k}\left( {\frac{1}{n} - \frac{1}{n + k}}\right) ;
+$$
+
+$$
+\frac{1}{n\left( {n + 1}\right) \left( {n + 2}\right) } = \frac{1}{2}\left\lbrack  {\frac{1}{n\left( {n + 1}\right) } - \frac{1}{\left( {n + 1}\right) \left( {n + 2}\right) }}\right\rbrack  ;
+$$
+
+$$
+\frac{1}{\sqrt{n} + \sqrt{n - 1}} = \sqrt{n} - \sqrt{n - 1};\frac{1}{\sqrt{n + k} + \sqrt{n}} = \frac{1}{k}\left( {\sqrt{n + k} - \sqrt{n}}\right) ;
+$$
+
+$$
+\frac{n}{\left( {n + 1}\right) !} = \frac{1}{n!} - \frac{1}{\left( {n + 1}\right) !};\frac{\sin {1}^{ \circ  }}{\cos {n}^{ \circ  }\cos {\left( n + 1\right) }^{ \circ  }} = \tan {\left( n + 1\right) }^{ \circ  } - \tan {n}^{ \circ  }.
+$$
+
+⑤ 分组求和法:将通项中有共同规律的部分进行分组，分别求和.
+
+⑥ 数学归纳法:对数列前 $n$ 项和进行归纳猜想，然后按数学归纳法步骤进行证明.
+
+## 4. 数学归纳法
+
+由特殊到一般的推理方法, 叫做归纳法.
+
+一般地,证明一个与正整数 $n$ 有关的命题,可按下列步骤进行:
+
+(1)证明当 $n$ 取第一个值 ${n}_{0}\left( {{n}_{0} \in  {\mathbf{N}}^{ * }}\right.$ ) 时，命题成立；
+
+(2)假设当 $n = k$ ( $k \geq  {n}_{0}$ ， $k \in  {\mathbf{N}}^{ * }$ )时命题成立，证明当 $n = k + 1$ 时命题也成立.
+
+那么对于从 ${n}_{0}$ 开始的所有正整数 $n$ 都成立,这种证明方法叫做数学归纳法.
+
+在数学的探索中, 为了寻求一般的规律, 往往先考虑一些特例, 进行归纳, 形成猜想, 再去证明这些猜想正确与否. 一般与正整数有关的命题也可以通过这样的途径得到.
+
+## 数学归纳法的形式(※)
+
+第一数学归纳法: 教材上的数学归纳法, 称之为第一数学归纳法, 是归纳法的基本形式.
+
+第二数学归纳法: ① 当 $n = 1$ 时, $P\left( n\right)$ 成立; ② 假设当 $n \leq  k\left( {k \in  {\mathbf{N}}^{ * }}\right)$ 时, $P\left( k\right)$ 成立,由此推出 $n = k + 1, P\left( {k + 1}\right)$ 也成立,那么命题成立.
+
+跳跃数学归纳法: ① 当 $n = 1\text{ 、 }2\text{ 、 }3\text{ 、 }\cdots \text{ 、 }m$ 时, $P\left( 1\right) \text{ 、 }P\left( 2\right) \text{ 、 }P\left( 3\right) \text{ 、 }\cdots \text{ 、 }P\left( m\right)$ 成立; ② 假设当 $n = k$ ( $k \geq  m$ , $k \in  {\mathbf{N}}^{ * }$ ) 时, $P\left( k\right)$ 成立,由此推出 $n = k + m$ 时, $P\left( {k + m}\right)$ 也成立, 那么对一切正整数, 命题成立.
+
+反向数学归纳法: ① $P\left( n\right)$ 对无穷多个正整数 n 成立; ② 假设当 $n = k + 1\left( {k \in  {\mathbf{N}}^{ * }}\right)$ 时,命题 $P\left( {k + 1}\right)$ 成立,由此推出 $n = k$ 时 $P\left( k\right)$ 也成立,那么对一切正整数,命题成立.
+
+## 5. 用迭代序列求 $\sqrt{2}$ 的近似值(※)
+
+现实生活中, 大量复杂的方程很难得到精确解, 而从应用上的需要看, 求得一个具有适当高精度的近似解就已足够, 为了得到解的近似值, 我们可以通过选取适当的首项与递推公式, 得到一个越来越趋近于精确解的数列, 这就形成了一个相应的算法.
+
+具体地说,记 $A$ 为某个方程的解,选定一个函数 $f\left( x\right)$ 以及一个首项 ${x}_{1}$ ,然后利用下面的递推公式 ${x}_{n + 1} = f\left( {x}_{n}\right)$ 重复地计算,如果 ${x}_{n}$ 越来越趋近于 $A$ ,即 $\mathop{\lim }\limits_{{n \rightarrow  \infty }}{x}_{n} = A$ ,就得到一个求 $A$ 的算法. 在此算法中,我们把首项 ${x}_{1}$ 称为初值,数列 $\left\{  {x}_{n}\right\}$ 称为迭代序列,而这个方法就称为迭代算法.
+
+下面以求 $\sqrt{2}$ 的近似值为例来说明迭代算法. 我们可以通过求方程 ${x}^{2} = 2$ 的正根来计算 $\sqrt{2}$ ,容易看到,方程 ${x}^{2} = 2$ 可等价地变形为 $x = \frac{1}{2}\left( {x + \frac{2}{x}}\right)$ ,即取 $f\left( x\right)  = \frac{1}{2}\left( {x + \frac{2}{x}}\right)$ . 为了求解,我们任取一个初值 ${x}_{1} > 0$ ,并构造递推公式 ${x}_{n + 1} = \frac{1}{2}\left( {{x}_{n} + \frac{2}{{x}_{n}}}\right)$ 来形成一个迭代序列 $\left\{  {x}_{n}\right\}$ , 这就是计算 $\sqrt{2}$ 的巴比伦算法.
+
+## 第十五章 导数及其应用
+
+![bo_d7aq48ilb0pc73dcpcb0_97_302_316_1055_768_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_97_302_316_1055_768_0.jpg)
+
+## 1. 导数的概念及意义
+
+## (1)导数的概念
+
+在已知函数关系 $y = f\left( x\right)$ 的前提下,对于自变量某个给定值 ${x}_{0}$ ,赋予 ${x}_{0}$ 一个变化量 $h$ , 分析当 $h$ 趋近于 0 时,函数值的变化量 $f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right)$ 相对于自变量变化量 $h$ 的比值 $\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ 是否趋近于某个稳定值. 如果这个稳定值存在,就说明 $\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ 在 $h$ 趋近于 0 时有极限,并把这个极限值记作 $\mathop{\lim }\limits_{{h \rightarrow  0}}\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ ,称为函数 $y = f\left( x\right)$ 在 $x = {x}_{0}$ 处的导数,记作 ${f}^{\prime }\left( {x}_{0}\right)$ ,即有 ${f}^{\prime }\left( {x}_{0}\right)  = \mathop{\lim }\limits_{{h \rightarrow  0}}\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ .
+
+一般地,对于一个函数 $y = f\left( x\right)$ ,通常将 $\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ 称为函数 $y = f\left( x\right)$ 在以 ${x}_{0}$ 和 ${x}_{0} + h$ 为端点的区间上的平均变化率. 而 ${f}^{\prime }\left( {x}_{0}\right)  = \mathop{\lim }\limits_{{h \rightarrow  0}}\frac{f\left( {{x}_{0} + h}\right)  - f\left( {x}_{0}\right) }{h}$ 就是函数 $y = f\left( x\right)$ 在 $x = {x}_{0}$ 处的瞬时变化率. 平均变化率反映了一个函数在一个区间上的平均变化情况,而瞬时变化率则反映了该函数在某个自变量 ${x}_{0}$ 处的瞬时变化情况.
+
+## (2)导数的几何意义
+
+函数 $y = f\left( x\right)$ 在 $x = {x}_{0}$ 处的导数 ${f}^{\prime }\left( {x}_{0}\right)$ 就是曲线 $y = f\left( x\right)$ 在点 $\left( {{x}_{0}, f\left( {x}_{0}\right) }\right)$ 处切线的斜率. 从而,函数 $y = f\left( x\right)$ 在点 $\left( {{x}_{0}, f\left( {x}_{0}\right) }\right)$ 处的切线方程为 $y - f\left( {x}_{0}\right)  = {f}^{\prime }\left( {x}_{0}\right) \left( {x - {x}_{0}}\right)$ .
+
+通常, 我们将导数为零的点称为函数的驻点, 曲线在其驻点处的切线是一条水平直线.
+
+## 2. 导数的运算
+
+给定函数 $y = f\left( x\right)$ ,在导数存在的前提下,对于不同的 ${x}_{0}$ ,总有一个确定的导数值 ${f}^{\prime }\left( {x}_{0}\right)$ 与之对应. 换句话说,如果用 $x$ 表示自变量,那么 ${y}^{\prime } = {f}^{\prime }\left( x\right)$ 也是一个关于 $x$ 的函数, 称为函数 $y = f\left( x\right)$ 的导函数 (也简称为导数),其中 ${f}^{\prime }\left( x\right)  = \mathop{\lim }\limits_{{h \rightarrow  0}}\frac{f\left( {x + h}\right)  - f\left( x\right) }{h}$ .
+
+求一个函数的导 (函) 数的过程常简称为求导.
+
+## (1)基本初等函数的导数
+
+常数函数、幂函数、指数函数、对数函数、三角函数、反三角函数被称为基本初等函数.
+
+① ${\left( C\right) }^{\prime } = 0$ ， $C$ 为常数；② ${\left( {x}^{\alpha }\right) }^{\prime } = \alpha {x}^{\alpha  - 1}$ ， $\alpha$ 为常数；③ ${\left( {\mathrm{e}}^{x}\right) }^{\prime } = {\mathrm{e}}^{x}$ ；④ ${\left( \ln x\right) }^{\prime } = \frac{1}{x}$ ；
+
+⑤ ${\left( \sin x\right) }^{\prime } = \cos x$ ; ⑥ ${\left( \cos x\right) }^{\prime } =  - \sin x$ ; ⑦ ${\left( {a}^{x}\right) }^{\prime } = {a}^{x} \cdot  \ln a$ ; ⑧ ${\left( {\log }_{a}x\right) }^{\prime } = \frac{1}{x} \cdot  {\log }_{a}\mathrm{e}$ .
+
+(※) ${\left( \tan x\right) }^{\prime } = {\sec }^{2}x;{\left( \cot x\right) }^{\prime } =  - {\csc }^{2}x;{\left( \sec x\right) }^{\prime } = \sec x \cdot  \tan x$ ;
+
+${\left( \csc x\right) }^{\prime } =  - \csc x \cdot  \cot x;\;{\left( \arcsin x\right) }^{\prime } = \frac{1}{\sqrt{1 - {x}^{2}}}\;\left( {-1 < x < 1}\right) ;$
+
+${\left( \arccos x\right) }^{\prime } =  - \frac{1}{\sqrt{1 - {x}^{2}}}\left( {-1 < x < 1}\right) ;{\left( \arctan x\right) }^{\prime } = \frac{1}{1 + {x}^{2}};{\left( \operatorname{arccot}x\right) }^{\prime } =  - \frac{1}{1 + {x}^{2}}$ .
+
+## (2)导数的四则运算
+
+① ${\left( Cf\left( x\right) \right) }^{\prime } = C{f}^{\prime }\left( x\right)$ ；
+
+② ${\left( f\left( x\right)  \pm  g\left( x\right) \right) }^{\prime } = {f}^{\prime }\left( x\right)  \pm  {g}^{\prime }\left( x\right)$ ；
+
+③ ${\left( f\left( x\right)  \cdot  g\left( x\right) \right) }^{\prime } = {f}^{\prime }\left( x\right)  \cdot  g\left( x\right)  + f\left( x\right)  \cdot  {g}^{\prime }\left( x\right)$ ；
+
+④ ${\left( \frac{f\left( x\right) }{g\left( x\right) }\right) }^{\prime } = \frac{{f}^{\prime }\left( x\right)  \cdot  g\left( x\right)  - f\left( x\right)  \cdot  {g}^{\prime }\left( x\right) }{{\left( g\left( x\right) \right) }^{2}}$ ，其中 $g\left( x\right)  \neq  0$ .
+
+## (3)简单复合函数的导数
+
+如果一个函数 $y = f\left( u\right)$ 的自变量 $u$ 又是另一个变量 $x$ 的函数 $u = g\left( x\right)$ ,那么就可将 $y$ 直接看作变量 $x$ 的函数而得到一个新函数 $y = f\left( {g\left( x\right) }\right)$ ,这个新函数就被称为两个函数的复合函数.
+
+$y = f\left( {{ax} + b}\right)$ 型复合函数的求导法则: ${\left( f\left( ax + b\right) \right) }^{\prime } = a{f}^{\prime }\left( u\right)$ ,其中 $u = {ax} + b$ .
+
+$y = f\left( {g\left( x\right) }\right)$ 型复合函数的求导法则: ${\left( f\left( g\left( x\right) \right) \right) }^{\prime } = {f}^{\prime }\left( u\right)  \cdot  {g}^{\prime }\left( x\right)$ ,其中 $u = g\left( x\right)$ .
+
+## 3. 导数的应用
+
+## (1)利用导数研究函数的单调性
+
+定理 在区间 $I$ 上,若 ${f}^{\prime }\left( x\right)  > 0$ ,则函数 $y = f\left( x\right)$ 在该区间严格增; 若 ${f}^{\prime }\left( x\right)  < 0$ ,则函数 $y = f\left( x\right)$ 在该区间严格减.
+
+导数的绝对值越大, 函数图像就越 “陡峭”, 也就是函数值的变化速度越快.
+
+## (2)利用导数研究函数的极值
+
+对于函数 $y = f\left( x\right)$ ,若在 $x = {x}_{1}$ 附近存在一个小区间,该区间内其他自变量所对应的函数值都不大于 $f\left( {x}_{1}\right)$ ,此时,就说函数 $y = f\left( x\right)$ 在 $x = {x}_{1}$ 处取得极大值 $f\left( {x}_{1}\right)$ ,而点 ${x}_{1}$ 称为函数 $y = f\left( x\right)$ 的极大值点. 类似的,若在 $x = {x}_{2}$ 附近存在一个小区间,该区间内其他自变量所对应的函数值都不小于 $f\left( {x}_{2}\right)$ ,此时,就说函数 $y = f\left( x\right)$ 在 $x = {x}_{2}$ 处取得极小值 $f\left( {x}_{2}\right)$ , 而点 ${x}_{2}$ 称为函数 $y = f\left( x\right)$ 的极小值点.
+
+极大值和极小值统称为极值, 而极大值点和极小值点则统称为极值点.
+
+在导数都存在的前提下, 极值点一定是相应函数单调增区间及单调减区间的分界点, 从而是函数的驻点, 函数曲线在该点的切线是水平的. 但反过来, 我们却不能说一个函数的驻点一定是其极值点. (如函数 $y = {x}^{3}, x = 0$ 是其驻点,但不是极值点)
+
+定理 设点 $x = {x}_{0}$ 是函数 $y = f\left( x\right)$ 的驻点.
+
+① 若在点 ${x}_{0}$ 的左侧附近有 ${f}^{\prime }\left( x\right)  > 0$ ,而在 ${x}_{0}$ 的右侧附近有 ${f}^{\prime }\left( x\right)  < 0$ ,则函数 $y = f\left( x\right)$ 在 ${x}_{0}$ 处取得极大值;
+
+② 若在点 ${x}_{0}$ 的左侧附近有 ${f}^{\prime }\left( x\right)  < 0$ ,而在 ${x}_{0}$ 的右侧附近有 ${f}^{\prime }\left( x\right)  > 0$ ,则函数 $y = f\left( x\right)$ 在 ${x}_{0}$ 处取得极小值.
+
+## (3)利用导数研究函数的最值
+
+函数的最大值和最小值统称为最值. 最值反映了函数在定义域上整体的情况, 而极值则仅考虑函数在某点附近的局部特征. 有时最值和极值是一致的, 有时却不一致. 当然, 一个函数的极值与最值可能都不存在.
+
+如果考虑一个在闭区间上的连续函数, 函数的最大值与最小值一定存在. 我们对驻点处与区间端点处的函数值进行比较, 其中最大的就是最大值, 最小的就是最小值. 在导数存在的前提下，闭区间上的连续函数的最值原则上都可以按照这样的方法求出.
+
+(4)利用导数研究二次函数
+
+(5)利用导数解决实际问题
+
+## 第十六章 计数原理
+
+![bo_d7aq48ilb0pc73dcpcb0_100_341_340_921_610_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_100_341_340_921_610_0.jpg)
+
+## 1. 乘法原理与加法原理
+
+## (1)乘法原理
+
+乘法原理(分步计数原理)做一件事，需要依次完成 $n$ 个步骤，其中完成第一步有 ${a}_{1}$ 种不同的方法,完成第二步有 ${a}_{2}$ 种不同的方法, $\cdots$ ,完成第 $n$ 步有 ${a}_{n}$ 种不同的方法,那么完成这件事共有 ${a}_{1}{a}_{2}\cdots {a}_{n}$ 种不同的方法.
+
+## (2)加法原理
+
+加法原理(分类计数原理)做一件事，完成它有 $n$ 类办法，其中第一类办法有 ${a}_{1}$ 种不同的方法,第二类办法有 ${a}_{2}$ 种不同的方法, $\cdots$ ,第 $n$ 类办法有 ${a}_{n}$ 种不同的方法. 那么完成这件事共有 ${a}_{1} + {a}_{2} + \cdots  + {a}_{n}$ 种不同的方法.
+
+## 2. 排列组合
+
+(1)排列
+
+从 $n$ 个互不相同的元素中,取出 $m\left( {m \leq  n}\right)$ 个不同元素,按照一定的顺序排成一列, 叫做从 $n$ 个元素中取出 $m$ 个元素的一个排列.
+
+从 $n$ 个互不相同的元素中,取出 $m\left( {m \leq  n}\right)$ 个不同元素的所有排列的个数,叫做从 $n$ 个元素中取出 $m$ 个元素的排列数,用符号 ${\mathrm{P}}_{n}^{m}$ 表示.
+
+排列数公式 ${\mathrm{P}}_{n}^{m} = n\left( {n - 1}\right) \left( {n - 2}\right) \cdots \left( {n - m + 1}\right)$ ,其中 $m$ 及 $n$ 是正整数,且 $m \leq  n$ .
+
+把 $n$ 个不同元素全部进行排列,叫做这 $n$ 个元素的全排列. 这时排列数公式中 $m = n$ , 即 ${\mathrm{P}}_{n}^{n} = n\left( {n - 1}\right) \left( {n - 2}\right) \cdots 3 \cdot  2 \cdot  1$ . 为方便起见,把乘积 $n\left( {n - 1}\right) \left( {n - 2}\right) \cdots 3 \cdot  2 \cdot  1$ 记作 $n$ !,读作 $n$ 的阶乘,那么 $n$ 个不同元素的全排列数可以写成 ${\mathrm{P}}_{n}^{n} = n!$ .
+
+排列数公式用阶乘表示为 ${\mathrm{P}}_{n}^{m} = \frac{n!}{\left( {n - m}\right) !}$ ,当 $m = n$ 时,规定 $0! = 1$ .
+
+排列数性质 ${\mathrm{P}}_{n}^{m} = n{\mathrm{P}}_{n - 1}^{m - 1};{\mathrm{P}}_{n}^{m} + m{\mathrm{P}}_{n}^{m - 1} = {\mathrm{P}}_{n + 1}^{m};{\mathrm{P}}_{n + 1}^{n + 1} - {\mathrm{P}}_{n}^{n} = {n}^{2}{\mathrm{P}}_{n - 1}^{n - 1}$ .
+
+(2)组合
+
+从 $n$ 个互不相同的元素中,取出 $m\left( {m \leq  n}\right)$ 个不同元素作为一组,叫做从 $n$ 个元素中取出 $m$ 个元素的一个组合.
+
+从 $n$ 个互不相同的元素中,取出 $m\left( {m \leq  n}\right)$ 个不同元素的所有组合的个数,叫做从 $n$ 个元素中取出 $m$ 个元素的组合数,用符号 ${\mathrm{C}}_{n}^{m}$ 表示.
+
+组合数公式 ${\mathrm{C}}_{n}^{m} = \frac{{\mathrm{P}}_{n}^{m}}{{\mathrm{P}}_{m}^{m}} = \frac{n\left( {n - 1}\right) \left( {n - 2}\right) \cdots \left( {n - m + 1}\right) }{m!} = \frac{n!}{m!\left( {n - m}\right) !}$ ,其中 $m$ 及 $n$ 是正整数,且 $m \leq  n$ .
+
+组合数性质 ${\mathrm{C}}_{n}^{m} = {\mathrm{C}}_{n}^{n - m}$ ,特殊地, ${\mathrm{C}}_{n}^{0} = 1;{\mathrm{C}}_{n + 1}^{m} = {\mathrm{C}}_{n}^{m} + {\mathrm{C}}_{n}^{m - 1}$ .
+
+## 3. 计数原理在古典概率中的应用
+
+排列组合问题的常用方法:
+
+① 对称法:对称思想.
+
+② 特殊优先法:特殊位置优先考虑，特殊元素优先考虑.
+
+③ 先选后排法:先进行组合，再进行排列.
+
+④ 捆绑法:相邻问题捆绑法.
+
+⑤ 插空法:不相邻问题插空法.
+
+⑥ 隔板法:相同元素分组问题.
+
+⑦ 逆向法:至多至少问题，正难则反，等价转化，又称间接法.
+
+⑧ 枚举法:数量不大时可以逐一枚举各种情况.
+
+## 4. 二项式定理
+
+## (1)杨辉三角与二项式定理
+
+设 $n$ 是正整数,等式 ${\left( a + b\right) }^{n} = {\mathrm{C}}_{n}^{0}{a}^{n}{b}^{0} + {\mathrm{C}}_{n}^{1}{a}^{n - 1}{b}^{1} + \cdots  + {\mathrm{C}}_{n}^{r}{a}^{n - r}{b}^{r} + \cdots  + {\mathrm{C}}_{n}^{n}{a}^{0}{b}^{n}$ 称为二项式定理. 右边的多项式叫做 ${\left( a + b\right) }^{n}$ 的二项展开式,它一共有 $n + 1$ 项. 其中各项的系数 ${\mathrm{C}}_{n}^{r}$ 叫做二项式系数. 式中的 ${\mathrm{C}}_{n}^{r}{a}^{n - r}{b}^{r}$ 叫做二项展开式的通项,它是二项展开式中的第 $r + 1$ 项, 用 ${T}_{r + 1}$ 表示,即 ${T}_{r + 1} = {\mathrm{C}}_{n}^{r}{a}^{n - r}{b}^{r}$ .
+
+## (2)二项式定理的应用
+
+二项式系数性质 $1{\left( a + b\right) }^{n}$ 的二项展开式中,与首末两端 “等距离” 的两项的二项式系数相等,即 ${\mathrm{C}}_{n}^{m} = {\mathrm{C}}_{n}^{n - m}$ .
+
+二项式系数性质 $2{\left( a + b\right) }^{n}$ 的二项展开式中,所有二项式系数的和等于 ${2}^{n}$ ,即 ${\mathrm{C}}_{n}^{0} + {\mathrm{C}}_{n}^{1} + {\mathrm{C}}_{n}^{2} + \cdots  + {\mathrm{C}}_{n}^{n} = {2}^{n}.$
+
+注意二项式系数与系数之间的区别.
+
+赋值法在二项式定理中的应用: 一般令字母等于 0 可得常数项, 令字母等于 1 可得所有系数之和, 令字母等于 -1 可分离出奇数项系数之和与偶数项系数之和.
+
+## 第十七章 概率初步
+
+![bo_d7aq48ilb0pc73dcpcb0_103_329_300_945_811_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_103_329_300_945_811_0.jpg)
+
+## 1. 随机现象与样本空间
+
+## (1)随机现象
+
+具不确定性的现象称为随机现象, 或者说具有随机性.
+
+现实中有很多不同类型的随机现象. 简单分为可随意重复的, 如抛掷硬币、掷骰子、抽签等，称为随机试验; 与不可随意重复的，如天气、动物寿命等.
+
+## (2)样本空间与事件
+
+定义 一个随机现象中依某个角度观察其所有可能出现 (发生) 的结果所组成的集合称为一个样本空间,用 $\Omega$ 表示,其中的元素称为基本事件或者样本点.
+
+样本空间中的基本事件须是互斥的, 即任何两个均不会同时发生.
+
+对于一个随机现象, 我们经常会关注其中某件事情发生的可能性有多大. 这件事情在数学中称为事件, 或称为随机事件, 而在样本空间确定之后, 事件实际上可以看作样本空间的一个子集. 一个事件对应于样本空间的一个子集, 即满足事件所述条件的所有基本事件的集合. 注意基本事件与事件之间的区别, 基本事件是样本空间中的元素, 而事件是样本空间的某个子集.
+
+在一个随机试验中, 有两个特别的事件. 一个必然发生, 称为必然事件, 它对应的子集就是样本空间 $\Omega$ ,即所有基本事件的集合; 另外一个必然不发生,称为不可能事件,对应的子集是空集 $\varnothing$ . 它们统称为确定事件,其余的称为不确定事件.
+
+## 2. 古典概率
+
+## (1)等可能性与概率
+
+一般地, 若一个随机试验的所有结果出现的可能性都一样, 则称之为具有等可能性.
+
+如果一个随机试验满足下面两个条件:① 包含有限个可能出现的结果(基本事件)； ② 这些结果出现是等可能的. 那么这样的随机试验就称为古典概率模型.
+
+由于一般的随机事件 $A$ 是基本事件的某个集合,即样本空间的一个子集,用符合 $P\left( A\right)$ 表示事件 $A$ 发生的概率,那么事件 $A$ 发生的概率为 $P\left( A\right)  = \frac{\left| A\right| }{\left| \Omega \right| }$ ,其中 $\left| A\right|$ 表示事件 $A$ 中的基本事件个数,而 $\left| \Omega \right|$ 表示样本空间中的基本事件个数.
+
+概率性质 1 必然事件的概率是 1,不可能事件的概率是 0,即 $P\left( \Omega \right)  = 1, P\left( \varnothing \right)  = 0$ .
+
+概率性质 2 设 $A$ 是一个事件,那么 $0 \leq  P\left( A\right)  \leq  1$ .
+
+设一个随机试验分两步完成,第一步有 $m$ 个等可能的结果,记作 ${a}_{1}\text{ 、 }{a}_{2}\text{ 、 }\cdots \text{ 、 }{a}_{m}$ ; 而对第一步得到的每个结果,第二步总有 $n$ 个等可能的结果,记作 ${b}_{1}\text{ 、 }{b}_{2}\text{ 、 }\cdots \text{ 、 }{b}_{n}$ . 那么, 该随机试验的样本空间就是 $\Omega  = \left\{  {\left( {{a}_{i},{b}_{j}}\right)  \mid  i = 1,2,\cdots , m;j = 1,2,\cdots , n}\right\}$ ,它是等可能的, 共有 ${mn}$ 个元素. 对多步的等可能随机试验可以类似地构造等可能的样本空间.
+
+## (2)事件关系和运算
+
+对于一个随机现象而言, 在确定样本空间之后, 事件对应于样本空间的一个子集, 通常用相同的字母来表示事件与相应的子集.
+
+首先,事件之间是有关系的. 如果 $A$ 的基本事件都在 $B$ 中,那么 $A$ 发生必然 $B$ 发生. 此时,称 $B$ 包含 $A$ 或者 $A$ 包含于 $B$ ,即 $A \subset  B$ .
+
+其次,事件是可以运算的. “两个事件 $A\text{ 、 }B$ 至少有一个发生”,这本身也是一个事件, 是指在两个事件所包含的基本事件中至少有一个发生,其对应的子集是 $A \cup  B$ . 同样地, “两个事件 $A\text{ 、 }B$ 同时发生” 也是一个事件,是指两个事件的某些共同的基本事件发生, 其对应的子集是 $A \cap  B$ .
+
+如果 $A$ 与 $B$ 没有共同的基本事件,即两个子集不相交: $A \cap  B = \varnothing$ ,那么这两个事件不可能同时发生, 或者说互斥.
+
+“事件 $A$ 发生” 的否定就是 “事件 $A$ 不发生”,它也是一个事件,称为事件 $A$ 的对立事件，简称为 “非 $A$ ”. 对应的子集是不属于 $A$ 的基本事件全体，从而是 $A$ 在样本空间 $\Omega$ 中的补集 $\bar{A}$ . 显然 $A$ 与非 $A$ 不会同时发生,但肯定有一个发生,即 $A \cap  \bar{A} = \varnothing , A \cup  \bar{A} = \Omega$ .
+
+“ $A\text{ 、 }B$ 两个事件同时发生” 的否定是 “ $A\text{ 、 }B$ 至少有一个不发生”,或者 “ $A$ 不发生或 $B$ 不发生”,即 $\overline{A \cap  B} = \bar{A} \cup  \bar{B}$ . 类似地,“ $A\text{ 、 }B$ 两个事件至少有一个发生” 的否定是 “ $A$ 与 $B$ 都没发生”,即 $\overline{A \cup  B} = \bar{A} \cap  \bar{B}$ . 上面这两个公式是对两个事件来陈述的,实际上对任意多个事件同样成立.
+
+## (3)可加性
+
+概率性质 3 (可加性) 两个不可能同时发生的事件至少有一个发生的概率是这两个事件的概率之和. 换言之,如果 $A \cap  B = \varnothing$ ,那么 $P\left( {A \cup  B}\right)  = P\left( A\right)  + P\left( B\right)$ .
+
+概率性质 4 对任一给定事件, 其发生的概率与不发生的概率的和总是 1 , 换言之, 有 $P\left( A\right)  = 1 - P\left( \bar{A}\right)$ .
+
+从两个事件的可加性可以推出任意多个事件的可加性: 如果 ${A}_{1}\text{ 、 }{A}_{2}\text{ 、 }\cdots \text{ 、 }{A}_{n}$ 是 $n$ 个两两互斥的事件,那么 $P\left( {{A}_{1} \cup  {A}_{2} \cup  \cdots  \cup  {A}_{n}}\right)  = P\left( {A}_{1}\right)  + P\left( {A}_{2}\right)  + \cdots  + P\left( {A}_{n}\right)$ .
+
+## 3. 频率与概率
+
+如果一个随机试验只有两种可能的结果,一个是 “成功”,概率是 $p\left( {0 < p < 1}\right)$ ,一个是 “失败”,概率是 $1 - p$ ,那么这个随机试验称为伯努利试验.
+
+假设我们可以独立地重复一个伯努利试验 $n$ 次,其中成功的次数记作 ${S}_{n}$ ,那么 $\frac{{S}_{n}}{n}$ 就被称为 $\left( n\right.$ 次实验中) 成功的频率. 频率是一个数,依赖于试验次数 $n$ ,它不是一个确定的数, 是一个随机的数. 而概率是一个确定的数.
+
+伯努利大数定律: 独立地重复一个伯努利试验 $n$ 次,当 $n$ 很大时,频率 $\frac{{S}_{n}}{n}$ 逼近概率.
+
+频率在大数次的试验中稳定于某一常数 (概率) 这个事实非常重要. 正因为如此, 在实际中可以把频率作为概率 (的估计值) 来应用. 频率也称为经验概率, 计算它通常是为了估计概率 $P$ . 为了区别于概率,经验概率用 $\widehat{P}$ 来表示.
+
+## 4. 随机事件的独立性
+
+## (1)独立随机事件
+
+如果两个随机事件 $A\text{ 、 }B$ 是否发生互相不影响,就认为它们是独立的. 它们同时发生的概率等于它们各自发生概率的乘积,即 $P\left( {A \cap  B}\right)  = P\left( A\right) P\left( B\right)$ .
+
+## (2)事件的独立性
+
+当两个事件的独立性不能通过随机试验的独立性来判断时, 我们就要直接用等式 $P\left( {A \cap  B}\right)  = P\left( A\right) P\left( B\right)$ 是否成立来检验两个事件 $A$ 与 $B$ 是否独立.
+
+## 5. 条件概率与相关公式
+
+## (1)条件概率
+
+在古典概率模型中,事件 $A$ 发生之后,随机现象的结果就剩下事件 $A$ 中的基本事件, 所以事件 $A$ 变成了由这些基本事件所构成的新的样本空间. 这个样本空间仍然是等可能的, 这时事件 $B$ 发生的概率称为事件 $B$ 基于条件 $A$ 的概率,或在事件 $A$ 发生的条件下,事件 $B$ 发生的概率,或已知事件 $A$ 发生,事件 $B$ 发生的概率,记为 $P\left( {B \mid  A}\right)$ . 事实上,这等于是在一个样本空间为 $A$ 的随机试验中,求事件 $A \cap  B$ 发生的概率,即 $P\left( {B \mid  A}\right)  = \frac{\left| A \cap  B\right| }{\left| A\right| }$ .
+
+将上式的分子、分母同时除以 $\left| \Omega \right|$ ,就得到条件概率公式,在事件 $A$ 发生的条件下,事件 $B$ 发生的概率是 $P\left( {B \mid  A}\right)  = \frac{P\left( {A \cap  B}\right) }{P\left( A\right) }$ .
+
+如果已知相应的条件概率,那么就可以计算两事件同时发生的概率,事件 $A\text{ 、 }B$ 同时发生的概率等于 $A$ 发生的概率与在 $A$ 发生的条件下 $B$ 发生的概率的乘积,即 $P\left( {A \cap  B}\right)  = P\left( A\right) P\left( {B \mid  A}\right)$ . 这个公式称为概率的乘法公式.
+
+## (2)全概率公式
+
+全概率公式是指一个事件发生的概率是其在不同条件下发生概率的加权平均.
+
+设某个随机试验的结果可以分成 $n$ 种情况,即设样本空间 $\Omega$ 可分成 $n$ 个两两不同时发生 (两两互斥) 的事件 ${\Omega }_{1}\text{ 、 }{\Omega }_{2}\text{ 、 }\cdots \text{ 、 }{\Omega }_{n}$ ,即 $\Omega  = {\Omega }_{1} \cup  {\Omega }_{2} \cup  \cdots  \cup  {\Omega }_{n}$ ,所以 $\mathop{\sum }\limits_{{k = 1}}^{n}P\left( {\Omega }_{k}\right)  = 1$ . 一个事件 $A$ 的发生可以看作是在不同情况下分别发生,即 $A = \left( {A \cap  {\Omega }_{1}}\right)  \cup  \left( {A \cap  {\Omega }_{2}}\right)  \cup  \cdots \; \bigcup \left( {A \cap  {\Omega }_{n}}\right)$ ,因此,由概率的可加性和乘法公式,得:
+
+$$
+P\left( A\right)  = P\left( {A \cap  {\Omega }_{1}}\right)  + P\left( {A \cap  {\Omega }_{2}}\right)  + \cdots  + P\left( {A \cap  {\Omega }_{n}}\right)
+$$
+
+$$
+= P\left( {A \mid  {\Omega }_{1}}\right) P\left( {\Omega }_{1}\right)  + P\left( {A \mid  {\Omega }_{2}}\right) P\left( {\Omega }_{2}\right)  + \cdots  + P\left( {A \mid  {\Omega }_{n}}\right) P\left( {\Omega }_{n}\right)
+$$
+
+于是我们得到全概率公式: $P\left( A\right)  = \mathop{\sum }\limits_{{k = 1}}^{n}P\left( {A \mid  {\Omega }_{k}}\right) P\left( {\Omega }_{k}\right)$ .
+
+所以 $P\left( A\right)$ 实际上是条件概率 $P\left( {A \mid  {\Omega }_{k}}\right)$ 的加权平均,而条件概率 $P\left( {A \mid  {\Omega }_{k}}\right)$ 的权重为 $P\left( {\Omega }_{k}\right) ,\;k = 1\text{ 、 }2\text{ 、 }\cdots \text{ 、 }n.$
+
+(3)贝叶斯公式(※)
+
+由乘法公式得 $P\left( {A \mid  {\Omega }_{i}}\right) P\left( {\Omega }_{i}\right)  = P\left( {A \cap  {\Omega }_{i}}\right)  = P\left( A\right) P\left( {{\Omega }_{i} \mid  A}\right)$ ,
+
+因此 $P\left( {{\Omega }_{i} \mid  A}\right)  = \frac{P\left( {A \mid  {\Omega }_{i}}\right) P\left( {\Omega }_{i}\right) }{P\left( A\right) }$ ,
+
+再对分母应用全概率公式即推出贝叶斯公式: $P\left( {{\Omega }_{i} \mid  A}\right)  = \frac{P\left( {A \mid  {\Omega }_{i}}\right) P\left( {\Omega }_{i}\right) }{\mathop{\sum }\limits_{{k = 1}}^{n}P\left( {A \mid  {\Omega }_{k}}\right) P\left( {\Omega }_{k}\right) }$ .
+
+对于任意给定的 $i$ 来说, $P\left( {\Omega }_{i}\right)$ 称为事件 ${\Omega }_{i}$ 的先验概率. 一个已经发生了的事件 $A$ 可以看作一个新的信息. 在 $A$ 发生的条件下, ${\Omega }_{i}$ 的概率 $P\left( {{\Omega }_{i} \mid  A}\right)$ 可以看作对原概率 $P\left( {\Omega }_{i}\right)$ 的一个矫正, 称为后验概率.
+
+## 6. 随机变量的分布与特征
+
+## (1)随机变量与分布
+
+以样本空间作为定义域的一个函数 $X$ 称为一个随机变量,即对样本空间 $\Omega$ 中任意给定的元素 $\omega$ ,都有唯一的实数 $X\left( \omega \right)$ 与之对应.
+
+随机变量所有可能的取值以及相应的概率, 称为随机变量的分布.
+
+随机变量 $X$ 的所有可能取值的概率的和等于 1 .
+
+当随机变量取所有值的概率均相等时, 称它是等可能分布或均匀分布的. 另外, 只取两个值的随机变量称为伯努利型, 其分布称为伯努利分布.
+
+一个如下形式的图表被称为一个分布: $\left( \begin{array}{llll} {x}_{1} & {x}_{2} & \cdots & {x}_{n} \\  {p}_{1} & {p}_{2} & \cdots & {p}_{n} \end{array}\right)$ ,其中 ${x}_{1}\text{ 、 }{x}_{2}\text{ 、 }\cdots \text{ 、 }{x}_{n}$ 是互异的实数, ${p}_{1}\text{ 、 }{p}_{2}\text{ 、 }\cdots \text{ 、 }{p}_{n}$ 是非负数,作为概率值,其总和为 1,即 ${p}_{1} + {p}_{2} + \cdots  + {p}_{n} = 1$ .
+
+## (2)期望
+
+随机变量的分布体现的是随机变量取值的概率分布. 把概率作为权重, 对随机变量的相应取值进行加权平均后所得到的值, 称为随机变量的期望.
+
+定义 如果随机变量 $X$ 的分布是 $\left( \begin{array}{llll} {x}_{1} & {x}_{2} & \cdots & {x}_{n} \\  {p}_{1} & {p}_{2} & \cdots & {p}_{n} \end{array}\right)$ ,那么它的期望定义为如下的加权平均: $E\left\lbrack  X\right\rbrack   = {x}_{1}{p}_{1} + {x}_{2}{p}_{2} + \cdots  + {x}_{n}{p}_{n}$ .
+
+随机变量的期望是一个确定的数, 它满足下面两个性质:
+
+① 如果 $X$ 是一个随机变量, $a$ 是一个实数,那么 $E\left\lbrack  {aX}\right\rbrack   = {aE}\left\lbrack  X\right\rbrack$ .
+
+② 如果 $X\text{ 、 }Y$ 是两个随机变量,那么 $E\left\lbrack  {X + Y}\right\rbrack   = E\left\lbrack  X\right\rbrack   + E\left\lbrack  Y\right\rbrack$ .
+
+## (3)方差
+
+对随机变量 $X$ 而言,我们用 $X$ 与其期望的偏差的平方的期望,即 $E\left\lbrack  {\left( X - E\left\lbrack  X\right\rbrack  \right) }^{2}\right\rbrack$ 来衡量随机变量 $X$ 的分散度,称为 $X$ 的方差,记为 $D\left\lbrack  X\right\rbrack$ ,即方差 $D\left\lbrack  X\right\rbrack   = E\left\lbrack  {\left( X - E\left\lbrack  X\right\rbrack  \right) }^{2}\right\rbrack$ .
+
+根据期望的线性性质,可推导方差的如下计算公式: $D\left\lbrack  X\right\rbrack   = E\left\lbrack  {X}^{2}\right\rbrack   - {\left( E\left\lbrack  X\right\rbrack  \right) }^{2}$ .
+
+方差有以下两个性质:
+
+① 如果 $X$ 是一个随机变量, $a$ 是一个实数,那么 $D\left\lbrack  {aX}\right\rbrack   = {a}^{2}D\left\lbrack  X\right\rbrack$ .
+
+② 如果 $X\text{ 、 }Y$ 分别是两个独立的随机变量,那么 $D\left\lbrack  {X + Y}\right\rbrack   = D\left\lbrack  X\right\rbrack   + D\left\lbrack  Y\right\rbrack$ .
+
+一个随机变量是以其样本空间为定义域的函数, 期望描述它的中心位置, 而方差描述此随机变量对其期望的偏离度, 即其随机程度. 期望与方差是随机变量最重要的两个特征. 它们是通过数字来描述的, 也称为数字特征.
+
+## 7. 常用分布
+
+## (1)二项分布
+
+设有一个伯努利试验,其成功概率为 $p\left( {0 < p < 1}\right)$ ,失败概率为 $q$ ,且 $p + q = 1$ . 独立地重复该伯努利试验 $n$ 次,用 $X$ 表示成功的次数. 把 $n$ 次试验看作具有 $n$ 个标号的位置, 其中每个位置都有两种可能: 成功或者失败,分别标记为 1 和 0 . “成功次数为 $k$ ” 的事件 $X = k$ 可以看作从 $n$ 个位置里选择 $k$ 个位置标记为 1,而其他标记为 0,这样的选择共有 ${C}_{n}^{k}$ 种. 因为每次试验都是独立地进行,所以由独立性,每种标记发生的概率是 ${p}^{k}{q}^{n - k}$ . 再由概率的可加性,可得成功次数为 $k$ 的概率为 $P\left( {X = k}\right)  = {C}_{n}^{k}{p}^{k}{q}^{n - k}$ . 其中 $k = 0\text{ 、 }1\text{ 、 }2\text{ 、 }\cdots \text{ 、 }n$ .
+
+因为 ${C}_{n}^{0} = {C}_{n}^{n} = 1$ ,所以 $X$ 的分布可表示为
+
+$$
+\left( \begin{matrix} 0 & 1 & 2 & \cdots & k & \cdots & n \\  {q}^{n} & {C}_{n}^{1}p{q}^{n - 1} & {C}_{n}^{2}{p}^{2}{q}^{n - 2} & \cdots & {C}_{n}^{k}{p}^{k}{q}^{n - k} & \cdots & {p}^{n} \end{matrix}\right) .
+$$
+
+从这个角度可以证明二项式定理 $\mathop{\sum }\limits_{{k = 0}}^{n}{C}_{n}^{k}{p}^{k}{q}^{n - k} = \mathop{\sum }\limits_{{k = 0}}^{n}P\left( {X = k}\right)  = 1$ . 这是这个分布被称为二项分布的理由.
+
+定义 独立地重复一个成功概率为 $p$ 的伯努利试验 $n$ 次,其成功次数的分布称为二项分布,亦称成功次数 $X$ 服从二项分布 $B\left( {n, p}\right)$ .
+
+## (2)超几何分布
+
+如果一袋中装有大小与质地相同的 $a$ 个白球、 $b$ 个黑球,依次随机且不放回地取 $n$ 个球, 用 $X$ 表示其中的白球数,那么 $X$ 的分布可由下式给出: $P\left( {X = k}\right)  = \frac{{C}_{a}^{k}{C}_{b}^{n - k}}{{C}_{a + b}^{n}}$ . 其中, $k$ 的取值范围由以下几个条件决定: 取得的白球个数不能超过 $n$ ,也不能超过 $a$ ,同时,取得的黑球个数不能超过 $b$ ,即 $k \leq  n, k \leq  a, n - k \leq  b$ .
+
+定义 从一个装有大小与质地相同的 $a$ 个白球、 $b$ 个黑球的袋中随机且不放回地取 $n$ 个球, 其中的白球数的分布称为超几何分布.
+
+二项分布和超几何分布的区别, 实质上就是摸球模型中放回摸球和不放回摸球的区别. 当 $a + b$ 远大于 $n$ 时,放回与不放回两种情况下的分布之间差别不大,即二项分布与超几何分布之间差别不大.
+
+## (3) 正态分布
+
+平常所说的正态分布, 大体上是指数据对称地分布在某个中心值两边, 且离中心值越远, 分布得越少.
+
+数学中的正态分布是指由下面的函数所表达的分布: ${\varphi }_{\mu ,{\sigma }^{2}}\left( x\right)  = \frac{1}{\sqrt{{2\pi }{\sigma }^{2}}}{\mathrm{e}}^{-\frac{{\left( x - \mu \right) }^{2}}{2{\sigma }^{2}}}$ . 其中有两个参数: ① $\mu$ 是该分布的期望或均值; ② ${\sigma }^{2}$ 是该分布的方差,且总是假设 $\sigma  > 0$ .
+
+该函数在数学上称为正态密度函数，也称为钟形曲线. 该函数图像与 $x$ 轴所夹部分的面积等于 1 .
+
+定义 设 $X$ 是一个取实数值的随机变量. 如果对任何给定的实数 $a$ 与 $b\left( {a < b}\right) , X$ 落在区间 $\left( {a, b}\right)$ 上的概率 $P\left( {0 < X < b}\right)$ 等于三条直线: $y = 0\text{ 、 }x = a\text{ 、 }x = b$ 与正态密度函数 $y = {\varphi }_{\mu ,{\sigma }^{2}}\left( x\right)$ 的图像所围的区域面积(或者简称作此函数在该区间上的面积)，那么 $X$ 服从正态分布,或更准确地说, $X$ 服从参数为 $\mu \text{ 、 }{\sigma }^{2}$ 的正态分布,记为 $X \sim  N\left( {\mu ,{\sigma }^{2}}\right)$ .
+
+![bo_d7aq48ilb0pc73dcpcb0_109_321_588_423_204_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_109_321_588_423_204_0.jpg)
+
+$P\left( {a < X < b}\right)$
+
+![bo_d7aq48ilb0pc73dcpcb0_109_867_590_452_203_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_109_867_590_452_203_0.jpg)
+
+$\Phi \left( x\right)$
+
+当 $\mu  = 0\text{ 、 }{\sigma }^{2} = 1$ 时,相应的正态分布称为标准正态分布,记作 $X \sim  N\left( {0,1}\right)$ ,其密度函数 $y = \frac{1}{\sqrt{2\pi }}{\mathrm{e}}^{-\frac{{x}^{2}}{2}}$ 称为标准正态分布的密度函数,简记作 $y = \varphi \left( x\right)$ . 实际上,一般的正态分布的密度函数总是标准正态分布的密度函数的某种平移和伸缩变换, 其形状保持钟形不变.
+
+用 $\Phi \left( x\right)$ 表示标准正态分布的密度函数 $y = \varphi \left( x\right)$ 从 $- \infty$ 到 $x$ 的累计面积,称为标准正态分布函数. 这个函数没有简单的表达式, 其函数值可通过近似计算得到.
+
+容易验证 $y = \varphi \left( x\right)$ 是一个偶函数,所以该函数在区间 $\left( {-\infty , - x}\right)$ 上的面积等于其在区间 $\left( {x, + \infty }\right)$ 上的面积. 由于 $y = \varphi \left( x\right)$ 与 $x$ 轴所围面积为 1,因此 $y = \Phi \left( x\right)$ 满足 $\Phi \left( {-x}\right)  = 1 - \Phi \left( x\right) .$
+
+如果 $X \sim  N\left( {\mu ,{\sigma }^{2}}\right)$ ,那么将 $X$ 平移再伸缩后将服从标准正态分布,即 $\frac{X - \mu }{\sigma } \sim  N\left( {0,1}\right)$ . 这样,正态分布 $X \sim  N\left( {\mu ,{\sigma }^{2}}\right)$ 的密度函数的图像是一条钟形曲线,它关于直线 $x = \mu$ 对称, 其最大值在 $x = \mu$ 处达到. 在 $x = \mu$ 的左侧,函数严格增,而在 $x = \mu$ 的右侧,函数严格减, 从而它是一条单峰曲线.
+
+另外一个参数 $\sigma$ 描述的是分布的集中程度. 由上可知,密度函数的最大值在 $x = \mu$ 处达到,其最大值为 ${\varphi }_{\mu ,{\sigma }^{2}}\left( \mu \right)  = \frac{1}{\sqrt{2\pi }\sigma }$ ,它与 $\sigma$ 成反比. 由于图像与 $x$ 轴之间的区域的总面积是一个固定值 1,因此当 $\sigma$ 变小时,最大值变大,钟形变 “高瘦”,分布向中心 $x = \mu$ 处集中; 反之,当 $\sigma$ 变大时,最大值变小,钟形变 “矮胖”,分布向 $x = \mu$ 的两侧分散.
+
+## 第十八章 统计
+
+![bo_d7aq48ilb0pc73dcpcb0_110_286_324_1102_1024_0.jpg](images/bo_d7aq48ilb0pc73dcpcb0_110_286_324_1102_1024_0.jpg)
+
+## 1. 总体与样本
+
+在统计问题中, 我们把研究对象的全体叫做总体, 总体中的每一个对象叫做个体. 总体中所含个体的数量, 称为总体的容量. 从总体中抽取的一部分个体叫做这个总体的一个样本, 样本所含个体的数量称为样本量, 也称样本容量.
+
+“达标率” “优秀率” 等用来描述样本特征的概括性数字度量, 称为统计量.
+
+统计学的具体研究对象是多种多样的, 它们有一个共同的特点, 就是具有不确定性. 统计活动的基本思想是通过分析样本的统计特征去推断总体的统计特征, 因此, 样本数据的代表性和获取方式十分重要.
+
+## 2. 数据的获取
+
+按照收集数据的不同方法, 可以将数据分为观测数据和实验数据.
+
+观测数据是指通过调查或观测而收集到的数据, 是在没有对有关事物进行人为控制的条件下得到的. 实验数据是指在实验中控制实验对象而收集到的数据.
+
+本章所说的数据主要涉及观测数据, 它主要是通过普查或抽样调查获得.
+
+一个国家或地区为详细调查某项重要的国情、国力, 专门组织大规模的全面调查, 即对总体的每个个体分别进行调查, 我们称之为普查.
+
+从总体中抽取样本的过程称为抽样, 通过抽样进行调查研究的方法叫做抽样调查.
+
+## 3. 抽样方法
+
+## (1)简单随机抽样
+
+在抽样的过程中通过逐个抽取的方法抽取样本, 且总体的每个个体都有同样的可能性被选入样本，这种抽样方法叫做简单随机抽样.
+
+在日常生活中抽签法应用很广泛. 抽签法简单易行, 适用于总体容量不大的情形.
+
+但当总体容量很大时, 制作号签比较费时, 且不易混合均匀, 这时我们可以利用随机数表法. 随机数表就是一种现成的号签,它是由一连串的 $0 \sim  9$ 之间的数字构成的,且满足以下两个条件: ① 对表中任何一个给定位置的数字,其为 $0 \sim  9$ 中任何一个数字的概率都相等；② 不同位置数字的取值是相互独立的.
+
+我们只要先把总体中的个体逐个编号, 然后按照某种事先确定的规则直接从随机数表 (或其他工具产生的随机数) 中取一定量的随机数, 这些随机数所对应的个体即组成一个样本，我们称这种抽样方法为随机数法.
+
+抽签法和随机数法都属于简单随机抽样, 一般地, 简单随机抽样具有以下特点: ① 总体个数 $N$ 是有限的; ② 是不放回抽样; ③ 总体中每个个体被选入样本的可能性相同.
+
+## (2)分层随机抽样
+
+一般地, 当总体由差异明显的几个部分组成时, 先把总体分成若干个部分, 然后从不同的部分中独立、随机地抽取样本，这种抽样的方法称为分层随机抽样，简称分层抽样.
+
+常用的分层抽样的方法如下: 先将容量为 $N$ 的总体按照要求分成 $k$ 层,每层的个体数分别记为 ${N}_{1}\text{ 、 }{N}_{2}\text{ 、 }\cdots \text{ 、 }{N}_{k}$ ,在每层中分别随机抽取 ${n}_{1}\text{ 、 }{n}_{2}\text{ 、 }\cdots \text{ 、 }{n}_{k}$ 个个体组成容量为 $n$ 的样本,使得 $N = {N}_{1} + {N}_{2} + \cdots  + {N}_{k}, n = {n}_{1} + {n}_{2} + \cdots  + {n}_{k},\frac{n}{N} = \frac{{n}_{1}}{{N}_{1}} + \frac{{n}_{2}}{{N}_{2}} + \cdots  + \frac{{n}_{k}}{{N}_{k}}$ . 显然,这里每个个体被抽到的概率均为 $\frac{n}{N}$ .
+
+## 4. 统计图表
+
+## (1)频率分布表和频率分布直方图
+
+绘制频率分布表的步骤:
+
+① 求极差. 绘制频率分布表最重要的就是分组. 要对数据进行分组, 首先要找出这一组数据的最大值和最小值, 最大值与最小值的差称为极差, 又称全距.
+
+② 确定组距与组数. 组距是指每个小组的区间端点之间的距离，组距的选取决定了组数多少: 组数 $= \frac{\text{ 极差 }}{\text{ 组距 }}$ . 一般地,第一组的下限应低于最小值,最后一组的上限应高于最大值.
+
+③ 统计每组的频数及频率. 将样本数据分好组以后，每个小组内的数据个数称为频数， 频数与样本容量的比值叫做这一小组的频率, 统计每个小组的频数, 再计算各组的频率.
+
+④ 绘制频率分布表.
+
+依据频率分布表, 我们就可以来制作频率分布直方图. 为此, 我们在直角坐标系中把横轴分成若干段, 每一段对应一个组距, 然后以组距形成的线段为底作一矩形, 矩形的高为小组的类面, 就得到频率分布直方图. 在频率分布直方图中, 数据落在各小组内的频率可以用小矩形的面积来表示, 这些面积的总和为 1 .
+
+通常, 在频率分布直方图中, 按照分组原则, 再在左边和右边各加一个区间, 这两个组的频率取值为 0 , 然后从所加的左边的区间的中点 (称为组中值) 开始, 从左至右依次连接各矩形上底边的中点, 直至右边所加区间的中点, 再将矩形的边去除, 就可以得到一条折线, 称为频率分布折线图, 简称频率折线图.
+
+## (2)茎叶图
+
+在数据不多的情况下，我们可以绘制茎叶图，展示所有样本数据的信息.
+
+将样本数据分为茎和叶两个部分，然后把 “茎” 由小到大、从上往下写成一列，并在其左边或者右边画一条竖直的线，最后把 “叶” 写在它所属的 “茎” 的另一边, 由小到大排成一行, 这样就得到茎叶图.
+
+茎叶图既可以用于呈现单组数据, 也可以用于对两组同类数据的比较分析. 用茎叶图展示数据的优点在于所有信息都可以从茎叶图中得到.
+
+“茎”视实际需要可以是任何位数, 而 “叶” 只能是一位数.
+
+## (3)散点图
+
+在考虑两组数据时, 为了对两组数据之间的关系形成大致的了解, 通常将这两组数据所对应的点描在平面直角坐标系内, 这些点组成的统计图称为散点图.
+
+在对数据进行分析和整理时, 应根据需要选择恰当的统计图. 散点图一般用于刻画成对的数据, 并且可以从图中看出成对数据之间是否存在某种关系. 茎叶图呈现了数据的所有信息, 但不适合数据量较大的情形. 当数据量较大时一般选用条形图或频率分布直方图, 它们能直观地反映数据分布的大致情况. 而如果想呈现每部分所占的比例, 则需要用到扇形图. 折线图则主要用于呈现数据随着时间变化的趋势.
+
+## 5. 统计估计
+
+在实际问题中, 当总体的信息难以或无法获得时, 我们可以采取科学的抽样方法, 获取具有代表性的样本，利用样本信息来估计总体的分布规律.
+
+## (1)估计总体的分布
+
+我们知道, 总体是指考察对象的全体, 个体是总体中的每一个考察的对象, 总体的分布指的是总体中不同范围或类型的个体所占的比例.
+
+如果样本数据是随机抽取的, 那么依据大数定律, 当样本量不断增大时, 样本中每组数据的频率会越来越稳定于一个相应的概率, 我们就可以把这个概率作为总体中的个体在相应区间内取值的概率, 从而用样本的频率分布来估计总体的分布情况.
+
+## (2)估计总体的数字特征
+
+我们把能反映一组数据某种特征的量称为这组数据的数字特征. 我们在初中阶段学习过的平均数、中位数和众数等, 就是用来刻画一组数据集中趋势的数字特征, 而方差和标准差则是用来刻画一组数据离散程度的数字特征.
+
+## ① 通过样本估计总体的集中趋势
+
+设样本数据为 ${x}_{1}\text{ 、 }{x}_{2}\text{ 、 }\cdots \text{ 、 }{x}_{n}$ ,由公式 $\bar{x} = \frac{{x}_{1} + {x}_{2} + \cdots  + {x}_{n}}{n}$ ,就得到样本平均数,它描述了样本数据的平均水平.
+
+如果 $n$ 个数据中不同的数据 ${x}_{1}\text{ 、 }{x}_{2}\text{ 、 }\cdots \text{ 、 }{x}_{k}$ 的频数分别为 ${f}_{1}\text{ 、 }{f}_{2}\text{ 、 }\cdots \text{ 、 }{f}_{k}$ ,那么样本平均数为 $\bar{x} = \frac{{x}_{1}{f}_{1} + {x}_{2}{f}_{2} + \cdots  + {x}_{k}{f}_{k}}{n}$ .
+
+我们引进一个记号 $\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}$ 表示多项连加的和 ${x}_{1} + {x}_{2} + \cdots  + {x}_{n}$ ,用这个记号,上述关于样本平均数的两个公式可以分别记为 $\bar{x} = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}$ 与 $\bar{x} = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{k}{x}_{i}{f}_{i}$ .
+
+当原始记录没有提供每个数据的准确值, 只提供了它们所在的区间时, 为了计算均值, 可用区间的中点值给区间内的每个数据赋值.
+
+## ② 通过样本估计总体的离散程度
+
+设样本数据为 ${x}_{1}\text{ 、 }{x}_{2}\text{ 、 }\cdots \text{ 、 }{x}_{n},\bar{x}$ 表示的是样本平均数,则样本数据的方差:
+
+$$
+{s}^{2} = \frac{{\left( {x}_{1} - \bar{x}\right) }^{2} + {\left( {x}_{2} - \bar{x}\right) }^{2} + \cdots  + {\left( {x}_{n} - \bar{x}\right) }^{2}}{n} = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}.
+$$
+
+我们用方差来衡量一组数据的波动大小. 一组数据的方差越大, 表明这组数据波动越大.
+
+方差的算术平方根 $s = \sqrt{\frac{{\left( {x}_{1} - \bar{x}\right) }^{2} + {\left( {x}_{2} - \bar{x}\right) }^{2} + \cdots  + {\left( {x}_{n} - \bar{x}\right) }^{2}}{n}} = \sqrt{\frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}}$ 叫做样本数据的标准差, 它同样是一个用来衡量样本数据波动大小的统计量.
+
+在实验中,为了消除系统性偏差,标准差公式中往往以 $n - 1$ 代替 $n$ ,用 $\sqrt{\frac{{\left( {x}_{1} - \bar{x}\right) }^{2} + {\left( {x}_{2} - \bar{x}\right) }^{2} + \cdots  + {\left( {x}_{n} - \bar{x}\right) }^{2}}{n - 1}}$ 来作为总体标准差的估计值.
+
+方差和标准差都反映了一组数据围绕平均数波动的大小, 方差的单位是观测数据的单位的平方, 而标准差的单位与观测数据的单位一致, 因此我们常常用标准差来描述数据的离散程度. 标准差是样本数据到平均数的一种平均距离,由统计理论可知, $\left\lbrack  {\bar{x} - {2s},\bar{x} + {2s}}\right\rbrack$ 包含大多数样本数据.
+
+## (3)估计百分位数
+
+我们知道, 将一组数据从小到大排列后, 中位数将一组数据分成了两部分, 一半的数据小于等于它, 一半的数据大于等于它. 当样本容量很大时, 还可以将数据分为 100 个部分, 每一部分包含 1% 的数据. 第 $k$ 百分位数( $k$ 为 1 到 100 之间的整数，记作 $\mathrm{P}k$ )即是将一组数据从小到大排列后,将数据分成两部分: 小于或等于第 $k$ 百分位数的数据占 $k\%$ ,大于或等于第 $k$ 百分位数的数据占 $\left( {{100} - k}\right) \%$ .
+
+显然, 中位数是第 50 百分位数, 而中位数和第 25 百分位数、第 75 百分位数将一组数据分成了四个部分，故又均称为四分位数.
+
+计算第 $k$ 百分位数时,首先将数据从小到大排列,然后计算指数 $i = n \cdot  k\%$ .
+
+① 若 $i$ 是整数，则第 $k$ 百分位数是第 $i$ 项与第 $i + 1$ 项的数据的平均值；
+
+② 若 $i$ 不是整数，则将 $i$ 向上取整，得到的数即为第 $k$ 百分位数的位置.
+
+## 6. 统计活动
+
+(1)确定调查方案
+
+(2)确定调查对象
+
+(3)收集数据
+
+(4)数据整理与分析
+
+(5)初步结论
+
+## 7. 成对数据的相关分析
+
+## (1)成对数据间的关系
+
+来自同一对象的两组数据称为成对数据. 研究成对数据相关性的方法称为相关分析.
+
+## (2)相关系数
+
+一些成对数据具有明显的相关性, 且在绘制出散点图后可以用一条直线进行拟合, 也就是说具有线性相关性.
+
+设由变量 $x$ 和 $y$ 获得的两组数据分别为 ${x}_{i}$ 和 ${y}_{i}\left( {i = 1,2,\cdots , n}\right)$ ,其对应关系为 $\left( {{x}_{i},{y}_{i}}\right)$ , 两组数据 ${x}_{i}$ 和 ${y}_{i}$ 的线性相关系数是度量两个变量 $x$ 与 $y$ 之间线性相关程度的统计量,其计算公式为 $r = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right) }{\sqrt{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - \bar{y}\right) }^{2}}}$ ,其中 $\bar{x} = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i},\bar{y} = \frac{1}{n}\mathop{\sum }\limits_{{i = 1}}^{n}{y}_{i}$ ,它们分别是这两组数据的算术平均数. 线性相关系数常常简称为相关系数, 也称为皮尔逊相关系数.
+
+相关系数 $r$ 的值满足 $\left| r\right|  \leq  1.\left| r\right|$ 越接近 1,两个变量的线性相关程度越高; $\left| r\right|$ 越接近 0 , 两个变量的线性相关程度越低.
+
+$r > 0$ 时,当 $x$ 的值由小变大, $y$ 的值具有由小变大的变化趋势,称这种相关为正相关; $r < 0$ 时,当 $x$ 的值由小变大, $y$ 的值具有由大变小的变化趋势,称这种相关为负相关.
+
+相关系数 $r$ 描述的是两个变量之间线性关系的方向与程度,是一种定量分析的方法,相关系数具有以下特点:
+
+① 相关系数的计算公式关于 $x$ 和 $y$ 这两个变量是对称的. 画散点图时,不论以哪个变量作为横轴 (纵轴), 所得的相关系数都一样.
+
+② 两个变量的相关系数与这两个变量的单位无关. 相关系数的结果都一样.
+
+③ 与平均数和标准差一样, 相关系数不仅会受到数据量多少的影响, 也会受到少数异常值较大的影响.
+
+用相关系数来描述两个随机变量的相关性, 一般要求这两个变量均满足正态分布.
+
+## 8. 一元线性回归分析
+
+## (1)一元线性回归分析的基本思想
+
+一般地,设给定一组有线性相关关系的成对数据 $\left( {{x}_{1},{y}_{1}}\right) \text{ 、 }\left( {{x}_{2},{y}_{2}}\right) \text{ 、 }\cdots \text{ 、 }\left( {{x}_{n},{y}_{n}}\right)$ 和一个线性方程 (或称线性模型) $y = {ax} + b$ . ①
+
+当变量 $x$ 取值 ${x}_{i}\left( {i = 1,2,\cdots , n}\right)$ 时,令 ${\widehat{y}}_{i} = a{x}_{i} + b$ ,它是变量 $y$ 与 ${x}_{i}$ 对应的理想值. 但数据中的 ${y}_{i}$ 与 ${\widehat{y}}_{i}$ 不一定相同,它们的差 ${y}_{i} - {\widehat{y}}_{i}$ 称为在 ${x}_{i}$ 处的离差,当 ${y}_{i} - {\widehat{y}}_{i} \geq  0$ 时称为正离差,而当 ${y}_{i} - {\widehat{y}}_{i} < 0$ 时称为负离差. 显然,离差直观地描述了单对数据与线性方程①的贴近度.
+
+我们用离差的平方和 $Q = \mathop{\sum }\limits_{{i = 1}}^{n}{\left( {y}_{i} - {\widehat{y}}_{i}\right) }^{2}$ 来刻画直线与点之间的拟合程度. $Q$ 称为拟合误差. 我们把拟合误差取得最小值时得到的线性方程 (线性模型) 记为 $y = \widehat{a}x + \widehat{b}$ ,并称之为变量 $y$ 随 $x$ 波动的回归方程或回归模型,其中自变量 $x$ 称为解释变量,因变量 $y$ 称为反应变量. 回归方程所定义的直线称为回归直线,回归方程的系数 (或称回归模型的参数) $\widehat{a}$ 与 $\widehat{b}$ 称为回归系数. 由一组有某种线性关系的成对数据求其回归方程的方法称为一元线性回归分析.
+
+回归系数 $\widehat{a}$ 与 $\widehat{b}$ 的计算公式: $\left\{  \begin{array}{l} \widehat{a} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}\left( {{x}_{i} - \bar{x}}\right) \left( {{y}_{i} - \bar{y}}\right) }{\mathop{\sum }\limits_{{i = 1}}^{n}{\left( {x}_{i} - \bar{x}\right) }^{2}} = \frac{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i} \cdot  {y}_{i} - n \cdot  \bar{x} \cdot  \bar{y}}{\mathop{\sum }\limits_{{i = 1}}^{n}{x}_{i}^{2} - n{\bar{x}}^{2}}\text{ ,其中 }\bar{x}\text{ 与 }\bar{y} \\  \widehat{b} = \bar{y} - \widehat{a}\bar{x} \end{array}\right.$ 分别是数据 ${x}_{i}$ 与 ${y}_{i}\left( {i = 1,2,\cdots , n}\right)$ 的算术平均值,数对 $\left( {\bar{x},\bar{y}}\right)$ 称为样本点的中心.
+
+我们的回归分析是基于 $Q$ 取最小值的假设,即基于所有离差的平方和取最小值的假设进行的. 这种回归分析的方法称为最小二乘法, 由最小二乘法导出的估计量称为最小二乘估计量,所得到的回归系数 $\widehat{a}$ 与 $\widehat{b}$ 又称为模型参数 $a$ 与 $b$ 的最小二乘估计.
+
+## (2)一元线性回归分析的应用
+
+从上述例子可以看出, 建立一元线性回归模型的一般步骤如下:
+
+① 确定研究对象，从一组数据出发，根据实际问题，明确哪个变量是自变量，哪个变量是因变量;
+
+② 对确定的自变量和因变量，绘制相应的散点图，观察它们之间的关系(如是否存在线性关系等);
+
+③ 若观察到数据呈线性关系,则选用线性方程 $y = {ax} + b$ ;
+
+④ 利用最小二乘法估计线性方程中的参数 $a\text{ 、 }b$ ,得到回归方程 $y = \widehat{a}x + \widehat{b}$ ;
+
+⑤ 得出结果后计算离差, 采用统计方法检验模型是否合适 (这一步本书不作要求);
+
+⑥ 利用所求的回归方程进行预测.
+
+相关分析和回归分析作为处理成对数据的两种基本统计方法, 它们有如下联系与区别:
+
+① 相关分析主要测定变量之间相关性的强弱和变化方向, 而回归分析则是在相关分析的基础上建立回归模型, 定量地描述变量间具体的变动关系, 只有在两组变量具有线性相关性时, 才作线性回归分析, 得到回归直线.
+
+② 在相关分析中，两个变量的地位是对等的. 而在回归分析中，要考察的是一个变量随另一个变量的变化趋势, 其中自变量是解释变量, 因变量是反应变量.
+
+③ 回归分析具有因果分析和预测的功能，可以分析反应变量受解释变量的影响程度， 也可以通过回归方程求得反应变量的计算值来估计其他同类的观察值.
+
+④ 在相关分析中, 一般要求两个变量的总体都满足正态分布. 而在回归分析时, 一般只要求反应变量的总体满足正态分布.
+
+## 9. $2 \times  2$ 列联表
+
+## (1)2×2 列联表独立性检验
+
+两个分类变量分别占两行和两列, 形成 4 个格子, 每个格子中的数据是同时满足所在行列对应类别的个体的频数. 这些数据都是通过实际调查得到的, 称为观察值. 这些观察值形成的 2 行 2 列的频数表格,称为 2 行 $\times  2$ 列列联表,简称 $2 \times  2$ 列联表,也称为四格表.
+
+要检验两个随机变量是否有关, 统计上一般先假设它们没有关系, 即相互独立, 再进行统计检验. 这种假设称为原假设,也称为零假设,习惯上用 ${H}_{0}$ 表示.
+
+为了描述观察值与预期值之间的总体偏差,我们引入统计量 ${\chi }^{2}$ :
+
+$$
+{\chi }^{2} = \sum \frac{{\left( \text{ 观察值 } - \text{ 预期值 }\right) }^{2}}{\text{ 预期值 }}.
+$$
+
+${\chi }^{2}$ 的值越大,说明观察值与预期值的总体偏差越大,原假设成立的可能性就越小.
+
+${\chi }^{2}$ 分布概率: $P\left( {{\chi }^{2} \geq  {6.635}}\right)  \approx  {0.01}, P\left( {{\chi }^{2} \geq  {5.024}}\right)  \approx  {0.025}, P\left( {{\chi }^{2} \geq  {3.841}}\right)  \approx  {0.05}$ , $P\left( {{\chi }^{2} \geq  {2.706}}\right)  \approx  {0.1}$ . 以 $P\left( {{\chi }^{2} \geq  {3.841}}\right)  \approx  {0.05}$ 为例,其含义是: 如果原假设成立,那么 ${\chi }^{2} \geq  {3.841}$ 成立的概率约为 0.05,这是一个小概率事件,不太可能发生. 0.05、0.01 等小概率值在统计上称为显著性水平,记作 $\alpha$ . 方便起见,本书的显著性水平规定为 0.05 .
+
+## $2 \times  2$ 列联表 ${\chi }^{2}$ 检验的计算公式:
+
+设有两组分类数据 $A\text{ 、 }B$ ,每组数据的两种状态分别用 0 和 1 表示,则可得到下面的 $2 \times  2$ 列联表:
+
+<table><tr><td></td><td>$A$ 组</td><td>$B$ 组</td><td>总计</td></tr><tr><td>0</td><td>$a$</td><td>$b$</td><td>$a + b$</td></tr><tr><td>1</td><td>$C$</td><td>$d$</td><td>$c + d$</td></tr><tr><td>总计</td><td>$a + c$</td><td>$b + d$</td><td>$a + b + c + d$</td></tr></table>
+
+其中, $a\text{ 、 }b\text{ 、 }c\text{ 、 }d$ 为实际观察值. 由 ${\chi }^{2} = \sum \frac{{\left( \text{ 观察值 } - \text{ 预期值 }\right) }^{2}}{\text{ 预期值 }}$ ,经过变形可得 ${\chi }^{2}$ 的一般计算公式 ${\chi }^{2} = \frac{n{\left( ad - bc\right) }^{2}}{\left( {a + b}\right) \left( {c + d}\right) \left( {a + c}\right) \left( {b + d}\right) }$ ,其中 $n = a + b + c + d.{\chi }^{2}$ 检验方法在统计学中称为 $2 \times  2$ 列联表独立性检验.
+
+$2 \times  2$ 列联表独立性检验通常有如下步骤:
+
+① 提出两个随机变量没有关系的原假设 ${H}_{0}$ ；
+
+② 确定显著性水平 $\alpha$ ，本书中规定 $\alpha  = {0.05}$ ，也即 $P\left( {{\chi }^{2} \geq  {3.841}}\right)  \approx  {0.05}$ ；
+
+③ 计算统计量 ${\chi }^{2}$ 的值;
+
+④ 统计决断: 比较上述 ${\chi }^{2}$ 值与 3.841 的大小. 若 ${\chi }^{2} \geq  {3.841}$ ,则否定 ${H}_{0}$ , 若 ${\chi }^{2} < {3.841}$ ,则接受 ${H}_{0}$ . 根据上述推断作出结论.
+
+## (2)独立性检验的具体应用
