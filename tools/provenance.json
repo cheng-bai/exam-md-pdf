@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "skills/paddleocr-text-recognition/SKILL.md",
+      "source_repo": "PaddlePaddle/PaddleOCR",
+      "source_path": "skills/paddleocr-text-recognition/SKILL.md",
+      "source_commit": "1e5aa0ad31bc8a82cd8e1daef7adc24e577d2534",
+      "source_sha256": "7696b3c79521d71c483391904524b0da2fd4051e574566140c72ec023dbfe1b3",
+      "license": "Apache-2.0",
+      "modified": true,
+      "modification": "Frontmatter description adds an exam-workflow routing exclusion."
+    },
+    {
+      "path": "skills/paper-exam-to-md-pdf",
+      "source": "user-local-personal-skill",
+      "license": "Apache-2.0",
+      "authorization": "confirmed-by-repository-owner",
+      "confirmed_at": "2026-08-25"
+    },
+    {
+      "path": "skills/annotating-math-exam-solutions",
+      "source": "user-local-personal-skill",
+      "license": "Apache-2.0",
+      "authorization": "confirmed-by-repository-owner",
+      "confirmed_at": "2026-08-25"
+    },
+    {
+      "path": "skills/math-docx-to-markdown",
+      "source": "user-local-personal-skill",
+      "license": "Apache-2.0",
+      "authorization": "confirmed-by-repository-owner",
+      "confirmed_at": "2026-08-25"
+    }
+  ]
+}
