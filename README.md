@@ -255,6 +255,7 @@ git push origin main
 
 ## 提交前安全检查
 
+- 提交内容应具备合法发布条件。
 - Markdown 和 PDF 中没有学生姓名、准考证号、电话、内部水印。
 - `inputs/` 原始 PDF 没有被强制提交。
 - `outputs/` MinerU 包和上传回执没有被提交。
