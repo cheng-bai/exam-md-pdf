@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Exam to MD/PDF"
+  short_description: "纸质试卷照片转 Markdown 与可打印 PDF"
+  default_prompt: "Use $paper-exam-to-md-pdf to digitize these paper exam photos into Markdown and PDF."

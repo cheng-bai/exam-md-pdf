@@ -1,0 +1,4 @@
+interface:
+  display_name: "Annotating Math Exam Solutions"
+  short_description: "Add concise/core exam answer annotations and topic overviews."
+  default_prompt: "Annotate this math exam with concise answers, core exam points, pitfalls, and a structured topic overview."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math DOCX to Markdown"
+  short_description: "Convert math Word files to verified Markdown"
+  default_prompt: "Use $math-docx-to-markdown to convert this math .docx into Markdown with verified formulas."
