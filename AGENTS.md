@@ -7,7 +7,6 @@
 - Markdown 是主源文件，PDF 是渲染产物。
 - 最终交付的 Markdown 和 PDF 文件名必须按试卷内容使用中文语义化命名，不要把最终交付文件命名为 `source.md`、`cleaned.md`、`student.md`、`QUALITY_REPORT.md` 这类泛名或英文名。
 - 原始 PDF、扫描图和 OCR 中间文件默认视为大文件或版权敏感文件，不主动提交，除非用户明确要求。
-- Markdown 主源稿和 `outputs/*.pdf` 也可能包含版权或隐私信息；推送公开仓库前必须提醒用户确认。
 - 数学公式必须使用标准 Markdown LaTeX：行内 `$...$`，独立 `$$...$$`。
 - OCR 只能作为初稿来源，最终内容必须按原卷逐题校对。
 - 交付前必须验证 Markdown 和 PDF 文件存在，PDF 页数合理，Pandoc 渲染无报错。
@@ -77,8 +76,6 @@ python3 scripts/render_exam.py exams/<年份学校标准名考试名称>/<中文
 - 提交标题可以保留 Conventional Commits 类型前缀，但冒号后的说明必须是中文，例如 `docs: 入库函数单调性教师版讲义`、`fix: 修复 Markdown 图片引用路径`。
 - 提交正文应简要说明本次完成的任务、提交的主要内容和关键校验结果；不要只写泛泛的 `update`、`docs`、`fix`。
 - 如果希望 GitHub 文件列表中某个英文目录右侧显示清晰说明，应单独提交该目录内的 `README.md`，并把提交标题写成该目录的中文用途说明，例如 `scripts: 自动化处理脚本入口`。
-- GitHub 远程默认使用 private，除非用户明确确认可以公开。
-- 推送试卷到云端前必须确认 GitHub 仓库是 private，或用户已明确确认可以公开。
 - 每次推送试卷内容时只暂存最终归档目录和必要题图；不要把未审阅的旧目录、脚本改动、OCR 中间文件混入同一提交。
 - 提交前至少验证：目录名格式、同名 `.md`/`.pdf` 存在、PDF 可打开且页数/A4 合理、Markdown 图片引用存在、暂存区没有 `result.zip`、`summary.json`、`full.md`、`*_origin.pdf`、`page-previews/`。
 

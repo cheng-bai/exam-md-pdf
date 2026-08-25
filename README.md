@@ -111,8 +111,6 @@ exams/2026上海市建平中学高一期末数学试卷/
 - `page-previews/`、`final-previews/`。
 - `.env`、API token、签名上传 URL。
 
-公开仓库前必须确认试卷版权和隐私风险。
-
 ## 环境准备
 
 检查环境：
@@ -255,11 +253,8 @@ git commit -m "docs: add normalized exam archive"
 git push origin main
 ```
 
-## GitHub 公开前检查
+## 提交前安全检查
 
-公开或分享仓库前确认：
-
-- 试卷版权允许公开或二次整理传播。
 - Markdown 和 PDF 中没有学生姓名、准考证号、电话、内部水印。
 - `inputs/` 原始 PDF 没有被强制提交。
 - `outputs/` MinerU 包和上传回执没有被提交。
