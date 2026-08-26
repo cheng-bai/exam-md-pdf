@@ -52,6 +52,6 @@ cp -R skills/<skill-name> "${CODEX_HOME:-$HOME/.codex}/skills/"
 
 ## 许可证
 
-`skills/`、`scripts/`、`templates/`、`workflows/`、`tools/` 和 `tests/` 中的原创工具资产采用 Apache License 2.0，详见仓库根目录的 [`TOOLKIT_LICENSE.md`](../TOOLKIT_LICENSE.md)。该许可明确不覆盖 `exams/`、`handouts/`、`collections/` 等内容目录。
+`skills/`、`scripts/`、`templates/`、`workflows/`、`tools/` 和 `tests/` 中的原创工具资产采用 Apache License 2.0，详见仓库根目录的 [`TOOLKIT_LICENSE.md`](../TOOLKIT_LICENSE.md)。该许可明确不覆盖 `exams/`、`handouts/`、`collections/`、`资料来源/` 等内容目录。
 
 候选筛选和暂缓原因见 [候选资产评估](候选资产评估.md)，第三方来源见 [第三方来源与许可证](第三方来源与许可证.md)。

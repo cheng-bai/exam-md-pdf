@@ -20,6 +20,7 @@ Copyright 2026 exam-md-pdf contributors
 - `exams/`
 - `handouts/`
 - `collections/`
+- `资料来源/`
 - `inputs/`
 - `outputs/`
 - `work/`

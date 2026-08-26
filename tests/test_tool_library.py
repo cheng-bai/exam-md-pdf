@@ -119,7 +119,7 @@ class ToolLibraryTests(unittest.TestCase):
         license_text = (ROOT / "TOOLKIT_LICENSE.md").read_text(encoding="utf-8")
         for tool_dir in ("skills/", "scripts/", "templates/", "workflows/", "tools/", "tests/"):
             self.assertIn(f"`{tool_dir}`", license_text)
-        for content_dir in ("exams/", "handouts/", "collections/", "inputs/", "outputs/", "work/"):
+        for content_dir in ("exams/", "handouts/", "collections/", "资料来源/", "inputs/", "outputs/", "work/"):
             self.assertIn(f"`{content_dir}`", license_text)
         self.assertIn("明确排除", license_text)
 
