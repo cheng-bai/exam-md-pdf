@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "cb134ba4a1e12c14",
+    "type": "split",
+    "children": [
+      {
+        "id": "685574f5ba4026c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f460dd100b6bea93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "资料来源/承白资料/试卷难度与题素分析/2026届嘉定区高三一模/2026届高三嘉定一模-难度题素分析.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026届高三嘉定一模-难度题素分析"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85c66370bd695efd",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e72bad87dd27c7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8be03c7768ad8004",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "8643946ea49e77b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "题素",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "a464e911c6a7274a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 399.85546875
+  },
+  "right": {
+    "id": "62d3ae9ab89e91ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae8a144a467e47c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c39467a40227931b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "资料来源/承白资料/试卷难度与题素分析/2026届嘉定区高三一模/2026届高三嘉定一模-难度题素分析.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "bbf0895da4839f91",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "资料来源/承白资料/试卷难度与题素分析/2026届嘉定区高三一模/2026届高三嘉定一模-难度题素分析.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "39d65e0916f49f08",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "09e908aed044f5c4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "0ed88621b8917010",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "资料来源/承白资料/试卷难度与题素分析/2026届嘉定区高三一模/2026届高三嘉定一模-难度题素分析.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "f460dd100b6bea93",
+  "lastOpenFiles": [
+    "资料来源/教辅教材资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版选择性必修第一册2026/images/bo_d7fqvdc91nqc7381i9u0_130_982_229_284_336_0.jpg",
+    "资料来源/教辅教材资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版必修第二册2026/images/bo_d7fqtok91nqc7381i920_114_890_426_491_115_0.jpg",
+    "collections/教辅教材公式识别资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版选择性必修第一册2026/images",
+    "collections/教辅教材公式识别资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版必修第二册2026/images",
+    "collections/教辅教材公式识别资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版选择性必修第一册2026",
+    "collections/教辅教材公式识别资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版必修第二册2026",
+    "collections/教辅教材公式识别资料/03-上海教材md/2026教材高清精校版 最新版本上海教材",
+    "collections/教辅教材公式识别资料/03-上海教材md",
+    "collections/教辅教材公式识别资料",
+    "2026年8月20日至26日项目复盘.md",
+    "资料来源/承白资料/不等式.md",
+    "资料来源/承白资料/函数.md",
+    "资料来源/承白资料/集合.md",
+    "资料来源/承白资料/三角.md",
+    "资料来源/承白资料/中档题.md",
+    "资料来源/承白资料/inbox.md",
+    "资料来源/承白资料/函数一轮复习.md",
+    "资料来源/承白资料/解析几何大题汇编.md",
+    "资料来源/承白资料/README.md"
+  ]
+}
