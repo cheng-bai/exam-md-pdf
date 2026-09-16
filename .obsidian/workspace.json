@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "题素",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +79,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -189,7 +188,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f460dd100b6bea93",
+  "active": "8be03c7768ad8004",
   "lastOpenFiles": [
     "资料来源/教辅教材资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版选择性必修第一册2026/images/bo_d7fqvdc91nqc7381i9u0_130_982_229_284_336_0.jpg",
     "资料来源/教辅教材资料/03-上海教材md/2026教材高清精校版 最新版本上海教材/沪教版必修第二册2026/images/bo_d7fqtok91nqc7381i920_114_890_426_491_115_0.jpg",
