@@ -19,6 +19,14 @@
 | 试卷归档治理 | 整理最终目录、命名、GitHub 提交前检查 | `skills/exam-archive-governance/SKILL.md` |
 | 交付前验证 | 提交、推送或声明完成前做证据检查 | `skills/verification-before-completion/SKILL.md` |
 
+需要把数学概念、函数图像、几何构造、立体截面、参数轨迹或证明步骤做成可交互页面时：
+
+| Skill | 何时使用 | 文件 |
+|---|---|---|
+| Anatomy 数学交互 | 制作可独立打开的数学交互 HTML/SVG 或 React 组件 | `skills/anatomy/SKILL.md` |
+
+Anatomy 是数学优先的本地修订版，同时保留原版精细等轴测插画能力。它不是试卷转录工具，不替代 OCR、数学审校和归档验收。
+
 AI agent 执行顺序：
 
 1. 读 `AGENTS.md`。
@@ -42,6 +50,7 @@ AI agent 执行顺序：
 ├── AGENTS.md                  # 本仓库 AI 工作规则
 ├── README.md                  # 人类和 AI 的复现手册
 ├── skills/                    # 可复用 AI skills
+├── workflows/                 # 跨 Skill 的端到端流程
 ├── inputs/                    # 原始 PDF / 扫描图片，默认不提交
 ├── outputs/                   # MinerU 解析包和上传回执，默认不提交
 ├── work/                      # 裁图、预览、临时文件，默认不提交

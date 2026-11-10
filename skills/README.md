@@ -15,6 +15,7 @@
 | `mineru-document-workflow` | 将扫描版试卷转换为 Markdown 和 PDF 的 OCR 与审校流程。 |
 | `exam-archive-governance` | 最终命名、目录整理、GitHub 提交和公开仓库风险规则。 |
 | `verification-before-completion` | 在声明完成、提交或推送前进行证据优先的验证。 |
+| `anatomy` | 制作数学概念、函数图像、几何构造、立体截面和证明步骤的交互可视化；保留原版等轴测插画能力。 |
 
 ## AI Agent 使用顺序
 
@@ -22,5 +23,6 @@
 2. 需要答案解析和考点标注时，再使用 `annotating-math-exam-solutions`。
 3. 把文件移动到最终 `exams/` 归档前，使用 `exam-archive-governance`。
 4. 提交、推送或汇报完成前，使用 `verification-before-completion`。
+5. 需要交互图形、参数探索或离线数学页面时，使用 `anatomy`；它不承担 OCR、试卷归档或答案审定。
 
 这些技能文件不写入本机 token。认证信息统一通过环境变量或本机 `.env` 配置，不提交到仓库。第三方技能的来源和许可证记录在 `tools/第三方来源与许可证.md`。

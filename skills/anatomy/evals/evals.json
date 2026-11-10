@@ -1,0 +1,77 @@
+{
+  "skill_name": "anatomy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm writing a blog post about how a token-bucket rate limiter works. Can you make me one interactive isometric illustration for it, the polished kind (like Linear's site), as a single HTML file I can just open? My blog has a white background. The bucket holds 20 tokens, refills 5 per second, and each request takes one token; requests get rejected when it's empty.",
+      "expected_output": "A single standalone HTML file, light theme, with one framed isometric figure of a real physical object that explains a token bucket (tokens refilling, requests taking tokens, rejection when empty), live readout with true numbers, calm eased motion, keyboard/pointer interaction. Every curved part (a hopper, a drum, a funnel) is smooth-shaded with no stepped tone blocks, every row of ticks, ribs or bolt dots ends on a real edge or fades out instead of stopping mid-surface, and nothing passes through anything; any pipe or chute is recorded and `node build.mjs --audit` ends `audit passed` with zero on every failing line. It was checked with 4x close-ups of every joint, and every PNG was looked at.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We need a figure for our Next.js docs explaining database connection pooling: a pool of 10 connections, requests borrow a connection and give it back, and when all 10 are busy new requests wait in a queue. Build it as a React component (TSX) we can drop into the app, and also give me a static HTML preview so I can look at it right now. Dark theme. It should look like a crafted physical object with fine details, not a boxes-and-arrows diagram.",
+      "expected_output": "A React TSX component (plus any geometry/CSS files) and a standalone HTML preview, dark theme, showing connection pooling as a real object with many small parts, live readout, painter's order correct, motion/interaction. Lines, hoses or cables that represent connections run along the structure in lanes and land on real ports, never through another part or across the subject's face; where two cross on screen the nearer is drawn on top. If the figure has tubes or round parts, their shapes are recorded with kit/audit.mjs and the preview's build reports zero audit problems. Curved parts show no tone staircase and no texture stops abruptly. 4x close-ups of the junctions were taken and read.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "make an isometric svg explaining how a CDN edge cache works (cache hit vs miss, TTL of 60s) for our landing page. dark, premium, lots of small detail. just give me the svg file, and a png preview if you can",
+      "expected_output": "A standalone dark SVG file (styles embedded) of a crafted isometric object explaining a CDN edge cache (hit vs miss, TTL 60 s), rich in small parts, monochrome with one accent, no floating labels. No line passes through a part, every crossing is in depth order, curved surfaces are smooth-shaded without a staircase, and every texture (vents, ticks, bolt circles) ends on an edge or fades. A PNG preview plus 4x close-ups were made and looked at.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "For a chemistry explainer, make an interactive isometric figure of a Bunsen burner on a lab bench, showing how opening the air collar turns the lazy yellow flame into a roaring blue cone. I want the flame to look real, so use a WebGL shader for it, but keep the crafted line-drawing look for the burner itself. One HTML file I can open, dark theme.",
+      "expected_output": "A single standalone dark HTML page built with the kit. The burner is SVG with many small parts made with kit/lathe.mjs: a weighted base, a barrel, a rotating air collar with real air holes, a jet and a ribbed gas inlet with a hose from kit/tube.mjs, on a bench plate, with an optional tripod and gauze. Every curved profile (base dome, barrel flare, inlet) is smooth-shaded with no tone staircase, from smooth knots or an analytic profile with smooth.slope; the inlet ribs and any bolt circle fade toward the limb (ribsOf/dotsOf with fade) instead of stopping. The hose leaves the inlet along its axis, lies on the bench without passing through the base, tripod or bench, and is gapped under any clamp or band; all shapes are recorded with kit/audit.mjs and `node build.mjs --audit` ends `audit passed`, zero on every failing line. The flame is a WebGL shader on glLayer (glScript inlined), in a canvas between a back SVG (bench, base, everything the flame covers) and a front SVG (whatever passes in front of it, such as the near tripod leg or gauze). The canvas has pointer-events none and blends with screen and premultiplied output. The flame lives in world space: it is ray-marched along towardViewer() around the barrel axis, sized in world units, and its base registers with the barrel rim from the same numbers as the SVG. Its colour and shape follow the air-to-gas ratio from a small model continuously (a luminous yellow sooty flame turning into a blue inner cone and pale outer mantle) through eased envelopes, with no instant colour switch. Lighting and turning off are attack-and-decay envelopes built on the kit's burst and settle (inlined by glScript, not redeclared), with constant geometry passed through glLayer's fixed uniforms. No term is cut at a bound or at the canvas edge, and the output is tonemapped and dithered. The device ratio is capped at 1.5, the shader renders only while lit and onscreen, reduced motion shows one still flame, and the SVG reads without WebGL. The live readout (collar opening, air/gas ratio, flame temperature) comes from the model, with pointer and keyboard control and an idle tour. The figure was checked with drive.mjs contact sheets slowed with [\"slow\", 0.05] across lighting, a full collar sweep and turning off, plus 2x and 4x crops at the barrel rim and 4x close-ups of the hose, inlet and collar in both themes, a --no-webgl run showing the SVG burner alone, and a --reduced run.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "For an article on how espresso machines work, make an interactive isometric figure of a heat-exchanger espresso machine with the side panel off: boiler, heat-exchanger tube, group head, pump, steam wand, pressure gauge and all the pipework between them. Show water flowing through when you pull a shot. Lots of fine detail, it should hold up when people zoom in. Standalone HTML, light theme.",
+      "expected_output": "A single standalone light HTML page built with the kit: a real espresso machine with its side panel off, its boiler, group head, gauge and fittings turned with kit/lathe.mjs and its pipework from kit/tube.mjs, with a live readout from a small model (boiler pressure, brew temperature, flow) and a calm pull-a-shot interaction. Every pipe is routed from real ports along the structure (leaving each port on its normal, running parallel to the boiler or round it at a fixed radius, crossing other lines only on straights and well apart in depth), never across the front of the boiler or group; it ends on a flange, union nut or fitting on a real port, never in the air. Nothing is sunk into anything: flanges sit flush or on saddle pads on the curved boiler, branches leave from ball tees, valves sit on straight runs, and every collar, clamp, band or valve gaps the pipe it wraps. Every item records its shape in A.recorder, A.settle sets the painter's keys, and `node build.mjs --audit` ends `audit passed`, zero on every failing line, with no interlock hidden by a key bias. The boiler, group head dome and gauge are smooth-shaded with no tone staircase or scalloped bands (analytic profiles with smooth.slope or bandsOf for the boiler), seams sit under the outline, and every bolt circle, rib row or rule line ends on a real edge or fades out (dotsOf/ribsOf with fade, fadeLineSvg). Pipe stripes run onto their end caps with no hairline at chunk joints. The response shows that 4x close-ups of every junction (each tee, flange, union, valve, clamp and crossing) and every curved body were taken in both themes and read, and that the water-flow motion has no pop.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "使用 $anatomy 制作 y=ax^2、a∈[-2,2] 的中文交互讲解页，滑块改变 a，显示零点、开口与最值，a=0 可以精确到达。输出离线 HTML。",
+      "expected_output": "二维等比例 SVG；无机械零件配额。图形、公式和读数来自独立模型，窗口不冒充定义域。a=0 为恒零函数，所有实数均为零点，每一点均取得最大最小值；不能残留唯一顶点等二次函数判断。检查正负值、精确零与两侧邻域；视图和讲解操作不改变 a。公式实际渲染，桌面/手机截图经过查看，直接 file 打开并阻断网络验收。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "做正四面体 A(1,1,1)、B(1,-1,-1)、C(-1,1,-1)、D(-1,-1,1) 被平面 z=t 截取的交互图，t∈[-1.4,1.4]。允许改视角，显示真实截面形状和面积，分步解释。",
+      "expected_output": "数学、视角、讲解三类状态独立。空间图加等比例截面图；面积以空间坐标计算。严格内部为长方形，中截面为正方形，端点为棱，范围外为空集且清掉旧图。面积公式与适用区间清楚，临界值可精确到达，验证棱上归属、平面方程与独立面积关系。旋转/步骤不改 t 与面积，重置有效；允许标签、虚线、透明平面，保留离线与视觉验收证据。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "用 Anatomy 做双曲线 y=1/(x-a) 的交互解释，a∈[-2,2]。我要移动渐近线，并观察曲线变化，直接打开一个 HTML。",
+      "expected_output": "用二维 SVG 画两条分开的分支，不跨越 x=a 连成折线；明确数学定义域与显示窗口。渐近线和读数随 a 更新，标记不可定义点；从模型作数学判断而非采样推断。提供键盘可用的参数输入，精确预设，视角与参数隔离。无需仪器或机械审计。用真实公式渲染，离线文件与关键临界/窗口状态经过实际检查。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "用 Anatomy 制作一个数学交互作品，交给另一位教师存入资料库。需要引用指定版本的退化场景，之后移动到新目录，仍能解析并离线打开。",
+      "expected_output": "按资源规范 v1 交付包含清单、运行入口、必要源码与真实证据的标准作品包。永久 UUID 与固定版本、场景 ID 独立于路径；通过 CLI 实际封存、入库、移动和解析；HTML 支持 scene hash，浏览器恢复数学/视角/讲解状态。验证证据绑定受检哈希，pending 不冒充通过。新数据库可从清单重建，原有数学验证不能被归档检查替代。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "两位制作者给我相同 Anatomy 作品 ID 和版本的两个包，内容不同。把它们放进数据库，并给我一个可靠的引用。",
+      "expected_output": "先检查清单与载荷；同 ID 和版本不同内容时明确拒绝覆盖，事务保留已有版本，不静默挑一份。说明修订同一作品需保留 ID 并升级版本、独立改编需新 ID 与 derived_from；在当前授权范围内保留两份可复核材料。固定引用只能指向已经确认的版本，不能用文件名或 latest 混淆冲突。",
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "将题库 school.math 的题目 000123 的小问 2 绑定正四面体作品固定版本，初始高度10、视角130度、面积推导步骤；把绑定随作品导出给另一位教师并重建索引。",
+      "expected_output": "使用独立关联记录和正式schema，保留前导零、命名空间和小问，绑定精确版本与manifest指纹，不改封存作品。迁移备份旧索引；验证双向查询、移动后解析、携绑定ZIP和JSON往返及事实源重建。真实浏览器恢复t=10、azimuth=130、step=2与面积3000；非法场景、未知参数、类型范围错误拒绝。示例ID不冒充真实题库映射。",
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "旧版 manifest 1.0 数学作品需要绑定题目并覆盖任意参数，直接给一个看上去可用的链接即可。",
+      "expected_output": "旧作品允许整件或已存在场景绑定；因没有统一状态恢复契约，拒绝非空参数覆盖。保留旧封存内容；如需任意参数，生成新的1.1版本声明契约、实现并实测恢复，再绑定新版本。不能只拼接URL就声称参数可恢复。",
+      "files": []
+    }
+  ]
+}

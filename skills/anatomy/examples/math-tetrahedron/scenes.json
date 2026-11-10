@@ -1,0 +1,7 @@
+[
+  {"id":"square","title":"中截面正方形","state":{"math":{"t":0},"view":{"azimuth":35},"lesson":{"step":0}}},
+  {"id":"rectangle","title":"长方形截面与面积推导","state":{"math":{"t":20},"view":{"azimuth":35},"lesson":{"step":2}}},
+  {"id":"negative-rectangle","title":"负高度长方形截面","state":{"math":{"t":-20},"view":{"azimuth":35},"lesson":{"step":1}}},
+  {"id":"degenerate","title":"截面退化为一条棱","state":{"math":{"t":40},"view":{"azimuth":35},"lesson":{"step":0}}},
+  {"id":"empty","title":"平面与四面体交集为空","state":{"math":{"t":45},"view":{"azimuth":35},"lesson":{"step":0}}}
+]

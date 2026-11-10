@@ -12,6 +12,15 @@
       "modification": "Frontmatter description adds an exam-workflow routing exclusion."
     },
     {
+      "path": "skills/anatomy",
+      "source_repo": "wheresryan22/anatomy",
+      "source_path": ".",
+      "source_commit": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+      "license": "MIT",
+      "modified": true,
+      "modification": "Math-first local revision: Chinese README, math references and examples, feedback regression; upstream mechanical examples and kit retained."
+    },
+    {
       "path": "skills/paper-exam-to-md-pdf",
       "source": "user-local-personal-skill",
       "license": "Apache-2.0",

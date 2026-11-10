@@ -42,6 +42,7 @@ cp -R skills/<skill-name> "${CODEX_HOME:-$HOME/.codex}/skills/"
 | 渲染 | `render_exam.py` | 可运行；强制 A4 与尺寸验收仍待修复 |
 | 归档 | `exam-archive-governance` | 可用 |
 | 完成验证 | `verification-before-completion` | 可用 |
+| 数学交互 | `anatomy` | 可用；数学优先的 MIT 上游修订版，保留原版等轴测插画能力 |
 
 ## 公开边界
 

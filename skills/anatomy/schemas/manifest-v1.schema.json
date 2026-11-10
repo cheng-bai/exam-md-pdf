@@ -1,0 +1,477 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1,
+      "const": "1.0"
+    },
+    "asset_id": {
+      "type": "string",
+      "minLength": 1,
+      "format": "uuid",
+      "pattern": "^[0-9a-f-]{36}$"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "maxLength": 80
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1,
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "minLength": 1,
+      "format": "date-time"
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "author",
+              "editor",
+              "reviewer"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "role"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "license",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "math": {
+      "type": "object",
+      "properties": {
+        "topics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "learning_goals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "minLength": 1,
+                "enum": [
+                  "number",
+                  "integer",
+                  "boolean",
+                  "enum"
+                ]
+              },
+              "domain": {
+                "type": "string",
+                "minLength": 1
+              },
+              "display_range": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "default": {},
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "type",
+              "domain",
+              "default"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "approximation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "topics",
+        "audience",
+        "objects",
+        "conditions",
+        "learning_goals",
+        "parameters",
+        "approximation"
+      ],
+      "additionalProperties": false
+    },
+    "entrypoints": {
+      "type": "object",
+      "properties": {
+        "html": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "svg": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "component": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      },
+      "required": [
+        "html"
+      ],
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "runtime",
+              "source",
+              "preview",
+              "evidence",
+              "document",
+              "license"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "media_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "path",
+          "role",
+          "sha256",
+          "bytes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 5000
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "maxLength": 80
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "type": "object",
+            "properties": {
+              "math": {
+                "type": "object"
+              },
+              "view": {
+                "type": "object"
+              },
+              "lesson": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "math",
+              "view",
+              "lesson"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "state"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uri": {
+                "type": "string",
+                "minLength": 1
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "relation": {
+                "type": "string",
+                "minLength": 1,
+                "enum": [
+                  "derived_from",
+                  "uses",
+                  "cites"
+                ]
+              },
+              "target": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^anatomy:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}@(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(#scene=[a-z][a-z0-9-]*)?$"
+              }
+            },
+            "required": [
+              "relation",
+              "target"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "sources",
+        "relations"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "mathematics",
+              "interaction",
+              "visual",
+              "offline"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "pass",
+              "fail",
+              "pending",
+              "not_applicable"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "checked_at": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "uniqueItems": true
+          },
+          "tested_files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 500
+                },
+                "sha256": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "kind",
+          "status",
+          "scope",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "asset_id",
+    "version",
+    "slug",
+    "title",
+    "language",
+    "created_at",
+    "updated_at",
+    "contributors",
+    "rights",
+    "math",
+    "entrypoints",
+    "files",
+    "scenes",
+    "provenance",
+    "validation",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:anatomy:math-resource:manifest:1.0",
+  "title": "Anatomy Math Resource Manifest v1"
+}

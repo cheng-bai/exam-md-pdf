@@ -1,0 +1,123 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "minLength": 1,
+      "const": "1.0"
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "binding_id": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uuid",
+            "pattern": "^[0-9a-f-]{36}$"
+          },
+          "question_namespace": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9][a-z0-9._-]*$",
+            "maxLength": 100
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "subquestion_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "question_revision": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "question_content_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "asset_id": {
+            "type": "string",
+            "minLength": 1,
+            "format": "uuid",
+            "pattern": "^[0-9a-f-]{36}$"
+          },
+          "asset_version": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+          },
+          "asset_manifest_sha256": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "scene_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$",
+            "maxLength": 80
+          },
+          "initial_state": {
+            "type": "object",
+            "properties": {
+              "math": {
+                "type": "object"
+              },
+              "view": {
+                "type": "object"
+              },
+              "lesson": {
+                "type": "object"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1,
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "binding_id",
+          "question_namespace",
+          "question_id",
+          "asset_id",
+          "asset_version",
+          "asset_manifest_sha256",
+          "initial_state",
+          "created_at",
+          "created_by"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "schema_version",
+    "bindings"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:anatomy:question-bindings:1.0",
+  "title": "Anatomy Question Bindings v1"
+}

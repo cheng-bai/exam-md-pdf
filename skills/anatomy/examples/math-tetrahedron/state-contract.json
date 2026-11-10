@@ -1,0 +1,8 @@
+{
+  "default_state": {"math":{"t":0},"view":{"azimuth":35},"lesson":{"step":0}},
+  "state_contract": {
+    "math":{"t":{"type":"number"}},
+    "view":{"azimuth":{"type":"number","minimum":5,"maximum":175}},
+    "lesson":{"step":{"type":"integer","enum":[0,1,2]}}
+  }
+}
