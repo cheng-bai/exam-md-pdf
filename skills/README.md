@@ -15,14 +15,18 @@
 | `mineru-document-workflow` | 将扫描版试卷转换为 Markdown 和 PDF 的 OCR 与审校流程。 |
 | `exam-archive-governance` | 最终命名、目录整理、GitHub 提交和公开仓库风险规则。 |
 | `verification-before-completion` | 在声明完成、提交或推送前进行证据优先的验证。 |
+| `ai-math-question-intake` | 将试卷、讲义或图片整理成可回源、可检索的题目记录，并标明识别与审校状态。 |
+| `ai-math-exam-compilation` | 从可追溯母集生成多用途的专题分类汇编，并对账来源、题号、分类和版本。 |
+| `ai-math-question-visualization` | 将已有题目转化为以变量、约束和关键关系为中心的教学可视化。 |
 | `anatomy` | 制作数学概念、函数图像、几何构造、立体截面和证明步骤的交互可视化；保留原版等轴测插画能力。 |
 
 ## AI Agent 使用顺序
 
 1. 用户只要逐行文字或坐标时使用 `paddleocr-text-recognition`；用户要最终 Markdown/PDF 时使用 `paper-exam-to-md-pdf` 主编排，不默认同时加载所有技能。
-2. 需要答案解析和考点标注时，再使用 `annotating-math-exam-solutions`。
-3. 把文件移动到最终 `exams/` 归档前，使用 `exam-archive-governance`。
-4. 提交、推送或汇报完成前，使用 `verification-before-completion`。
-5. 需要交互图形、参数探索或离线数学页面时，使用 `anatomy`；它不承担 OCR、试卷归档或答案审定。
+2. 需要把材料整理成可回源题目记录时，使用 `ai-math-question-intake`；需要把多套试卷组织成专题分类汇编时，使用 `ai-math-exam-compilation`。
+3. 需要答案解析和考点标注时，再使用 `annotating-math-exam-solutions`。
+4. 把文件移动到最终 `exams/` 归档前，使用 `exam-archive-governance`。
+5. 提交、推送或汇报完成前，使用 `verification-before-completion`。
+6. 需要交互图形、参数探索或离线数学页面时，先用 `ai-math-question-visualization` 明确数学关系与验收目标，再使用 `anatomy` 实现；两者都不承担 OCR、试卷归档或答案审定。
 
 这些技能文件不写入本机 token。认证信息统一通过环境变量或本机 `.env` 配置，不提交到仓库。第三方技能的来源和许可证记录在 `tools/第三方来源与许可证.md`。
