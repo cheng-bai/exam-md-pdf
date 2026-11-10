@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper,fontset=fandol]{ctexart}
+
+\usepackage[a4paper,left=51pt,right=51pt,top=47pt,bottom=40pt,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setCJKfamilyfont{hei}{FandolHei-Regular.otf}[BoldFont=FandolHei-Bold.otf]
+\setCJKfamilyfont{kai}{FandolKai-Regular.otf}
+\tcbuselibrary{skins,breakable}
+
+\definecolor{identityblue}{RGB}{44,76,128}
+\definecolor{markred}{RGB}{220,0,0}
+\definecolor{softgray}{RGB}{244,245,247}
+\definecolor{lineblue}{RGB}{40,90,180}
+
+\hypersetup{colorlinks=true,linkcolor=identityblue,urlcolor=identityblue,pdfauthor={chengbai}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[C]{\small\color{identityblue}第 \thepage\ 页 / 共 \pageref*{LastPage} 页}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\titleformat{\section}{\CJKfamily{hei}\Large\bfseries}{第\,\thesection\,节}{0.8em}{}
+\titleformat{\subsection}{\CJKfamily{hei}\large\bfseries}{\thesubsection}{0.8em}{}
+\setlist{nosep,leftmargin=2em}
+\linespread{1.18}
+
+\newtcolorbox{answerbox}{
+  enhanced,
+  breakable,
+  colback=softgray,
+  colframe=softgray,
+  boxrule=0pt,
+  borderline west={1.2pt}{0pt}{lineblue},
+  left=8pt,
+  right=8pt,
+  top=6pt,
+  bottom=6pt,
+  arc=1pt
+}
+
+\newcommand{\difficulty}[1]{\textbf{【难度：#1 星】}}
+\newcommand{\point}[1]{\par\noindent{\CJKfamily{kai}\color{markred}#1}\par}
+\newcommand{\gaoguan}[1]{\par\noindent{\CJKfamily{kai}\color{identityblue}高观点：#1}\par}
+
+\begin{document}
+
+\section{章节标题}
+
+\noindent\textbf{例 1}\quad \difficulty{3}\quad 在这里放入题目文本。
+\[
+  a^2+b^2\geq 2ab.
+\]
+
+\begin{answerbox}
+\noindent\textbf{解}\quad 在这里放入解答过程。
+\[
+  a^2+b^2-2ab=(a-b)^2\geq 0.
+\]
+因此
+\[
+  \color{markred}{a^2+b^2\geq 2ab}.
+\]
+\end{answerbox}
+
+\point{点拨：在这里写关键思路，语言要短，服务于学生复盘。}
+
+\gaoguan{在这里写更高层的结构观察，例如等价变形、参数化、构造函数或判别式思想。}
+
+\subsection{方法总结}
+
+\begin{enumerate}
+  \item 写第一条可迁移方法；
+  \item 写第二条可迁移方法；
+  \item 写第三条可迁移方法。
+\end{enumerate}
+
+\end{document}

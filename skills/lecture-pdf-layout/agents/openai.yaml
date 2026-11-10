@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lecture PDF Layout"
+  short_description: "Chinese math handout PDF layout"
+  default_prompt: "Use $lecture-pdf-layout to typeset this math handout as an A4 PDF."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学解析语言风格"
+  short_description: "沿用建平解析的简洁书面表达，在关键转化处说明理由并保留完整论证"
+  default_prompt: "使用 $math-solution-style 编写或润色这道高中数学题的解析，简洁表达并说明关键转化的理由。"
