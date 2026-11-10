@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML 数学讲义出版"
+  short_description: "保留数学正文，以 HTML 制作可复核的普通或紧凑讲义 PDF，校验分页、目录与书签"
+  default_prompt: "使用 $html-math-pdf-publishing 将这份数学讲义制作成 HTML 和 PDF，保持正文不变，并核验公式、题块分页与目录书签。"

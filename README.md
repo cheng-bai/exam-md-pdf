@@ -27,6 +27,8 @@
 
 Anatomy 是数学优先的本地修订版，同时保留原版精细等轴测插画能力。它不是试卷转录工具，不替代 OCR、数学审校和归档验收。
 
+需要把解析写法、讲义版式与 PDF 出版三个技能整包拷给他人时，用 `skills-share/`：它是这三个技能的独立分享包，含安装说明、依赖和 Apache-2.0 许可，不夹带任何试卷或学生材料。
+
 AI agent 执行顺序：
 
 1. 读 `AGENTS.md`。
@@ -50,6 +52,7 @@ AI agent 执行顺序：
 ├── AGENTS.md                  # 本仓库 AI 工作规则
 ├── README.md                  # 人类和 AI 的复现手册
 ├── skills/                    # 可复用 AI skills
+├── skills-share/              # 数学解析与 PDF 出版技能分享包（整包分发用）
 ├── workflows/                 # 跨 Skill 的端到端流程
 ├── inputs/                    # 原始 PDF / 扫描图片，默认不提交
 ├── outputs/                   # MinerU 解析包和上传回执，默认不提交

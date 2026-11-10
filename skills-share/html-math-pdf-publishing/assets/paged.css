@@ -1,0 +1,29 @@
+/* Append after the document's existing styles; preserve its local font rules. */
+@page {
+  size: A4;
+  margin: 20mm 18mm 18mm;
+  @top-left { content: "MATHEMATICS"; font: 7.5pt "Times New Roman", serif; color: #68757c; }
+  @top-right { content: string(section-title); font: 7.5pt "Songti SC", serif; color: #68757c; }
+  @bottom-left { content: none; }
+  @bottom-right { content: counter(page) " / " counter(pages); font: 8pt "Times New Roman", serif; color: #465b68; }
+}
+h2 { string-set: section-title content(text); }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; }
+.problem-unit, .keep-step { break-inside: avoid-page; page-break-inside: avoid; }
+.problem-unit.allow-split, .problem-unit.long-problem { break-inside: auto; page-break-inside: auto; }
+figure { break-inside: avoid-page; }
+p, li { orphans: 2; widows: 2; }
+#toc { font-family: "Songti SC", serif; }
+#toc ol { list-style: none; padding-left: 1.2em; }
+#toc li { margin: 6pt 0; break-inside: avoid-page; }
+#toc a { color: #344c5c; text-decoration: none; }
+#toc a::after { content: leader(".") " " target-counter(attr(href), page); color: #788c95; }
+#toc .lecture-number, #toc .lecture-name {
+  display: inline; font: inherit; padding: 0; background: none; clip-path: none;
+}
+@media print {
+  html { background: white; }
+  body { max-width: none; margin: 0; padding: 0; }
+  .no-print { display: none; }
+  @page { size: A4; margin: 20mm 18mm 18mm; }
+}

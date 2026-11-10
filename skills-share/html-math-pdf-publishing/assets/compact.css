@@ -1,0 +1,28 @@
+/* Starting points for teacher reading, not fixed requirements for every book. */
+@page { margin: 16mm 16mm 15mm; }
+body { font-size: 10.5pt; line-height: 1.38; }
+h1 { font-size: 16pt; margin-bottom: 7px; }
+h2 { font-size: 12.5pt; margin: .7em 0 .4em; }
+h3 { font-size: 11pt; margin: .65em 0 .3em; }
+h4 { font-size: 10.5pt; margin: .6em 0 .3em; }
+h5 { font-size: 10.2pt; }
+p { margin: .22em 0; }
+ul, ol { margin: .25em 0 .4em; }
+li { margin: .08em 0; }
+.problem-card { margin: .45em 0 .35em; padding: 0 8px 5px; }
+.problem-card > h4, .problem-card > h5 { margin: 0 -8px .2em; padding: 3px 8px; font-size: 10.2pt; }
+.problem-card p { margin: .2em 0; }
+aside { font-size: 9.5pt; line-height: 1.4; padding: 6px 9px; margin: .45em 0; }
+.study-note { margin-top: 8px; padding-top: 6px; }
+.source-note { font-size: 8.4pt; line-height: 1.35; margin: .35em 0 .5em; }
+.katex-display { margin: .2em 0; }
+p:has(> .math.display:only-child) { margin: .1em 0; }
+#toc li { margin: 5pt 0; }
+@media print {
+  body { font-size: 10.5pt; line-height: 1.38; }
+  h1 { font-size: 16pt; margin-bottom: 7px; }
+  h2 { font-size: 12.5pt; margin-top: .7em; }
+  h3 { font-size: 11pt; }
+  h4 { font-size: 10.5pt; }
+  @page { margin: 16mm 16mm 15mm; }
+}
